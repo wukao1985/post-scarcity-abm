@@ -1,36 +1,36 @@
-# Behavioral Sink Under Extreme Automation: An Agent-Based Model of Meaning, Collapse, and Intervention
+# Behavioral Sink Under Post-Labor Displacement: Mechanisms of Meaning Loss, Social Contagion, and Intervention in a Stylized Agent-Based Model
 
 **Authors:** [Redacted for peer review]
 
-**Keywords:** artificial intelligence, automation, behavioral sink, meaning crisis, agent-based modeling, universal basic income, social policy
+**Keywords:** post-labor displacement, behavioral sink, self-determination theory, agent-based modeling, role substitution, social cohesion, universal basic income
 
 ---
 
 ## Abstract
 
-As artificial intelligence advances toward automating cognitive work, societies face a potential "behavioral sink"—widespread meaning loss, social withdrawal, and collapse of pro-social behavior among displaced populations. We present an agent-based model (ABM) integrating Self-Determination Theory (SDT) with economic displacement dynamics to explore policy interventions. Across 17,050 simulation runs spanning six parameter sweeps, we find:
+What happens to human well-being when populations are displaced from productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to study mechanisms of meaning loss, behavioral cascade, and intervention under post-labor conditions. Across 17,050 simulation runs spanning six parameter sweeps, we find:
 
-1. The oft-cited "80% automation threshold" for social collapse is not fixed—it shifts to ~50% under rapid automation but can be extended to ~95% with combined interventions.
+1. A phase transition to behavioral sink occurs at ~80% role displacement, but this threshold is policy-malleable — shifting lower under rapid displacement and higher with combined interventions.
 
-2. No single intervention (income support, role substitution, fairness redistribution, virtual worlds, or collectivism) prevents collapse at 95% automation.
+2. Income support (UBI) is necessary but insufficient: at 95% displacement, collapse probability reaches 91% in individualist societies even with UBI.
 
-3. Strategic combinations achieve 0% collapse even at 95%: Universal Basic Income (UBI) + high-quality virtual role systems, or role substitution + virtual worlds.
+3. Role substitution programs outperform income transfers in preventing meaning loss (sink index 0.388 vs 0.639 at 95% displacement).
 
-4. Cultural context matters: collectivist social structures enable UBI to function at automation levels where it otherwise fails.
+4. Social cohesion is the decisive moderator: collectivism reduces UBI failure from 91% to 0% collapse — a finding consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
 
-5. Transition speed is a critical policy lever: gradual displacement (40-year timeline) produces meaning scores 36% higher than rapid displacement (10-year timeline) at equivalent endpoints.
+5. Transition speed matters: rapid displacement produces 73 percentage points more collapse than gradual displacement at equivalent endpoints.
 
-Our findings suggest that preventing behavioral sink under extreme automation requires coordinated multi-pillar policies addressing income, meaningful activity, and social connection—deployed early in the transition.
+Our findings identify which mechanisms drive or prevent behavioral sink under post-labor conditions, suggesting that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution.
 
 ---
 
 ## 1. Introduction
 
-### 1.1 The Automation-Meaning Crisis
+### 1.1 The Role-Displacement Problem
 
-Economic history has witnessed technological unemployment before, but artificial intelligence differs fundamentally from prior automation. Where mechanization replaced physical labor and software replaced routine cognitive tasks, large language models and multi-modal AI now threaten to replace *meaningful* cognitive work—creative, analytical, and social tasks that provide not just income but identity, status, and purpose (Brynjolfsson & McAfee, 2014; Frey & Osborne, 2017).
+Human well-being is deeply embedded in productive roles. Work provides not just income but identity, competence, social connection, and purpose (Blustein, 2008; Deci & Ryan, 2000). Technological displacement, deindustrialization, and resource windfalls have repeatedly demonstrated that removing productive roles — even while maintaining material sufficiency — can produce severe social pathology (Case & Deaton, 2020).
 
-Calhoun's (1962) rodent experiments demonstrated "behavioral sink"—social collapse characterized by withdrawal, aggression, and reproductive failure—when populations lacked meaningful social roles. While controversial when applied to humans, the analogy raises urgent questions: What happens to societies when AI renders most economically productive roles obsolete?
+Calhoun's (1962) rodent experiments demonstrated "behavioral sink" — social collapse characterized by withdrawal, aggression, and reproductive failure — when populations lacked meaningful social roles. The analogy to human post-labor conditions, while imperfect, raises urgent mechanistic questions: What psychological and social dynamics drive or prevent behavioral sink when populations are displaced from productive roles? Which interventions are effective, and under what conditions do they fail?
 
 ### 1.2 The Gap in Current Understanding
 
@@ -71,7 +71,7 @@ We integrate three theoretical strands:
 
 ### 2.1 Model Overview
 
-We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021) with 200 agents interacting over 80 timesteps. The model extends prior work (V1, V2) with refined psychological dynamics and five intervention dimensions.
+We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021) with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to study mechanisms, not a forecast of specific technological timelines or displacement levels.** The model extends prior work (V1, V2) with refined psychological dynamics and five intervention dimensions.
 
 **Agent state variables:**
 - Psychological: autonomy, competence, relatedness, status (0-1 scales)
@@ -107,6 +107,19 @@ meaning = 0.25×autonomy + 0.25×competence + 0.25×relatedness + 0.10×status +
 ```
 
 where contribution = 0.8×economic_role + 0.1×virtual_role (capturing the insight that virtual contribution matters less than economic contribution).
+
+**Weight justification:**
+
+| Weight | Value | Basis |
+|--------|-------|-------|
+| Autonomy, Competence, Relatedness | 0.25 each | SDT: three core needs weighted equally (Deci & Ryan, 2000) |
+| Status | 0.10 | Calibration: status matters but is not a core SDT need |
+| Contribution | 0.15 | Calibration: captures "mattering" dimension absent from SDT triad |
+| Economic contribution | 0.80 | Assumption: real-world productive roles provide primary meaning |
+| Virtual contribution | 0.10 | Assumption: virtual roles provide partial but limited meaning substitute |
+| Decay rate | 0.08 | Calibration: produces equilibration within ~30 steps |
+| Noise σ | 0.02 | Calibration: currently too low (see Limitations) |
+| Base floor | 0.32 | Calibration: minimum human functioning even under severe deprivation |
 
 ### 2.3 Archetype Classification
 
@@ -343,11 +356,13 @@ The decisive variable is collectivism_index: at PL=0.95 with UBI, collapse drops
 
 ## 5. Conclusion
 
-As AI capabilities advance, societies face a potential behavioral sink—a collapse of meaning, social connection, and pro-social behavior among displaced populations. Our model suggests this outcome is not inevitable but depends critically on policy choices.
+This stylized model identifies mechanisms by which post-labor displacement can drive behavioral sink — and mechanisms by which it can be prevented. Our findings do not predict when or whether AI will displace specific populations, but they characterize the dynamics that would follow such displacement.
 
-The 80% automation threshold often cited in popular discourse is better understood as a default outcome under unmanaged transitions. With coordinated interventions—income support, role substitution, virtual infrastructure, and collectivism-oriented social policy—societies can maintain high meaning and prevent collapse even at 95% automation.
+The central insight is that income support, while necessary, is insufficient to prevent meaning loss. The mechanisms that drive behavioral sink — loss of competence, autonomy, social role, and contribution — require targeted intervention beyond economic redistribution. Role substitution programs, virtual role infrastructure, and social cohesion structures each address distinct psychological needs that income cannot satisfy.
 
-The window for intervention is early. Once sink indices cross thresholds and populations shift into non-productive archetypes, recovery becomes increasingly difficult. The question is not whether societies can survive extreme automation, but whether they will choose to.
+The model's sensitivity to social cohesion — with collectivism moderating UBI effectiveness from 91% failure to 0% — highlights that identical economic policies can produce radically different outcomes depending on the social substrate. This finding is consistent with historical divergences between post-labor societies (Nauru vs. Gulf states) and suggests that cultural and institutional context deserves as much attention as economic policy design.
+
+As a stylized model, these results identify mechanisms and qualitative relationships rather than precise thresholds. The specific numbers (80% threshold, 91% collapse rate) are model-dependent and should not be interpreted as predictions. What the model contributes is a framework for thinking about which dimensions of human well-being are at risk under role displacement, and which intervention categories address which risks.
 
 ---
 
@@ -370,6 +385,14 @@ Felten, E. W., Raj, M., & Seamans, R. (2021). Occupational, industry, and geogra
 Frey, C. B., & Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation? *Technological Forecasting and Social Change*, 114, 254-280.
 
 Kazil, J., Masad, D., & Crooks, A. (2021). Utilizing Python for agent-based modeling: The Mesa framework. In *Agent-Based Simulation of Organizational Behavior* (pp. 308-344). Springer.
+
+Case, A., & Deaton, A. (2020). *Deaths of Despair and the Future of Capitalism*. Princeton University Press.
+
+Connell, J. (2006). Nauru: The first failed Pacific state? *The Round Table*, 95(383), 47-63.
+
+Hertog, S. (2010). *Princes, Brokers, and Bureaucrats: Oil and the State in Saudi Arabia*. Cornell University Press.
+
+Hofstede, G. (2001). *Culture's Consequences: Comparing Values, Behaviors, Institutions, and Organizations Across Nations*. Sage.
 
 Standing, G. (2017). *Basic income: And how we can make it happen*. Penguin UK.
 
