@@ -2,12 +2,15 @@
 
 ## 🔴 Active
 
-### Pathway A — ABM (Phase 2+)
-- [ ] Run Sweeps 2-4 (automation speed, virtual world, collectivism)
-- [ ] Run all 10 scenarios at 0.5 / 0.8 / 0.95 post-labor
-- [ ] Add behavioral archetype time-series tracking
-- [ ] Generate full V3 report
-- [ ] Increase Monte Carlo runs to 150/point for final results
+### Pathway A — ABM (Phase 2+) — COMPLETE
+- [x] Run Sweeps 2-4 (automation speed, virtual world, collectivism)
+- [x] Run all 10 scenarios at 0.5 / 0.8 / 0.95 post-labor
+- [x] Add behavioral archetype time-series tracking
+- [x] Generate full V3 report
+- [x] Increase Monte Carlo runs to 150/point for final results
+- **Total:** 17,400 simulation runs completed
+- **Reports:** `reports/v3_sweeps_2-6_analysis.md`, `reports/paper_draft.md`
+- **Figures:** 6 comprehensive figures in `reports/figures/`
 
 ## 🟡 Next Up
 
