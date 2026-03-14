@@ -8,7 +8,7 @@
 
 ## Abstract
 
-As artificial intelligence advances toward automating cognitive work, societies face a potential "behavioral sink"—widespread meaning loss, social withdrawal, and collapse of pro-social behavior among displaced populations. We present an agent-based model (ABM) integrating Self-Determination Theory (SDT) with economic displacement dynamics to explore policy interventions. Across 17,400 simulation runs, we find:
+As artificial intelligence advances toward automating cognitive work, societies face a potential "behavioral sink"—widespread meaning loss, social withdrawal, and collapse of pro-social behavior among displaced populations. We present an agent-based model (ABM) integrating Self-Determination Theory (SDT) with economic displacement dynamics to explore policy interventions. Across 17,050 simulation runs spanning six parameter sweeps, we find:
 
 1. The oft-cited "80% automation threshold" for social collapse is not fixed—it shifts to ~50% under rapid automation but can be extended to ~95% with combined interventions.
 
@@ -122,15 +122,15 @@ Agents are classified based on meaning and aggression potential:
 
 ### 2.4 Simulation Design
 
-We conducted six parameter sweeps totaling 17,400 runs:
+We conducted six parameter sweeps totaling 17,050 runs:
 
 | Sweep | Parameter | Levels | Scenarios | Runs/Point | Total |
 |-------|-----------|--------|-----------|------------|-------|
 | 1 | Post-labor fraction | 9 | 5 | 50 | 2,250 |
-| 2 | Automation speed | 2 | 5 | 100 | 3,000 |
-| 3 | Virtual world quality | 6 | 3 | 100 | 3,600 |
-| 4 | Collectivism index | 6 | 3 | 100 | 3,600 |
-| 5 | Archetype tracking | — | 2 | 50 | 100 |
+| 2 | Automation speed | 2×3 | 5 | 100 | 3,000 |
+| 3 | Virtual world quality | 6 | 3×2 | 100 | 3,600 |
+| 4 | Collectivism index | 6 | 3×2 | 100 | 3,600 |
+| 5 | Archetype time series | 2 | 2 | 50 | 100 (×81 steps) |
 | 6 | Full scenario grid | 3 | 10 | 150 | 4,500 |
 
 **Validation:** Model replicates prior findings (V2) with phase transition at ~80% post-labor under baseline conditions.
@@ -262,6 +262,14 @@ Time-series analysis reveals archetype emergence patterns (Figure 5):
 
 The Aggressor emergence before Withdrawn suggests anger and frustration are initial responses to displacement, with withdrawal and collapse following as chronic states. This has implications for intervention timing—early deployment (before step 25) prevents population archetype shifts that become self-sustaining.
 
+### 3.7 Historical Validation: Nauru vs. Gulf States
+
+To test external validity, we mapped two historical natural experiments to model conditions. The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a natural experiment in UBI-without-purpose. The result was social dissolution: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's rapid/baseline condition at PL=0.80 predicts meaning=0.364, sink=0.798, collapse=100% — consistent with Nauru's near-total social dysfunction despite material sufficiency.
+
+Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes. The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.487, sink=0.119, collapse=0%, with high Beautiful Ones prevalence (~72%) — consistent with the Gulf pattern of stability with consumerist disengagement.
+
+The decisive variable is collectivism_index: at PL=0.95 with UBI, collapse drops from 91% (collectivism=0.0, Nauru-like) to 0% (collectivism=0.8, Gulf-like). The model was not fitted to either case; this divergence emerges from the theoretical framework alone. While post-hoc and subject to confounding, this provides qualified support for construct validity.
+
 ---
 
 ## 4. Discussion
@@ -286,23 +294,32 @@ The Aggressor emergence before Withdrawn suggests anger and frustration are init
 
 **Early warning systems:** The archetype trajectory (Aggressors → Withdrawn → Collapsed) provides a potential early warning framework. Rising aggression metrics may predict approaching collapse before sink indices cross thresholds.
 
-### 4.3 Limitations
+### 4.3 Limitations and Self-Critique
+
+**Excessive determinism:** Cohen's d values between conditions range from 8 to 48, far exceeding anything observed in behavioral science. Standard deviations across 100+ runs are typically 0.002 for meaning index. The mean-reverting dynamics with small noise terms (σ=0.02) produce a model that is nominally stochastic but functionally deterministic. Confidence intervals in our figures are artifacts of insufficient stochasticity, not evidence of precision. Future versions should increase noise, add heterogeneous shocks, and model stochastic institutional dynamics.
+
+**Additive intervention structure:** The model treats interventions as independent additive effects. Real policies interact: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs. Our perfectly ordered intervention hierarchy is an artifact of this independence assumption.
+
+**Gradual speed artifact:** The gradual automation condition (0.01/step × 80 steps) cannot reach targets above 0.80. All gradual/0.95 comparisons are confounded: we compare a system reaching 0.80 automation against one reaching 0.95. Speed and endpoint effects are entangled at the highest displacement level.
+
+**Missing aggressors:** The aggressor archetype is nearly absent (<3%) across all conditions due to parameterization thresholds. This limits our ability to test hypotheses about political instability and anger-driven dynamics. The model effectively treats the sink as withdrawal-dominated, missing the aggression dimension central to Calhoun's original observations.
+
+**No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
+
+**Threshold-dependent results:** Many headline findings (91% → 0% UBI collapse, 100% → 0% VW transition) occur near phase transition boundaries where small parameter changes produce large outcome shifts. While characteristic of complex systems, this sensitivity means our quantitative predictions are unreliable — the qualitative direction matters, but specific percentages should be treated with extreme caution.
 
 **Model simplifications:**
 - Static network structure (real networks rewire during disruption)
 - Binary displacement (no gradations of underemployment)
 - Homogeneous agents (no age, education, or skill variation)
 - Single generation (no demographic replacement)
+- No economic dynamics (markets, prices, innovation)
 
-**Simulation limitations:**
-- 150 runs per point provides limited precision for rare events
-- 80 timesteps may be insufficient for very gradual transitions
-- Fixed random seeds may create path dependencies
-
-**Generalizability:**
-- Network parameters calibrated to Western individualist societies
-- Virtual world quality operationalized as single parameter
-- Intervention effectiveness may differ across economic sectors
+**Historical validation limitations:**
+- Post-hoc case selection (not prospective prediction)
+- Multiple confounders between Nauru and Gulf states beyond collectivism
+- "Collectivism" reduces complex cultural systems to a single scalar
+- Quantitative match is to qualitative patterns, not measured outcomes
 
 ### 4.4 Future Research
 
@@ -360,7 +377,7 @@ Standing, G. (2017). *Basic income: And how we can make it happen*. Penguin UK.
 
 ## Data Availability
 
-All simulation code, data (17,400 runs), and analysis scripts are available at: https://github.com/wukao1985/post-scarcity-abm
+All simulation code, data (17,050 runs across 6 sweeps), and analysis scripts are available at: https://github.com/wukao1985/post-scarcity-abm
 
 ## Acknowledgments
 

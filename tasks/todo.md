@@ -1,17 +1,5 @@
 # Project Tasks — Post-Scarcity ABM
 
-## 🔴 Active
-
-### Pathway A — ABM (Phase 2+) — COMPLETE
-- [x] Run Sweeps 2-4 (automation speed, virtual world, collectivism)
-- [x] Run all 10 scenarios at 0.5 / 0.8 / 0.95 post-labor
-- [x] Add behavioral archetype time-series tracking
-- [x] Generate full V3 report
-- [x] Increase Monte Carlo runs to 150/point for final results
-- **Total:** 17,400 simulation runs completed
-- **Reports:** `reports/v3_sweeps_2-6_analysis.md`, `reports/paper_draft.md`
-- **Figures:** 6 comprehensive figures in `reports/figures/`
-
 ## 🟡 Next Up
 
 ### Pathway C — System Dynamics
@@ -31,6 +19,13 @@
 - [ ] Run pilot (10 agents, 30 steps)
 - [ ] Code qualitative outputs for behavioral typology
 
+### Model Improvements (from self-critique)
+- [ ] Increase stochasticity (noise σ from 0.02 to 0.05+)
+- [ ] Fix gradual speed artifact (use 0.012/step to reach 0.95)
+- [ ] Add non-additive intervention interactions
+- [ ] Re-parameterize aggressor threshold
+- [ ] Add endogenous adaptation mechanism
+
 ## ✅ Completed
 
 - [x] Research Proposal written
@@ -45,3 +40,13 @@
 - [x] Phase 1: Add V2 scenarios (baseline, UBI, roles, fairness, full_bundle)
 - [x] Phase 1: Sweep 1 validation (50 runs/point, 9 PL levels x 5 scenarios = 2,250 runs)
 - [x] Phase 1: Validation report + figures generated
+- [x] Phase 2: Sweep 2 — Automation speed (3,000 runs)
+- [x] Phase 2: Sweep 3 — Virtual world quality (3,600 runs)
+- [x] Phase 2: Sweep 4 — Collectivism index (3,600 runs)
+- [x] Phase 2: Sweep 5 — Archetype time series (100 runs, 8,100 timesteps)
+- [x] Phase 2: Sweep 6 — Full 10-scenario grid (4,500 runs, 150/point)
+- [x] Phase 3: Analysis reports for sweeps 2-6
+- [x] Phase 3: Publication-quality figures (20+ figures)
+- [x] Phase 3: Historical validation (Nauru vs. Gulf states)
+- [x] Phase 4: Paper draft (reports/paper_draft.md)
+- **Total simulation runs: 17,050**
