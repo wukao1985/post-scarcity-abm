@@ -87,9 +87,10 @@ def run_sweep_2(n_runs=100, output_dir="data/simulation"):
     """
     os.makedirs(output_dir, exist_ok=True)
 
-    # Automation speeds: gradual (0.01/step) vs rapid (0.08/step, hits 0.8 by step 10)
+    # Automation speeds: gradual (target/80 per step) vs rapid (0.08/step, hits 0.8 by step 10)
+    # V4 fix: gradual speed computed per-target so it always reaches target by step 80
     speed_configs = {
-        "gradual": 0.01,   # 0.8 / 80 steps
+        "gradual": None,   # computed as pl/80 per target level
         "rapid": 0.08,     # 0.8 / 10 steps
     }
 
@@ -109,8 +110,10 @@ def run_sweep_2(n_runs=100, output_dir="data/simulation"):
     print(f"Running Sweep 2: Automation Speed ({total} total runs)")
     print("=" * 60)
 
-    for speed_name, speed_val in speed_configs.items():
+    for speed_name, speed_default in speed_configs.items():
         for pl in post_labor_levels:
+            # V4: gradual speed = target/80 so it always reaches target by step 80
+            speed_val = pl / 80.0 if speed_default is None else speed_default
             for scenario_name, iv in scenarios.items():
                 run_meanings = []
                 run_sinks = []

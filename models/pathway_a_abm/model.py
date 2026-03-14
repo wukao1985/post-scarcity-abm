@@ -1,9 +1,11 @@
 """
-Post-Scarcity ABM — V3 Phase 1
+Post-Scarcity ABM — V4
 Mesa 3.5+ compatible implementation.
 
-V2 target results (baseline, 80% post-labor):
-  meaning=0.450, sink=0.769, collapse_prob=97%
+V4 changes from V3:
+- Increased stochasticity (σ=0.08, agent shocks)
+- Fixed gradual speed to always reach target by step 80
+- Recalibrated aggressor thresholds for 10-20% emergence
 """
 import numpy as np
 import random
@@ -72,6 +74,9 @@ class PostLaborAgent(mesa.Agent):
         ns = self._get_neighbors_state()
         m  = self.model
 
+        # Per-step agent-level shock (models life events, idiosyncratic variation)
+        agent_shock = np.random.normal(0, 0.03)
+
         # Contagion effects (negative social exposure)
         sink_exposure = ns["aggressor_frac"] + ns["collapsed_frac"] + ns["withdrawn_frac"]
         contagion = sink_exposure * m.contagion_strength
@@ -85,6 +90,9 @@ class PostLaborAgent(mesa.Agent):
         # Baseline human needs floor (even displaced people retain some base function)
         base = 0.32
 
+        # Noise σ = 0.08 (V4: increased from 0.02 for realistic between-run variance)
+        noise_sigma = 0.08
+
         # Autonomy target depends on economic role, fairness, resilience
         autonomy_target = base + (
             0.25 * self.economic_role
@@ -95,7 +103,8 @@ class PostLaborAgent(mesa.Agent):
             - 0.05 * contagion
         )
         self.autonomy = np.clip(
-            self.autonomy + decay * (autonomy_target - self.autonomy) + np.random.normal(0, 0.02),
+            self.autonomy + decay * (autonomy_target - self.autonomy)
+            + np.random.normal(0, noise_sigma) + agent_shock,
             0, 1)
 
         # Competence target
@@ -107,7 +116,8 @@ class PostLaborAgent(mesa.Agent):
             - 0.05 * contagion
         )
         self.competence = np.clip(
-            self.competence + decay * (competence_target - self.competence) + np.random.normal(0, 0.02),
+            self.competence + decay * (competence_target - self.competence)
+            + np.random.normal(0, noise_sigma) + agent_shock,
             0, 1)
 
         # Relatedness target
@@ -121,7 +131,8 @@ class PostLaborAgent(mesa.Agent):
             - 0.05 * contagion
         )
         self.relatedness = np.clip(
-            self.relatedness + decay * (relatedness_target - self.relatedness) + np.random.normal(0, 0.02),
+            self.relatedness + decay * (relatedness_target - self.relatedness)
+            + np.random.normal(0, noise_sigma) + agent_shock,
             0, 1)
 
         # Status target
@@ -133,7 +144,8 @@ class PostLaborAgent(mesa.Agent):
             - 0.04 * contagion
         )
         self.status = np.clip(
-            self.status + decay * (status_target - self.status) + np.random.normal(0, 0.02),
+            self.status + decay * (status_target - self.status)
+            + np.random.normal(0, noise_sigma) + agent_shock,
             0, 1)
 
         # Virtual role access (endogenous search by displaced workers)
