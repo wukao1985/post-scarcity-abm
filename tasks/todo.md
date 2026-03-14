@@ -2,18 +2,14 @@
 
 ## 🔴 Active
 
-- [ ] V3 experiment design finalized
-- [ ] GitHub repo created and pushed
+### Pathway A — ABM (Phase 2+)
+- [ ] Run Sweeps 2-4 (automation speed, virtual world, collectivism)
+- [ ] Run all 10 scenarios at 0.5 / 0.8 / 0.95 post-labor
+- [ ] Add behavioral archetype time-series tracking
+- [ ] Generate full V3 report
+- [ ] Increase Monte Carlo runs to 150/point for final results
 
 ## 🟡 Next Up
-
-### Pathway A — ABM
-- [ ] Port V2 model to clean Python Mesa codebase
-- [ ] Add new V3 variables: automation_speed, virtual_world_quality, collectivism_index
-- [ ] Add new scenarios: Rapid, VirtualWorld, Collectivist, Fairness-first
-- [ ] Add behavioral archetype time-series tracking
-- [ ] Run V3 parameter sweep (target: 15,000+ runs)
-- [ ] Generate V3 report
 
 ### Pathway C — System Dynamics
 - [ ] Build stock-flow model in PySD
@@ -39,3 +35,10 @@
 - [x] Obsidian knowledge base built
 - [x] V2 simulation analyzed
 - [x] Evergreen deployed
+- [x] V3 experiment design finalized
+- [x] GitHub repo created and pushed
+- [x] Phase 1: Port V2 model to clean Python Mesa 3.5 codebase
+- [x] Phase 1: Add V3 variables (automation_speed, virtual_world_quality, collectivism_index)
+- [x] Phase 1: Add V2 scenarios (baseline, UBI, roles, fairness, full_bundle)
+- [x] Phase 1: Sweep 1 validation (50 runs/point, 9 PL levels x 5 scenarios = 2,250 runs)
+- [x] Phase 1: Validation report + figures generated
