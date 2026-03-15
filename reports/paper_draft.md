@@ -149,14 +149,14 @@ We conducted six parameter sweeps plus two ablation studies, totaling 18,500 run
 | 2 | Automation speed | 2×3 | 5 | 100 | 3,000 |
 | 3 | Virtual world quality | 6 | 3×2 | 100 | 3,600 |
 | 4 | Collectivism index | 6 | 3×2 | 100 | 3,600 |
-| 5 | Archetype time series | 2 | 2 | 50 | 100 (×81 steps) |
+| 5 | Archetype time series | 2 | 2 | 50 | 100 runs |
 | 6 | Full scenario grid | 3 | 10 | 150 | 4,500 |
 | A | Weight ablation (econ:virtual ratio) | 5 | 4 | 50 | 1,000 |
 | B | Intervention decoupling | 1 | 3 | 150 | 450 |
 
 **Intervention coupling.** In our implementation, the UBI scenario includes a fairness boost (reflecting UBI's social legitimacy signal), and role programs enhance both economic role and competence directly. These couplings are intentional design choices reflecting real-world co-occurrence of interventions, but mean that UBI and fairness effects are not fully orthogonal.
 
-**Validation:** Model replicates prior findings (V2) with phase transition in the 80-90% zone under baseline conditions. V4 increased stochasticity (σ=0.08) broadened the transition zone from a sharp threshold to a realistic gradient.
+**Validation:** V4 reproduces the directional pattern of V2 findings (threshold behavior in the 80-90% zone under baseline conditions), with broader confidence intervals due to increased stochasticity. Note that V4 was calibrated to approximate V2 outputs; this comparison validates implementation consistency, not independent replication.
 
 **Horizon robustness.** We verified that outcomes are near-stationary by step 80: extending simulations to T=160 and T=240 changes mean sink_index by less than 0.01 across all 9 tested conditions (3 scenarios × 3 displacement levels). The maximum delta between T=80 and T=120 is 0.009, well below the 0.02 convergence threshold. We therefore use T=80 as a reliable approximation of the near-equilibrium state. Full convergence table in Supplementary Methods.
 
@@ -330,7 +330,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 **Self-Determination Theory in Economic Context:** Our findings extend SDT by demonstrating that the three core needs (autonomy, competence, relatedness) can be satisfied through diverse channels. Economic roles are the default source, but virtual worlds (autonomy, competence) and collectivism (relatedness) provide partial substitutes. However, the ceiling effects suggest these substitutes are imperfect—extreme automation may exceed substitution capacity. Note that SDT needs are operationalized directly in our model's meaning function; consistency with SDT predictions is therefore expected by construction and does not constitute independent empirical validation of the theory.
 
-**Phase Transitions in Social Systems:** The 80% threshold behaves like a critical point in physical systems. Near this threshold, small parameter changes produce large outcome changes—a hallmark of phase transitions. Unlike physical constants, however, this threshold is policy-malleable.
+**Threshold Dynamics in Social Systems:** The 80-90% zone exhibits steep threshold behavior: small parameter changes near this region produce disproportionately large outcome changes, consistent with nonlinear dynamics in complex adaptive systems. Unlike physical phase transitions, which require specific mathematical criteria (power-law scaling, diverging correlation lengths), we use "threshold effect" to describe this empirical pattern. Crucially, this threshold is policy-malleable rather than fixed.
 
 **Social Contagion Amplification:** The sharp increase in sink between steps 20-40 suggests contagion dynamics. Individual displacement effects are multiplied through social networks, creating emergent collective collapse exceeding individual-level predictions.
 
