@@ -52,8 +52,8 @@ What mechanisms drive or prevent behavioral sink in post-labor societies, and wh
 These are findings from the ABM, not empirical claims. They identify mechanisms and qualitative relationships within the model's assumptions:
 
 - **Phase transition zone at ~80-90% displacement** (model finding): Baseline collapse probability rises sharply from 2% at 80% to 100% at 95% post-labor. The transition zone — rather than a knife-edge threshold — reflects realistic stochasticity in the V4 model.
-- **UBI is necessary but insufficient** (model finding): At 95% displacement, UBI alone produces a sink index of 0.515 with elevated distress across the population.
-- **Role programs outperform income transfers** (model finding): Roles (sink=0.458) vs UBI (sink=0.515) at 95% displacement.
+- **UBI is necessary but insufficient** (model finding): At 95% displacement, UBI alone produces a sink index of 0.518 with elevated distress across the population.
+- **Role programs outperform income transfers** (model finding): Roles (sink=0.459) vs UBI (sink=0.518) at 95% displacement.
 - **Virtual worlds complement but cannot fully substitute** (model finding): VW+UBI achieves near-zero sink; VW alone provides only partial protection at extreme displacement.
 - **Social cohesion moderates intervention effectiveness** (model finding): Collectivist structures substantially reduce UBI-associated sink, consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
 - **Speed matters** (model finding): Rapid displacement produces 46 percentage points more collapse than gradual at 95% automation.
