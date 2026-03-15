@@ -56,7 +56,7 @@ These are findings from the ABM, not empirical claims. They identify mechanisms 
 - **Role programs outperform income transfers** (model finding): Roles (sink=0.459) vs UBI (sink=0.518) at 95% displacement.
 - **Virtual worlds complement but cannot fully substitute** (model finding): VW+UBI achieves near-zero sink; VW alone provides only partial protection at extreme displacement.
 - **Social cohesion moderates intervention effectiveness** (model finding): Collectivist structures substantially reduce UBI-associated sink, consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
-- **Speed matters** (model finding): Rapid displacement produces 46 percentage points more collapse than gradual at 95% automation.
+- **Speed is transient** (model finding): When controlling for exposure time, rapid and gradual automation converge to the same equilibrium. Interventions matter more than transition speed.
 
 ## Project Structure
 

@@ -18,7 +18,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 4. Social cohesion reduces sink severity: collectivism lowers UBI-associated sink from 0.549 to 0.443 at 95% displacement — a finding consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
 
-5. Transition speed matters: rapid displacement produces 46 percentage points more collapse than gradual displacement at 95% automation (100% vs 54%).
+5. Transition speed is transient: when controlling for exposure time, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
 
 These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches.
 
@@ -154,6 +154,8 @@ We conducted six parameter sweeps totaling 17,050 runs:
 
 **Validation:** Model replicates prior findings (V2) with phase transition in the 80-90% zone under baseline conditions. V4 increased stochasticity (σ=0.08) broadened the transition zone from a sharp threshold to a realistic gradient.
 
+**Horizon robustness.** We verified that outcomes are near-stationary by step 80: extending simulations to T=160 and T=240 changes mean sink_index by less than 0.01 across all 9 tested conditions (3 scenarios × 3 displacement levels). The maximum delta between T=80 and T=120 is 0.009, well below the 0.02 convergence threshold. We therefore use T=80 as a reliable approximation of the near-equilibrium state. Full convergence table in Supplementary Methods.
+
 ### 2.5 Sensitivity Analysis
 
 We conducted one-at-a-time perturbation of three key internal parameters (noise σ, decay rate, contagion strength) by ±20%, with 50 runs per condition at PL=0.80 and PL=0.95 baseline. Core findings are robust: at PL=0.95, collapse occurs in 92-100% of runs across all perturbations; at PL=0.80, collapse remains rare (2-12%). The most sensitive parameter is contagion strength, which governs the positive feedback loop driving collective collapse (+20% raises PL=0.80 collapse from 2% to 12%). Full sensitivity results are reported in the Methods Appendix.
@@ -205,26 +207,22 @@ The marginal benefit of virtual quality is concave — substantial gains occur b
 
 The model's contribution weighting (virtual contribution counts 0.1 vs. 0.8 for economic roles) creates a ceiling effect: even maximum virtual quality leaves a meaning gap. Combining virtual worlds with UBI closes this gap substantially (sink 0.294 vs 0.517 with virtual alone).
 
-### 3.3 The Speed of Collapse (RQ3)
+### 3.3 Speed of Automation (RQ3)
 
-Automation speed produces distinct archetype trajectories (Figure 3).
+To isolate speed effects from exposure-time confounds, we conducted a controlled comparison measuring outcomes at matched intervals after each scenario reaches its target displacement (PL=0.95). Rapid automation (speed=0.20) reaches the target in ~5 steps; gradual automation (speed≈0.006) reaches it in ~160 steps.
 
-**Rapid automation** (0.08/step, reaching 80% in 10 steps):
-- Early emergence of Aggressors (steps 10-15)
-- Accelerated transition through Beautiful Ones
-- Rapid Sink threshold crossing (step 20)
+**Finding: speed is transient, not structural.** At matched exposure times (10 steps after reaching PL=0.95), both speeds produce similar sink levels that converge toward the same equilibrium:
 
-**Gradual automation** (target/80 per step, reaching the target level by step 80):
-- Delayed archetype transitions
-- Prolonged Beautiful One phase
-- Slower Sink accumulation
+| Speed | Sink (t+10) | Sink (t+40) | Equilibrium |
+|-------|-------------|-------------|-------------|
+| Rapid | 0.645 | 0.789 | ~0.79 |
+| Gradual | 0.775 | 0.797 | ~0.80 |
 
-At 95% post-labor baseline, rapid automation produces:
-- 9% lower meaning (0.329 vs 0.360)
-- 13% higher sink index (0.792 vs 0.703)
-- 46 percentage point higher collapse probability (100% vs 54%)
+Counterintuitively, gradual automation produces *higher* sink at matched exposure times (0.775 vs 0.645 at t+10), because the extended ramp period allows social contagion to accumulate during partial displacement. The original naive comparison (both measured at T=80) confounded speed with exposure time: rapid had 75 steps at full displacement while gradual had just reached its target.
 
-At 80% post-labor, the speed effect is smaller (2pp collapse difference) because V4's broader transition zone places 80% below the critical region for both speeds. The speed effect is most consequential near the transition zone boundary (~88-95%). Interventions — particularly full bundles — attenuate speed effects, suggesting that managed transitions with policy support can buffer speed impacts.
+At equilibrium (t+40), both speeds converge to nearly identical outcomes (~0.79 sink for baseline). This confirms that **the displacement level, not the path taken, determines the final state**. Interventions dominate speed effects: full_bundle produces sink ≈ 0.12-0.13 regardless of speed.
+
+This finding has an important policy implication: managing transition speed may matter less than having appropriate interventions in place by the time displacement occurs. The window for intervention deployment, not the automation timeline itself, is the critical variable.
 
 ### 3.4 Collectivism as Social Buffer (RQ4)
 
@@ -318,7 +316,7 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 **Virtual infrastructure investment:** Virtual worlds show the largest marginal benefit when added to other interventions. Investment in high-quality virtual role systems—games, creative platforms, virtual civic engagement—may be as important as physical infrastructure.
 
-**Transition management:** The speed effect demonstrates that *how* we automate matters as much as *what* we automate. Gradual transitions with early intervention deployment produce meaning scores 9% higher than rapid transitions at 95% displacement.
+**Transition management:** Our controlled speed comparison reveals that rapid and gradual automation converge to the same equilibrium — suggesting that *what interventions are in place* matters more than *how fast* automation occurs. The policy priority should be ensuring intervention infrastructure is deployed before displacement reaches critical levels, rather than managing automation speed per se.
 
 **Cultural tailoring:** Collectivism effects suggest UBI programs should be designed differently in different cultural contexts. Individualist societies may need stronger supplementary interventions.
 
@@ -457,5 +455,7 @@ All simulation code, data (6 sweeps, 17,000+ runs), and analysis scripts are ava
 
 Supplementary figures, sensitivity analyses, and extended data tables are available in the online repository. This includes:
 - **Supplementary Methods:** Full parameter documentation with justification categories (SDT theory, Calhoun calibration, convenience/sensitivity-tested)
+- **Horizon Robustness:** Convergence table showing all conditions stabilize by T=80 (max Δ < 0.01 to T=240)
+- **Speed Comparison:** Exposure-time-controlled analysis showing speed convergence
 - **Pathway C:** System dynamics model specification, Nauru/Gulf calibration, and ABM-SD comparison
 - **V4 Validation:** Detailed V3 vs V4 comparison showing effect of increased stochasticity on headline results
