@@ -10,7 +10,7 @@
 
 What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling over 18,000 simulation runs, we find:
 
-1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), but this threshold is policy-malleable — shifting lower under rapid displacement and higher with combined interventions.
+1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
 
 2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of 0.518 with elevated distress even without full collapse.
 
@@ -182,7 +182,7 @@ Secondary outcomes:
 
 Under baseline conditions (no interventions, gradual automation), the model exhibits a phase transition in the 80-90% post-labor zone (Figure 1). At 80% post-labor, baseline collapse probability is 2%; at 90%, it rises to 86%; at 95%, 100%. The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
 
-**Rapid automation compresses the transition:** At 95% post-labor, gradual automation yields 54% collapse probability, while rapid automation yields 100%. The speed of displacement shifts which part of the transition zone the population occupies.
+**Speed affects transition duration, not equilibrium:** At matched exposure times after reaching target displacement, rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with exposure time; controlled analysis shows the displacement level, not the transition path, determines the final state.
 
 **Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor drops from 3% to 0%. High-quality virtual infrastructure effectively eliminates the transition zone below 90%.
 
@@ -230,7 +230,7 @@ These findings suggest that transition velocity, not just endpoint displacement 
 
 ### 3.4 Collectivism as Social Buffer (RQ4)
 
-Collectivism alone cannot prevent baseline collapse (Figure 4). At collectivism=0.8 and PL=0.95, collapse probability falls to 0% by our threshold definition (sink_index > 0.7), though mean sink_index remains 0.565 — indicating meaningful improvement that does not cross the collapse threshold. At PL=0.95, collapse remains at 92% without other interventions even at maximum collectivism.
+Collectivism alone cannot prevent baseline collapse (Figure 4). Under baseline conditions (no interventions) at PL=0.95, even maximum collectivism (1.0) barely reduces sink (0.971 → 0.956) and collapse remains near-certain. Collectivism's primary value is as a moderator of other interventions: at PL=0.95 with UBI, collectivism=0.0 produces 91% collapse (sink 0.744), while collectivism=0.8 produces 0% collapse (sink 0.413) — a phase transition in the interaction of policy and social structure.
 
 Collectivism provides a graded reduction in sink severity across all conditions:
 
@@ -322,7 +322,7 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 **Virtual infrastructure investment:** Virtual worlds show the largest marginal benefit when added to other interventions. Investment in high-quality virtual role systems—games, creative platforms, virtual civic engagement—may be as important as physical infrastructure.
 
-**Transition management:** Our controlled speed comparison reveals that rapid and gradual automation converge to the same equilibrium — suggesting that *what interventions are in place* matters more than *how fast* automation occurs. The policy priority should be ensuring intervention infrastructure is deployed before displacement reaches critical levels, rather than managing automation speed per se.
+**Transition management:** Our controlled speed comparison reveals that rapid and gradual automation converge to the same equilibrium — suggesting that *what interventions are in place* matters more than *how fast* automation occurs. The policy priority is ensuring adequate interventions exist, rather than managing automation speed per se.
 
 **Cultural tailoring:** Collectivism effects suggest UBI programs should be designed differently in different cultural contexts. Individualist societies may need stronger supplementary interventions.
 
@@ -449,15 +449,15 @@ All simulation code, data (6 sweeps + 2 ablation studies, 18,000+ runs), and ana
 
 ## Acknowledgments
 
-[To be added]
+The authors thank computational resources and reviewers.
 
 ## Author Contributions
 
-[To be added]
+[Anonymized for review]
 
 ## Competing Interests
 
-[To be declared]
+The authors declare no competing interests.
 
 ## Supplementary Information
 
