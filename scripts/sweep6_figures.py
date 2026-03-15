@@ -11,6 +11,7 @@ import seaborn as sns
 sns.set_theme(style="whitegrid", font_scale=1.1)
 plt.rcParams['figure.dpi'] = 150
 plt.rcParams['savefig.dpi'] = 300
+plt.rcParams['savefig.facecolor'] = 'white'
 
 df = pd.read_csv('data/simulation/sweep6_full_grid.csv')
 

@@ -64,7 +64,7 @@ def plot_sweep2_automation_speed(df):
 
     plt.suptitle("Sweep 2: Effect of Automation Speed on Behavioral Sink", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep2_automation_speed.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep2_automation_speed.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print("Saved: sweep2_automation_speed.png")
 
@@ -101,7 +101,7 @@ def plot_sweep3_virtual_world(df):
 
     plt.suptitle("Sweep 3: Virtual World Quality vs. Behavioral Sink", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep3_virtual_world.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep3_virtual_world.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print("Saved: sweep3_virtual_world.png")
 
@@ -138,7 +138,7 @@ def plot_sweep4_collectivism(df):
 
     plt.suptitle("Sweep 4: Collectivism Index vs. Behavioral Sink", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep4_collectivism.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep4_collectivism.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print("Saved: sweep4_collectivism.png")
 
@@ -198,7 +198,7 @@ def plot_sweep5_archetypes(df):
 
     plt.suptitle("Sweep 5: Archetype Time Series (80% Post-Labor)", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep5_archetypes.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep5_archetypes.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print("Saved: sweep5_archetypes.png")
 
@@ -252,7 +252,7 @@ def plot_sweep6_full_grid(df):
 
     plt.suptitle("Sweep 6: Full Scenario Grid (10 Scenarios x 3 Automation Levels)", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep6_full_grid.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep6_full_grid.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print("Saved: sweep6_full_grid.png")
 
@@ -374,7 +374,7 @@ def plot_combined_summary():
              bbox=dict(boxstyle="round", facecolor="wheat", alpha=0.5))
 
     plt.suptitle("V3 ABM: Comprehensive Sweep Analysis Summary", fontsize=16, fontweight="bold", y=0.98)
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep_summary_combined.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep_summary_combined.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print("Saved: sweep_summary_combined.png")
 

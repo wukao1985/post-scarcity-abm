@@ -16,6 +16,14 @@ REPORTS_DIR = "reports"
 FIGURES_DIR = "reports/figures"
 DATA_DIR = "data/simulation"
 
+# Publication-quality figure defaults
+plt.rcParams['font.size'] = 12
+plt.rcParams['axes.titlesize'] = 13
+plt.rcParams['axes.labelsize'] = 12
+plt.rcParams['xtick.labelsize'] = 10
+plt.rcParams['ytick.labelsize'] = 10
+plt.rcParams['legend.fontsize'] = 10
+
 # V2 reference data
 V2_REFERENCE = {
     ("baseline", 0.80): {"meaning": 0.450, "sink": 0.769, "collapse": 97},
@@ -90,7 +98,7 @@ def plot_phase_transition(summary):
 
     plt.suptitle("V3 Sweep 1: Phase Transition Curves (V2 Replication)", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_phase_transition.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_phase_transition.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
 
 
@@ -112,7 +120,7 @@ def plot_collapse_probability(summary):
     ax.set_ylim(-5, 105)
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_collapse_prob.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_collapse_prob.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
 
 
@@ -143,7 +151,7 @@ def plot_scenario_comparison(summary):
 
     plt.suptitle("Scenario Comparison at 80% Post-Labor", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_scenario_comparison.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_scenario_comparison.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
 
 
@@ -175,7 +183,7 @@ def plot_v2_comparison(summary):
 
     plt.title("V3 vs V2 Comparison at Key Parameter Points", fontsize=14, fontweight="bold", pad=20)
     plt.tight_layout()
-    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_v2_comparison.png"), dpi=150, bbox_inches="tight")
+    plt.savefig(os.path.join(FIGURES_DIR, "sweep1_v2_comparison.png"), dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
 
 

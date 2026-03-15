@@ -234,7 +234,7 @@ def run_comparison():
 
     fig.suptitle("Pathway C — System Dynamics: Historical Analogues", fontsize=13, y=1.02)
     fig.tight_layout()
-    fig.savefig("reports/figures/pathway_c_comparison.png", dpi=150, bbox_inches="tight")
+    fig.savefig("reports/figures/pathway_c_comparison.png", dpi=300, bbox_inches="tight", facecolor="white")
     plt.close(fig)
     print("\nFigure saved to reports/figures/pathway_c_comparison.png")
 

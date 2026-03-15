@@ -16,6 +16,7 @@ from scipy import stats
 sns.set_theme(style="whitegrid", font_scale=1.1)
 plt.rcParams['figure.dpi'] = 150
 plt.rcParams['savefig.dpi'] = 300
+plt.rcParams['savefig.facecolor'] = 'white'
 plt.rcParams['font.family'] = 'sans-serif'
 
 df = pd.read_csv('data/simulation/sweep2_automation_speed.csv')
