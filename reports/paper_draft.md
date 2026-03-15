@@ -10,7 +10,7 @@
 
 What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling 18,500 simulation runs, we find:
 
-1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone, and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
+1. A steep threshold effect occurs in the 80-90% role displacement zone, and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
 
 2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of ~0.52 with elevated distress even without full collapse.
 
@@ -180,11 +180,11 @@ Secondary outcomes:
 
 ## 3. Results
 
-### 3.1 The Malleable Phase Transition Zone (RQ1)
+### 3.1 The Malleable Threshold Zone (RQ1)
 
-Under baseline conditions (no interventions, gradual automation), the model exhibits a phase transition in the 80-90% post-labor zone (Figure 1). At 80% post-labor, baseline collapse probability is 2%; at 90%, it rises to 86%; at 95%, 100%.
+Under baseline conditions (no interventions, gradual automation), the model exhibits a steep threshold effect in the 80-90% post-labor zone (Figure 1). At 80% post-labor, baseline collapse probability is 2%; at 90%, it rises to 86%; at 95%, 100%.
 
-![Figure 1: Phase transition — sink index and collapse probability across post-labor levels under baseline conditions](figures/sweep1_phase_transition.png) The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
+![Figure 1: Threshold effect — sink index and collapse probability across post-labor levels under baseline conditions](figures/sweep1_phase_transition.png) The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
 
 **Speed affects transition duration, not equilibrium:** At matched exposure times after reaching target displacement, rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with exposure time; controlled analysis shows the displacement level, not the transition path, determines the final state.
 
@@ -360,7 +360,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
-**Threshold-dependent results:** Many headline findings occur near the phase transition zone (80-90% displacement) where small parameter changes produce large outcome shifts. While characteristic of complex systems, this sensitivity means our quantitative predictions are unreliable — the qualitative direction matters, but specific percentages should be treated with extreme caution.
+**Threshold-dependent results:** Many headline findings occur near the threshold zone (80-90% displacement) where small parameter changes produce large outcome shifts. While characteristic of complex systems, this sensitivity means our quantitative predictions are unreliable — the qualitative direction matters, but specific percentages should be treated with extreme caution.
 
 **Model simplifications:**
 - Static network structure (real networks rewire during disruption)
@@ -493,7 +493,7 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 
 ## Appendix: Figures
 
-**Figure 1.** Phase transition — sink index and collapse probability across post-labor levels under baseline conditions. The transition zone (80–90%) broadens under V4 stochasticity.
+**Figure 1.** Threshold effect — sink index and collapse probability across post-labor levels under baseline conditions. The transition zone (80–90%) broadens under V4 stochasticity.
 ![Figure 1](figures/sweep1_phase_transition.png)
 
 **Figure 2.** Virtual world quality effect on sink index at 80% and 95% post-labor. Marginal benefit is concave, with largest gains between quality 0.0 and 0.6.
