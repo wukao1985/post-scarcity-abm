@@ -314,7 +314,7 @@ The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed
 
 ### 3.7 Historical Validation: Nauru vs. Gulf States
 
-To test external validity, we mapped two historical natural experiments to model conditions (Figure 7).
+To assess qualitative plausibility, we mapped two historical natural experiments to model conditions (Figure 7). These cases were selected post-hoc as contrasting archetypes; this is not a prospective validation test.
 
 ![Figure 7: Historical analogues — model predictions vs Nauru (collapse) and Gulf states (stability)](figures/historical_analogues.png) The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a natural experiment in UBI-without-purpose. The result was social dissolution: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's baseline condition at PL=0.95 predicts meaning=0.330, sink=0.790, collapse=100% — consistent with Nauru's near-total social dysfunction despite material sufficiency.
 
@@ -379,7 +379,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 To test whether our findings are method-dependent, we developed a parallel system dynamics (SD) model using stock-flow ODEs with three state variables: MeaningStock, SinkStock, and SocialTrust. The SD model was calibrated independently to the Nauru historical trajectory (1970-2000: resource wealth without purpose → social collapse) and then tested against the Gulf states comparison case (collectivist structures + resource wealth → stability).
 
-Under matched parameters (PL=0.80, baseline), both models predict low meaning and high sink. Under UBI conditions, both models predict higher meaning and lower sink relative to baseline. The directional agreement across two modeling approaches sharing the same theoretical framework (SDT + social contagion) — one bottom-up (agent heterogeneity, network effects) and one top-down (aggregate stocks, continuous flows) — provides initial triangulation support for the core findings. Agreement between models validates consistency of implementation rather than theoretical independence, since both models operationalize the same SDT assumptions.
+Under matched parameters (PL=0.80, baseline), both models predict low meaning and high sink. Under UBI conditions, both models predict higher meaning and lower sink relative to baseline. The directional agreement across two modeling approaches sharing the same theoretical framework (SDT + social contagion) — one bottom-up (agent heterogeneity, network effects) and one top-down (aggregate stocks, continuous flows) — provides convergent validity evidence for the implementation (not theoretical independence, since both models share SDT assumptions). Agreement between models validates consistency of implementation rather than theoretical independence, since both models operationalize the same SDT assumptions.
 
 The SD model also reproduces the Nauru-Gulf divergence: Nauru-like parameters (low collectivism, high displacement) produce sink ≈ 0.71 by year 30, while Gulf-like parameters (high collectivism) maintain sink < 0.15. This convergence is notable because the SD model was not fitted to ABM outputs — both derive from the same theoretical framework (SDT + social contagion) implemented through different methodologies. Full Pathway C documentation is provided in the Supplementary Methods.
 
