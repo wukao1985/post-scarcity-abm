@@ -180,7 +180,9 @@ Secondary outcomes:
 
 ### 3.1 The Malleable Phase Transition Zone (RQ1)
 
-Under baseline conditions (no interventions, gradual automation), the model exhibits a phase transition in the 80-90% post-labor zone (Figure 1). At 80% post-labor, baseline collapse probability is 2%; at 90%, it rises to 86%; at 95%, 100%. The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
+Under baseline conditions (no interventions, gradual automation), the model exhibits a phase transition in the 80-90% post-labor zone (Figure 1). At 80% post-labor, baseline collapse probability is 2%; at 90%, it rises to 86%; at 95%, 100%.
+
+![Figure 1: Phase transition — sink index and collapse probability across post-labor levels under baseline conditions](figures/sweep1_phase_transition.png) The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
 
 **Speed affects transition duration, not equilibrium:** At matched exposure times after reaching target displacement, rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with exposure time; controlled analysis shows the displacement level, not the transition path, determines the final state.
 
@@ -193,6 +195,8 @@ Under baseline conditions (no interventions, gradual automation), the model exhi
 ### 3.2 Virtual Worlds as Substitutes (RQ2)
 
 Virtual worlds provide significant and graded protection (Figure 2).
+
+![Figure 2: Virtual world quality effect on sink index at 80% and 95% post-labor](figures/sweep3_virtual_world.png)
 
 At 80% post-labor:
 - Zero virtual quality: 3% collapse, sink 0.627
@@ -213,7 +217,9 @@ The model's contribution weighting (virtual contribution counts 0.1 vs. 0.8 for 
 
 ### 3.3 Speed of Automation (RQ3)
 
-To isolate speed effects from exposure-time confounds, we conducted a controlled comparison measuring outcomes at matched intervals after each scenario reaches its target displacement (PL=0.95). Rapid automation (speed=0.20) reaches the target in ~5 steps; gradual automation (speed≈0.006) reaches it in ~160 steps.
+To isolate speed effects from exposure-time confounds, we conducted a controlled comparison (Figure 3) measuring outcomes at matched intervals after each scenario reaches its target displacement (PL=0.95).
+
+![Figure 3: Speed comparison — rapid vs gradual automation convergence to same equilibrium](figures/sweep2_automation_speed.png) Rapid automation (speed=0.20) reaches the target in ~5 steps; gradual automation (speed≈0.006) reaches it in ~160 steps.
 
 **Finding: speed is transient, not structural.** At matched exposure times (10 steps after reaching PL=0.95), both speeds produce similar sink levels that converge toward the same equilibrium:
 
@@ -232,6 +238,8 @@ These findings suggest that transition velocity affects transition duration but 
 
 Collectivism alone cannot prevent baseline collapse (Figure 4).
 
+![Figure 4: UBI × collectivism interaction — collapse probability and sink index at 95% post-labor](figures/sweep4_ubi_collectivism_interaction.png)
+
 **Baseline at 95% post-labor (no interventions):**
 - Collectivism 0.0: 100% collapse, sink 0.812
 - Collectivism 1.0: 92% collapse, sink 0.743 (modest reduction, collapse still near-certain)
@@ -249,7 +257,9 @@ This finding suggests cultural context moderates the severity of post-labor dist
 
 ### 3.5 Intervention Combinations at Extreme Automation (RQ5)
 
-At 95% post-labor — the stress test for any post-labor policy — we rank intervention effectiveness by sink index:
+At 95% post-labor — the stress test for any post-labor policy — we rank intervention effectiveness by sink index (Figure 6):
+
+![Figure 6: Intervention ranking by sink index at 95% post-labor across 10 scenarios](figures/sweep6_scenario_ranking.png)
 
 **Tier 1 (0% collapse, sink < 0.15):**
 - All bundle (+ virtual + collectivism): 0.090 sink
@@ -285,6 +295,8 @@ At 95% post-labor — the stress test for any post-labor policy — we rank inte
 
 Time-series analysis reveals archetype emergence patterns (Figure 5):
 
+![Figure 5: Archetype distribution over 80 timesteps — baseline vs full bundle at 80% post-labor](figures/sweep5_archetypes.png)
+
 **Baseline trajectory (80% post-labor):**
 - Steps 0-10: Productive drops from 100% to 60%, Beautiful Ones emerge (29%)
 - Steps 10-25: Withdrawn surge (9% → 28%), Collapsed emerge (1% → 10%)
@@ -299,7 +311,9 @@ The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed
 
 ### 3.7 Historical Validation: Nauru vs. Gulf States
 
-To test external validity, we mapped two historical natural experiments to model conditions. The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a natural experiment in UBI-without-purpose. The result was social dissolution: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's baseline condition at PL=0.95 predicts meaning=0.330, sink=0.790, collapse=100% — consistent with Nauru's near-total social dysfunction despite material sufficiency.
+To test external validity, we mapped two historical natural experiments to model conditions (Figure 7).
+
+![Figure 7: Historical analogues — model predictions vs Nauru (collapse) and Gulf states (stability)](figures/historical_analogues.png) The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a natural experiment in UBI-without-purpose. The result was social dissolution: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's baseline condition at PL=0.95 predicts meaning=0.330, sink=0.790, collapse=100% — consistent with Nauru's near-total social dysfunction despite material sufficiency.
 
 Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
 
@@ -471,3 +485,28 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 - **Weight Ablation:** Economic:virtual contribution ratio sensitivity (3:1 to ∞), 1,000 runs
 - **Intervention Decoupling:** Matched-strength comparison of UBI vs roles, 450 runs
 - **ODD Protocol:** Full ODD-compliant model description (Grimm et al., 2020)
+
+---
+
+## Appendix: Figures
+
+**Figure 1.** Phase transition — sink index and collapse probability across post-labor levels under baseline conditions. The transition zone (80–90%) broadens under V4 stochasticity.
+![Figure 1](figures/sweep1_phase_transition.png)
+
+**Figure 2.** Virtual world quality effect on sink index at 80% and 95% post-labor. Marginal benefit is concave, with largest gains between quality 0.0 and 0.6.
+![Figure 2](figures/sweep3_virtual_world.png)
+
+**Figure 3.** Speed comparison — rapid vs gradual automation. Both paths converge to the same equilibrium; speed affects transition duration, not final state.
+![Figure 3](figures/sweep2_automation_speed.png)
+
+**Figure 4.** UBI × collectivism interaction at 95% post-labor. UBI fails at 91% collapse in individualist societies (collectivism=0.0) but succeeds at 0% collapse in collectivist ones (collectivism≥0.4).
+![Figure 4](figures/sweep4_ubi_collectivism_interaction.png)
+
+**Figure 5.** Archetype distribution over 80 timesteps — baseline (top) vs full bundle (bottom) at 80% post-labor. Dominant pathway: Productive → Beautiful One → Withdrawn → Collapsed.
+![Figure 5](figures/sweep5_archetypes.png)
+
+**Figure 6.** Intervention ranking by sink index at 95% post-labor across 10 scenarios. Multi-pillar bundles dominate; no single intervention achieves sink < 0.4.
+![Figure 6](figures/sweep6_scenario_ranking.png)
+
+**Figure 7.** Historical analogues — model predictions mapped to Nauru (baseline collapse) and Gulf states (collectivism + UBI stability). Post-hoc pattern matching, not formal validation.
+![Figure 7](figures/historical_analogues.png)
