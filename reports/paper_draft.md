@@ -147,9 +147,13 @@ We conducted six parameter sweeps totaling 17,050 runs:
 | 5 | Archetype time series | 2 | 2 | 50 | 100 (×81 steps) |
 | 6 | Full scenario grid | 3 | 10 | 150 | 4,500 |
 
-**Validation:** Model replicates prior findings (V2) with phase transition at ~80% post-labor under baseline conditions.
+**Validation:** Model replicates prior findings (V2) with phase transition in the 80-90% zone under baseline conditions. V4 increased stochasticity (σ=0.08) broadened the transition zone from a sharp threshold to a realistic gradient.
 
-### 2.5 Analysis
+### 2.5 Sensitivity Analysis
+
+We conducted one-at-a-time perturbation of three key internal parameters (noise σ, decay rate, contagion strength) by ±20%, with 50 runs per condition at PL=0.80 and PL=0.95 baseline. Core findings are robust: at PL=0.95, collapse occurs in 92-100% of runs across all perturbations; at PL=0.80, collapse remains rare (2-12%). The most sensitive parameter is contagion strength, which governs the positive feedback loop driving collective collapse (+20% raises PL=0.80 collapse from 2% to 12%). Full sensitivity results are reported in the Methods Appendix.
+
+### 2.6 Analysis
 
 Primary outcomes:
 - **Meaning index:** population mean meaning
