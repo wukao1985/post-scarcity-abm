@@ -20,7 +20,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 5. Transition speed is transient: when controlling for exposure time, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
 
-These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. *Note: the model underrepresents aggressive behavior (~2% vs. Calhoun's 10-20%); results characterize withdrawal-dominated dynamics.* (All numerical values are model-dependent; directional relationships are the primary contribution.)
+These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. *Note: aggressive behavior is a known validation gap (~2% modeled vs. Calhoun's 10-20% observed); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.*
 
 ---
 
@@ -32,7 +32,7 @@ Human well-being is deeply embedded in productive roles. Work provides not just 
 
 Calhoun's (1962) rodent experiments demonstrated "behavioral sink" — social collapse characterized by withdrawal, aggression, and reproductive failure — when populations lacked meaningful social roles. Jahoda (1982) established that employment provides not only income but latent functions: time structure, social contact, collective purpose, status, and activity — functions that persist as psychological needs even when income is secured through other means. The analogy to human post-labor conditions, while imperfect, raises urgent questions: What equilibrium states does a society reach when large fractions of the population lack productive roles? Which interventions shift the society toward more favorable equilibria, and under what conditions do they fail?
 
-We note that our model underrepresents aggressive behavior (~2% prevalence vs. 10-20% in Calhoun's observations); results should be interpreted as characterizing withdrawal-dominated dynamics rather than the full spectrum of behavioral sink.
+We note that aggressive behavior represents a validation gap (~2% model prevalence vs. 10-20% in Calhoun's observations); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.
 
 ### 1.2 The Gap in Current Understanding
 
@@ -188,7 +188,7 @@ Under baseline conditions (no interventions, gradual automation), the model exhi
 
 **Speed affects transition duration, not equilibrium:** At matched exposure times after reaching target displacement, rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with exposure time; controlled analysis shows the displacement level, not the transition path, determines the final state.
 
-**Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor is 3% without virtual infrastructure vs. 0% with it. High-quality virtual infrastructure effectively eliminates the transition zone below 90%.
+**Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor is 3% without virtual infrastructure vs. 0% with it. Under high-quality virtual conditions, collapse is not observed below 90% displacement (though this is based on n=50 runs; treat as directional).
 
 **Combined interventions push threshold to 95%:** Full intervention bundles (UBI + role substitution + fairness + virtual worlds + collectivism) achieve 0% collapse even at 95% post-labor.
 
@@ -499,7 +499,7 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 **Figure 2.** Virtual world quality effect on sink index at 80% and 95% post-labor. Marginal benefit is concave, with largest gains between quality 0.0 and 0.6.
 ![Figure 2](figures/sweep3_virtual_world.png)
 
-**Figure 3.** Speed comparison — rapid vs gradual automation. Both paths converge to the same equilibrium; speed affects transition duration, not final state.
+**Figure 3.** Speed comparison — rapid vs gradual automation. Both paths converge to the same equilibrium; speed is associated with transition duration but not with the final equilibrium state.
 ![Figure 3](figures/sweep2_automation_speed.png)
 
 **Figure 4.** UBI × collectivism interaction at 95% post-labor. Under UBI, sink index is 0.549 in individualist societies (collectivism=0.0) and decreases to 0.443 in highly collectivist ones (collectivism=1.0), with 0% collapse across all collectivism levels.
