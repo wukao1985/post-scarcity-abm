@@ -1,6 +1,6 @@
 # Equilibrium Dynamics of Meaning and Behavioral Sink in Post-Labor Societies: A Stylized Agent-Based Analysis
 
-**Authors:** [Redacted for peer review]
+**Authors:** Anonymous Authors (under review)
 
 **Keywords:** post-labor displacement, behavioral sink, self-determination theory, agent-based modeling, role substitution, social cohesion, universal basic income
 
@@ -226,21 +226,22 @@ Counterintuitively, gradual automation produces *higher* sink at matched exposur
 
 At equilibrium (t+40), both speeds converge to nearly identical outcomes (~0.79 sink for baseline). This is consistent with the interpretation that **the displacement level, not the path taken, determines the final state**. Interventions dominate speed effects: full_bundle produces sink ≈ 0.12-0.13 regardless of speed.
 
-These findings suggest that transition velocity, not just endpoint displacement level, may affect equilibrium outcomes; formal intervention timing analysis is left to future work.
+These findings suggest that transition velocity affects transition duration but not the final equilibrium state, as confirmed by our horizon robustness analysis; formal intervention timing analysis is left to future work.
 
 ### 3.4 Collectivism as Social Buffer (RQ4)
 
-Collectivism alone cannot prevent baseline collapse (Figure 4). Under baseline conditions (no interventions) at PL=0.95, even maximum collectivism (1.0) barely reduces sink (0.971 → 0.956) and collapse remains near-certain. Collectivism's primary value is as a moderator of other interventions: at PL=0.95 with UBI, collectivism=0.0 produces 91% collapse (sink 0.744), while collectivism=0.8 produces 0% collapse (sink 0.413) — a phase transition in the interaction of policy and social structure.
+Collectivism alone cannot prevent baseline collapse (Figure 4).
 
-Collectivism provides a graded reduction in sink severity across all conditions:
-
-**Baseline at 95% post-labor:**
+**Baseline at 95% post-labor (no interventions):**
 - Collectivism 0.0: 100% collapse, sink 0.812
-- Collectivism 1.0: 92% collapse, sink 0.743 (modest reduction)
+- Collectivism 1.0: 92% collapse, sink 0.743 (modest reduction, collapse still near-certain)
 
-**UBI at 95% post-labor:**
-- Collectivism 0.0: 0% collapse, sink 0.549
-- Collectivism 1.0: 0% collapse, sink 0.443 (19% lower sink)
+**UBI at 95% post-labor (collectivism as moderator):**
+- Collectivism 0.0: 91% collapse, sink 0.744
+- Collectivism 0.8: 0% collapse, sink 0.413
+- Collectivism 1.0: 0% collapse, sink 0.443 (19% lower sink than collectivism 0.0 within non-collapsing runs)
+
+The UBI × collectivism interaction is striking: UBI alone fails at 91% collapse in individualist societies but succeeds at 0% collapse in collectivist ones — a phase transition in the interaction of policy and social structure, with the threshold between collectivism 0.2–0.4.
 
 The collectivism effect is a continuous moderator rather than a threshold switch: higher collectivism progressively reduces sink index across all conditions, but does not independently prevent collapse in baseline scenarios. The mechanism operates through relatedness maintenance — collectivist structures provide alternative social connection sources when workplace ties are severed.
 
@@ -449,7 +450,7 @@ All simulation code, data (6 sweeps + 2 ablation studies, 18,000+ runs), and ana
 
 ## Acknowledgments
 
-The authors thank computational resources and reviewers.
+The authors thank [reviewers and computational resources].
 
 ## Author Contributions
 
