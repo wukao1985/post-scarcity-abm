@@ -46,7 +46,9 @@ class PostLaborAgent(mesa.Agent):
         self.meaning = self._compute_meaning()
 
     def _compute_meaning(self):
-        contribution = self.economic_role * 0.8 + self.virtual_role * 0.1
+        ew = self.model.economic_weight if hasattr(self, 'model') and self.model else 0.8
+        vw = self.model.virtual_weight if hasattr(self, 'model') and self.model else 0.1
+        contribution = self.economic_role * ew + self.virtual_role * vw
         return np.clip(
             0.25 * self.autonomy +
             0.25 * self.competence +
@@ -108,11 +110,12 @@ class PostLaborAgent(mesa.Agent):
             0, 1)
 
         # Competence target
+        roles_comp = 0.10 * m.roles_program if m.roles_competence_boost else 0.0
         competence_target = base + (
             0.25 * self.economic_role
             + 0.10 * self.virtual_role * m.virtual_world_quality
             + 0.12 * self.skill_transferability
-            + 0.10 * m.roles_program
+            + roles_comp
             - 0.05 * contagion
         )
         self.competence = np.clip(
@@ -155,7 +158,7 @@ class PostLaborAgent(mesa.Agent):
                 0, m.virtual_world_quality)
 
         # Recompute meaning
-        contribution = self.economic_role * 0.8 + self.virtual_role * 0.1
+        contribution = self.economic_role * m.economic_weight + self.virtual_role * m.virtual_weight
         self.meaning = np.clip(
             0.25 * self.autonomy +
             0.25 * self.competence +
@@ -192,7 +195,10 @@ class PostLaborModel(mesa.Model):
     def __init__(self, n_agents=200, post_labor_fraction=0.5,
                  automation_speed=0.03, virtual_world_quality=0.0,
                  collectivism_index=0.3, contagion_strength=0.5,
-                 intervention=None, seed=None):
+                 intervention=None, seed=None,
+                 economic_weight=0.8, virtual_weight=0.1,
+                 ubi_strength=0.30, roles_strength=0.35,
+                 roles_competence_boost=True):
         super().__init__(seed=seed)
         if seed is not None:
             np.random.seed(seed)
@@ -205,6 +211,13 @@ class PostLaborModel(mesa.Model):
         self.virtual_world_quality = virtual_world_quality
         self.collectivism_index    = collectivism_index
         self.contagion_strength    = contagion_strength
+
+        # Ablation parameters (defaults preserve current behavior)
+        self.economic_weight       = economic_weight
+        self.virtual_weight        = virtual_weight
+        self.ubi_strength          = ubi_strength
+        self.roles_strength        = roles_strength
+        self.roles_competence_boost = roles_competence_boost
 
         # Intervention params
         iv = intervention or {}
@@ -267,7 +280,7 @@ class PostLaborModel(mesa.Model):
         for a in agent_list:
             if a.unique_id in displaced_ids:
                 # UBI provides partial economic floor, roles provide substitute
-                a.economic_role = self.ubi * 0.30 + self.roles_program * 0.35
+                a.economic_role = self.ubi * self.ubi_strength + self.roles_program * self.roles_strength
             else:
                 a.economic_role = 1.0
 

@@ -55,4 +55,9 @@
 - [x] Pathway C: Nauru + Gulf calibration
 - [x] Pathway C: ABM-SD directional comparison
 - [x] Pathway C: Initial report (reports/pathway_c_initial.md)
-- **Total simulation runs: ~22,300** (17,050 V3 + 5,250 V4)
+- [x] Iteration 5: Weight ablation — economic:virtual ratio sensitivity (1,000 runs)
+- [x] Iteration 6: Intervention decoupling — matched UBI vs roles comparison (450 runs)
+- [x] Iteration 7: ODD protocol (reports/ODD_protocol.md)
+- [x] Ablation analysis report (reports/ablation_analysis.md)
+- [x] Paper updated: weight ablation in §3.2, decoupling in §3.5, limitations, V5 future work
+- **Total simulation runs: ~23,750** (17,050 V3 + 5,250 V4 + 1,450 ablation)

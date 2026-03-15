@@ -8,7 +8,7 @@
 
 ## Abstract
 
-What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps totaling over 17,000 simulation runs, we find:
+What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling over 18,000 simulation runs, we find:
 
 1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), but this threshold is policy-malleable — shifting lower under rapid displacement and higher with combined interventions.
 
@@ -139,7 +139,7 @@ Agents are classified based on meaning and aggression potential:
 
 ### 2.4 Simulation Design
 
-We conducted six parameter sweeps totaling 17,050 runs:
+We conducted six parameter sweeps plus two ablation studies, totaling 18,500 runs:
 
 | Sweep | Parameter | Levels | Scenarios | Runs/Point | Total |
 |-------|-----------|--------|-----------|------------|-------|
@@ -149,6 +149,8 @@ We conducted six parameter sweeps totaling 17,050 runs:
 | 4 | Collectivism index | 6 | 3×2 | 100 | 3,600 |
 | 5 | Archetype time series | 2 | 2 | 50 | 100 (×81 steps) |
 | 6 | Full scenario grid | 3 | 10 | 150 | 4,500 |
+| A | Weight ablation (econ:virtual ratio) | 5 | 4 | 50 | 1,000 |
+| B | Intervention decoupling | 1 | 3 | 150 | 450 |
 
 **Intervention coupling.** In our implementation, the UBI scenario includes a fairness boost (reflecting UBI's social legitimacy signal), and role programs enhance both economic role and competence directly. These couplings are intentional design choices reflecting real-world co-occurrence of interventions, but mean that UBI and fairness effects are not fully orthogonal.
 
@@ -206,6 +208,8 @@ At 95% post-labor:
 The marginal benefit of virtual quality is concave — substantial gains occur between 0.0 and 0.6, with diminishing returns above 0.8. At 95% displacement, virtual worlds alone reduce collapse from 100% to 0%, though elevated sink (0.517) persists even at maximum quality, indicating partial but incomplete substitution.
 
 The model's contribution weighting (virtual contribution counts 0.1 vs. 0.8 for economic roles) creates a ceiling effect: even maximum virtual quality leaves a meaning gap. Combining virtual worlds with UBI closes this gap substantially (sink 0.294 vs 0.517 with virtual alone).
+
+**Sensitivity to contribution weights.** The virtual-world ceiling is partially structural: our default 8:1 contribution weight (economic vs virtual) was varied from 3:1 to ∞ in an ablation study (1,000 runs). At ratios below 5:1, virtual-world-only scenarios approach UBI performance (sink difference < 0.04). At the current 8:1 assumption, the gap is negligible (0.514 vs 0.509). At ratios above 12:1, UBI clearly dominates virtual-only (sink 0.542 vs 0.514). This confirms the finding is assumption-sensitive: societies where virtual engagement carries greater psychological weight would see different equilibria. However, two results are robust across all tested ratios: (1) virtual-only always prevents collapse (0% across all ratios), and (2) UBI+virtual always dominates either single intervention.
 
 ### 3.3 Speed of Automation (RQ3)
 
@@ -270,6 +274,8 @@ At 95% post-labor — the stress test for any post-labor policy — we rank inte
 
 3. **Role substitution outperforms income support:** At 95%, roles-only (0.459 sink) outperforms UBI-only (0.518 sink), though the gap is smaller than in V3.
 
+**Decomposing the roles advantage.** To isolate the source of role programs' advantage, we ran a matched comparison (450 runs) where UBI and roles were equalized on economic_role restoration strength (both at 0.30). Under this condition, roles_matched (no competence boost, matched strength) produces sink 0.575 — *worse* than ubi_pure (sink 0.516), because UBI includes an implicit fairness co-benefit that roles lack. The full roles advantage (sink 0.460 vs 0.516) therefore decomposes into: competence pathway + higher default strength (Δsink = 0.115) minus UBI's fairness advantage (Δsink = 0.059), yielding a net advantage of 0.056. This suggests role programs' superiority is partly mechanistic (competence development provides genuine benefit that income cannot) and partly parameterization (stronger default restoration strength). When equalized on strength, UBI's fairness co-benefit actually dominates roles' competence pathway alone.
+
 4. **Fairness redistribution is insufficient alone:** Fairness-only scenarios show 12% collapse and high sink (0.661) because they don't address role absence.
 
 5. **No single intervention eliminates elevated sink:** Even the best single intervention (roles, 0.459) leaves nearly half the population in suboptimal states at 95% displacement.
@@ -332,7 +338,7 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 **Displacement as population-level rate.** The model treats role displacement as a cross-sectional share rather than a permanent individual state. Each timestep, the displaced fraction is redrawn from the agent pool. This enables equilibrium analysis but precludes conclusions about individual adjustment trajectories, unemployment scarring, or the dynamics of managed transitions. Future work should model persistent individual displacement with explicit re-employment mechanisms.
 
-**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Fully orthogonal intervention comparisons would require additional decoupling in the model architecture. The intervention hierarchy reported in §3.5 should be interpreted with this coupling in mind.
+**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Ablation analysis (see Supplementary) shows the directional finding (roles > UBI) is robust across a range of parameter values, but the magnitude depends on assumptions about the relative potency of different interventions. When equalized on economic restoration strength, UBI's fairness co-benefit actually outweighs roles' competence pathway, reversing the ranking. The intervention hierarchy reported in §3.5 should therefore be interpreted as conditional on the default parameterization.
 
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
@@ -376,6 +382,8 @@ The SD model also reproduces the Nauru-Gulf divergence: Nauru-like parameters (l
 - Optimal intervention timing (when to deploy during transition)
 - Cost-effectiveness analysis (which interventions achieve outcomes per dollar)
 - Political economy (how intervention preferences evolve with automation)
+
+**V5 extensions.** These findings suggest several natural extensions. First, a V5 model with persistent individual displacement states would enable study of unemployment scarring, managed transitions, and trajectory heterogeneity that the current equilibrium model cannot address. Second, empirical calibration of the economic-to-virtual contribution weight ratio from survey data on meaningful engagement would transform our sensitivity finding into a testable prediction. Third, a multi-site validation using deindustrialization data (Rust Belt, post-Soviet transitions) and resource-curse cases beyond Nauru and Gulf states would strengthen construct validity.
 
 ---
 
@@ -437,7 +445,7 @@ Standing, G. (2017). *Basic income: And how we can make it happen*. Penguin UK.
 
 ## Data Availability
 
-All simulation code, data (6 sweeps, 17,000+ runs), and analysis scripts are available at: https://github.com/wukao1985/post-scarcity-abm
+All simulation code, data (6 sweeps + 2 ablation studies, 18,000+ runs), and analysis scripts are available at: https://github.com/wukao1985/post-scarcity-abm
 
 ## Acknowledgments
 
@@ -459,3 +467,6 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 - **Speed Comparison:** Exposure-time-controlled analysis showing speed convergence
 - **Pathway C:** System dynamics model specification, Nauru/Gulf calibration, and ABM-SD comparison
 - **V4 Validation:** Detailed V3 vs V4 comparison showing effect of increased stochasticity on headline results
+- **Weight Ablation:** Economic:virtual contribution ratio sensitivity (3:1 to ∞), 1,000 runs
+- **Intervention Decoupling:** Matched-strength comparison of UBI vs roles, 450 runs
+- **ODD Protocol:** Full ODD-compliant model description (Grimm et al., 2020)
