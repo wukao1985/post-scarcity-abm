@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 sns.set_theme(style="whitegrid", font_scale=1.1)
-plt.rcParams['figure.dpi'] = 150
-plt.rcParams['savefig.dpi'] = 300
-plt.rcParams['savefig.facecolor'] = 'white'
+plt.rcParams.update({'font.size': 12, 'axes.titlesize': 13, 'axes.labelsize': 12,
+                     'xtick.labelsize': 10, 'ytick.labelsize': 10, 'legend.fontsize': 10,
+                     'figure.dpi': 300, 'savefig.dpi': 300, 'savefig.facecolor': 'white'})
 
 df = pd.read_csv('data/simulation/sweep5_archetypes.csv')
 

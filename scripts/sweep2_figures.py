@@ -14,10 +14,10 @@ import seaborn as sns
 from scipy import stats
 
 sns.set_theme(style="whitegrid", font_scale=1.1)
-plt.rcParams['figure.dpi'] = 150
-plt.rcParams['savefig.dpi'] = 300
-plt.rcParams['savefig.facecolor'] = 'white'
-plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams.update({'font.size': 12, 'axes.titlesize': 13, 'axes.labelsize': 12,
+                     'xtick.labelsize': 10, 'ytick.labelsize': 10, 'legend.fontsize': 10,
+                     'figure.dpi': 300, 'savefig.dpi': 300, 'savefig.facecolor': 'white',
+                     'font.family': 'sans-serif'})
 
 df = pd.read_csv('data/simulation/sweep2_automation_speed.csv')
 
