@@ -18,7 +18,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
-5. Transition speed is transient: when controlling for exposure time, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
+5. Transition speed is transient: when matched on time since reaching target displacement, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
 
 These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. *Note: aggressive behavior is a known validation gap (~2% modeled vs. Calhoun's 10-20% observed); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.*
 
@@ -411,7 +411,7 @@ This stylized model identifies mechanisms by which post-labor displacement can d
 
 The central insight is that income support, while necessary, is insufficient to prevent meaning loss. The mechanisms that drive behavioral sink — loss of competence, autonomy, social role, and contribution — require targeted intervention beyond economic redistribution. Role substitution programs, virtual role infrastructure, and social cohesion structures each address distinct psychological needs that income cannot satisfy.
 
-The model's sensitivity to social cohesion — with higher collectivism being associated with lower UBI-associated sink, from 0.549 to 0.443 at 95% displacement — highlights that identical economic policies produce different severity outcomes depending on the social substrate. This finding is consistent with historical divergences between post-labor societies (Nauru vs. Gulf states) and suggests that cultural and institutional context deserves as much attention as economic policy design.
+The model's sensitivity to social cohesion — with higher collectivism being associated with lower UBI-associated sink, from 0.549 to 0.443 at 95% displacement — highlights that identical economic policies are associated with different severity outcomes depending on the social substrate. This finding is consistent with historical divergences between post-labor societies (Nauru vs. Gulf states) and suggests that cultural and institutional context deserves as much attention as economic policy design.
 
 As a stylized model, these results identify mechanisms and qualitative relationships rather than precise thresholds. The specific numbers (80-90% transition zone, sink indices) are model-dependent and should not be interpreted as predictions. What the model contributes is a framework for thinking about which dimensions of human well-being are at risk under role displacement, and which intervention categories address which risks.
 
