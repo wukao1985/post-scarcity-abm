@@ -186,7 +186,7 @@ Under baseline conditions (no interventions, gradual automation), the model exhi
 
 ![Figure 1: Threshold effect — sink index and collapse probability across post-labor levels under baseline conditions](figures/sweep1_phase_transition.png) The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
 
-**Speed affects transition duration, not equilibrium:** At matched exposure times after reaching target displacement, rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with exposure time; controlled analysis shows the displacement level, not the transition path, determines the final state.
+**Speed affects transition duration, not equilibrium:** At matched time-since-target-displacement (t+10 after reaching PL=0.95), rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with time-at-target; matched analysis shows the displacement level, not the transition path, determines the final state.
 
 **Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor is 3% without virtual infrastructure vs. 0% with it. Under high-quality virtual conditions, collapse is not observed below 90% displacement (though this is based on n=50 runs; treat as directional).
 
@@ -223,7 +223,7 @@ To isolate speed effects from exposure-time confounds, we conducted a controlled
 
 ![Figure 3: Speed comparison — rapid vs gradual automation convergence to same equilibrium](figures/sweep2_automation_speed.png) Rapid automation (speed=0.20) reaches the target in ~5 steps; gradual automation (speed≈0.006) reaches it in ~160 steps.
 
-**Finding: speed is transient, not structural.** At matched exposure times (10 steps after reaching PL=0.95), both speeds produce similar sink levels that converge toward the same equilibrium:
+**Finding: speed is transient, not structural.** At matched time-since-target-displacement (10 steps after reaching PL=0.95), both speeds show similar sink levels converging toward the same equilibrium:
 
 | Speed | Sink (t+10) | Sink (t+40) | Equilibrium |
 |-------|-------------|-------------|-------------|
