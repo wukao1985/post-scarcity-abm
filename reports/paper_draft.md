@@ -1,4 +1,4 @@
-# Behavioral Sink Under Post-Labor Displacement: Mechanisms of Meaning Loss, Social Contagion, and Intervention in a Stylized Agent-Based Model
+# Equilibrium Dynamics of Meaning and Behavioral Sink in Post-Labor Societies: A Stylized Agent-Based Analysis
 
 **Authors:** [Redacted for peer review]
 
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-What happens to human well-being when populations are displaced from productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to study mechanisms of meaning loss, behavioral cascade, and intervention under post-labor conditions. Across six parameter sweeps totaling over 17,000 simulation runs, we find:
+What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps totaling over 17,000 simulation runs, we find:
 
 1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), but this threshold is policy-malleable — shifting lower under rapid displacement and higher with combined interventions.
 
@@ -20,7 +20,7 @@ What happens to human well-being when populations are displaced from productive 
 
 5. Transition speed matters: rapid displacement produces 46 percentage points more collapse than gradual displacement at 95% automation (100% vs 54%).
 
-Our findings identify which mechanisms drive or prevent behavioral sink under post-labor conditions, suggesting that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution.
+These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches.
 
 ---
 
@@ -30,30 +30,30 @@ Our findings identify which mechanisms drive or prevent behavioral sink under po
 
 Human well-being is deeply embedded in productive roles. Work provides not just income but identity, competence, social connection, and purpose (Blustein, 2008; Deci & Ryan, 2000). Technological displacement, deindustrialization, and resource windfalls have repeatedly demonstrated that removing productive roles — even while maintaining material sufficiency — can produce severe social pathology (Case & Deaton, 2020).
 
-Calhoun's (1962) rodent experiments demonstrated "behavioral sink" — social collapse characterized by withdrawal, aggression, and reproductive failure — when populations lacked meaningful social roles. The analogy to human post-labor conditions, while imperfect, raises urgent mechanistic questions: What psychological and social dynamics drive or prevent behavioral sink when populations are displaced from productive roles? Which interventions are effective, and under what conditions do they fail?
+Calhoun's (1962) rodent experiments demonstrated "behavioral sink" — social collapse characterized by withdrawal, aggression, and reproductive failure — when populations lacked meaningful social roles. Jahoda (1982) established that employment provides not only income but latent functions: time structure, social contact, collective purpose, status, and activity — functions that persist as psychological needs even when income is secured through other means. The analogy to human post-labor conditions, while imperfect, raises urgent questions: What equilibrium states does a society reach when large fractions of the population lack productive roles? Which interventions shift the society toward more favorable equilibria, and under what conditions do they fail?
 
 ### 1.2 The Gap in Current Understanding
 
 Existing literature on AI and employment focuses primarily on:
-- **Economic impacts:** unemployment rates, wage effects, inequality (Autor, 2015)
+- **Economic impacts:** unemployment rates, wage effects, inequality (Autor, 2015; Acemoglu & Restrepo, 2018)
 - **Technical feasibility:** which tasks can be automated (Felten et al., 2021)
 - **Policy responses:** UBI, retraining programs, taxation (Standing, 2017)
 
-What remains underexplored is the **psychological and social impact of role displacement independent of income loss**. A displaced worker receiving UBI may avoid poverty but still experience what Deci & Ryan (2000) term "motivation decay"—the erosion of autonomy, competence, and relatedness that constitute psychological well-being.
+What remains underexplored is the **psychological and social impact of role displacement independent of income loss**. As Rosso et al. (2010) synthesize, the meaning of work spans multiple dimensions — purpose, belonging, self-efficacy, transcendence — that are not addressed by income replacement alone. A displaced population receiving UBI may avoid poverty but still experience what Deci & Ryan (2000) term "motivation decay" — the erosion of autonomy, competence, and relatedness that constitute psychological well-being.
 
 ### 1.3 Research Questions
 
-We address five questions:
+We address five questions about equilibrium configurations under sustained role displacement:
 
-**RQ1:** At what automation level does behavioral sink emerge, and is this threshold fixed or mutable?
+**RQ1:** At what displacement level does the population equilibrium shift to behavioral sink, and is this threshold fixed or policy-malleable?
 
-**RQ2:** Can high-quality virtual worlds substitute for economic roles in providing meaning?
+**RQ2:** Can high-quality virtual worlds shift the equilibrium by substituting for economic roles in providing meaning?
 
-**RQ3:** Does the speed of automation matter independently of the final displacement level?
+**RQ3:** Does the speed of displacement affect the equilibrium reached, independently of the final displacement level?
 
-**RQ4:** Do collectivist vs. individualist cultural structures exhibit different collapse thresholds?
+**RQ4:** Do collectivist vs. individualist cultural structures produce different equilibrium configurations at equivalent displacement?
 
-**RQ5:** What intervention combinations prevent collapse at extreme (≥90%) automation levels?
+**RQ5:** What intervention combinations sustain favorable equilibria at extreme (≥90%) displacement levels?
 
 ### 1.4 Theoretical Framework
 
@@ -61,7 +61,7 @@ We integrate three theoretical strands:
 
 **Self-Determination Theory (SDT):** Deci & Ryan's (2000) framework identifies three core psychological needs: autonomy (self-direction), competence (mastery), and relatedness (social connection). Economic roles typically satisfy all three; displacement threatens all three.
 
-**Social Contagion Theory:** Behavioral sink spreads through social networks (Christakis & Fowler, 2007). Our model incorporates contagion dynamics where collapsed agents increase collapse risk among network neighbors.
+**Social Contagion Theory:** Behavioral sink spreads through social networks via complex contagion — behaviors requiring social reinforcement from multiple contacts rather than simple exposure (Centola & Macy, 2007; Christakis & Fowler, 2007). Our model incorporates contagion dynamics where collapsed agents increase collapse risk among network neighbors.
 
 **Institutional Capacity:** Following Acemoglu & Robinson (2012), we model interventions as institutional capacities—policy choices that shape how societies respond to technological shocks.
 
@@ -71,7 +71,9 @@ We integrate three theoretical strands:
 
 ### 2.1 Model Overview
 
-We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021) with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to study mechanisms, not a forecast of specific technological timelines or displacement levels.** The model extends prior work (V1, V2) with refined psychological dynamics and five intervention dimensions.
+We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021), following ODD protocol conventions (Grimm et al., 2020), with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to characterize equilibrium states, not a forecast of specific technological timelines or displacement levels.** The model extends prior work (V1, V2) with refined psychological dynamics and five intervention dimensions.
+
+**Modeling displacement as a population-level rate.** In this model, `post_labor_fraction` represents the share of the population lacking productive roles at any given timestep, not a permanent individual state. At each step, this fraction is drawn from the agent pool, representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory — appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. Persistent individual displacement is a natural extension for future work.
 
 **Agent state variables:**
 - Psychological: autonomy, competence, relatedness, status (0-1 scales)
@@ -103,10 +105,11 @@ Targets depend on:
 
 **Meaning function:**
 ```
-meaning = 0.25×autonomy + 0.25×competence + 0.25×relatedness + 0.10×status + 0.15×contribution
+meaning = 0.25×autonomy + 0.25×competence + 0.25×relatedness + 0.10×status
+          + 0.15×contribution − 0.08×contagion + 0.08×resilience
 ```
 
-where contribution = 0.8×economic_role + 0.1×virtual_role (capturing the insight that virtual contribution matters less than economic contribution).
+where contribution = 0.8×economic_role + 0.1×virtual_role, and contagion is the neighborhood sink exposure scaled by contagion_strength. The direct contagion and resilience terms capture social network effects and individual buffering beyond the SDT components.
 
 **Weight justification:**
 
@@ -146,6 +149,8 @@ We conducted six parameter sweeps totaling 17,050 runs:
 | 4 | Collectivism index | 6 | 3×2 | 100 | 3,600 |
 | 5 | Archetype time series | 2 | 2 | 50 | 100 (×81 steps) |
 | 6 | Full scenario grid | 3 | 10 | 150 | 4,500 |
+
+**Intervention coupling.** In our implementation, the UBI scenario includes a fairness boost (reflecting UBI's social legitimacy signal), and role programs enhance both economic role and competence directly. These couplings are intentional design choices reflecting real-world co-occurrence of interventions, but mean that UBI and fairness effects are not fully orthogonal.
 
 **Validation:** Model replicates prior findings (V2) with phase transition in the 80-90% zone under baseline conditions. V4 increased stochasticity (σ=0.08) broadened the transition zone from a sharp threshold to a realistic gradient.
 
@@ -209,8 +214,8 @@ Automation speed produces distinct archetype trajectories (Figure 3).
 - Accelerated transition through Beautiful Ones
 - Rapid Sink threshold crossing (step 20)
 
-**Gradual automation** (0.01/step, reaching 80% in 80 steps):
-- Delayed Aggressor emergence (steps 30-40)
+**Gradual automation** (target/80 per step, reaching the target level by step 80):
+- Delayed archetype transitions
 - Prolonged Beautiful One phase
 - Slower Sink accumulation
 
@@ -291,7 +296,7 @@ The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed
 
 To test external validity, we mapped two historical natural experiments to model conditions. The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a natural experiment in UBI-without-purpose. The result was social dissolution: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's baseline condition at PL=0.95 predicts meaning=0.330, sink=0.790, collapse=100% — consistent with Nauru's near-total social dysfunction despite material sufficiency.
 
-Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes. The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
+Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
 
 The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink drops from 0.549 (collectivism=0.0, Nauru-like) to 0.462 (collectivism=0.8, Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. While post-hoc and subject to confounding, this provides qualified support for construct validity.
 
@@ -326,6 +331,10 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 **Additive intervention structure:** The model treats interventions as independent additive effects. Real policies interact: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs. Our perfectly ordered intervention hierarchy is an artifact of this independence assumption.
 
 **Underrepresented aggressors:** V4 recalibrated aggressor thresholds, increasing prevalence from <1% to ~2-3% at high displacement. However, this remains below the 10-20% expected from Calhoun's observations. The aggression formula `(1-meaning)*(1-social_capital)*0.5 > 0.3` requires extremely low social capital (< 0.14) combined with low meaning — a narrow parameter region. The model effectively treats behavioral sink as withdrawal-dominated, underrepresenting the aggression dimension. Future work should explore alternative aggression mechanisms (e.g., relative deprivation, frustration-aggression dynamics).
+
+**Displacement as population-level rate.** The model treats role displacement as a cross-sectional share rather than a permanent individual state. Each timestep, the displaced fraction is redrawn from the agent pool. This enables equilibrium analysis but precludes conclusions about individual adjustment trajectories, unemployment scarring, or the dynamics of managed transitions. Future work should model persistent individual displacement with explicit re-employment mechanisms.
+
+**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Fully orthogonal intervention comparisons would require additional decoupling in the model architecture. The intervention hierarchy reported in §3.5 should be interpreted with this coupling in mind.
 
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
@@ -386,6 +395,8 @@ As a stylized model, these results identify mechanisms and qualitative relations
 
 ## References
 
+Acemoglu, D., & Restrepo, P. (2018). The wrong kind of AI? Artificial intelligence and the future of labour demand. *Cambridge Journal of Regions, Economy and Society*, 11(1), 29-44.
+
 Acemoglu, D., & Robinson, J. A. (2012). *Why nations fail: The origins of power, prosperity, and poverty*. Crown Business.
 
 Autor, D. H. (2015). Why are there still so many jobs? The history and future of workplace automation. *Journal of Economic Perspectives*, 29(3), 3-30.
@@ -394,7 +405,13 @@ Brynjolfsson, E., & McAfee, A. (2014). *The second machine age: Work, progress, 
 
 Calhoun, J. B. (1962). Population density and social pathology. *Scientific American*, 206(2), 139-148.
 
+Case, A., & Deaton, A. (2020). *Deaths of Despair and the Future of Capitalism*. Princeton University Press.
+
+Centola, D., & Macy, M. (2007). Complex contagions and the weakness of long ties. *American Journal of Sociology*, 113(3), 702-734.
+
 Christakis, N. A., & Fowler, J. H. (2007). The spread of obesity in a large social network over 32 years. *New England Journal of Medicine*, 357(4), 370-379.
+
+Connell, J. (2006). Nauru: The first failed Pacific state? *The Round Table*, 95(383), 47-63.
 
 Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry*, 11(4), 227-268.
 
@@ -402,15 +419,19 @@ Felten, E. W., Raj, M., & Seamans, R. (2021). Occupational, industry, and geogra
 
 Frey, C. B., & Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation? *Technological Forecasting and Social Change*, 114, 254-280.
 
-Kazil, J., Masad, D., & Crooks, A. (2021). Utilizing Python for agent-based modeling: The Mesa framework. In *Agent-Based Simulation of Organizational Behavior* (pp. 308-344). Springer.
-
-Case, A., & Deaton, A. (2020). *Deaths of Despair and the Future of Capitalism*. Princeton University Press.
-
-Connell, J. (2006). Nauru: The first failed Pacific state? *The Round Table*, 95(383), 47-63.
+Grimm, V., et al. (2020). The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism. *JASSS*, 23(2), 7.
 
 Hertog, S. (2010). *Princes, Brokers, and Bureaucrats: Oil and the State in Saudi Arabia*. Cornell University Press.
 
 Hofstede, G. (2001). *Culture's Consequences: Comparing Values, Behaviors, Institutions, and Organizations Across Nations*. Sage.
+
+Jahoda, M. (1982). *Employment and unemployment: A social-psychological analysis*. Cambridge University Press.
+
+Kazil, J., Masad, D., & Crooks, A. (2021). Utilizing Python for agent-based modeling: The Mesa framework. In *Agent-Based Simulation of Organizational Behavior* (pp. 308-344). Springer.
+
+Ross, M. (2012). *The oil curse: How petroleum wealth shapes the development of nations*. Princeton University Press.
+
+Rosso, B. D., Dekas, K. H., & Wrzesniewski, A. (2010). On the meaning of work: A theoretical integration and review. *Research in Organizational Behavior*, 30, 91-127.
 
 Standing, G. (2017). *Basic income: And how we can make it happen*. Penguin UK.
 
