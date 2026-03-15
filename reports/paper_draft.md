@@ -82,7 +82,7 @@ We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al
 
 **Model parameters:**
 - post_labor_fraction: proportion of population displaced (0-0.95)
-- automation_speed: rate of displacement per step (0.01-0.08)
+- automation_speed: rate of displacement per step (0.006–0.20 for speed comparison; 0.03 baseline for all other sweeps)
 - virtual_world_quality: competence/autonomy provided by virtual roles (0-1)
 - collectivism_index: baseline relatedness and social buffering (0-1)
 - Interventions: UBI, role_substitution, fairness_redistribution
@@ -224,13 +224,13 @@ To isolate speed effects from exposure-time confounds, we conducted a controlled
 
 Counterintuitively, gradual automation produces *higher* sink at matched exposure times (0.775 vs 0.645 at t+10), because the extended ramp period allows social contagion to accumulate during partial displacement. The original naive comparison (both measured at T=80) confounded speed with exposure time: rapid had 75 steps at full displacement while gradual had just reached its target.
 
-At equilibrium (t+40), both speeds converge to nearly identical outcomes (~0.79 sink for baseline). This confirms that **the displacement level, not the path taken, determines the final state**. Interventions dominate speed effects: full_bundle produces sink ≈ 0.12-0.13 regardless of speed.
+At equilibrium (t+40), both speeds converge to nearly identical outcomes (~0.79 sink for baseline). This is consistent with the interpretation that **the displacement level, not the path taken, determines the final state**. Interventions dominate speed effects: full_bundle produces sink ≈ 0.12-0.13 regardless of speed.
 
-This finding has an important policy implication: managing transition speed may matter less than having appropriate interventions in place by the time displacement occurs. The window for intervention deployment, not the automation timeline itself, is the critical variable.
+These findings suggest that transition velocity, not just endpoint displacement level, may affect equilibrium outcomes; formal intervention timing analysis is left to future work.
 
 ### 3.4 Collectivism as Social Buffer (RQ4)
 
-Collectivism alone cannot prevent baseline collapse (Figure 4). Even at maximum collectivism_index=1.0, baseline collapse probability at 80% post-labor remains high (0% in V4, but sink remains 0.565) and at 95% remains 92% without other interventions.
+Collectivism alone cannot prevent baseline collapse (Figure 4). At collectivism=0.8 and PL=0.95, collapse probability falls to 0% by our threshold definition (sink_index > 0.7), though mean sink_index remains 0.565 — indicating meaningful improvement that does not cross the collapse threshold. At PL=0.95, collapse remains at 92% without other interventions even at maximum collectivism.
 
 Collectivism provides a graded reduction in sink severity across all conditions:
 
@@ -294,7 +294,7 @@ Time-series analysis reveals archetype emergence patterns (Figure 5):
 - Beautiful Ones at ~32%, small Withdrawn fraction (~8%)
 - Sink index stable at ~0.09
 
-The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed, with aggression remaining rare (~1-2%) throughout. The Beautiful One phase — surface-level functioning without productive engagement — is the most common transitional state, consistent with Calhoun's observation of "beautiful ones" as a withdrawal archetype. Intervention timing matters: early deployment preserves a larger Productive fraction through the transition period.
+The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed, with aggression remaining rare (~1-2%) throughout. The Beautiful One phase — surface-level functioning without productive engagement — is the most common transitional state, consistent with Calhoun's observation of "beautiful ones" as a withdrawal archetype. Our results are consistent with the hypothesis that earlier intervention preserves social cohesion, though the model does not include an explicit deployment timing parameter.
 
 ### 3.7 Historical Validation: Nauru vs. Gulf States
 
@@ -302,7 +302,7 @@ To test external validity, we mapped two historical natural experiments to model
 
 Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
 
-The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink drops from 0.549 (collectivism=0.0, Nauru-like) to 0.462 (collectivism=0.8, Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. While post-hoc and subject to confounding, this provides qualified support for construct validity.
+The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink drops from 0.549 (collectivism=0.0, Nauru-like) to 0.462 (collectivism=0.8, Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional consistency provides qualitative plausibility evidence for the model's core mechanisms.
 
 ---
 
@@ -326,13 +326,13 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 **Cultural tailoring:** Collectivism effects suggest UBI programs should be designed differently in different cultural contexts. Individualist societies may need stronger supplementary interventions.
 
-**Early warning systems:** The archetype trajectory (Aggressors → Withdrawn → Collapsed) provides a potential early warning framework. Rising aggression metrics may predict approaching collapse before sink indices cross thresholds.
+**Early warning systems:** The archetype trajectory (Productive → Beautiful One → Withdrawn → Collapsed, with Aggressor emergence rare at ~2%) provides a potential early warning framework. Rising Beautiful One and Withdrawn fractions may predict approaching collapse before sink indices cross thresholds.
 
 ### 4.3 Limitations and Self-Critique
 
 **Residual determinism:** V4 increased noise (σ=0.08, plus agent-level shocks) to address V3's excessive determinism. Between-run standard deviations improved from ~0.002 to ~0.008 for meaning index, and Cohen's d between conditions dropped from 8-48 to ~9-12. While substantially improved, the model remains more deterministic than typical behavioral science data (where Cohen's d of 1-3 is common). The mean-reverting dynamics, while theoretically motivated, still dominate over noise at 80 timesteps. Future versions should explore alternative update rules (e.g., multiplicative noise, regime-switching dynamics) to achieve realistic between-run variance.
 
-**Additive intervention structure:** The model treats interventions as independent additive effects. Real policies interact: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs. Our perfectly ordered intervention hierarchy is an artifact of this independence assumption.
+**Intervention structure:** While our experimental design varies interventions individually and in combination, the implementation includes coupling between UBI and fairness effects, and between role programs and competence development (detailed in §2.4). Fully orthogonal comparisons would require further model decoupling. Real policies interact in ways not captured: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs.
 
 **Underrepresented aggressors:** V4 recalibrated aggressor thresholds, increasing prevalence from <1% to ~2-3% at high displacement. However, this remains below the 10-20% expected from Calhoun's observations. The aggression formula `(1-meaning)*(1-social_capital)*0.5 > 0.3` requires extremely low social capital (< 0.14) combined with low meaning — a narrow parameter region. The model effectively treats behavioral sink as withdrawal-dominated, underrepresenting the aggression dimension. Future work should explore alternative aggression mechanisms (e.g., relative deprivation, frustration-aggression dynamics).
 

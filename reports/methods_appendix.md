@@ -22,7 +22,7 @@
 | Initial psychological state | autonomy/competence ~ N(0.55, 0.08); relatedness/status ~ N(0.50, 0.08) | Convenience/sensitivity-tested |
 | Collapse threshold | sink_index > 0.7 | Calhoun calibration |
 | Post-labor targets tested | 0.0 to 0.95 | SDT theory -- spans full automation range |
-| `automation_speed` | 0.03 default (variable in sweeps) | Convenience/sensitivity-tested |
+| `automation_speed` | 0.03 default; 0.006–0.20 in speed comparison sweep | Convenience/sensitivity-tested |
 | `collectivism_index` | 0.3 default (variable in sweeps) | Convenience/sensitivity-tested |
 | UBI economic floor | displaced role = ubi * 0.30 + roles_program * 0.35 | Convenience/sensitivity-tested |
 
@@ -155,7 +155,7 @@ One-at-a-time (OAT) perturbation of the top 3 internal parameters by ±20%, with
 ### Limitations
 
 - OAT analysis does not capture parameter interactions (e.g., high noise + high contagion)
-- 50 runs per condition (not 150 as specified in CLAUDE.md) -- adequate for directional conclusions but wider CIs
+- 50 runs per condition (not the 150 used in primary sweeps) -- adequate for directional conclusions but wider CIs
 - `base_floor` not tested in this round (hardcoded deeper in agent psychology; requires more invasive patching)
 
 ---
