@@ -10,9 +10,9 @@
 
 What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling 18,500 simulation runs, we find:
 
-1. A steep threshold effect occurs in the 80-90% role displacement zone, and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
+1. A steep threshold effect occurs in the 80-90% role displacement zone, and this threshold is policy-sensitive — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
 
-2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of ~0.52 with elevated distress even without full collapse.
+2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
 
 3. Under default parameterization, role substitution shows modest advantage over income transfers (sink ~0.46 vs ~0.52 at 95% displacement), though this advantage is parameter-dependent and reverses when restoration strength is equalized (see §3.5).
 
@@ -47,7 +47,7 @@ What remains underexplored is the **psychological and social impact of role disp
 
 We address five questions about equilibrium configurations under sustained role displacement:
 
-**RQ1:** At what displacement level does the population equilibrium shift to behavioral sink, and is this threshold fixed or policy-malleable?
+**RQ1:** At what displacement level does the population equilibrium shift to behavioral sink, and is this threshold fixed or policy-sensitive?
 
 **RQ2:** Can high-quality virtual worlds shift the equilibrium by substituting for economic roles in providing meaning?
 
@@ -188,7 +188,7 @@ Under baseline conditions (no interventions, gradual automation), the model exhi
 
 **Speed affects transition duration, not equilibrium:** At matched exposure times after reaching target displacement, rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with exposure time; controlled analysis shows the displacement level, not the transition path, determines the final state.
 
-**Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor drops from 3% to 0%. High-quality virtual infrastructure effectively eliminates the transition zone below 90%.
+**Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor is 3% without virtual infrastructure vs. 0% with it. High-quality virtual infrastructure effectively eliminates the transition zone below 90%.
 
 **Combined interventions push threshold to 95%:** Full intervention bundles (UBI + role substitution + fairness + virtual worlds + collectivism) achieve 0% collapse even at 95% post-labor.
 
@@ -252,7 +252,7 @@ Collectivism alone cannot prevent baseline collapse (Figure 4).
 - Collectivism 0.8: 0% collapse, sink 0.462
 - Collectivism 1.0: 0% collapse, sink 0.443 (19% lower sink than collectivism 0.0)
 
-The UBI × collectivism interaction is striking: under UBI conditions at 95% displacement, higher collectivism is associated with substantially lower sink severity — sink decreases from 0.549 (collectivism=0.0) to 0.443 (collectivism=1.0), though collapse probability remains 0% across all collectivism levels.
+The UBI × collectivism interaction is striking: under UBI conditions at 95% displacement, higher collectivism is associated with substantially lower sink severity — sink ranges from 0.549 at collectivism=0.0 to 0.443 at collectivism=1.0, though collapse probability remains 0% across all collectivism levels.
 
 The collectivism effect is a continuous moderator rather than a threshold switch: higher collectivism is progressively associated with lower sink index across all conditions, but does not independently prevent collapse in baseline scenarios. The mechanism operates through relatedness maintenance — collectivist structures provide alternative social connection sources when workplace ties are severed.
 
@@ -320,7 +320,7 @@ To assess qualitative plausibility, we mapped two historical natural experiments
 
 Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
 
-The collectivism variable is associated with sink severity differences: at PL=0.95 with UBI, sink decreases from 0.549 (collectivism=0.0, Nauru-like) to 0.462 (collectivism=0.8, Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. This comparison is illustrative only; both cases were selected post-hoc and differ on numerous dimensions beyond collectivism. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional consistency provides qualitative plausibility evidence for the model's core mechanisms.
+The collectivism variable is associated with sink severity differences: at PL=0.95 with UBI, sink is 0.549 at collectivism=0.0 (Nauru-like) vs. 0.462 at collectivism=0.8 (Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. This comparison is illustrative only; both cases were selected post-hoc and differ on numerous dimensions beyond collectivism. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional consistency provides qualitative plausibility evidence for the model's core mechanisms.
 
 ---
 
@@ -330,7 +330,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 **Self-Determination Theory in Economic Context:** Our findings extend SDT by demonstrating that the three core needs (autonomy, competence, relatedness) can be satisfied through diverse channels. Economic roles are the default source, but virtual worlds (autonomy, competence) and collectivism (relatedness) provide partial substitutes. However, the ceiling effects suggest these substitutes are imperfect—extreme automation may exceed substitution capacity. Note that SDT needs are operationalized directly in our model's meaning function; consistency with SDT predictions is therefore expected by construction and does not constitute independent empirical validation of the theory.
 
-**Threshold Dynamics in Social Systems:** The 80-90% zone exhibits steep threshold behavior: small parameter changes near this region produce disproportionately large outcome changes, consistent with nonlinear dynamics in complex adaptive systems. Unlike physical phase transitions, which require specific mathematical criteria (power-law scaling, diverging correlation lengths), we use "threshold effect" to describe this empirical pattern. Crucially, this threshold is policy-malleable rather than fixed.
+**Threshold Dynamics in Social Systems:** The 80-90% zone exhibits steep threshold behavior: small parameter changes near this region produce disproportionately large outcome changes, consistent with nonlinear dynamics in complex adaptive systems. Unlike physical phase transitions, which require specific mathematical criteria (power-law scaling, diverging correlation lengths), we use "threshold effect" to describe this empirical pattern. Crucially, this threshold is policy-sensitive rather than fixed.
 
 **Social Contagion Amplification:** The sharp increase in sink between steps 20-40 suggests contagion dynamics. Individual displacement effects are multiplied through social networks, creating emergent collective collapse exceeding individual-level predictions.
 
@@ -348,7 +348,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 ### 4.3 Limitations and Self-Critique
 
-**Residual determinism:** V4 increased noise (σ=0.08, plus agent-level shocks) to address V3's excessive determinism. Between-run standard deviations improved from ~0.002 to ~0.008 for meaning index, and Cohen's d between conditions dropped from 8-48 to ~9-12. While substantially improved, the model remains more deterministic than typical behavioral science data (where Cohen's d of 1-3 is common). The mean-reverting dynamics, while theoretically motivated, still dominate over noise at 80 timesteps. Future versions should explore alternative update rules (e.g., multiplicative noise, regime-switching dynamics) to achieve realistic between-run variance.
+**Residual determinism:** V4 increased noise (σ=0.08, plus agent-level shocks) to address V3's excessive determinism. Between-run standard deviations improved from ~0.002 to ~0.008 for meaning index, and Cohen's d between conditions dropped from 8-48 to ~9-12. While substantially improved, the model remains more deterministic than typical behavioral science data (where Cohen's d of 1-3 is common). The mean-reverting dynamics, while theoretically motivated, still dominate over noise at 80 timesteps. Consequently, conventional inferential statistics (p-values, power) are not meaningful given these effect sizes; we report point estimates and SEM as descriptive summaries only. Future versions should explore alternative update rules (e.g., multiplicative noise, regime-switching dynamics) to achieve realistic between-run variance.
 
 **Intervention structure:** While our experimental design varies interventions individually and in combination, the implementation includes coupling between UBI and fairness effects, and between role programs and competence development (detailed in §2.4). Fully orthogonal comparisons would require further model decoupling. Real policies interact in ways not captured: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs.
 
