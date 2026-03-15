@@ -8,7 +8,7 @@
 
 ## Abstract
 
-What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling over 18,000 simulation runs, we find:
+What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling 18,500 simulation runs, we find:
 
 1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone, and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
 
@@ -463,7 +463,7 @@ Standing, G. (2017). *Basic income: And how we can make it happen*. Penguin UK.
 
 ## Data Availability
 
-All simulation code, data (6 sweeps + 2 ablation studies, 18,000+ runs), and analysis scripts are available at: https://github.com/wukao1985/post-scarcity-abm
+All simulation code, data (6 sweeps + 2 ablation studies, 18,500 runs), and analysis scripts are available at: https://github.com/wukao1985/post-scarcity-abm
 
 ## Acknowledgments
 
@@ -502,7 +502,7 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 **Figure 3.** Speed comparison — rapid vs gradual automation. Both paths converge to the same equilibrium; speed affects transition duration, not final state.
 ![Figure 3](figures/sweep2_automation_speed.png)
 
-**Figure 4.** UBI × collectivism interaction at 95% post-labor. UBI fails at 91% collapse in individualist societies (collectivism=0.0) but succeeds at 0% collapse in collectivist ones (collectivism≥0.4).
+**Figure 4.** UBI × collectivism interaction at 95% post-labor. Under UBI, sink index is 0.549 in individualist societies (collectivism=0.0) and decreases to 0.443 in highly collectivist ones (collectivism=1.0), with 0% collapse across all collectivism levels.
 ![Figure 4](figures/sweep4_ubi_collectivism_interaction.png)
 
 **Figure 5.** Archetype distribution over 80 timesteps — baseline (top) vs full bundle (bottom) at 80% post-labor. Dominant pathway: Productive → Beautiful One → Withdrawn → Collapsed.
