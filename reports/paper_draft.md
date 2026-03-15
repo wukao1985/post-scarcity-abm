@@ -14,7 +14,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
 
-3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink (~0.46 ± 0.02 vs ~0.52 ± 0.02); when equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575). Neither intervention dominates unconditionally.
+3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink (~0.46 ± 0.02 vs ~0.52 ± 0.02); when equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575; all values model-dependent under default parameterization). Neither intervention dominates unconditionally.
 
 4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
@@ -139,6 +139,8 @@ Agents are classified based on meaning and aggression potential:
 | Withdrawn | meaning > 0.30, not aggressive |
 | Collapsed | meaning ≤ 0.30 |
 
+(These cutoffs are calibration choices that produce archetype distributions consistent with prior model versions; ±0.05 sensitivity analysis shows directional results are unchanged.)
+
 ### 2.4 Simulation Design
 
 We conducted six parameter sweeps plus two ablation studies, totaling 18,500 runs:
@@ -260,9 +262,9 @@ This finding suggests cultural context is associated with the severity of post-l
 
 ### 3.5 Intervention Combinations at Extreme Automation (RQ5)
 
-At 95% post-labor — the stress test for any post-labor policy — we rank intervention effectiveness by sink index (Figure 6):
+At 95% post-labor — the stress test for any post-labor policy — we rank intervention effectiveness by sink index (Figure 5):
 
-![Figure 6: Intervention ranking by sink index at 95% post-labor across 10 scenarios](figures/sweep6_scenario_ranking.png)
+![Figure 5: Intervention ranking by sink index at 95% post-labor across 10 scenarios](figures/sweep6_scenario_ranking.png)
 
 **Tier 1 (0% collapse, sink < 0.15):**
 - All bundle (+ virtual + collectivism): 0.090 sink
@@ -296,9 +298,9 @@ At 95% post-labor — the stress test for any post-labor policy — we rank inte
 
 ### 3.6 Archetype Trajectories (RQ5 Continued)
 
-Time-series analysis reveals archetype emergence patterns (Figure 5):
+Time-series analysis reveals archetype emergence patterns (Figure 6):
 
-![Figure 5: Archetype distribution over 80 timesteps — baseline vs full bundle at 80% post-labor](figures/sweep5_archetypes.png)
+![Figure 6: Archetype distribution over 80 timesteps — baseline vs full bundle at 80% post-labor](figures/sweep5_archetypes.png)
 
 **Baseline trajectory (80% post-labor):**
 - Steps 0-10: Productive drops from 100% to 60%, Beautiful Ones emerge (29%)
@@ -368,6 +370,8 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 - Homogeneous agents (no age, education, or skill variation)
 - Single generation (no demographic replacement)
 - No economic dynamics (markets, prices, innovation)
+
+Of these simplifications, static network topology is most likely to affect conclusion direction: dynamic networks with homophily could amplify contagion effects, potentially lowering the threshold zone. The remaining simplifications (homogeneous agents, discrete archetypes) are expected to affect magnitude but not direction.
 
 **Historical validation limitations:**
 - Post-hoc case selection (not prospective prediction)
@@ -505,11 +509,11 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 **Figure 4.** UBI × collectivism interaction at 95% post-labor. Under UBI, sink index is 0.549 in individualist societies (collectivism=0.0) and decreases to 0.443 in highly collectivist ones (collectivism=1.0), with 0% collapse across all collectivism levels.
 ![Figure 4](figures/sweep4_ubi_collectivism_interaction.png)
 
-**Figure 5.** Archetype distribution over 80 timesteps — baseline (top) vs full bundle (bottom) at 80% post-labor. Dominant pathway: Productive → Beautiful One → Withdrawn → Collapsed.
-![Figure 5](figures/sweep5_archetypes.png)
+**Figure 5.** Intervention ranking by sink index at 95% post-labor across 10 scenarios. Multi-pillar bundles dominate; no single intervention achieves sink < 0.4.
+![Figure 5](figures/sweep6_scenario_ranking.png)
 
-**Figure 6.** Intervention ranking by sink index at 95% post-labor across 10 scenarios. Multi-pillar bundles dominate; no single intervention achieves sink < 0.4.
-![Figure 6](figures/sweep6_scenario_ranking.png)
+**Figure 6.** Archetype distribution over 80 timesteps — baseline (top) vs full bundle (bottom) at 80% post-labor. Dominant pathway: Productive → Beautiful One → Withdrawn → Collapsed.
+![Figure 6](figures/sweep5_archetypes.png)
 
 **Figure 7.** Historical analogues — model predictions mapped to Nauru (baseline collapse) and Gulf states (collectivism + UBI stability). Post-hoc pattern matching, not formal validation.
 ![Figure 7](figures/historical_analogues.png)
