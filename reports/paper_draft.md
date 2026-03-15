@@ -14,13 +14,13 @@ What equilibrium states does a society reach when large fractions of the populat
 
 2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
 
-3. Under default parameterization, role substitution shows modest advantage over income transfers (sink ~0.46 ± 0.02 vs ~0.52 ± 0.02 at 95% displacement), though this advantage is parameter-dependent and reverses when restoration strength is equalized (see §3.5).
+3. Under default parameterization (roles_strength=0.35 > ubi_strength=0.30), role substitution shows modest advantage over income transfers (sink ~0.46 ± 0.02 vs ~0.52 ± 0.02 at 95% displacement); this ranking reverses when strengths are equalized, revealing UBI's hidden fairness co-benefit dominates when parameterization is held constant (see §3.5 decomposition).
 
 4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
 5. Transition speed is transient: when matched on time since reaching target displacement, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
 
-These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. *Note: aggressive behavior is a known validation gap (~2% modeled vs. Calhoun's 10-20% observed); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.*
+These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. Note that virtual role substitutes provide strong protection at moderate displacement (≤90%) but only partial substitution at extreme levels (95%), where elevated sink persists even at maximum virtual quality. *Note: aggressive behavior is a known validation gap (~2% modeled vs. Calhoun's 10-20% observed); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.*
 
 ---
 
@@ -356,7 +356,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 **Displacement as population-level rate.** The model treats role displacement as a cross-sectional share rather than a permanent individual state. Each timestep, the displaced fraction is redrawn from the agent pool. This enables equilibrium analysis but precludes conclusions about individual adjustment trajectories, unemployment scarring, or the dynamics of managed transitions. Future work should model persistent individual displacement with explicit re-employment mechanisms.
 
-**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Ablation analysis (see Supplementary) shows the directional finding (roles > UBI) is consistent across ±20% parameter perturbation, but the magnitude depends on assumptions about the relative potency of different interventions. When equalized on economic restoration strength, UBI's fairness co-benefit actually outweighs roles' competence pathway, reversing the ranking. The intervention hierarchy reported in §3.5 should therefore be interpreted as conditional on the default parameterization.
+**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Ablation analysis (see Supplementary) shows the directional finding (roles > UBI under default parameterization) is consistent across ±20% perturbation of that default, but the magnitude depends on assumptions about the relative potency of different interventions. When equalized on economic restoration strength, UBI's fairness co-benefit actually outweighs roles' competence pathway, reversing the ranking. The intervention hierarchy reported in §3.5 should therefore be interpreted as conditional on the default parameterization.
 
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
@@ -375,7 +375,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 - "Collectivism" reduces complex cultural systems to a single scalar
 - Quantitative match is to qualitative patterns, not measured outcomes
 
-### 4.4 Triangulation: System Dynamics Model (Pathway C)
+### 4.4 Implementation Cross-Check: System Dynamics Model (Pathway C)
 
 To test whether our findings are method-dependent, we developed a parallel system dynamics (SD) model using stock-flow ODEs with three state variables: MeaningStock, SinkStock, and SocialTrust. The SD model was calibrated independently to the Nauru historical trajectory (1970-2000: resource wealth without purpose → social collapse) and then tested against the Gulf states comparison case (collectivist structures + resource wealth → stability).
 
