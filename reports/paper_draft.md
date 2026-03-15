@@ -20,7 +20,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 5. Transition speed is transient: when controlling for exposure time, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
 
-These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. (All numerical values are model-dependent; directional relationships are the primary contribution.)
+These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. *Note: the model underrepresents aggressive behavior (~2% vs. Calhoun's 10-20%); results characterize withdrawal-dominated dynamics.* (All numerical values are model-dependent; directional relationships are the primary contribution.)
 
 ---
 
@@ -286,7 +286,7 @@ At 95% post-labor — the stress test for any post-labor policy — we rank inte
 
 2. **Virtual worlds are the most potent addition to single interventions:** Adding virtual worlds to UBI is associated with a 43% reduction in sink (0.518 → 0.293). Adding virtual worlds to roles is associated with a 46% reduction in sink (0.459 → 0.247).
 
-3. **Role substitution outperforms income support:** At 95%, roles-only (0.459 sink) outperforms UBI-only (0.518 sink), though the gap is smaller than in V3.
+3. **Role substitution shows advantage over income support under default parameterization:** At 95%, roles-only (~0.46 sink) shows lower sink than UBI-only (~0.52 sink) under default parameters, though this ranking is parameter-dependent (see decomposition below).
 
 **Decomposing the roles advantage.** To isolate the source of role programs' advantage, we ran a matched comparison (450 runs) where UBI and roles were equalized on economic_role restoration strength (both at 0.30). Under this condition, roles_matched (no competence boost, matched strength) produces sink 0.575 ± 0.003 — *worse* than ubi_pure (sink 0.516 ± 0.003), because UBI includes an implicit fairness co-benefit that roles lack. The full roles advantage (sink 0.460 ± 0.003 vs 0.516 ± 0.003) therefore decomposes into: competence pathway + higher default strength (Δsink = 0.115) minus UBI's fairness advantage (Δsink = 0.059), yielding a net advantage of 0.056. This suggests role programs' superiority is partly mechanistic (competence development provides genuine benefit that income cannot) and partly parameterization (stronger default restoration strength). When equalized on strength, UBI's fairness co-benefit actually dominates roles' competence pathway alone.
 
