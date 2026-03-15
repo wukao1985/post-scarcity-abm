@@ -239,7 +239,7 @@ Collectivism alone cannot prevent baseline collapse (Figure 4).
 **UBI at 95% post-labor (collectivism as moderator):**
 - Collectivism 0.0: 91% collapse, sink 0.744
 - Collectivism 0.8: 0% collapse, sink 0.413
-- Collectivism 1.0: 0% collapse, sink 0.443 (19% lower sink than collectivism 0.0 within non-collapsing runs)
+- Collectivism 1.0: 0% collapse, sink 0.443 (40% lower sink than collectivism 0.0)
 
 The UBI × collectivism interaction is striking: UBI alone fails at 91% collapse in individualist societies but succeeds at 0% collapse in collectivist ones — a phase transition in the interaction of policy and social structure, with the threshold between collectivism 0.2–0.4.
 
