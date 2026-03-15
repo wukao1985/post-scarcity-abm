@@ -1,0 +1,499 @@
+OpenAI Codex v0.114.0 (research preview)
+--------
+workdir: /Users/cloud/Documents/claude/post-scarcity-abm
+model: gpt-5.4
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR, /Users/cloud/.codex/memories]
+reasoning effort: high
+reasoning summaries: none
+session id: 019ceefa-6e54-7a80-8a67-1b3d5ab081db
+--------
+user
+# ROLE
+You are a senior peer reviewer for JASSS (Journal of Artificial Societies and Social Simulation), with experience also reviewing for Nature Human Behaviour and PNAS. You have published in computational social science and the sociology of technology.
+
+This paper is submitted to JASSS as a first target. Write a full peer review — the kind you would actually submit to an editor. Be honest, specific, and unsparing. Your job is to make this paper significantly better or identify why it is not publishable.
+
+**Constraint:** Do NOT write any code. Do NOT make any commits or file changes. Only read files and write your review.
+
+# WHAT TO READ
+- reports/paper_draft.md — the full manuscript
+- reports/methods_appendix.md — parameter documentation
+- reports/historical_validation_protocol.md — validation methodology
+- models/pathway_a_abm/model.py — core model implementation (check if code matches paper claims)
+
+# REVIEW STRUCTURE
+Write your review in plain text, structured as a real JASSS referee report:
+
+## Summary (2-3 sentences)
+What is the paper trying to do, and does it succeed?
+
+## Recommendation
+Accept / Minor Revision / Major Revision / Reject — and why in one sentence.
+
+## Major Issues (numbered)
+Issues that must be fixed before publication. Be specific: cite section names, line numbers, or code locations.
+
+## Minor Issues (numbered)
+Issues worth fixing but not blockers.
+
+## Theory & Contribution
+Is the combination of SDT + Calhoun behavioral sink + contagion genuinely novel? What is the actual theoretical contribution?
+
+## Model Validity
+Does the code actually implement what the paper claims? Are there structural assumptions that predetermine the findings? Pay special attention to:
+- The 8:1 weight (economic_role * 0.8 vs virtual_role * 0.1) — is "virtual worlds can't replace real roles" a finding or a tautology?
+- The displacement re-sampling each step — does this undermine the mechanism story about chronic role loss?
+
+## Historical Validation
+Is the Nauru/Gulf comparison real evidence or post-hoc pattern matching? What would genuine validation require?
+
+## Missing Literature
+What important work should be cited? (Consider: Acemoglu on automation, Standing on precariat, Graeber on bullshit jobs, Keynes on leisure, behavioral economics of unemployment, ABM validation methodology literature)
+
+## JASSS vs NHB Gap
+What specifically would this paper need to reach Nature Human Behaviour?
+mcp startup: no servers
+codex
+I’m reading the manuscript, appendix, validation note, and the model implementation first, then I’ll cross-check whether the empirical and theoretical claims are actually supported by the code.
+Plan update
+  → Read manuscript and appendix to extract core claims, mechanisms, and stated contributions
+  • Inspect model implementation against paper claims and note mismatches or built-in assumptions
+  • Assess validation strategy, literature positioning, and venue fit; then draft full referee report
+exec
+/bin/zsh -lc "sed -n '1,260p' reports/paper_draft.md" in /Users/cloud/Documents/claude/post-scarcity-abmexec
+/bin/zsh -lc "sed -n '1,260p' reports/methods_appendix.md" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+# Methods Appendix: Post-Scarcity ABM (V4)
+
+## 1. Parameter Table
+
+| Parameter | Value | Justification |
+|-----------|-------|---------------|
+| `n_agents` | 200 | Convenience/sensitivity-tested |
+| `time_horizon` | 80 steps | Convenience/sensitivity-tested |
+| `decay` | 0.08 | Calhoun calibration -- produces equilibration in ~30 steps |
+| `noise_sigma` | 0.08 | Calhoun calibration -- V4 recalibration for realistic between-run variance (increased from 0.02) |
+| `base_floor` | 0.32 | Calhoun calibration -- minimum human functioning floor |
+| `agent_shock_sigma` | 0.03 | Convenience/sensitivity-tested -- per-step idiosyncratic life-event noise |
+| Network type | Watts-Strogatz | Calhoun calibration -- small-world structure |
+| Network `k` | 6 | Calhoun calibration |
+| Network `p` | 0.1 | Calhoun calibration |
+| `contagion_strength` | 0.5 | Calhoun calibration |
+| Profile distribution | 15% resilient, 55% balanced, 30% vulnerable | Convenience/sensitivity-tested |
+| Resilient profile | resilience=0.8, social_capital=0.7, skill_transfer=0.7 | Convenience/sensitivity-tested |
+| Balanced profile | resilience=0.5, social_capital=0.5, skill_transfer=0.5 | Convenience/sensitivity-tested |
+| Vulnerable profile | resilience=0.2, social_capital=0.3, skill_transfer=0.3 | Convenience/sensitivity-tested |
+ succeeded in 0ms:
+# Behavioral Sink Under Post-Labor Displacement: Mechanisms of Meaning Loss, Social Contagion, and Intervention in a Stylized Agent-Based Model
+
+**Authors:** [Redacted for peer review]
+
+**Keywords:** post-labor displacement, behavioral sink, self-determination theory, agent-based modeling, role substitution, social cohesion, universal basic income
+
+---
+
+## Abstract
+
+What happens to human well-being when populations are displaced from productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to study mechanisms of meaning loss, behavioral cascade, and intervention under post-labor conditions. Across 17,050 simulation runs spanning six parameter sweeps, we find:
+
+1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), but this threshold is policy-malleable — shifting lower under rapid displacement and higher with combined interventions.
+
+2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of 0.515 and elevated distress even without full collapse.
+
+3. Role substitution programs outperform income transfers in preventing meaning loss (sink index 0.458 vs 0.515 at 95% displacement).
+
+4. Social cohesion is the decisive moderator: collectivism reduces UBI-associated sink — a finding consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
+
+exec
+/bin/zsh -lc "sed -n '1,260p' reports/historical_validation_protocol.md" in /Users/cloud/Documents/claude/post-scarcity-abmexec
+/bin/zsh -lc "sed -n '1,260p' models/pathway_a_abm/model.py" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+# Historical Validation Protocol
+
+## Purpose
+
+This document pre-declares the parameter mapping rules and outcome matching criteria for historical construct validation. The model was built from SDT theory and Calhoun's behavioral sink framework — NOT fitted to any historical case. We test whether the model's theoretical mechanisms reproduce known divergences in real-world post-labor societies.
+
+**Caveat:** This is post-hoc construct validation, not prospective prediction. We selected cases after observing model behavior and identified parameter mappings that yield qualitative matches. A proper prospective validation would pre-register parameter values and predictions before running the simulation. We report this transparently.
+
+---
+
+## Case Selection Criteria
+
+Cases were selected for three properties:
+1. **High labor displacement**: Population freed from economic necessity by resource wealth
+2. **Divergent outcomes**: Cases with similar displacement but different social results
+3. **Documented social indicators**: Published data on well-being, social dysfunction, or stability
+
+---
+
+## Parameter Mapping Rules
+ succeeded in 0ms:
+"""
+Post-Scarcity ABM — V4
+Mesa 3.5+ compatible implementation.
+
+V4 changes from V3:
+- Increased stochasticity (σ=0.08, agent shocks)
+- Fixed gradual speed to always reach target by step 80
+- Recalibrated aggressor thresholds for 10-20% emergence
+"""
+import numpy as np
+import random
+import mesa
+from mesa.space import NetworkGrid
+from mesa.datacollection import DataCollector
+import networkx as nx
+
+
+class PostLaborAgent(mesa.Agent):
+    def __init__(self, model, profile="balanced"):
+        super().__init__(model)
+codex
+I have the main claims and the key implementation pieces. I’m pulling the remainder of the model now to check whether displacement, interventions, and data collection behave the way the manuscript says they do.
+exec
+/bin/zsh -lc "sed -n '261,420p' models/pathway_a_abm/model.py" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+        if n_displaced > 0:
+            displaced = random.sample(agent_list, min(n_displaced, len(agent_list)))
+            displaced_ids = set(a.unique_id for a in displaced)
+        else:
+            displaced_ids = set()
+
+        for a in agent_list:
+            if a.unique_id in displaced_ids:
+                # UBI provides partial economic floor, roles provide substitute
+                a.economic_role = self.ubi * 0.30 + self.roles_program * 0.35
+            else:
+                a.economic_role = 1.0
+
+        # Step all agents in random order
+        self.agents.shuffle_do("step")
+        self.datacollector.collect(self)
+exec
+/bin/zsh -lc "nl -ba models/pathway_a_abm/model.py | sed -n '1,340p'" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+     1	"""
+     2	Post-Scarcity ABM — V4
+     3	Mesa 3.5+ compatible implementation.
+     4	
+     5	V4 changes from V3:
+     6	- Increased stochasticity (σ=0.08, agent shocks)
+     7	- Fixed gradual speed to always reach target by step 80
+     8	- Recalibrated aggressor thresholds for 10-20% emergence
+     9	"""
+    10	import numpy as np
+    11	import random
+    12	import mesa
+    13	from mesa.space import NetworkGrid
+    14	from mesa.datacollection import DataCollector
+    15	import networkx as nx
+    16	
+    17	
+    18	class PostLaborAgent(mesa.Agent):
+    19	    def __init__(self, model, profile="balanced"):
+    20	        super().__init__(model)
+exec
+/bin/zsh -lc "rg -n '"'^##|''^###'"' reports/paper_draft.md" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+9:## Abstract
+27:## 1. Introduction
+29:### 1.1 The Role-Displacement Problem
+35:### 1.2 The Gap in Current Understanding
+44:### 1.3 Research Questions
+58:### 1.4 Theoretical Framework
+70:## 2. Methods
+72:### 2.1 Model Overview
+88:### 2.2 Psychological Update Mechanism
+125:### 2.3 Archetype Classification
+137:### 2.4 Simulation Design
+152:### 2.5 Sensitivity Analysis
+156:### 2.6 Analysis
+170:## 3. Results
+172:### 3.1 The Malleable Phase Transition Zone (RQ1)
+184:### 3.2 Virtual Worlds as Substitutes (RQ2)
+202:### 3.3 The Speed of Collapse (RQ3)
+223:### 3.4 Collectivism as Social Buffer (RQ4)
+238:### 3.5 Intervention Combinations at Extreme Automation (RQ5)
+268:### 3.6 Archetype Trajectories (RQ5 Continued)
+exec
+/bin/zsh -lc "nl -ba reports/paper_draft.md | sed -n '1,320p'" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+     1	# Behavioral Sink Under Post-Labor Displacement: Mechanisms of Meaning Loss, Social Contagion, and Intervention in a Stylized Agent-Based Model
+     2	
+     3	**Authors:** [Redacted for peer review]
+     4	
+     5	**Keywords:** post-labor displacement, behavioral sink, self-determination theory, agent-based modeling, role substitution, social cohesion, universal basic income
+     6	
+     7	---
+     8	
+     9	## Abstract
+    10	
+    11	What happens to human well-being when populations are displaced from productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to study mechanisms of meaning loss, behavioral cascade, and intervention under post-labor conditions. Across 17,050 simulation runs spanning six parameter sweeps, we find:
+    12	
+    13	1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), but this threshold is policy-malleable — shifting lower under rapid displacement and higher with combined interventions.
+    14	
+    15	2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of 0.515 and elevated distress even without full collapse.
+    16	
+    17	3. Role substitution programs outperform income transfers in preventing meaning loss (sink index 0.458 vs 0.515 at 95% displacement).
+    18	
+    19	4. Social cohesion is the decisive moderator: collectivism reduces UBI-associated sink — a finding consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
+    20	
+exec
+/bin/zsh -lc "nl -ba reports/paper_draft.md | sed -n '320,440p'" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+   320	
+   321	**Additive intervention structure:** The model treats interventions as independent additive effects. Real policies interact: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs. Our perfectly ordered intervention hierarchy is an artifact of this independence assumption.
+   322	
+   323	**Underrepresented aggressors:** V4 recalibrated aggressor thresholds, increasing prevalence from <1% to ~2-3% at high displacement. However, this remains below the 10-20% expected from Calhoun's observations. The aggression formula `(1-meaning)*(1-social_capital)*0.5 > 0.3` requires extremely low social capital (< 0.14) combined with low meaning — a narrow parameter region. The model effectively treats behavioral sink as withdrawal-dominated, underrepresenting the aggression dimension. Future work should explore alternative aggression mechanisms (e.g., relative deprivation, frustration-aggression dynamics).
+   324	
+   325	**No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
+   326	
+   327	**Threshold-dependent results:** Many headline findings (91% → 0% UBI collapse, 100% → 0% VW transition) occur near phase transition boundaries where small parameter changes produce large outcome shifts. While characteristic of complex systems, this sensitivity means our quantitative predictions are unreliable — the qualitative direction matters, but specific percentages should be treated with extreme caution.
+   328	
+   329	**Model simplifications:**
+   330	- Static network structure (real networks rewire during disruption)
+   331	- Binary displacement (no gradations of underemployment)
+   332	- Homogeneous agents (no age, education, or skill variation)
+   333	- Single generation (no demographic replacement)
+   334	- No economic dynamics (markets, prices, innovation)
+   335	
+   336	**Historical validation limitations:**
+   337	- Post-hoc case selection (not prospective prediction)
+   338	- Multiple confounders between Nauru and Gulf states beyond collectivism
+   339	- "Collectivism" reduces complex cultural systems to a single scalar
+codex
+The main inconsistencies are already showing up in the implementation rather than just in the prose. I’m indexing the appendix and validation note with line numbers so I can cite the exact places where the paper overclaims or misdescribes the model.
+exec
+/bin/zsh -lc "nl -ba reports/methods_appendix.md | sed -n '1,260p'" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+     1	# Methods Appendix: Post-Scarcity ABM (V4)
+     2	
+     3	## 1. Parameter Table
+     4	
+     5	| Parameter | Value | Justification |
+     6	|-----------|-------|---------------|
+     7	| `n_agents` | 200 | Convenience/sensitivity-tested |
+     8	| `time_horizon` | 80 steps | Convenience/sensitivity-tested |
+     9	| `decay` | 0.08 | Calhoun calibration -- produces equilibration in ~30 steps |
+    10	| `noise_sigma` | 0.08 | Calhoun calibration -- V4 recalibration for realistic between-run variance (increased from 0.02) |
+    11	| `base_floor` | 0.32 | Calhoun calibration -- minimum human functioning floor |
+    12	| `agent_shock_sigma` | 0.03 | Convenience/sensitivity-tested -- per-step idiosyncratic life-event noise |
+    13	| Network type | Watts-Strogatz | Calhoun calibration -- small-world structure |
+    14	| Network `k` | 6 | Calhoun calibration |
+    15	| Network `p` | 0.1 | Calhoun calibration |
+    16	| `contagion_strength` | 0.5 | Calhoun calibration |
+    17	| Profile distribution | 15% resilient, 55% balanced, 30% vulnerable | Convenience/sensitivity-tested |
+    18	| Resilient profile | resilience=0.8, social_capital=0.7, skill_transfer=0.7 | Convenience/sensitivity-tested |
+    19	| Balanced profile | resilience=0.5, social_capital=0.5, skill_transfer=0.5 | Convenience/sensitivity-tested |
+    20	| Vulnerable profile | resilience=0.2, social_capital=0.3, skill_transfer=0.3 | Convenience/sensitivity-tested |
+exec
+/bin/zsh -lc "nl -ba reports/historical_validation_protocol.md | sed -n '1,260p'" in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+     1	# Historical Validation Protocol
+     2	
+     3	## Purpose
+     4	
+     5	This document pre-declares the parameter mapping rules and outcome matching criteria for historical construct validation. The model was built from SDT theory and Calhoun's behavioral sink framework — NOT fitted to any historical case. We test whether the model's theoretical mechanisms reproduce known divergences in real-world post-labor societies.
+     6	
+     7	**Caveat:** This is post-hoc construct validation, not prospective prediction. We selected cases after observing model behavior and identified parameter mappings that yield qualitative matches. A proper prospective validation would pre-register parameter values and predictions before running the simulation. We report this transparently.
+     8	
+     9	---
+    10	
+    11	## Case Selection Criteria
+    12	
+    13	Cases were selected for three properties:
+    14	1. **High labor displacement**: Population freed from economic necessity by resource wealth
+    15	2. **Divergent outcomes**: Cases with similar displacement but different social results
+    16	3. **Documented social indicators**: Published data on well-being, social dysfunction, or stability
+    17	
+    18	---
+    19	
+    20	## Parameter Mapping Rules
+exec
+/bin/zsh -lc 'rg -n "contribution_to_nonplayers|roles_program|status_deconc|fairness" reports/paper_draft.md reports/methods_appendix.md models/pathway_a_abm/model.py' in /Users/cloud/Documents/claude/post-scarcity-abmexec
+/bin/zsh -lc 'rg -n "Nauru|Gulf|collectivism|virtual_world_quality|collapse probability" reports/paper_draft.md reports/historical_validation_protocol.md' in /Users/cloud/Documents/claude/post-scarcity-abm succeeded in 0ms:
+reports/paper_draft.md:86:- Interventions: UBI, role_substitution, fairness_redistribution
+reports/paper_draft.md:99:- Redistribution fairness
+reports/paper_draft.md:180:**Combined interventions push threshold to 95%:** Full intervention bundles (UBI + role substitution + fairness + virtual worlds + collectivism) achieve 0% collapse even at 95% post-labor.
+reports/paper_draft.md:200:Critically, virtual worlds alone cannot fully substitute for economic roles at extreme automation. The model's `contribution_to_nonplayers` term (where virtual contribution counts 0.1 vs. 0.8 for economic roles) creates a ceiling effect. Even maximum virtual quality leaves a meaning gap that becomes critical above 90% automation.
+reports/paper_draft.md:243:- Full bundle (UBI + roles + fairness): 0.000 sink
+reports/paper_draft.md:264:3. **Fairness redistribution is insufficient alone:** Despite economic equality, fairness-only scenarios collapse because they don't address role absence.
+reports/paper_draft.md:321:**Additive intervention structure:** The model treats interventions as independent additive effects. Real policies interact: UBI might reduce work motivation (negative with roles), virtual worlds might displace real-world socializing (negative with collectivism), fairness perception might depend on who benefits from role programs. Our perfectly ordered intervention hierarchy is an artifact of this independence assumption.
+reports/methods_appendix.md:27:| UBI economic floor | displaced role = ubi * 0.30 + roles_program * 0.35 | Convenience/sensitivity-tested |
+models/pathway_a_abm/model.py:96:        # Autonomy target depends on economic role, fairness, resilience
+models/pathway_a_abm/model.py:100:            + 0.10 * m.fairness
+models/pathway_a_abm/model.py:115:            + 0.10 * m.roles_program
+models/pathway_a_abm/model.py:129:            + 0.08 * m.fairness
+models/pathway_a_abm/model.py:141:            + 0.10 * m.fairness
+models/pathway_a_abm/model.py:212:        self.roles_program     = iv.get("roles", 0.0)
+models/pathway_a_abm/model.py:213:        self.fairness          = iv.get("fairness", 0.1) + self.ubi * 0.3
+models/pathway_a_abm/model.py:214:        self.status_concentration = 1.0 - iv.get("status_deconc", 0.0) * 0.5
+models/pathway_a_abm/model.py:215:        self.inequality_index  = np.clip(1.0 - self.fairness, 0, 1)
+models/pathway_a_abm/model.py:270:                a.economic_role = self.ubi * 0.30 + self.roles_program * 0.35
+ succeeded in 0ms:
+reports/historical_validation_protocol.md:27:collectivism_index = (100 - IDV) / 100
+reports/historical_validation_protocol.md:30:| Case | Hofstede IDV | collectivism_index | Source |
+reports/historical_validation_protocol.md:32:| Nauru | ~74 (estimated from Anglophone Pacific norms) | **0.1-0.2** | Hofstede (2001); Connell (2006) |
+reports/historical_validation_protocol.md:37:**Coding decision:** Nauru coded at 0.1 (not exactly 0.26 from formula) because post-colonial social fragmentation further reduced collectivist structures beyond what Hofstede captures. Gulf states coded at 0.75 (not 0.75) as a round figure within the Hofstede-derived range.
+reports/historical_validation_protocol.md:45:| Nauru (1980s peak) | >80% of workforce received royalties, <15% in formal employment | **0.85** | Pollock (2014); World Bank |
+reports/historical_validation_protocol.md:46:| Gulf citizen workforce | 70-80% in government/symbolic roles; private sector dominated by expatriates | **0.75** | Hertog (2010); IMF data |
+reports/historical_validation_protocol.md:52:| Nauru | Phosphate wealth arrived within a decade (1960s-1970s) | **rapid (0.08)** | Compressed transition |
+reports/historical_validation_protocol.md:53:| Gulf states | Oil wealth accumulated over 40+ years (1960s-2000s) | **gradual (0.01)** | Multi-decade transition |
+reports/historical_validation_protocol.md:59:| Nauru | Royalty payments, no role substitution, no fairness framework | **ubi_only** (UBI=0.7) | Income without purpose infrastructure |
+reports/historical_validation_protocol.md:60:| Gulf states | Wealth redistribution + cultural/civic programs | **ubi_only** (UBI=0.7) | Primary mechanism is redistribution; roles partially exist through government employment |
+reports/historical_validation_protocol.md:78:- Exact numerical values (e.g., "meaning = 0.364 matches Nauru's wellbeing score of X")
+reports/historical_validation_protocol.md:86:### Nauru Configuration
+reports/historical_validation_protocol.md:92:    "virtual_world_quality": 0.0,
+reports/historical_validation_protocol.md:93:    "collectivism_index": 0.1,         # low (individualist)
+reports/historical_validation_protocol.md:99:### Gulf States Configuration
+reports/historical_validation_protocol.md:105:    "virtual_world_quality": 0.0,
+reports/historical_validation_protocol.md:106:    "collectivism_index": 0.75,        # high (collectivist)
+reports/historical_validation_protocol.md:118:Since exact Nauru/Gulf parameters were not run as dedicated sweeps, we use the closest conditions from existing data:
+reports/historical_validation_protocol.md:120:**Nauru-like** (Sweep 2: rapid, PL=0.80, baseline; Sweep 4: collectivism=0.0, PL=0.95, UBI):
+reports/historical_validation_protocol.md:126:**Gulf-like** (Sweep 4: collectivism=0.8, PL=0.80, UBI):
+Plan update
+I’ve finished reading the manuscript and support documents, and I’ve cross-checked the core mechanisms against the implementation. I’m drafting the referee report around the main problems: internal numerical inconsistencies, invalid speed/displacement interpretation, assumption-driven conclusions about virtual roles and role substitution, and the weak historical validation.
+  ✓ Read manuscript and appendix to extract core claims, mechanisms, and stated contributions
+  ✓ Inspect model implementation against paper claims and note mismatches or built-in assumptions
+  → Assess validation strategy, literature positioning, and venue fit; then draft full referee report
+codex
+## Summary
+
+This paper asks an important question: whether large-scale displacement from productive roles can generate a human analogue of “behavioral sink,” and whether UBI, role-substitution, virtual worlds, and collectivist social structure can buffer that process. The core intuition is potentially interesting, but in its current form the manuscript does not succeed, because several headline findings are either internally inconsistent across sections or not supported by the implementation the authors say generated them.
+
+## Recommendation
+
+Reject — the current manuscript is not publishable because core empirical claims are numerically inconsistent within the paper, and two central mechanisms (speed effects and role loss persistence) are not validly implemented in the audited code.
+
+## Major Issues
+
+1. The manuscript reports incompatible results for the same scenarios, which makes the findings impossible to trust.
+The abstract states that at 95% displacement UBI yields sink `0.515` and role substitution `0.458` ([paper_draft.md:15](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md), [paper_draft.md:17](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)), but Section 3.5 reports `0.639` and `0.388` for what appears to be the same comparison ([paper_draft.md:249](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md), [paper_draft.md:253](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). Likewise, Section 3.1 says baseline collapse at 80% post-labor is 2% ([paper_draft.md:174](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)), while Section 3.2 says at 80% post-labor and zero virtual quality collapse is 100% ([paper_draft.md:188](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)-[paper_draft.md:191](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)); Section 3.4 then says collectivism alone at 80% still gives 95% collapse ([paper_draft.md:225](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). These cannot all be true.
+
+2. The speed-of-automation claim is invalid as implemented.
+The code claims V4 “fixed gradual speed to always reach target by step 80” ([model.py:5](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:8](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)), but the actual implementation simply adds `automation_speed` each step until the target is reached ([model.py:251](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:256](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). At `0.01` over 80 steps, the model reaches 0.80, not 0.95. That means the paper’s “95% post-labor, gradual automation” comparison is either based on different code or is misdescribed. More fundamentally, rapid automation reaches the target much earlier and therefore spends many more steps at full exposure before measurement. The manuscript presents this as an independent speed effect, but the code conflates speed with duration at the terminal displacement level.
+
+3. The model does not represent chronic displacement; it re-samples who is displaced at every step.
+At each timestep, the model randomly samples the displaced set anew ([model.py:258](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:272](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). This means agents do not experience persistent role loss, unemployment scarring, or cumulative exclusion. That directly undermines the paper’s mechanism story about chronic role deprivation, transition trajectories, and “managed transitions.” It is especially damaging given the manuscript’s narrative that agents move from aggression to withdrawal to collapse ([paper_draft.md:283](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)), while the appendix explicitly states archetype assignment is memoryless ([methods_appendix.md:73](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)-[methods_appendix.md:92](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)).
+
+4. The paper’s claim that virtual worlds cannot replace real roles is largely built into the model by assumption.
+The appendix is admirably transparent that the 8:1 economic-versus-virtual contribution ratio is a researcher choice, not an empirical estimate ([methods_appendix.md:62](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)-[methods_appendix.md:69](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)). But the manuscript still discusses the virtual-world ceiling as if it were an emergent result ([paper_draft.md:198](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)-[paper_draft.md:200](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). In code, `economic_role` affects autonomy, competence, relatedness, status, birth intention, and contribution ([model.py:97](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:145](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py), [model.py:157](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:167](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)), whereas virtual role enters much more weakly. The conclusion is therefore close to tautological unless the authors systematically vary these weights and show the result survives.
+
+5. The manuscript claims to separate income support from role meaning, but the model does not actually do that.
+There is no explicit income variable. UBI works by partially restoring `economic_role` and by increasing `fairness` ([model.py:211](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:215](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py), [model.py:267](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:270](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). Role programs also raise `economic_role` directly and additionally boost competence ([model.py:111](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:117](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). So the “UBI versus roles” comparison is not comparing income versus meaning; it is comparing two different ways of restoring the same latent role variable, with the role program given a structurally stronger mapping.
+
+6. The historical validation is not validation in any meaningful sense.
+The protocol explicitly says this is post-hoc construct validation and that the cases were chosen after observing model behavior ([historical_validation_protocol.md:5](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)-[historical_validation_protocol.md:7](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)). It also admits that the exact Nauru and Gulf parameterizations were not run; instead, “closest available conditions” from existing sweeps were used ([historical_validation_protocol.md:118](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)-[historical_validation_protocol.md:130](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)). Yet the manuscript presents this as support for external or construct validity ([paper_draft.md:285](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)-[paper_draft.md:291](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). That overstates what has been done. At present this is post-hoc narrative pattern matching on two heavily confounded cases.
+
+7. The model documentation is not yet sufficient for JASSS standards of transparency and reproducibility.
+Key scenario intensities are not reported clearly in the manuscript. “UBI,” “roles,” “fairness,” “full bundle,” and “all bundle” are labels, not parameter values. The appendix repeatedly uses the phrase “Calhoun calibration,” but no actual calibration procedure is described ([methods_appendix.md:7](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)-[methods_appendix.md:16](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)). Given the model’s extreme threshold sensitivity, the absence of uncertainty intervals, formal robustness over interaction effects, and a proper ODD-style specification is a serious weakness, not a cosmetic one.
+
+## Minor Issues
+
+1. The manuscript refers to a `contribution_to_nonplayers` term that does not exist in the current codebase ([paper_draft.md:200](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). This suggests version drift between paper and implementation.
+
+2. The use of “behavioral sink” for human societies remains theoretically thin and normatively fraught. At present, Calhoun functions more as a metaphor plus archetype labels than as a disciplined cross-species operationalization.
+
+3. The “phase transition” language is overstated. The paper reports threshold-like behavior, but no formal criticality analysis is conducted.
+
+4. The historical discussion of Nauru treats obesity, diabetes, and family disruption as interchangeable evidence of “sink.” That is too loose conceptually.
+
+5. The collectivism mapping is ad hoc. The protocol derives a formula from Hofstede, then overrides it downward for Nauru by judgment ([historical_validation_protocol.md:24](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)-[historical_validation_protocol.md:37](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)).
+
+6. The Pathway C triangulation claim is not really evaluable from the manuscript as written; it is asserted rather than demonstrated.
+
+## Theory & Contribution
+
+The combination of SDT, Calhoun, and contagion is novel as a framing device, but not yet as a convincing theoretical contribution. The real contribution here is narrower: a stylized hypothesis that role displacement harms well-being through autonomy, competence, relatedness, status, and contribution, and that these harms can be socially amplified. The “Calhoun” component is currently mostly rhetorical. It supplies archetype names and the sink metaphor, but the model does not genuinely theorize density, role crowding, reproductive competition, or social niche collapse in a way that would make this more than an analogy.
+
+## Model Validity
+
+The code only partially implements what the paper claims. On the 8:1 weighting: this is not a finding. It is a prior assumption that heavily constrains the answer, and it is reinforced by the broader update equations, where economic role has much stronger leverage than virtual role almost everywhere in the model. Unless the authors show that the virtual-world conclusion survives wide alternative codings, the result should be presented as a conditional sensitivity statement, not a substantive discovery.
+
+On displacement re-sampling: yes, this seriously undermines the mechanism story. Because displaced agents are re-drawn every step, the model represents a population share under exposure, not durable individual role loss. That makes the paper’s claims about chronic deprivation, scarring, transition sequencing, and the social psychology of long-term displacement much less credible. It also contaminates the speed result, because what varies is not only rate but cumulative duration at high exposure.
+
+## Historical Validation
+
+The Nauru/Gulf comparison is not real validation; it is post-hoc qualitative matching on two cherry-picked cases with hand-waved parameter mappings and no exact simulation runs for the mapped cases. Genuine validation would require pre-specified mappings, multiple cases on both sides of the outcome distribution, observable indicators tied to model outputs, and out-of-sample discrimination. At minimum I would expect direct runs of the declared Nauru and Gulf configurations, plus additional comparison cases such as Alaska, Norway, Rust Belt deindustrialization, or post-Soviet transitions, and a clear account of why Gulf citizen labor regimes are commensurable with “post-labor” rather than political rentier employment.
+
+## Missing Literature
+
+The manuscript is under-cited in the literatures most central to its own claim.
+
+1. On automation and labor displacement: Acemoglu and Restrepo, not just broad automation overviews.
+2. On non-pecuniary harms of unemployment and work loss: Jahoda, Warr, Fryer, Paul and Moser, Winkelmann and Winkelmann, Hetschko et al.
+3. On precarious labor and the social function of work: Standing; Graeber may be worth engaging, but critically.
+4. On post-work and leisure: Keynes is essential if the paper is about abundance without labor.
+5. On ABM protocol and validation: Grimm et al. on ODD/ODD+D, Windrum, Fagiolo and Moneta on empirical validation, Edmonds and Moss, Carley, and the broader JASSS validation literature.
+
+## JASSS vs NHB Gap
+
+For JASSS, this could become publishable after a major rebuild around model validity, documentation, and much more careful claims. For *Nature Human Behaviour*, the gap is much larger: the paper would need real empirical anchoring, not analogical historical anecdotes. That means calibrated or estimated parameters, pre-registered validation, direct behavioral or survey evidence for the proposed mechanisms, multi-case comparative data, stronger uncertainty quantification, and a far more defensible treatment of culture, work, and role loss. In its current form, this is a speculative conceptual simulation paper; NHB would require a hybrid empirical-modeling contribution with substantially higher evidentiary standards.
+tokens used
+47,776
+## Summary
+
+This paper asks an important question: whether large-scale displacement from productive roles can generate a human analogue of “behavioral sink,” and whether UBI, role-substitution, virtual worlds, and collectivist social structure can buffer that process. The core intuition is potentially interesting, but in its current form the manuscript does not succeed, because several headline findings are either internally inconsistent across sections or not supported by the implementation the authors say generated them.
+
+## Recommendation
+
+Reject — the current manuscript is not publishable because core empirical claims are numerically inconsistent within the paper, and two central mechanisms (speed effects and role loss persistence) are not validly implemented in the audited code.
+
+## Major Issues
+
+1. The manuscript reports incompatible results for the same scenarios, which makes the findings impossible to trust.
+The abstract states that at 95% displacement UBI yields sink `0.515` and role substitution `0.458` ([paper_draft.md:15](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md), [paper_draft.md:17](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)), but Section 3.5 reports `0.639` and `0.388` for what appears to be the same comparison ([paper_draft.md:249](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md), [paper_draft.md:253](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). Likewise, Section 3.1 says baseline collapse at 80% post-labor is 2% ([paper_draft.md:174](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)), while Section 3.2 says at 80% post-labor and zero virtual quality collapse is 100% ([paper_draft.md:188](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)-[paper_draft.md:191](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)); Section 3.4 then says collectivism alone at 80% still gives 95% collapse ([paper_draft.md:225](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). These cannot all be true.
+
+2. The speed-of-automation claim is invalid as implemented.
+The code claims V4 “fixed gradual speed to always reach target by step 80” ([model.py:5](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:8](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)), but the actual implementation simply adds `automation_speed` each step until the target is reached ([model.py:251](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:256](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). At `0.01` over 80 steps, the model reaches 0.80, not 0.95. That means the paper’s “95% post-labor, gradual automation” comparison is either based on different code or is misdescribed. More fundamentally, rapid automation reaches the target much earlier and therefore spends many more steps at full exposure before measurement. The manuscript presents this as an independent speed effect, but the code conflates speed with duration at the terminal displacement level.
+
+3. The model does not represent chronic displacement; it re-samples who is displaced at every step.
+At each timestep, the model randomly samples the displaced set anew ([model.py:258](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:272](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). This means agents do not experience persistent role loss, unemployment scarring, or cumulative exclusion. That directly undermines the paper’s mechanism story about chronic role deprivation, transition trajectories, and “managed transitions.” It is especially damaging given the manuscript’s narrative that agents move from aggression to withdrawal to collapse ([paper_draft.md:283](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)), while the appendix explicitly states archetype assignment is memoryless ([methods_appendix.md:73](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)-[methods_appendix.md:92](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)).
+
+4. The paper’s claim that virtual worlds cannot replace real roles is largely built into the model by assumption.
+The appendix is admirably transparent that the 8:1 economic-versus-virtual contribution ratio is a researcher choice, not an empirical estimate ([methods_appendix.md:62](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)-[methods_appendix.md:69](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)). But the manuscript still discusses the virtual-world ceiling as if it were an emergent result ([paper_draft.md:198](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)-[paper_draft.md:200](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). In code, `economic_role` affects autonomy, competence, relatedness, status, birth intention, and contribution ([model.py:97](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:145](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py), [model.py:157](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:167](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)), whereas virtual role enters much more weakly. The conclusion is therefore close to tautological unless the authors systematically vary these weights and show the result survives.
+
+5. The manuscript claims to separate income support from role meaning, but the model does not actually do that.
+There is no explicit income variable. UBI works by partially restoring `economic_role` and by increasing `fairness` ([model.py:211](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:215](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py), [model.py:267](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:270](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). Role programs also raise `economic_role` directly and additionally boost competence ([model.py:111](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)-[model.py:117](/Users/cloud/Documents/claude/post-scarcity-abm/models/pathway_a_abm/model.py)). So the “UBI versus roles” comparison is not comparing income versus meaning; it is comparing two different ways of restoring the same latent role variable, with the role program given a structurally stronger mapping.
+
+6. The historical validation is not validation in any meaningful sense.
+The protocol explicitly says this is post-hoc construct validation and that the cases were chosen after observing model behavior ([historical_validation_protocol.md:5](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)-[historical_validation_protocol.md:7](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)). It also admits that the exact Nauru and Gulf parameterizations were not run; instead, “closest available conditions” from existing sweeps were used ([historical_validation_protocol.md:118](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)-[historical_validation_protocol.md:130](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)). Yet the manuscript presents this as support for external or construct validity ([paper_draft.md:285](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)-[paper_draft.md:291](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). That overstates what has been done. At present this is post-hoc narrative pattern matching on two heavily confounded cases.
+
+7. The model documentation is not yet sufficient for JASSS standards of transparency and reproducibility.
+Key scenario intensities are not reported clearly in the manuscript. “UBI,” “roles,” “fairness,” “full bundle,” and “all bundle” are labels, not parameter values. The appendix repeatedly uses the phrase “Calhoun calibration,” but no actual calibration procedure is described ([methods_appendix.md:7](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)-[methods_appendix.md:16](/Users/cloud/Documents/claude/post-scarcity-abm/reports/methods_appendix.md)). Given the model’s extreme threshold sensitivity, the absence of uncertainty intervals, formal robustness over interaction effects, and a proper ODD-style specification is a serious weakness, not a cosmetic one.
+
+## Minor Issues
+
+1. The manuscript refers to a `contribution_to_nonplayers` term that does not exist in the current codebase ([paper_draft.md:200](/Users/cloud/Documents/claude/post-scarcity-abm/reports/paper_draft.md)). This suggests version drift between paper and implementation.
+
+2. The use of “behavioral sink” for human societies remains theoretically thin and normatively fraught. At present, Calhoun functions more as a metaphor plus archetype labels than as a disciplined cross-species operationalization.
+
+3. The “phase transition” language is overstated. The paper reports threshold-like behavior, but no formal criticality analysis is conducted.
+
+4. The historical discussion of Nauru treats obesity, diabetes, and family disruption as interchangeable evidence of “sink.” That is too loose conceptually.
+
+5. The collectivism mapping is ad hoc. The protocol derives a formula from Hofstede, then overrides it downward for Nauru by judgment ([historical_validation_protocol.md:24](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)-[historical_validation_protocol.md:37](/Users/cloud/Documents/claude/post-scarcity-abm/reports/historical_validation_protocol.md)).
+
+6. The Pathway C triangulation claim is not really evaluable from the manuscript as written; it is asserted rather than demonstrated.
+
+## Theory & Contribution
+
+The combination of SDT, Calhoun, and contagion is novel as a framing device, but not yet as a convincing theoretical contribution. The real contribution here is narrower: a stylized hypothesis that role displacement harms well-being through autonomy, competence, relatedness, status, and contribution, and that these harms can be socially amplified. The “Calhoun” component is currently mostly rhetorical. It supplies archetype names and the sink metaphor, but the model does not genuinely theorize density, role crowding, reproductive competition, or social niche collapse in a way that would make this more than an analogy.
+
+## Model Validity
+
+The code only partially implements what the paper claims. On the 8:1 weighting: this is not a finding. It is a prior assumption that heavily constrains the answer, and it is reinforced by the broader update equations, where economic role has much stronger leverage than virtual role almost everywhere in the model. Unless the authors show that the virtual-world conclusion survives wide alternative codings, the result should be presented as a conditional sensitivity statement, not a substantive discovery.
+
+On displacement re-sampling: yes, this seriously undermines the mechanism story. Because displaced agents are re-drawn every step, the model represents a population share under exposure, not durable individual role loss. That makes the paper’s claims about chronic deprivation, scarring, transition sequencing, and the social psychology of long-term displacement much less credible. It also contaminates the speed result, because what varies is not only rate but cumulative duration at high exposure.
+
+## Historical Validation
+
+The Nauru/Gulf comparison is not real validation; it is post-hoc qualitative matching on two cherry-picked cases with hand-waved parameter mappings and no exact simulation runs for the mapped cases. Genuine validation would require pre-specified mappings, multiple cases on both sides of the outcome distribution, observable indicators tied to model outputs, and out-of-sample discrimination. At minimum I would expect direct runs of the declared Nauru and Gulf configurations, plus additional comparison cases such as Alaska, Norway, Rust Belt deindustrialization, or post-Soviet transitions, and a clear account of why Gulf citizen labor regimes are commensurable with “post-labor” rather than political rentier employment.
+
+## Missing Literature
+
+The manuscript is under-cited in the literatures most central to its own claim.
+
+1. On automation and labor displacement: Acemoglu and Restrepo, not just broad automation overviews.
+2. On non-pecuniary harms of unemployment and work loss: Jahoda, Warr, Fryer, Paul and Moser, Winkelmann and Winkelmann, Hetschko et al.
+3. On precarious labor and the social function of work: Standing; Graeber may be worth engaging, but critically.
+4. On post-work and leisure: Keynes is essential if the paper is about abundance without labor.
+5. On ABM protocol and validation: Grimm et al. on ODD/ODD+D, Windrum, Fagiolo and Moneta on empirical validation, Edmonds and Moss, Carley, and the broader JASSS validation literature.
+
+## JASSS vs NHB Gap
+
+For JASSS, this could become publishable after a major rebuild around model validity, documentation, and much more careful claims. For *Nature Human Behaviour*, the gap is much larger: the paper would need real empirical anchoring, not analogical historical anecdotes. That means calibrated or estimated parameters, pre-registered validation, direct behavioral or survey evidence for the proposed mechanisms, multi-case comparative data, stronger uncertainty quantification, and a far more defensible treatment of culture, work, and role loss. In its current form, this is a speculative conceptual simulation paper; NHB would require a hybrid empirical-modeling contribution with substantially higher evidentiary standards.

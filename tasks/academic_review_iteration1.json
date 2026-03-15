@@ -1,0 +1,73 @@
+{
+  "review_metadata": {
+    "timestamp": "2026-03-14T17:55:00-07:00",
+    "model": "gpt-5.4",
+    "mode": "codex exec read-only",
+    "caveat": "Codex was instructed not to re-read files in this pass; some assessments are directional only"
+  },
+  "overall_recommendation": "major_revision",
+  "overall_score": 18,
+  "target_journal_fit": {
+    "jasss": "adequate",
+    "nature_human_behaviour": "poor",
+    "jasss_verdict": "In scope if paper narrows causal claims to mechanism exploration and adds discriminating tests",
+    "nhb_gap": "Requires much stronger empirical identification, external validation, and generalizable behavioral contribution"
+  },
+  "theoretical_contribution": {
+    "rating": "weak",
+    "critique": "Theoretical contribution may be framed stronger than model can support — must separate mechanism illustration from demonstrated explanation"
+  },
+  "model_validity": {
+    "rating": "weak",
+    "structural_assumptions": [
+      "Model conclusions may depend heavily on how roles/displacement are operationalized vs. independent empirical constraints",
+      "If agents discover roles because model architecture makes them payoff-relevant by construction, model embeds the result it claims to explain",
+      "Persistence of displacement is a strong claim unless retraining, institutional buffering, and endogenous role creation are represented"
+    ],
+    "is_virtual_role_finding_tautological": "Potentially yes — if virtual roles emerge because state space already defines them as accessible and beneficial, finding is architectural not explanatory. Needs ablation analysis.",
+    "displacement_persistence_issue": "Not persuasive unless persistence survives alternative assumptions about adaptation speed, institutional response, and redistribution mechanisms"
+  },
+  "evidence_strength": {
+    "rating": "weak",
+    "historical_validation_verdict": "Historical validation label only convincing with temporally disciplined out-of-sample tests, benchmark comparisons, and clear failure criteria",
+    "what_real_validation_requires": "Map model observables to archival series, pre-specify metrics, test competing mechanisms, reproduce multiple independent patterns, show robustness to alternative calibrations",
+    "overstatement_examples": [
+      "Claiming model 'explains' historical change rather than 'reproduces selected patterns under specified assumptions'",
+      "Claiming emergent role adaptation validated by historical resemblance alone without discriminating tests",
+      "Claiming persistent displacement is likely real-world consequence without external anchoring"
+    ]
+  },
+  "missing_literature": [
+    "Foundational ABM validation literature (face validation vs. pattern-oriented modelling vs. external validation)",
+    "Equifinality and identification in simulation-based social science",
+    "Economic history of technological displacement, task creation, institutional mediation",
+    "Sociological work on role formation, occupational restructuring, welfare-state buffering",
+    "Causal inference limits in generative computational models"
+  ],
+  "critical_issues": [
+    {"id": "C1", "severity": "fatal", "issue": "Risk of presenting mechanism-generating ABM as validated evidence of real historical causation", "fix": "Reframe as exploratory mechanism analysis; add pre-specified external validation with discriminating tests"},
+    {"id": "C2", "severity": "major", "issue": "Virtual role finding potentially tautological if model architecture makes those roles available by construction", "fix": "Add ablations, alternative state-space specs, negative controls"},
+    {"id": "C3", "severity": "major", "issue": "Displacement persistence may be parameter-driven not robust mechanism", "fix": "Sensitivity over adaptation frictions, institutional response, endogenous task creation"},
+    {"id": "C4", "severity": "major", "issue": "Evidential bridge from simulation to historical validation too weak", "fix": "Explicit empirical targets, out-of-sample tests, comparison against simpler baseline models"},
+    {"id": "C5", "severity": "minor", "issue": "Journal positioning may be mismatched if emphasizing broad behavioral claims without empirical grounding", "fix": "Position as methodological/theory-building contribution for computational social science"}
+  ],
+  "what_would_make_this_publishable_at_jasss": [
+    "Narrow claims to mechanism exploration, not historical explanation",
+    "Full sensitivity and ablation analyses",
+    "Test findings against alternative representations of role discovery and adaptation",
+    "Distinguish calibration vs. pattern reproduction vs. external validation",
+    "Add benchmark comparisons against simpler models or null process models"
+  ],
+  "what_would_make_this_publishable_at_nhb": [
+    "Much stronger empirical identification linking model to observed behavioral/historical data",
+    "Model must outperform credible alternatives on multiple independent empirical targets",
+    "Clearer behavioral contribution generalizing beyond simulated case",
+    "Pre-registered validation criteria with serious out-of-sample testing"
+  ],
+  "positive_aspects": [
+    "Ambitious interdisciplinary framing relevant to computational social science",
+    "ABM is appropriate tool for exploring path dependence and role transitions IF claims stay proportionate",
+    "Methods appendix and historical validation protocol show commendable transparency",
+    "Topic is timely and important"
+  ]
+}
