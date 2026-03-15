@@ -5,7 +5,7 @@
 
 A simulation study of the psychological and social consequences of large-scale labor displacement, grounded in Calhoun's behavioral sink theory, Self-Determination Theory, and complex systems research.
 
-This repository should currently be read as a **mature ABM research prototype with planned triangulation extensions**, not yet as a fully completed three-pathway project.
+**Current paper claim:** This repository supports a paper based primarily on Pathway A (ABM, 18,500+ simulation runs) with initial directional support from Pathway C (system dynamics). Pathway B (LLM agent simulation) is planned as future work and is not part of the current paper's claims.
 
 ---
 
@@ -92,6 +92,26 @@ post-scarcity-abm/
 ├── REPRODUCE.md               # Reproduction instructions
 └── outputs_manifest.md        # Complete output file listing
 ```
+
+## Paper Figure Index
+
+Every figure and table in the paper mapped to its generation script and data source:
+
+| Paper Location | Description | Script | Data |
+|---|---|---|---|
+| §3.1, Figure 1 | Phase transition curve | `models/pathway_a_abm/report.py` | `sweep1_results.csv` |
+| §3.2, Figure 2 | Virtual world quality effect | `scripts/sweep3_figures.py` | `sweep3_virtual_world.csv` |
+| §3.3 | Speed comparison table | Inline analysis | `speed_clean_comparison.csv` |
+| §3.4, Figure 4 | Collectivism as moderator | `scripts/sweep4_figures.py` | `sweep4_collectivism.csv` |
+| §3.5 | Intervention ranking table | Inline analysis | `sweep6_full_grid.csv` |
+| §3.5 | Intervention decoupling | `scripts/run_ablation_interventions.py` | `ablation_interventions.csv` |
+| §3.6, Figure 5 | Archetype trajectories | `scripts/sweep5_figures.py` | `sweep5_archetypes.csv` |
+| §3.2 | Weight ablation results | `scripts/run_ablation_weights.py` | `ablation_weights.csv` |
+| §2.5 | Sensitivity analysis table | Inline analysis | `sensitivity_analysis.csv` |
+| §2.4 | Horizon robustness table | Inline analysis | `convergence_summary.csv` |
+| §4.4 | Pathway C triangulation | `models/pathway_c_sd/sd_model.py` | Generated inline |
+
+All data files are in `data/simulation/`. See [REPRODUCE.md](REPRODUCE.md) for full reproduction instructions.
 
 ## Theoretical Framework
 
