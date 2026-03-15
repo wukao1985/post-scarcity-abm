@@ -10,17 +10,17 @@
 
 What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling over 18,000 simulation runs, we find:
 
-1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone (critical point ~88%), and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
+1. A phase transition to behavioral sink occurs in the 80-90% role displacement zone, and this threshold is policy-malleable — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
 
-2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of 0.518 with elevated distress even without full collapse.
+2. Income support (UBI) is necessary but insufficient: at 95% displacement, UBI alone produces a sink index of ~0.52 with elevated distress even without full collapse.
 
-3. Role substitution programs outperform income transfers in preventing meaning loss (sink index 0.459 vs 0.518 at 95% displacement).
+3. Under default parameterization, role substitution shows modest advantage over income transfers (sink ~0.46 vs ~0.52 at 95% displacement), though this advantage is parameter-dependent and reverses when restoration strength is equalized (see §3.5).
 
-4. Social cohesion reduces sink severity: collectivism lowers UBI-associated sink from 0.549 to 0.443 at 95% displacement — a finding consistent with the Nauru (collapse) vs Gulf states (stability) historical divergence.
+4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
 5. Transition speed is transient: when controlling for exposure time, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
 
-These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches.
+These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. (All numerical values are model-dependent; directional relationships are the primary contribution.)
 
 ---
 
@@ -31,6 +31,8 @@ These equilibrium findings suggest that meaning infrastructure (role programs, s
 Human well-being is deeply embedded in productive roles. Work provides not just income but identity, competence, social connection, and purpose (Blustein, 2008; Deci & Ryan, 2000). Technological displacement, deindustrialization, and resource windfalls have repeatedly demonstrated that removing productive roles — even while maintaining material sufficiency — can produce severe social pathology (Case & Deaton, 2020).
 
 Calhoun's (1962) rodent experiments demonstrated "behavioral sink" — social collapse characterized by withdrawal, aggression, and reproductive failure — when populations lacked meaningful social roles. Jahoda (1982) established that employment provides not only income but latent functions: time structure, social contact, collective purpose, status, and activity — functions that persist as psychological needs even when income is secured through other means. The analogy to human post-labor conditions, while imperfect, raises urgent questions: What equilibrium states does a society reach when large fractions of the population lack productive roles? Which interventions shift the society toward more favorable equilibria, and under what conditions do they fail?
+
+We note that our model underrepresents aggressive behavior (~2% prevalence vs. 10-20% in Calhoun's observations); results should be interpreted as characterizing withdrawal-dominated dynamics rather than the full spectrum of behavioral sink.
 
 ### 1.2 The Gap in Current Understanding
 
@@ -160,7 +162,7 @@ We conducted six parameter sweeps plus two ablation studies, totaling 18,500 run
 
 ### 2.5 Sensitivity Analysis
 
-We conducted one-at-a-time perturbation of three key internal parameters (noise σ, decay rate, contagion strength) by ±20%, with 50 runs per condition at PL=0.80 and PL=0.95 baseline. Core findings are robust: at PL=0.95, collapse occurs in 92-100% of runs across all perturbations; at PL=0.80, collapse remains rare (2-12%). The most sensitive parameter is contagion strength, which governs the positive feedback loop driving collective collapse (+20% raises PL=0.80 collapse from 2% to 12%). Full sensitivity results are reported in the Methods Appendix.
+We conducted one-at-a-time perturbation of three key internal parameters (noise σ, decay rate, contagion strength) by ±20%, with 50 runs per condition at PL=0.80 and PL=0.95 baseline. Core findings are directionally consistent across tested parameter ranges: at PL=0.95, collapse occurs in 92-100% of runs across all perturbations; at PL=0.80, collapse remains rare (2-12%). The most sensitive parameter is contagion strength, which governs the positive feedback loop driving collective collapse (+20% raises PL=0.80 collapse from 2% to 12%). Full sensitivity results are reported in the Methods Appendix.
 
 ### 2.6 Analysis
 
@@ -213,7 +215,7 @@ The marginal benefit of virtual quality is concave — substantial gains occur b
 
 The model's contribution weighting (virtual contribution counts 0.1 vs. 0.8 for economic roles) creates a ceiling effect: even maximum virtual quality leaves a meaning gap. Combining virtual worlds with UBI closes this gap substantially (sink 0.294 vs 0.517 with virtual alone).
 
-**Sensitivity to contribution weights.** The virtual-world ceiling is partially structural: our default 8:1 contribution weight (economic vs virtual) was varied from 3:1 to ∞ in an ablation study (1,000 runs). At ratios below 5:1, virtual-world-only scenarios approach UBI performance (sink difference < 0.04). At the current 8:1 assumption, the gap is negligible (0.514 vs 0.509). At ratios above 12:1, UBI clearly dominates virtual-only (sink 0.542 vs 0.514). This confirms the finding is assumption-sensitive: societies where virtual engagement carries greater psychological weight would see different equilibria. However, two results are robust across all tested ratios: (1) virtual-only always prevents collapse (0% across all ratios), and (2) UBI+virtual always dominates either single intervention.
+**Sensitivity to contribution weights.** The virtual-world ceiling is partially structural: our default 8:1 contribution weight (economic vs virtual) was varied from 3:1 to ∞ in an ablation study (1,000 runs). At ratios below 5:1, virtual-world-only scenarios approach UBI performance (sink difference < 0.04). At the current 8:1 assumption, the gap is negligible (0.514 vs 0.509). At ratios above 12:1, UBI clearly dominates virtual-only (sink 0.542 vs 0.514). This confirms the finding is assumption-sensitive: societies where virtual engagement carries greater psychological weight would see different equilibria. However, two results are directionally consistent across all tested ratios: (1) virtual-only always prevents collapse (0% across all ratios), and (2) UBI+virtual always dominates either single intervention.
 
 ### 3.3 Speed of Automation (RQ3)
 
@@ -245,15 +247,16 @@ Collectivism alone cannot prevent baseline collapse (Figure 4).
 - Collectivism 1.0: 92% collapse, sink 0.743 (modest reduction, collapse still near-certain)
 
 **UBI at 95% post-labor (collectivism as moderator):**
-- Collectivism 0.0: 91% collapse, sink 0.744
-- Collectivism 0.8: 0% collapse, sink 0.413
-- Collectivism 1.0: 0% collapse, sink 0.443 (40% lower sink than collectivism 0.0)
+- Collectivism 0.0: 0% collapse, sink 0.549
+- Collectivism 0.4: 0% collapse, sink 0.504
+- Collectivism 0.8: 0% collapse, sink 0.462
+- Collectivism 1.0: 0% collapse, sink 0.443 (19% lower sink than collectivism 0.0)
 
-The UBI × collectivism interaction is striking: UBI alone fails at 91% collapse in individualist societies but succeeds at 0% collapse in collectivist ones — a phase transition in the interaction of policy and social structure, with the threshold between collectivism 0.2–0.4.
+The UBI × collectivism interaction is striking: under UBI conditions at 95% displacement, higher collectivism is associated with substantially lower sink severity — sink decreases from 0.549 (collectivism=0.0) to 0.443 (collectivism=1.0), though collapse probability remains 0% across all collectivism levels.
 
-The collectivism effect is a continuous moderator rather than a threshold switch: higher collectivism progressively reduces sink index across all conditions, but does not independently prevent collapse in baseline scenarios. The mechanism operates through relatedness maintenance — collectivist structures provide alternative social connection sources when workplace ties are severed.
+The collectivism effect is a continuous moderator rather than a threshold switch: higher collectivism is progressively associated with lower sink index across all conditions, but does not independently prevent collapse in baseline scenarios. The mechanism operates through relatedness maintenance — collectivist structures provide alternative social connection sources when workplace ties are severed.
 
-This finding suggests cultural context moderates the severity of post-labor distress. Societies with higher baseline collectivism (East Asian, Nordic) experience lower sink levels at equivalent displacement, though the effect is insufficient to prevent collapse without complementary interventions.
+This finding suggests cultural context is associated with the severity of post-labor distress. Societies with higher baseline collectivism (East Asian, Nordic) show lower sink levels at equivalent displacement. Under UBI conditions at high displacement, higher collectivism is associated with lower sink indices.
 
 ### 3.5 Intervention Combinations at Extreme Automation (RQ5)
 
@@ -281,11 +284,11 @@ At 95% post-labor — the stress test for any post-labor policy — we rank inte
 
 1. **Multi-pillar interventions dominate:** Full and all bundles achieve the lowest sink (<0.15), confirming that addressing multiple psychological needs simultaneously is most effective.
 
-2. **Virtual worlds are the most potent addition to single interventions:** Adding virtual worlds to UBI reduces sink by 43% (0.518 → 0.293). Adding virtual worlds to roles reduces sink by 46% (0.459 → 0.247).
+2. **Virtual worlds are the most potent addition to single interventions:** Adding virtual worlds to UBI is associated with a 43% reduction in sink (0.518 → 0.293). Adding virtual worlds to roles is associated with a 46% reduction in sink (0.459 → 0.247).
 
 3. **Role substitution outperforms income support:** At 95%, roles-only (0.459 sink) outperforms UBI-only (0.518 sink), though the gap is smaller than in V3.
 
-**Decomposing the roles advantage.** To isolate the source of role programs' advantage, we ran a matched comparison (450 runs) where UBI and roles were equalized on economic_role restoration strength (both at 0.30). Under this condition, roles_matched (no competence boost, matched strength) produces sink 0.575 — *worse* than ubi_pure (sink 0.516), because UBI includes an implicit fairness co-benefit that roles lack. The full roles advantage (sink 0.460 vs 0.516) therefore decomposes into: competence pathway + higher default strength (Δsink = 0.115) minus UBI's fairness advantage (Δsink = 0.059), yielding a net advantage of 0.056. This suggests role programs' superiority is partly mechanistic (competence development provides genuine benefit that income cannot) and partly parameterization (stronger default restoration strength). When equalized on strength, UBI's fairness co-benefit actually dominates roles' competence pathway alone.
+**Decomposing the roles advantage.** To isolate the source of role programs' advantage, we ran a matched comparison (450 runs) where UBI and roles were equalized on economic_role restoration strength (both at 0.30). Under this condition, roles_matched (no competence boost, matched strength) produces sink 0.575 ± 0.003 — *worse* than ubi_pure (sink 0.516 ± 0.003), because UBI includes an implicit fairness co-benefit that roles lack. The full roles advantage (sink 0.460 ± 0.003 vs 0.516 ± 0.003) therefore decomposes into: competence pathway + higher default strength (Δsink = 0.115) minus UBI's fairness advantage (Δsink = 0.059), yielding a net advantage of 0.056. This suggests role programs' superiority is partly mechanistic (competence development provides genuine benefit that income cannot) and partly parameterization (stronger default restoration strength). When equalized on strength, UBI's fairness co-benefit actually dominates roles' competence pathway alone.
 
 4. **Fairness redistribution is insufficient alone:** Fairness-only scenarios show 12% collapse and high sink (0.661) because they don't address role absence.
 
@@ -317,7 +320,7 @@ To test external validity, we mapped two historical natural experiments to model
 
 Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
 
-The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink drops from 0.549 (collectivism=0.0, Nauru-like) to 0.462 (collectivism=0.8, Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional consistency provides qualitative plausibility evidence for the model's core mechanisms.
+The collectivism variable is associated with sink severity differences: at PL=0.95 with UBI, sink decreases from 0.549 (collectivism=0.0, Nauru-like) to 0.462 (collectivism=0.8, Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. This comparison is illustrative only; both cases were selected post-hoc and differ on numerous dimensions beyond collectivism. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional consistency provides qualitative plausibility evidence for the model's core mechanisms.
 
 ---
 
@@ -325,7 +328,7 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 ### 4.1 Theoretical Implications
 
-**Self-Determination Theory in Economic Context:** Our findings extend SDT by demonstrating that the three core needs (autonomy, competence, relatedness) can be satisfied through diverse channels. Economic roles are the default source, but virtual worlds (autonomy, competence) and collectivism (relatedness) provide partial substitutes. However, the ceiling effects suggest these substitutes are imperfect—extreme automation may exceed substitution capacity.
+**Self-Determination Theory in Economic Context:** Our findings extend SDT by demonstrating that the three core needs (autonomy, competence, relatedness) can be satisfied through diverse channels. Economic roles are the default source, but virtual worlds (autonomy, competence) and collectivism (relatedness) provide partial substitutes. However, the ceiling effects suggest these substitutes are imperfect—extreme automation may exceed substitution capacity. Note that SDT needs are operationalized directly in our model's meaning function; consistency with SDT predictions is therefore expected by construction and does not constitute independent empirical validation of the theory.
 
 **Phase Transitions in Social Systems:** The 80% threshold behaves like a critical point in physical systems. Near this threshold, small parameter changes produce large outcome changes—a hallmark of phase transitions. Unlike physical constants, however, this threshold is policy-malleable.
 
@@ -353,7 +356,7 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 **Displacement as population-level rate.** The model treats role displacement as a cross-sectional share rather than a permanent individual state. Each timestep, the displaced fraction is redrawn from the agent pool. This enables equilibrium analysis but precludes conclusions about individual adjustment trajectories, unemployment scarring, or the dynamics of managed transitions. Future work should model persistent individual displacement with explicit re-employment mechanisms.
 
-**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Ablation analysis (see Supplementary) shows the directional finding (roles > UBI) is robust across a range of parameter values, but the magnitude depends on assumptions about the relative potency of different interventions. When equalized on economic restoration strength, UBI's fairness co-benefit actually outweighs roles' competence pathway, reversing the ranking. The intervention hierarchy reported in §3.5 should therefore be interpreted as conditional on the default parameterization.
+**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Ablation analysis (see Supplementary) shows the directional finding (roles > UBI) is consistent across ±20% parameter perturbation, but the magnitude depends on assumptions about the relative potency of different interventions. When equalized on economic restoration strength, UBI's fairness co-benefit actually outweighs roles' competence pathway, reversing the ranking. The intervention hierarchy reported in §3.5 should therefore be interpreted as conditional on the default parameterization.
 
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
@@ -376,7 +379,7 @@ The collectivism variable moderates sink severity: at PL=0.95 with UBI, sink dro
 
 To test whether our findings are method-dependent, we developed a parallel system dynamics (SD) model using stock-flow ODEs with three state variables: MeaningStock, SinkStock, and SocialTrust. The SD model was calibrated independently to the Nauru historical trajectory (1970-2000: resource wealth without purpose → social collapse) and then tested against the Gulf states comparison case (collectivist structures + resource wealth → stability).
 
-Under matched parameters (PL=0.80, baseline), both models predict low meaning and high sink. Under UBI conditions, both models predict higher meaning and lower sink relative to baseline. The directional agreement across two independent modeling approaches — one bottom-up (agent heterogeneity, network effects) and one top-down (aggregate stocks, continuous flows) — provides initial triangulation support for the core findings.
+Under matched parameters (PL=0.80, baseline), both models predict low meaning and high sink. Under UBI conditions, both models predict higher meaning and lower sink relative to baseline. The directional agreement across two modeling approaches sharing the same theoretical framework (SDT + social contagion) — one bottom-up (agent heterogeneity, network effects) and one top-down (aggregate stocks, continuous flows) — provides initial triangulation support for the core findings. Agreement between models validates consistency of implementation rather than theoretical independence, since both models operationalize the same SDT assumptions.
 
 The SD model also reproduces the Nauru-Gulf divergence: Nauru-like parameters (low collectivism, high displacement) produce sink ≈ 0.71 by year 30, while Gulf-like parameters (high collectivism) maintain sink < 0.15. This convergence is notable because the SD model was not fitted to ABM outputs — both derive from the same theoretical framework (SDT + social contagion) implemented through different methodologies. Full Pathway C documentation is provided in the Supplementary Methods.
 
@@ -408,7 +411,7 @@ This stylized model identifies mechanisms by which post-labor displacement can d
 
 The central insight is that income support, while necessary, is insufficient to prevent meaning loss. The mechanisms that drive behavioral sink — loss of competence, autonomy, social role, and contribution — require targeted intervention beyond economic redistribution. Role substitution programs, virtual role infrastructure, and social cohesion structures each address distinct psychological needs that income cannot satisfy.
 
-The model's sensitivity to social cohesion — with collectivism reducing UBI-associated sink from 0.549 to 0.443 at 95% displacement — highlights that identical economic policies produce different severity outcomes depending on the social substrate. This finding is consistent with historical divergences between post-labor societies (Nauru vs. Gulf states) and suggests that cultural and institutional context deserves as much attention as economic policy design.
+The model's sensitivity to social cohesion — with higher collectivism being associated with lower UBI-associated sink, from 0.549 to 0.443 at 95% displacement — highlights that identical economic policies produce different severity outcomes depending on the social substrate. This finding is consistent with historical divergences between post-labor societies (Nauru vs. Gulf states) and suggests that cultural and institutional context deserves as much attention as economic policy design.
 
 As a stylized model, these results identify mechanisms and qualitative relationships rather than precise thresholds. The specific numbers (80-90% transition zone, sink indices) are model-dependent and should not be interpreted as predictions. What the model contributes is a framework for thinking about which dimensions of human well-being are at risk under role displacement, and which intervention categories address which risks.
 
