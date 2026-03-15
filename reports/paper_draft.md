@@ -14,7 +14,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
 
-3. Under default parameterization, role substitution shows modest advantage over income transfers (sink ~0.46 vs ~0.52 at 95% displacement), though this advantage is parameter-dependent and reverses when restoration strength is equalized (see §3.5).
+3. Under default parameterization, role substitution shows modest advantage over income transfers (sink ~0.46 ± 0.02 vs ~0.52 ± 0.02 at 95% displacement), though this advantage is parameter-dependent and reverses when restoration strength is equalized (see §3.5).
 
 4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
@@ -381,7 +381,7 @@ To test whether our findings are method-dependent, we developed a parallel syste
 
 Under matched parameters (PL=0.80, baseline), both models predict low meaning and high sink. Under UBI conditions, both models predict higher meaning and lower sink relative to baseline. The directional agreement across two modeling approaches sharing the same theoretical framework (SDT + social contagion) — one bottom-up (agent heterogeneity, network effects) and one top-down (aggregate stocks, continuous flows) — provides an implementation consistency check (not independent validation, since both models share SDT assumptions). 
 
-The SD model also reproduces the Nauru-Gulf divergence: Nauru-like parameters (low collectivism, high displacement) produce sink ≈ 0.71 by year 30, while Gulf-like parameters (high collectivism) maintain sink < 0.15. This convergence is notable because the SD model was not fitted to ABM outputs — both derive from the same theoretical framework (SDT + social contagion) implemented through different methodologies. Full Pathway C documentation is provided in the Supplementary Methods.
+The SD model reproduces the same qualitative Nauru-Gulf pattern as the ABM (Nauru-like: sink ≈ 0.71; Gulf-like: sink < 0.15). Note that both models share the same theoretical framework (SDT + social contagion), and the SD model was calibrated to the Nauru historical trajectory — so this convergence reflects implementation consistency, not methodological independence. Full Pathway C documentation is provided in the Supplementary Methods.
 
 ### 4.5 Future Research
 
