@@ -258,7 +258,7 @@ class PostLaborModel(mesa.Model):
                 "birth_intention":   lambda m: np.mean([a.birth_intention for a in m.agents]),
                 "social_trust":      lambda m: np.mean([a.relatedness     for a in m.agents]),
                 "post_labor_current":lambda m: m.current_post_labor,
-                "trigger_rate":      lambda m: sum(1 for a in m.agents if 0.35 <= a.meaning <= 0.65) / m.n_agents,
+                "band_occupancy":    lambda m: sum(1 for a in m.agents if 0.35 <= a.meaning <= 0.65) / m.n_agents,
             }
         )
         self.datacollector.collect(self)

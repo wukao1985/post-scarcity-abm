@@ -1,7 +1,7 @@
 """
 Sensitivity analysis for decay parameter.
 
-Sweeps decay values and measures trigger_rate (fraction of agents with meaning in [0.35, 0.65])
+Sweeps decay values and measures band_occupancy (fraction of agents with meaning in [0.35, 0.65])
 and other calibration metrics.
 """
 import numpy as np
@@ -33,17 +33,11 @@ def run_single(decay, post_labor_fraction=0.95, intervention=None, steps=80, see
 
     # Calculate metrics
     mean_meaning = late_run['meaning_index'].mean()
-    trigger_rate_mean = late_run['trigger_rate'].mean()
-
-    # Calculate fraction_in_band as fraction of time agents spend in band
-    # This requires computing across all agent histories, but we approximate
-    # using the trigger_rate which is already computed per-step
-    fraction_in_band_mean = late_run['trigger_rate'].mean()
+    band_occupancy_mean = late_run['band_occupancy'].mean()
 
     return {
         'mean_meaning': mean_meaning,
-        'trigger_rate_mean': trigger_rate_mean,
-        'fraction_in_band_mean': fraction_in_band_mean,
+        'band_occupancy_mean': band_occupancy_mean,
     }
 
 
@@ -67,17 +61,14 @@ def run_sweep(decay_values, n_runs=50, post_labor_fraction=0.95, intervention=No
 
         # Aggregate across runs
         mean_meanings = [r['mean_meaning'] for r in run_results]
-        trigger_rates = [r['trigger_rate_mean'] for r in run_results]
-        fraction_in_bands = [r['fraction_in_band_mean'] for r in run_results]
+        band_occupancies = [r['band_occupancy_mean'] for r in run_results]
 
         results.append({
             'decay_value': decay,
             'mean_meaning': np.mean(mean_meanings),
             'mean_meaning_std': np.std(mean_meanings),
-            'trigger_rate_mean': np.mean(trigger_rates),
-            'trigger_rate_std': np.std(trigger_rates),
-            'fraction_in_band_mean': np.mean(fraction_in_bands),
-            'fraction_in_band_std': np.std(fraction_in_bands),
+            'band_occupancy_mean': np.mean(band_occupancies),
+            'band_occupancy_std': np.std(band_occupancies),
             'n_runs': n_runs,
         })
 
@@ -115,11 +106,11 @@ def main():
     print("\n" + "=" * 80)
     print("RESULTS")
     print("=" * 80)
-    print(f"{'decay':>8} | {'mean_meaning':>12} | {'trigger_rate':>12} | {'frac_in_band':>12}")
+    print(f"{'decay':>8} | {'mean_meaning':>12} | {'band_occupancy':>14}")
     print("-" * 80)
 
     for _, row in df.iterrows():
-        print(f"{row['decay_value']:>8.2f} | {row['mean_meaning']:>12.4f} | {row['trigger_rate_mean']:>12.4f} | {row['fraction_in_band_mean']:>12.4f}")
+        print(f"{row['decay_value']:>8.2f} | {row['mean_meaning']:>12.4f} | {row['band_occupancy_mean']:>14.4f}")
 
     print("-" * 80)
     print(f"\nSaved to: {output_path}")
