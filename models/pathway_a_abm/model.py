@@ -87,7 +87,7 @@ class PostLaborAgent(mesa.Agent):
         status_gap = np.clip(m.inequality_index * (1 - self.economic_role), 0, 1)
 
         # Mean-reverting dynamics: state decays toward a target determined by conditions
-        decay = 0.08  # how fast state adjusts toward target
+        decay = self.model.decay  # how fast state adjusts toward target
 
         # Baseline human needs floor (even displaced people retain some base function)
         base = 0.32
@@ -198,7 +198,7 @@ class PostLaborModel(mesa.Model):
                  intervention=None, seed=None,
                  economic_weight=0.8, virtual_weight=0.1,
                  ubi_strength=0.30, roles_strength=0.35,
-                 roles_competence_boost=True):
+                 roles_competence_boost=True, decay=0.08):
         super().__init__(seed=seed)
         if seed is not None:
             np.random.seed(seed)
@@ -218,6 +218,7 @@ class PostLaborModel(mesa.Model):
         self.ubi_strength          = ubi_strength
         self.roles_strength        = roles_strength
         self.roles_competence_boost = roles_competence_boost
+        self.decay                 = decay
 
         # Intervention params
         iv = intervention or {}
@@ -257,6 +258,7 @@ class PostLaborModel(mesa.Model):
                 "birth_intention":   lambda m: np.mean([a.birth_intention for a in m.agents]),
                 "social_trust":      lambda m: np.mean([a.relatedness     for a in m.agents]),
                 "post_labor_current":lambda m: m.current_post_labor,
+                "trigger_rate":      lambda m: sum(1 for a in m.agents if 0.35 <= a.meaning <= 0.65) / m.n_agents,
             }
         )
         self.datacollector.collect(self)
