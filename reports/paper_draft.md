@@ -10,15 +10,17 @@
 
 What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling 18,500 simulation runs, we find:
 
-1. A steep threshold effect occurs in the 80-90% role displacement zone under baseline parameterization (specific percentages are model-dependent), and this threshold is policy-sensitive — shifting higher with combined interventions. Rapid displacement affects transition duration but not the final equilibrium.
+1. A steep threshold effect occurs in the 80-90% role displacement zone under baseline parameterization (specific percentages are model-dependent), and this threshold is policy-sensitive — shifting higher with combined interventions. Within this equilibrium framing, rapid displacement affects transition duration but not late-run aggregate outcomes once target displacement is reached.
 
 2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
 
-3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink (~0.46 ± 0.02 vs ~0.52 ± 0.02); when equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575; all values model-dependent under default parameterization). Neither intervention dominates unconditionally.
+3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink (~0.46 vs ~0.52; exact matched-comparison values in §3.5); when equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575; all values model-dependent under default parameterization). Neither intervention dominates unconditionally.
 
 4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
-5. Transition speed is transient: when matched on time since reaching target displacement, rapid and gradual automation converge to the same equilibrium. The displacement level and intervention regime, not the transition path, determine the final state.
+5. Within this equilibrium ABM, once target displacement is reached, late-run aggregate outcomes are similar across fast and slow ramps; whether this generalizes to persistent-displacement models or real managed transitions requires further work.
+
+All reported numerical values and comparative rankings are conditional on this stylized parameterization; the main contribution is directional and mechanistic rather than predictive.
 
 These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. Note that virtual role substitutes provide strong protection at moderate displacement (≤90%) but only partial substitution at extreme levels (95%), where elevated sink persists even at maximum virtual quality. *Note: aggressive behavior is a known validation gap (~2% modeled vs. Calhoun's 10-20% observed); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.*
 
@@ -188,7 +190,7 @@ Under baseline conditions (no interventions, gradual automation), the model exhi
 
 ![Figure 1: Threshold effect — sink index and collapse probability across post-labor levels under baseline conditions](figures/sweep1_phase_transition.png) The transition zone — rather than a knife-edge threshold — is consistent with complex adaptive systems theory and more realistic than a sharp critical point. This zone proves highly sensitive to policy and contextual factors.
 
-**Speed affects transition duration, not equilibrium:** At matched time-since-target-displacement (t+10 after reaching PL=0.95), rapid and gradual automation converge to the same equilibrium (see §3.3). Naive comparisons at fixed T=80 confound speed with time-at-target; matched analysis shows the displacement level, not the transition path, determines the final state.
+**Speed affects transition duration within the equilibrium ABM:** At matched time-since-target-displacement (t+10 after reaching PL=0.95), rapid and gradual automation show similar late-run trajectories once both have reached the target (see §3.3). Naive comparisons at fixed T=80 confound speed with time-at-target; matched analysis instead supports a narrower equilibrium interpretation within this model.
 
 **Virtual worlds extend threshold higher:** With virtual_world_quality ≥ 0.6, collapse probability at 80% post-labor is 3% without virtual infrastructure vs. 0% with it. Under high-quality virtual conditions, collapse is not observed below 90% displacement (though this is based on n=50 runs; treat as directional).
 
@@ -217,15 +219,15 @@ The marginal benefit of virtual quality is concave — substantial gains occur b
 
 The model's contribution weighting (virtual contribution counts 0.1 vs. 0.8 for economic roles) creates a ceiling effect: even maximum virtual quality leaves a meaning gap. Combining virtual worlds with UBI closes this gap substantially (sink 0.294 vs 0.517 with virtual alone).
 
-**Sensitivity to contribution weights.** The virtual-world ceiling is partially structural: our default 8:1 contribution weight (economic vs virtual) was varied from 3:1 to ∞ in an ablation study (1,000 runs). At ratios below 5:1, virtual-world-only scenarios approach UBI performance (sink difference < 0.04). At the current 8:1 assumption, the gap is negligible (0.514 vs 0.509). At ratios above 12:1, UBI clearly dominates virtual-only (sink 0.542 vs 0.514). This confirms the finding is assumption-sensitive: societies where virtual engagement carries greater psychological weight would see different equilibria. However, two results are directionally consistent across all tested ratios: (1) virtual-only always prevents collapse (0% across all ratios), and (2) UBI+virtual always dominates either single intervention.
+**Sensitivity to contribution weights.** The virtual-world ceiling is partially structural: our default 8:1 contribution weight (economic vs virtual) was varied from 3:1 to ∞ in an ablation study (1,000 runs). At ratios below 5:1, virtual-world-only scenarios approach UBI performance (sink difference < 0.04). At the current 8:1 assumption, the gap is negligible (0.514 vs 0.509). At ratios above 12:1, UBI produces lower sink than virtual-only (0.514 vs 0.542). This confirms the finding is assumption-sensitive: societies where virtual engagement carries greater psychological weight would see different equilibria. However, two results are directionally consistent across all tested ratios: (1) virtual-only always prevents collapse (0% across all ratios), and (2) UBI+virtual always dominates either single intervention.
 
 ### 3.3 Speed of Automation (RQ3)
 
 To isolate speed effects from exposure-time confounds, we conducted a controlled comparison (Figure 3) measuring outcomes at matched intervals after each scenario reaches its target displacement (PL=0.95).
 
-![Figure 3: Speed comparison — rapid vs gradual automation convergence to same equilibrium](figures/sweep2_automation_speed.png) Rapid automation (speed=0.20) reaches the target in ~5 steps; gradual automation (speed≈0.006) reaches it in ~160 steps.
+![Figure 3: Speed comparison — rapid vs gradual automation under matched time-since-target conditions in the equilibrium ABM](figures/sweep2_automation_speed.png) Rapid automation (speed=0.20) reaches the target in ~5 steps; gradual automation (speed≈0.006) reaches it in ~160 steps.
 
-**Finding: speed is transient, not structural.** At matched time-since-target-displacement (10 steps after reaching PL=0.95), both speeds show similar sink levels converging toward the same equilibrium:
+**Finding within the equilibrium ABM: speed effects are transient rather than structural.** At matched time-since-target-displacement (10 steps after reaching PL=0.95), both speeds show similar sink levels converging toward the same late-run aggregate state:
 
 | Speed | Sink (t+10) | Sink (t+40) | Equilibrium |
 |-------|-------------|-------------|-------------|
@@ -234,9 +236,9 @@ To isolate speed effects from exposure-time confounds, we conducted a controlled
 
 Counterintuitively, gradual automation produces *higher* sink at matched exposure times (0.775 vs 0.645 at t+10), because the extended ramp period allows social contagion to accumulate during partial displacement. The original naive comparison (both measured at T=80) confounded speed with exposure time: rapid had 75 steps at full displacement while gradual had just reached its target.
 
-At equilibrium (t+40), both speeds converge to nearly identical outcomes (~0.79 sink for baseline). This is consistent with the interpretation that **the displacement level, not the path taken, determines the final state**. Interventions dominate speed effects: full_bundle produces sink ≈ 0.12-0.13 regardless of speed.
+At equilibrium (t+40), both speeds converge to nearly identical outcomes (~0.79 sink for baseline). Within this equilibrium ABM, once target displacement is reached, late-run aggregate outcomes are similar across fast and slow ramps. Interventions dominate these late-run speed differences: full_bundle produces sink ≈ 0.12-0.13 regardless of speed.
 
-These findings suggest that transition velocity affects transition duration but not the final equilibrium state, as confirmed by our horizon robustness analysis; formal intervention timing analysis is left to future work.
+These findings suggest that transition velocity affects transition duration but not late-run aggregate outcomes within this equilibrium model, as confirmed by our horizon robustness analysis; persistent-displacement models are needed before drawing stronger conclusions about managed transition speed or intervention timing.
 
 ### 3.4 Collectivism as Social Buffer (RQ4)
 
@@ -316,13 +318,13 @@ The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed
 
 ### 3.7 Historical Validation: Nauru vs. Gulf States
 
-To assess qualitative plausibility, we mapped two historical natural experiments to model conditions (Figure 7). These cases were selected post-hoc as contrasting archetypes; this is not a prospective validation test.
+To assess qualitative plausibility, we mapped two historical cases that share structural features with model conditions (Figure 7). These cases were selected post-hoc as contrasting archetypes; this is not a prospective validation test.
 
-![Figure 7: Historical analogues — model predictions vs Nauru (collapse) and Gulf states (stability)](figures/historical_analogues.png) The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a natural experiment in UBI-without-purpose. The result was social dissolution: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's baseline condition at PL=0.95 predicts meaning=0.330, sink=0.790, collapse=100% — consistent with Nauru's near-total social dysfunction despite material sufficiency.
+![Figure 7: Historical analogues — model predictions vs Nauru (collapse) and Gulf states (stability)](figures/historical_analogues.png) The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a case that shares structural features with the UBI-without-purpose scenario. The period was associated with severe social dysfunction: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's baseline condition at PL=0.95 predicts meaning=0.330, sink=0.790, collapse=100% — broadly consistent with Nauru's severe social dysfunction despite material sufficiency.
 
-Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). The key structural difference: collectivist social institutions (tribal structures, Islamic community norms). Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
+Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). One notable difference between the cases is the role of collectivist social institutions (tribal structures, Islamic community norms), though multiple confounds preclude causal attribution. Our model predicts collectivism=0.8 + UBI at PL=0.80 → meaning=0.476, sink=0.323, collapse=0% — broadly consistent with the Gulf pattern of stability with some disengagement but no systemic collapse.
 
-The collectivism variable is associated with sink severity differences: at PL=0.95 with UBI, sink is 0.549 at collectivism=0.0 (Nauru-like) vs. 0.462 at collectivism=0.8 (Gulf-like). While both avoid outright collapse with UBI, higher collectivism produces meaningfully lower distress. The model was not fitted to either case; this divergence emerges from the theoretical framework alone. This comparison is illustrative only; both cases were selected post-hoc and differ on numerous dimensions beyond collectivism. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional pattern is consistent with the model's predictions, though this post-hoc comparison cannot constitute evidence.
+The collectivism variable is associated with sink severity differences: at PL=0.95 with UBI, sink is 0.549 at collectivism=0.0 (Nauru-like) vs. 0.462 at collectivism=0.8 (Gulf-like). While both avoid outright collapse with UBI, higher collectivism is associated in the model with lower distress. The model was not fitted to either case; this divergence is illustrative of the framework's mechanisms rather than evidence that collectivism explains the historical contrast. This comparison is illustrative only; both cases were selected post-hoc and differ on numerous dimensions beyond collectivism. We emphasize that this comparison is post-hoc pattern matching against two cases selected to differ maximally; it does not constitute formal empirical validation. While subject to extensive confounding (geography, colonial history, population size, resource type), the directional pattern is consistent with the model's predictions, though this post-hoc comparison cannot constitute evidence.
 
 ---
 
@@ -342,7 +344,7 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 **Virtual infrastructure investment:** Virtual worlds show the largest marginal benefit when added to other interventions. Investment in high-quality virtual role systems—games, creative platforms, virtual civic engagement—may be as important as physical infrastructure.
 
-**Transition management:** Our controlled speed comparison reveals that rapid and gradual automation converge to the same equilibrium — suggesting that *what interventions are in place* matters more than *how fast* automation occurs. The policy priority is ensuring adequate interventions exist, rather than managing automation speed per se.
+**Transition management:** Our controlled speed comparison shows similar late-run aggregate outcomes for rapid and gradual automation once the same target displacement is reached. This conclusion is conditional on the equilibrium ABM design, which does not model persistent individual displacement, scarring, or retraining trajectories; a persistent-displacement model is needed before drawing operational guidance about transition speed management. Within that framing, intervention provision matters more than automation speed in shaping the model's late-run state.
 
 **Cultural tailoring:** Collectivism effects suggest UBI programs should be designed differently in different cultural contexts. Individualist societies may need stronger supplementary interventions.
 
@@ -363,6 +365,8 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
 **Threshold-dependent results:** Many headline findings occur near the threshold zone (80-90% displacement) where small parameter changes produce large outcome shifts. While characteristic of complex systems, this sensitivity means our quantitative predictions are unreliable — the qualitative direction matters, but specific percentages should be treated with extreme caution.
+
+Sensitivity analysis in this paper is local (one-at-a-time, ±20%), not global; parameter interaction effects across the joint space have not been assessed with Sobol indices or PRCC, and findings near the threshold regime may be sensitive to combinations not tested.
 
 **Model simplifications:**
 - Static network structure (real networks rewire during disruption)
@@ -503,7 +507,7 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 **Figure 2.** Virtual world quality effect on sink index at 80% and 95% post-labor. Marginal benefit is concave, with largest gains between quality 0.0 and 0.6.
 ![Figure 2](figures/sweep3_virtual_world.png)
 
-**Figure 3.** Speed comparison — rapid vs gradual automation. Both paths converge to the same equilibrium; speed is associated with transition duration but not with the final equilibrium state.
+**Figure 3.** Speed comparison — rapid vs gradual automation. Within the equilibrium ABM, both paths show similar late-run outcomes once target displacement is reached; speed is associated with transition duration rather than late-run aggregate state.
 ![Figure 3](figures/sweep2_automation_speed.png)
 
 **Figure 4.** UBI × collectivism interaction at 95% post-labor. Under UBI, sink index is 0.549 in individualist societies (collectivism=0.0) and decreases to 0.443 in highly collectivist ones (collectivism=1.0), with 0% collapse across all collectivism levels.
