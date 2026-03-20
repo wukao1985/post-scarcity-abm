@@ -14,7 +14,7 @@ What equilibrium states does a society reach when large fractions of the populat
 
 2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
 
-3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink (~0.46 vs ~0.52; exact matched-comparison values in §3.5); when equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575; all values model-dependent under default parameterization). Neither intervention dominates unconditionally.
+3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink than UBI (~0.46 vs ~0.52). When interventions are equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575). Both comparisons are conditional on this stylized parameterization; neither intervention dominates unconditionally.
 
 4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
 
