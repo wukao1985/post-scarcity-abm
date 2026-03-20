@@ -1,0 +1,46 @@
+## Task: Fix Paper Draft — v16 Review Issues
+
+Read `reports/adversarial_review_v16.md` first — it lists all issues to fix in `reports/paper_draft.md`.
+
+### MAJOR fix (most important):
+
+**RQ3 over-broad speed claim** — narrow the transition-speed interpretation throughout.
+
+Find and fix these specific passages in `reports/paper_draft.md`:
+
+1. Abstract Finding 5: "the displacement level and intervention regime, not the transition path, determine the final state"
+   → Change to: "within this equilibrium ABM, once target displacement is reached, late-run aggregate outcomes are similar across fast and slow ramps; whether this generalises to persistent-displacement models or real managed transitions requires further work"
+
+2. Results §3.3 (similar wording) → narrow to "within this model's equilibrium framing"
+
+3. Discussion §4.2 (policy claim about automation speed management) → add explicit caveat: "This conclusion is conditional on the equilibrium ABM design, which does not model persistent individual displacement, scarring, or retraining trajectories; a persistent-displacement model is needed before drawing operational guidance about transition speed management"
+
+### MINOR fixes:
+
+**MINOR 1 — Add local-only sensitivity limitation**
+In §4.3 (Limitations), add one sentence: "Sensitivity analysis in this paper is local (one-at-a-time, ±20%), not global; parameter interaction effects across the joint space have not been assessed with Sobol indices or PRCC, and findings near the threshold regime may be sensitive to combinations not tested."
+
+**MINOR 2 — Fix Abstract uncertainty notation**
+Abstract Finding 3: change `~0.46 ± 0.02 vs ~0.52 ± 0.02` to match what §3.5 actually reports (`0.460 ± 0.003 vs 0.516 ± 0.003`), OR remove the ± notation from the Abstract and just use `~0.46 vs ~0.52` with a note that exact values are in §3.5.
+Also fix §3.2 "UBI clearly dominates virtual-only (sink 0.542 vs 0.514)" — the ordering of numbers vs the "dominates" claim is confusing (lower sink is better). Rewrite to make the direction explicit: "UBI produces lower sink than virtual-only (0.514 vs 0.542)"
+
+**MINOR 3 — Soften historical validation language**
+In the Nauru/Gulf historical comparison section:
+- "natural experiment in UBI-without-purpose" → "a case that shares structural features with the UBI-without-purpose scenario"
+- "The key structural difference: collectivist social institutions" → "One notable difference between the cases is the role of collectivist social institutions, though multiple confounds preclude causal attribution"
+- Any other sentences that sound causal/definitive in that section → soften to "consistent with", "may reflect", "illustrative of"
+
+**MINOR 4 — Complete Abstract model-dependence caveat**
+After the last finding in the Abstract, add one compact sentence:
+"All reported numerical values and comparative rankings are conditional on this stylized parameterization; the main contribution is directional and mechanistic rather than predictive."
+
+### Acceptance check before commit:
+- [ ] RQ3/speed claim narrowed in Abstract, Results §3.3, Discussion §4.2
+- [ ] Sensitivity limitation sentence added to §4.3
+- [ ] Abstract ±0.02 fixed; §3.2 "dominates" direction clarified
+- [ ] Historical validation softened (Nauru/Gulf section)
+- [ ] Model-dependence catch-all sentence added to Abstract
+- [ ] No new numerical errors introduced
+- [ ] No new causal language introduced
+
+git commit: "paper: fix v16 review issues — narrow RQ3, sensitivity caveat, abstract cleanup"

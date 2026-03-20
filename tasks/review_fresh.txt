@@ -1,0 +1,74 @@
+## Task: Fresh Adversarial Review of Paper 1
+
+You are a senior reviewer for JASSS (Journal of Artificial Societies and Social Simulation). Your job is to rigorously evaluate this paper for publication readiness.
+
+### Files to read (in order):
+1. `reports/paper_draft.md` — the full paper draft (primary target)
+2. `reports/adversarial_review_v15.md` — last review (v15, 0 FATAL 0 MAJOR 4 MINOR, "Accept with Minor Revision")
+3. `reports/calibration_diagnosis.md` — recent calibration work
+4. `reports/sensitivity_decay_fullscale.md` — recent sensitivity analysis
+5. `reports/codex_verification_decay.md` — recent verification
+6. `reports/ablation_analysis.md` — weight ablation
+7. `reports/ODD_protocol.md` — ODD protocol
+8. `reports/methods_appendix.md` — methods appendix
+
+### What to check:
+
+**Part 1: Were v15's 4 MINOR issues fixed?**
+For each of the 4 MINOR issues in v15, check whether the paper_draft.md now addresses them.
+
+**Part 2: Fresh full review of paper_draft.md**
+Apply the 32-item JASSS review checklist (infer from context). Pay special attention to:
+
+1. **Displacement modeling** — is post_labor_fraction implemented as persistent individual displacement or random re-sampling each step? If re-sampling, is this acknowledged as a limitation? Is the equilibrium interpretation still valid?
+
+2. **Sensitivity analysis completeness** — does the paper have global sensitivity analysis (Sobol/PRCC) or only local/one-at-a-time? If only local, is this flagged as a limitation?
+
+3. **Aggressor validation gap** — the model shows ~2% aggressors vs Calhoun's 10-20%. Is this handled rigorously or just hand-waved?
+
+4. **Number consistency** — spot-check 5+ specific numbers between Abstract, Results tables, and figure captions. Are they consistent?
+
+5. **Causal language** — check for inappropriate "causes/drives/leads to" when the model can only show correlation/association.
+
+6. **Intervention comparison validity** — are UBI vs Roles compared at matched strength? Is this clearly stated?
+
+7. **Historical validation** — is the comparison to Nauru/Gulf cases appropriately labeled as "illustrative only" with no predictive claims?
+
+8. **ODD completeness** — does the ODD protocol cover all 7 elements?
+
+9. **What's new since v15?** — do calibration_diagnosis, sensitivity_decay_fullscale, codex_verification_decay introduce any new findings or problems that need to be reflected in paper_draft.md?
+
+**Part 3: Submission readiness assessment**
+- Is this ready to submit to JASSS as-is?
+- What are the blocking issues (FATAL/MAJOR) if any?
+- What are the polish items (MINOR)?
+- Estimated time to address all issues and submit?
+
+### Output
+Write a comprehensive review to `reports/adversarial_review_v16.md`:
+
+Format:
+```
+# JASSS Adversarial Review v16
+**Verdict:** [FATAL/MAJOR count]
+**Recommendation:** [Submit / Major Revision / Minor Revision]
+
+## v15 Issue Tracking
+[for each v15 minor: resolved / partially resolved / still open]
+
+## New Issues Found
+
+### FATAL (must fix before submission)
+...
+
+### MAJOR (should fix, affects scientific validity)
+...
+
+### MINOR (text fixes)
+...
+
+## Submission Readiness
+[Direct assessment]
+```
+
+git commit: "review: adversarial review v16"

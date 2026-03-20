@@ -1,0 +1,18 @@
+## Task: Final Fix — Abstract Finding 3 wording
+
+Read `reports/adversarial_review_v17.md` first.
+
+### Only issue remaining (MINOR):
+
+In `reports/paper_draft.md`, Abstract Finding 3 currently compresses two separate comparisons into one sentence and ends with a caveat that only applies to the first comparison:
+
+The problem: `0.516 vs 0.575` is the **matched-strength** comparison (not default parameterization), but the current sentence implies the caveat "all values model-dependent under default parameterization" covers both comparisons, which is misleading.
+
+Fix: Split into two clear sentences:
+- Sentence 1: Default-parameterization comparison (roles_strength=0.35, ubi_strength=0.30) → roles shows lower sink (~0.46) vs UBI (~0.52); add "under default parameterization"
+- Sentence 2: Matched-strength comparison → when equalized, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575); add "when interventions are equalized on restoration strength"
+- Keep the model-dependence caveat but make clear it applies to both
+
+After fixing, verify the surrounding Abstract sentences still flow naturally.
+
+git commit: "paper: fix final Abstract Finding 3 wording (v17 minor)"

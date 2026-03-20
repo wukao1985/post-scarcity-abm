@@ -41,7 +41,7 @@ def run_single(decay, post_labor_fraction=0.95, intervention=None, steps=80, see
     }
 
 
-def run_sweep(decay_values, n_runs=50, post_labor_fraction=0.95, intervention=None):
+def run_sweep(decay_values, n_runs=150, post_labor_fraction=0.95, intervention=None):
     """Run sensitivity sweep over decay values."""
     results = []
 
@@ -78,7 +78,7 @@ def run_sweep(decay_values, n_runs=50, post_labor_fraction=0.95, intervention=No
 def main():
     # Configuration
     decay_values = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30]
-    n_runs = 50
+    n_runs = 150
     post_labor_fraction = 0.95
     intervention = {"ubi": 0.7}
 
