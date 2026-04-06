@@ -1,5 +1,5 @@
 """
-Sweep runners for V3 experiments.
+Sweep runners for V5 experiments.
 """
 import sys
 import os
@@ -334,7 +334,7 @@ def run_sweep_5(n_runs=50, output_dir="data/simulation"):
 def run_sweep_6(n_runs=150, output_dir="data/simulation"):
     """
     Sweep 6: Full 10-Scenario Grid at 0.5/0.8/0.95
-    All 10 V3 scenarios x 3 post-labor levels x 150 runs
+    All 10 V5 scenarios x 3 post-labor levels x 150 runs
     """
     os.makedirs(output_dir, exist_ok=True)
 

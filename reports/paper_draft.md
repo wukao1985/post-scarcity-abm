@@ -8,7 +8,11 @@
 
 ## Abstract
 
-What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model integrating Self-Determination Theory with social contagion dynamics to characterize population-level equilibria under sustained role displacement. Across six parameter sweeps and two ablation studies (18,500 primary runs), we find: (1) a steep, policy-sensitive threshold zone in the 80-90% displacement range under baseline conditions, with collapse probability rising from 2% at 80% post-labor to 86% at 90% and 100% at 95%; (2) UBI alone is insufficient at extreme displacement, yielding sink index 0.743 and 87.3% collapse probability at 95% post-labor in the full-grid sweep, even though the mean collapsed agent fraction is only 0.325; (3) role substitution is more protective than UBI under both the default and matched-strength comparisons, with sink 0.472 for `roles`, 0.582 for `roles_matched`, and 0.746 for `ubi_pure`; (4) multi-pillar bundles dominate at extreme displacement, with `all_bundle` reducing sink to 0.115 and eliminating collapse at 95% post-labor; and (5) collectivism moderates UBI-associated distress, lowering collapse from 97% to 31% as collectivism rises from 0.0 to 1.0 at 95% post-labor, while a separate exposure-time-controlled speed comparison shows that rapid and gradual automation differ sharply at t+10 after target displacement but nearly converge by t+40. All numerical values are conditional on this stylized parameterization and are intended as mechanistic rather than predictive statements. Aggressive behavior remains rare in the reported high-displacement conditions (1.6-3.3%), so the reported dynamics are withdrawal-dominated rather than aggression-dominated.
+What equilibrium states does a society reach when large fractions of the population lose productive roles, even if material needs can still be met? This question matters because work is not only a source of income: it also structures identity, competence, belonging, and purpose, so role displacement can produce social distress even when poverty is buffered.
+
+We present a stylized agent-based model that combines Self-Determination Theory with social contagion dynamics to study long-run social states under sustained role displacement. Across multiple sweeps and ablation studies, the model points to a policy-sensitive threshold at high displacement, shows that income support alone is less protective than interventions that restore meaningful participation, finds that virtual worlds and collectivist buffering help but do not fully replace real roles on their own, and indicates that multi-pillar policy bundles perform best under extreme displacement. A matched-time speed comparison further suggests that automation speed changes the transition path more than the late-run equilibrium in this model.
+
+These results are mechanistic rather than predictive: they are conditional on a stylized parameterization, they underrepresent aggression relative to the historical behavioral-sink literature, and they do not model persistent individual scarring. Even with those limits, the model contributes a clearer distinction between economic buffering and meaning restoration, showing why post-labor policy may need to preserve socially valued participation rather than rely on income replacement alone.
 
 ---
 
@@ -24,10 +28,10 @@ We note that aggressive behavior remains a validation gap: in the reported high-
 
 ### 1.2 The Gap in Current Understanding
 
-Existing literature on AI and employment focuses primarily on:
+Existing literature on artificial intelligence (AI) and employment focuses primarily on:
 - **Economic impacts:** unemployment rates, wage effects, inequality (Autor, 2015; Acemoglu & Restrepo, 2018)
 - **Technical feasibility:** which tasks can be automated (Felten et al., 2021)
-- **Policy responses:** UBI, retraining programs, taxation (Standing, 2017)
+- **Policy responses:** universal basic income (UBI), retraining programs, taxation (Standing, 2017)
 
 What remains underexplored is the **psychological and social impact of role displacement independent of income loss**. As Rosso et al. (2010) synthesize, the meaning of work spans multiple dimensions — purpose, belonging, self-efficacy, transcendence — that are not addressed by income replacement alone. A displaced population receiving UBI may avoid poverty but still experience what Deci & Ryan (2000) term "motivation decay" — the erosion of autonomy, competence, and relatedness that constitute psychological well-being.
 
@@ -51,7 +55,7 @@ We integrate three theoretical strands:
 
 **Self-Determination Theory (SDT):** Deci & Ryan's (2000) framework identifies three core psychological needs: autonomy (self-direction), competence (mastery), and relatedness (social connection). Economic roles typically satisfy all three; displacement threatens all three.
 
-**Social Contagion Theory:** Behavioral sink spreads through social networks via network exposure — the proportion of an agent's neighbors in collapsed states increases the agent's own collapse risk (Centola & Macy, 2007; Christakis & Fowler, 2007). Our model implements contagion as a linear exposure mechanism where the fraction of neighbors in sink states (aggressor, withdrawn, collapsed) exerts downward pressure on psychological state, scaled by `contagion_strength`. This is a simple exposure model, without threshold or reinforcement requirements from multiple contacts.
+**Social Contagion Theory:** Behavioral sink spreads through social networks via network exposure — the proportion of an agent's neighbors in collapsed states increases the agent's own collapse risk (Centola & Macy, 2007; Christakis & Fowler, 2007). Our model implements contagion as a linear exposure mechanism where the fraction of neighbors in sink states (aggressor, withdrawn, collapsed) exerts downward pressure on psychological state, scaled by the contagion-strength parameter. This is a simple exposure model, without threshold or reinforcement requirements from multiple contacts.
 
 **Institutional Capacity:** Following Acemoglu & Robinson (2012), we model interventions as institutional capacities—policy choices that shape how societies respond to technological shocks.
 
@@ -61,20 +65,20 @@ We integrate three theoretical strands:
 
 ### 2.1 Model Overview
 
-We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021), following ODD protocol conventions (Grimm et al., 2020), with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to characterize equilibrium states, not a forecast of specific technological timelines or displacement levels.** The model (V5) extends prior work with a key structural distinction: UBI provides `income_support` (economic security, fairness buffer) without restoring role meaning, while role substitution provides `role_access` (meaning-generating participation) which drives autonomy, competence, relatedness, status, and contribution. This separation makes the UBI-vs-roles comparison a test of structural mechanism rather than parameter difference.
+We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021), following the Overview, Design concepts, and Details (ODD) protocol conventions (Grimm et al., 2020), with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to characterize equilibrium states, not a forecast of specific technological timelines or displacement levels.** The model (V5) extends prior work with a key structural distinction: UBI provides `income_support`, meaning material security plus a fairness buffer, without restoring role meaning, while role substitution provides `role_access`, meaning access to socially recognized and meaning-generating participation, which drives autonomy, competence, relatedness, status, and contribution. This separation makes the UBI-vs-roles comparison a test of structural mechanism rather than parameter difference.
 
-**Modeling displacement as a ramp-to-target process.** In this model, `post_labor_fraction` specifies a target displacement level that the population reaches via a gradual ramp governed by `automation_speed` (default: 0.03/step, reaching 80% by ~step 27). At each step after the ramp, the current displacement fraction is drawn from the agent pool — representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory — appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. The ramp-to-target mechanism means early-timestep outcomes reflect partial displacement rather than the full target level. Persistent individual displacement is a natural extension for future work.
+**Modeling displacement as a ramp-to-target process.** In this model, `post_labor_fraction` is the target share of the population whose usual productive roles have been displaced. The population reaches that target via a gradual ramp governed by `automation_speed` (default: 0.03/step, reaching 80% by ~step 27). At each step after the ramp, the current displacement fraction is drawn from the agent pool — representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory — appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. The ramp-to-target mechanism means early-timestep outcomes reflect partial displacement rather than the full target level. Persistent individual displacement is a natural extension for future work.
 
 **Agent state variables:**
 - Psychological: autonomy, competence, relatedness, status (0-1 scales)
-- Role: role_access (meaning-generating participation), income_support (economic security), virtual_role (virtual world engagement)
+- Role: `role_access` (access to meaningful social roles), `income_support` (material support that protects against deprivation), `virtual_role` (virtual world engagement)
 - Behavioral: archetype (productive, beautiful_one, aggressor, withdrawn, collapsed)
 
 **Model parameters:**
-- post_labor_fraction: proportion of population displaced (0-0.95)
-- automation_speed: rate of displacement per step (0.006–0.20 for speed comparison; 0.03 baseline for all other sweeps)
-- virtual_world_quality: competence/autonomy provided by virtual roles (0-1)
-- collectivism_index: baseline relatedness and social buffering (0-1)
+- post-labor fraction (PL; implemented as `post_labor_fraction`): target proportion of population displaced from productive roles (0-0.95)
+- automation speed (implemented as `automation_speed`): rate of displacement per step (0.006–0.20 for speed comparison; 0.03 baseline for all other sweeps)
+- virtual-world quality (implemented as `virtual_world_quality`): competence/autonomy provided by virtual roles (0-1)
+- collectivism index (implemented as `collectivism_index`): baseline relatedness and social buffering (0-1)
 - Interventions: UBI, role_substitution, fairness_redistribution
 
 ### 2.2 Psychological Update Mechanism
@@ -99,7 +103,7 @@ meaning = 0.25×autonomy + 0.25×competence + 0.25×relatedness + 0.10×status
           + 0.15×contribution − 0.08×contagion + 0.08×resilience
 ```
 
-where contribution = 0.8×role_access + 0.1×virtual_engagement, and contagion is the neighborhood sink exposure scaled by contagion_strength. Here `virtual_engagement` equals `virtual_role` only when engagement exceeds a minimum threshold (`virtual_role > 0.1`); otherwise the virtual channel contributes nothing. The direct contagion and resilience terms capture social network effects and individual buffering beyond the SDT components. Note that `income_support` (UBI) does not appear in the meaning function and does not restore role access; it affects the model only through status gap (inequality) and fairness buffering. This structural separation ensures UBI provides economic security without restoring role meaning, matching the paper's theoretical claim.
+where contribution = 0.8×role_access + 0.1×virtual_engagement, and contagion is the neighborhood sink exposure scaled by contagion strength. Here virtual engagement equals virtual-role engagement only when engagement exceeds a minimum threshold (`virtual_role > 0.1`); otherwise the virtual channel contributes nothing. The direct contagion and resilience terms capture social network effects and individual buffering beyond the SDT components. Note that `income_support` (UBI) does not appear in the meaning function and does not restore role access; it affects the model only through status gap (inequality) and fairness buffering. This structural separation ensures UBI provides economic security without restoring role meaning, matching the paper's theoretical claim.
 
 **Weight justification:**
 
@@ -150,21 +154,21 @@ We conducted six parameter sweeps plus two primary ablation studies, totaling 18
 
 In addition, §3.3 draws on a separate exposure-time-controlled speed comparison comprising 300 simulations (50 runs × 3 scenarios × 2 speeds). That supplementary dataset is reported separately and is not included in the 18,500-run primary total above.
 
-**Intervention structure.** In our implementation, UBI and role substitution target distinct channels. UBI provides `income_support` (economic security, fairness buffer) without restoring role access; it does not enter the role-driven meaning channel. Role substitution provides `role_access` (meaning-generating participation), which directly affects autonomy, competence, relatedness, status, and contribution. The UBI scenario includes an implicit fairness boost (reflecting UBI's social legitimacy signal), and role programs include a competence boost. These are structural differences, not parameter differences: the roles-vs-UBI comparison tests whether meaning channels or economic channels matter more for preventing behavioral sink.
+**Intervention structure.** In our implementation, UBI and role substitution target distinct channels. UBI provides `income_support` (economic security plus a fairness buffer) without restoring role access; it does not enter the role-driven meaning channel. Role substitution provides `role_access` (meaning-generating participation), which directly affects autonomy, competence, relatedness, status, and contribution. The UBI scenario includes an implicit fairness boost (reflecting UBI's social legitimacy signal), and role programs include a competence boost. These are structural differences, not parameter differences: the roles-vs-UBI comparison tests whether meaning channels or economic channels matter more for preventing behavioral sink.
 
 **Validation:** V5 reproduces the directional pattern of prior findings (threshold effect in the 80-90% zone under baseline conditions), with the critical structural change that UBI no longer provides role access. The V5 separation of UBI from roles is the most significant model change, revealing that earlier versions overstated UBI's effectiveness. Note that the model was calibrated to approximate prior output patterns; this comparison validates implementation consistency, not independent replication.
 
-**Horizon robustness.** We verified that outcomes are near-stationary by step 80: across all 9 tested scenario × displacement conditions, the absolute change in mean sink_index between T=80 and T=120 ranges from 0.0009 to 0.0092, and all 9 conditions are flagged as converged in `convergence_summary.csv`. We therefore use T=80 as a reliable approximation of the near-equilibrium state. Full convergence table in Supplementary Methods.
+**Horizon robustness.** We verified that outcomes are near-stationary by step 80: across all 9 tested scenario × displacement conditions, the absolute change in mean `sink_index` (the share of agents in aggressor, withdrawn, or collapsed states) between T=80 and T=120 ranges from 0.0009 to 0.0092, the maximum absolute change between T=80 and T=240 is 0.0060, and the largest intermediate change is 0.0144 between T=120 and T=160. We therefore use T=80 as a reliable near-equilibrium approximation rather than a claim of full numerical convergence through T=240. Full convergence table in Supplementary Methods.
 
 ### 2.5 Sensitivity Analysis
 
-We conducted one-at-a-time perturbation of three key internal parameters (noise σ, decay rate, contagion strength) by ±20%, with 50 runs per condition at PL=0.80 and PL=0.95 baseline. Core findings are directionally consistent across tested parameter ranges: at PL=0.80, collapse probability ranges from 2% to 12%; at PL=0.95, it ranges from 92% to 100%. The largest PL=0.80 sink shift occurs under contagion-strength perturbation, where mean sink_index ranges from 0.605 at -20% to 0.657 at +20%. Full sensitivity results are reported in the Methods Appendix.
+We conducted one-at-a-time perturbation of three key internal parameters (noise σ, decay rate, contagion strength) by ±20%, with 50 runs per condition at PL=0.80 and PL=0.95 baseline. Core findings are directionally consistent across tested parameter ranges: at PL=0.80, collapse probability ranges from 2% to 12%; at PL=0.95, it ranges from 92% to 100%. The largest PL=0.80 sink shift occurs under contagion-strength perturbation, where mean `sink_index` ranges from 0.605 at -20% to 0.657 at +20%. Full sensitivity results are reported in the Methods Appendix.
 
 ### 2.6 Analysis
 
 Primary outcomes:
-- **Meaning index:** population mean meaning
-- **Sink index:** proportion in aggressor/withdrawn/collapsed states
+- **Meaning index (`meaning_index`):** the population-average meaning score, or the average sense of purpose and psychological functioning across agents
+- **Sink index (`sink_index`):** the share of the population in aggressor, withdrawn, or collapsed states, which we use as the broad distress measure
 - **Collapse probability:** percentage of runs with sink_index > 0.7 at final step
 
 Secondary outcomes:
@@ -178,58 +182,125 @@ Secondary outcomes:
 
 ### 3.1 The Malleable Threshold Zone (RQ1)
 
-Under baseline conditions (no interventions, gradual automation), the model exhibits a steep threshold effect in the 80-90% post-labor zone (Figure 1). In `sweep1_results.csv`, baseline collapse probability rises from 2% at 80% post-labor (meaning 0.382, sink 0.629) to 86% at 90% (meaning 0.348, sink 0.736) and 100% at 95% (meaning 0.330, sink 0.788).
+The main pattern is straightforward: distress stays much lower through moderate displacement, then rises sharply once most productive roles are gone, and policy can move that danger zone (Figure 1).
+
+| Baseline condition | Meaning index | Sink index | Collapse probability |
+|--------------------|---------------|------------|----------------------|
+| 80% post-labor | 0.382 | 0.629 | 2% |
+| 90% post-labor | 0.348 | 0.736 | 86% |
+| 95% post-labor | 0.330 | 0.788 | 100% |
+
+In plain language, the model does not point to one fixed cliff; it points to a high-risk zone where small institutional differences can shift the long-run social state.
 
 ![Figure 1: Threshold effect — sink index and collapse probability across post-labor levels under baseline conditions](figures/sweep1_phase_transition.png) The transition zone is therefore broad rather than knife-edged, and it is highly policy-sensitive.
 
-**Policy sensitivity within the threshold zone.** In the same sweep, `full_bundle` remains at 0% collapse through 95% post-labor and averages sink 0.301 at PL=0.95, while `ubi_only` reaches 32% collapse at PL=0.90 and 92% at PL=0.95. The threshold is therefore not fixed; it moves with the intervention mix.
+**Policy sensitivity within the threshold zone.**
 
-**Virtual worlds extend the threshold upward.** In `sweep3_virtual_world.csv`, baseline PL=0.95 collapse probability falls from 100% at virtual-world quality 0.0 to 59% at 0.4, 8% at 0.6, and 0% at 0.8 and 1.0; the corresponding mean sink_index declines from 0.793 to 0.715, 0.659, 0.597, and 0.520.
+| Scenario | Key threshold result |
+|----------|----------------------|
+| Full bundle | 0% collapse through 95% post-labor; sink 0.301 at PL=0.95 |
+| Income support only | 32% collapse at PL=0.90; 92% collapse at PL=0.95 |
 
-**Combined interventions push the threshold beyond the tested range.** In `sweep6_full_grid.csv`, `all_bundle` achieves 0% collapse with sink 0.115 at PL=0.95.
+In plain language, the threshold is not fixed by technology alone; it moves when the policy mix changes.
 
-**Run-level collapse is not the same metric as `collapsed_frac`.** In the PL=0.95 full-grid conditions, `ubi_only` averages sink 0.743, `collapsed_frac` 0.325, and collapse probability 87.3% because collapse is defined in the code as final `sink_index > 0.7`. By contrast, `roles` averages sink 0.472, `collapsed_frac` 0.122, and 0% collapse probability. This distinction matters throughout the paper: mean collapsed-agent share and run-level collapse probability move together, but they are not interchangeable statistics.
+**Virtual worlds extend the threshold upward.**
+
+| Baseline at PL=0.95 | Collapse probability | Sink index |
+|---------------------|----------------------|------------|
+| Virtual-world quality 0.0 | 100% | 0.793 |
+| Virtual-world quality 0.4 | 59% | 0.715 |
+| Virtual-world quality 0.6 | 8% | 0.659 |
+| Virtual-world quality 0.8 | 0% | 0.597 |
+| Virtual-world quality 1.0 | 0% | 0.520 |
+
+In plain language, better virtual environments can buy room above the threshold, but they do not erase distress on their own.
+
+**Combined interventions push the threshold beyond the tested range.** In `sweep6_full_grid.csv`, the all-bundle scenario achieves 0% collapse with sink 0.115 at PL=0.95.
+
+In plain language, combining multiple supports is what fully moves the danger zone beyond the paper's highest tested displacement level.
+
+**Run-level collapse is not the same metric as the collapsed-agent share.** Here the collapsed-agent share means the share of agents in the fully collapsed state only, whereas collapse probability is the share of runs whose final sink index exceeds 0.7.
+
+| PL=0.95 full-grid condition | Sink index | Collapsed-agent share | Collapse probability |
+|-----------------------------|------------|-----------------------|----------------------|
+| Income support only | 0.743 | 0.325 | 87.3% |
+| Roles only | 0.472 | 0.122 | 0% |
+
+In plain language, a society can have a high run-level collapse risk even when the fully collapsed subgroup is much smaller, because the broader distress measure also counts withdrawal and aggression.
 
 ### 3.2 Virtual Worlds as Substitutes (RQ2)
 
-Virtual worlds provide significant and graded protection (Figure 2).
+Virtual worlds help, but they act as partial substitutes rather than full replacements for real social roles (Figure 2).
 
 ![Figure 2: Virtual world quality effect on sink index at 80% and 95% post-labor](figures/sweep3_virtual_world.png)
 
-At 95% post-labor (baseline, no UBI):
-- Zero virtual quality: 100% collapse, sink 0.793
-- Moderate quality (0.6): 8% collapse, sink 0.659
-- Maximum quality (1.0): 0% collapse, sink 0.520
+| Condition at PL=0.95 | Virtual-world quality | Collapse probability | Sink index |
+|----------------------|-----------------------|----------------------|------------|
+| Baseline, no UBI | 0.0 | 100% | 0.793 |
+| Baseline, no UBI | 0.6 | 8% | 0.659 |
+| Baseline, no UBI | 1.0 | 0% | 0.520 |
+| Income support only | 0.0 | 90% | 0.746 |
+| Income support only | 0.6 | 0% | 0.598 |
+| Income support only | 0.8 | 0% | 0.533 |
 
-At 95% post-labor (with UBI):
-- Zero virtual quality: 90% collapse, sink 0.746
-- Moderate quality (0.6): 0% collapse, sink 0.598
-- High quality (0.8): 0% collapse, sink 0.533
+In plain language, virtual worlds reduce harm in both conditions, but they work best when they are not the only support people receive.
 
-The marginal benefit of virtual quality is concave. In the baseline PL=0.95 condition, the largest collapse-probability drop occurs between quality 0.2 and 0.6 (97% to 8%), and in the `ubi_only` PL=0.95 condition collapse falls from 90% at quality 0.0 to 10% at 0.4 and 0% at 0.6. Even so, maximum virtual quality leaves substantial residual sink under baseline conditions (0.520 at quality 1.0), indicating partial rather than full substitution.
+The marginal benefit of virtual quality is concave.
 
-The full-grid sweep shows the same ordering at PL=0.95: `UBI+virtual` averages sink 0.535 with 0% collapse, while `roles+virtual` reaches sink 0.259 with 0% collapse. Virtual worlds therefore help most when paired with an intervention that also restores meaning-generating participation.
+| Condition | Quality shift | Collapse change | Residual sink at highest reported quality |
+|-----------|---------------|-----------------|-------------------------------------------|
+| Baseline at PL=0.95 | 0.2 to 0.6 | 97% to 8% | 0.520 at quality 1.0 |
+| Income support only at PL=0.95 | 0.0 to 0.4 to 0.6 | 90% to 10% to 0% | 0.533 at quality 0.8 |
 
-**Sensitivity to contribution weights.** The ceiling is assumption-sensitive, but the ranking is stable in `ablation_weights.csv`. At 3:1, `virtual_only` yields sink 0.446 versus 0.749 for `ubi_only`; at the default 8:1 ratio, 0.517 versus 0.747; and at `inf`, 0.584 versus 0.742. `ubi_plus_virtual` remains better than either single intervention at every tested ratio, ranging from sink 0.381 at 3:1 to 0.520 at `inf`.
+In plain language, most of the benefit arrives in the middle of the quality range, but even excellent virtual worlds do not fully recreate what missing real-world roles provide.
+
+The full-grid sweep shows the same ordering at PL=0.95: income support plus virtual worlds averages sink 0.535 with 0% collapse, while roles plus virtual worlds reaches sink 0.259 with 0% collapse. Virtual worlds therefore help most when paired with an intervention that also restores meaning-generating participation.
+
+In plain language, virtual infrastructure is strongest as a supplement to meaningful social roles, not as a substitute for them.
+
+**Sensitivity to contribution weights.** The ceiling is assumption-sensitive, but the ranking is stable in `ablation_weights.csv`.
+
+| Economic:virtual contribution ratio | Virtual only sink | Income support only sink | Income support + virtual sink |
+|-------------------------------------|-------------------|--------------------------|-------------------------------|
+| 3:1 | 0.446 | 0.749 | 0.381 |
+| 8:1 (default) | 0.517 | 0.747 | not separately reported here |
+| `inf` | 0.584 | 0.742 | 0.520 |
+
+In plain language, the exact ceiling depends on how much meaning we assume virtual roles can carry, but the intervention ordering does not flip.
 
 ### 3.3 Speed of Automation (RQ3)
 
-To isolate speed effects from exposure-time confounds, we conducted a controlled comparison (Figure 3) measuring outcomes at matched intervals after each scenario reaches its target displacement (PL=0.95).
+Once outcomes are compared at the same time after the target displacement is reached, automation speed matters much more for the short-run transition than for the later equilibrium (Figure 3).
+
+To isolate speed effects from exposure-time confounds, we conducted a controlled comparison measuring outcomes at matched intervals after each scenario reaches its target displacement (PL=0.95).
 
 ![Figure 3: Speed comparison — rapid vs gradual automation under matched time-since-target conditions in the equilibrium ABM](figures/sweep2_automation_speed.png) Rapid automation (speed = 0.20) reaches the target in 5 steps; gradual automation (speed = 0.95/160 = 0.0059) reaches it in 160 steps.
 
-**Finding within the equilibrium ABM: speed effects are transient rather than structural.** In `speed_clean_comparison.csv`, gradual automation produces substantially higher sink immediately after target displacement, but the gap narrows over time:
+**Finding within the equilibrium ABM: speed effects are transient rather than structural.** In `speed_clean_comparison.csv`, gradual automation produces substantially higher sink immediately after target displacement, but the gap narrows over time.
 
 | Speed | Sink (t+10) | Sink (t+40) |
 |-------|-------------|-------------|
 | Rapid | 0.638 | 0.777 |
 | Gradual | 0.780 | 0.790 |
 
-The same directional pattern appears in the other two scenarios. For `ubi_only`, sink is 0.732 under gradual automation versus 0.594 under rapid automation at t+10, narrowing to 0.739 versus 0.727 by t+40. For `full_bundle`, the difference is smaller throughout: 0.274 versus 0.241 at t+10 and 0.291 versus 0.302 at t+40.
+In plain language, gradual automation looks worse during the transition because the population spends longer accumulating distress before the comparison point catches up.
 
-The original naive comparison at fixed T=80 confounds ramp speed with time spent at the target displacement. Once outcomes are aligned by time-since-target, late-run aggregate states are similar: by t+40, the rapid-gradual sink difference is 0.013 in `baseline`, 0.012 in `ubi_only`, and 0.011 in `full_bundle`.
+The same directional pattern appears in the other two scenarios.
+
+| Scenario | Rapid sink (t+10) | Gradual sink (t+10) | Rapid sink (t+40) | Gradual sink (t+40) |
+|----------|-------------------|---------------------|-------------------|---------------------|
+| Income support only | 0.594 | 0.732 | 0.727 | 0.739 |
+| Full bundle | 0.241 | 0.274 | 0.302 | 0.291 |
+
+| Scenario | Rapid-gradual sink difference at t+40 |
+|----------|---------------------------------------|
+| Baseline | 0.013 |
+| Income support only | 0.012 |
+| Full bundle | 0.011 |
 
 These findings suggest that transition velocity affects transition duration but not late-run aggregate outcomes within this equilibrium model, as confirmed by our horizon robustness analysis; persistent-displacement models are needed before drawing stronger conclusions about managed transition speed or intervention timing.
+
+In plain language, this model says "how fast" matters less for the destination than for how painful the path is.
 
 ### 3.4 Collectivism as Social Buffer (RQ4)
 
@@ -237,89 +308,139 @@ Collectivism reduces distress, but it does not independently eliminate collapse 
 
 ![Figure 4: UBI × collectivism interaction — collapse probability and sink index at 95% post-labor under UBI-only conditions](figures/sweep4_ubi_collectivism_interaction.png)
 
-**Baseline at 95% post-labor (no interventions):**
-- At collectivism 0.0, sink is 0.812 and collapse probability is 100%
-- At collectivism 1.0, sink is 0.743 and collapse probability is 92%
+The plain-language takeaway is that stronger social buffering helps at every level we tested, but it is not a stand-alone fix when displacement becomes extreme.
 
-**UBI at 95% post-labor (collectivism as moderator):**
-- Collectivism 0.0: 97% collapse, sink 0.769
-- Collectivism 0.4: 86% collapse, sink 0.732
-- Collectivism 0.6: 63% collapse, sink 0.713
-- Collectivism 0.8: 47% collapse, sink 0.704
-- Collectivism 1.0: 31% collapse, sink 0.684
+| Condition at PL=0.95 | Collectivism | Collapse probability | Sink index |
+|----------------------|--------------|----------------------|------------|
+| No interventions | 0.0 | 100% | 0.812 |
+| No interventions | 1.0 | 92% | 0.743 |
+| Income support only | 0.0 | 97% | 0.769 |
+| Income support only | 0.4 | 86% | 0.732 |
+| Income support only | 0.6 | 63% | 0.713 |
+| Income support only | 0.8 | 47% | 0.704 |
+| Income support only | 1.0 | 31% | 0.684 |
 
-The collectivism sweep therefore reveals a continuous dose-response relationship: higher collectivism is associated with lower sink and lower collapse probability under both baseline and `ubi_only` conditions.
+The collectivism sweep therefore reveals a continuous dose-response relationship: higher collectivism is associated with lower sink and lower collapse probability under both baseline and income-support-only conditions.
 
-The effect is a moderator rather than a threshold switch. In `ubi_only` at PL=0.80, the same increase from collectivism 0.0 to 1.0 lowers sink from 0.600 to 0.511 while collapse remains at 0% throughout, showing that collectivism is more effective below the extreme-displacement regime than within it.
+In plain language, more social cohesion steadily softens the damage instead of flipping the system from bad to good all at once.
+
+The effect is a moderator rather than a threshold switch.
+
+| Income support only at PL=0.80 | Collectivism | Collapse probability | Sink index |
+|--------------------------------|--------------|----------------------|------------|
+| Lower collectivism | 0.0 | 0% | 0.600 |
+| Higher collectivism | 1.0 | 0% | 0.511 |
+
+In plain language, collectivism works better at containing moderate stress than at rescuing a society that is already deep into the extreme-displacement regime.
 
 This finding suggests cultural context moderates but does not eliminate the severity of post-labor distress. Societies with higher baseline collectivism (East Asian, Nordic) would show lower sink levels at equivalent displacement, but still face substantial collapse risk at extreme automation without role-targeted interventions.
 
+In plain language, the same economic policy can look very different depending on the surrounding social fabric.
+
 ### 3.5 Intervention Combinations at Extreme Automation (RQ5)
 
-At 95% post-labor — the stress test for any post-labor policy — we rank intervention effectiveness by sink index (Figure 5):
+At the highest tested displacement level, combined interventions clearly outperform single-policy approaches (Figure 5).
 
 ![Figure 5: Intervention ranking by sink index at 95% post-labor across 10 scenarios](figures/sweep6_scenario_ranking.png)
 
-**Tier 1 (0% collapse, sink < 0.30):**
-- All bundle (+ virtual + collectivism): 0.115 sink
-- Roles + Virtual: 0.259 sink
+| Tier | Scenario | Sink index | Collapse probability |
+|------|----------|------------|----------------------|
+| 1 | All bundle (+ virtual + collectivism) | 0.115 | 0% |
+| 1 | Roles + virtual | 0.259 | 0% |
+| 2 | Full bundle (UBI + roles + fairness) | 0.300 | 0% |
+| 2 | Roles only | 0.472 | 0% |
+| 3 | UBI + virtual | 0.535 | 0% |
+| 3 | Fairness + collectivism | 0.614 | 0.7% |
+| 3 | Fairness only | 0.661 | 12% |
+| 3 | UBI + collectivism | 0.703 | 51% |
+| 3 | UBI only | 0.743 | 87.3% |
+| 3 | Baseline | 0.790 | 100% |
 
-**Tier 2 (0% collapse, sink 0.30-0.50):**
-- Full bundle (UBI + roles + fairness): 0.300 sink
-- Roles only: 0.472 sink
+In plain language, the ranking is not close: the scenarios that combine meaning, security, and social support are the ones that keep the society functional.
 
-**Tier 3 (partial or high collapse, sink > 0.50):**
-- UBI + Virtual: 0.535 sink, 0% collapse
-- Fairness + Collectivism: 0.614 sink, 0.7% collapse
-- Fairness only: 0.661 sink, 12% collapse
-- UBI + Collectivism: 0.703 sink, 51% collapse
-- UBI only: 0.743 sink, 87.3% collapse
-- Baseline: 0.790 sink, 100% collapse
+| Critical insight | Evidence | So what |
+|------------------|----------|---------|
+| Multi-pillar interventions dominate. | The all-bundle achieves the lowest sink (0.115), and roles plus virtual worlds (0.259) outperform any single intervention. | No single lever repairs the whole problem. |
+| Virtual worlds are the most potent addition to single interventions. | Adding virtual worlds to UBI lowers sink from 0.743 to 0.535 and reduces collapse from 87.3% to 0%. Adding virtual worlds to roles lowers sink from 0.472 to 0.259. | Virtual environments matter most when they strengthen something else rather than stand alone. |
+| Role substitution is structurally superior to UBI at extreme displacement. | At 95%, the roles-only scenario achieves sink 0.472 and 0% collapse probability, versus 0.743 and 87.3% for the income-support-only scenario. The difference persists in `ablation_interventions.csv`, where the matched-strength role condition averages sink 0.582 versus 0.746 for the matched-strength income-only condition. | Restoring meaningful participation protects better than income support alone. |
+| UBI alone performs poorly at extreme displacement. | At PL=0.95 in the full-grid sweep, the income-support-only scenario averages collapsed-agent share 0.325 but crosses the run-level collapse threshold in 87.3% of runs. | Paying people is not the same as giving them a valued place in society. |
+| Fairness redistribution is insufficient alone. | Fairness-only scenarios show 12% collapse and high sink (0.661) because they do not address role absence. | Perceived fairness helps, but it cannot substitute for purpose and participation. |
+| No single intervention eliminates elevated sink. | Even the best single intervention, roles only, leaves nearly half the population in suboptimal states at 95% displacement. | Extreme displacement is a systems problem, so it needs a systems response. |
 
-**Critical insights:**
+**The structural roles-vs-UBI decomposition.**
 
-1. **Multi-pillar interventions dominate:** The all-bundle achieves the lowest sink (0.115), and roles+virtual (0.259) outperforms any single intervention, confirming that addressing multiple psychological needs simultaneously is most effective.
+| Ablation condition | Sink index |
+|--------------------|------------|
+| Income support only | 0.746 |
+| Matched-strength roles | 0.582 |
+| Default roles | 0.471 |
 
-2. **Virtual worlds are the most potent addition to single interventions:** Adding virtual worlds to UBI lowers sink from 0.743 to 0.535 and reduces collapse from 87.3% to 0%. Adding virtual worlds to roles lowers sink from 0.472 to 0.259.
+The default roles configuration therefore improves on the matched-strength version by 0.110 sink points, but even the matched-strength roles condition substantially outperforms the income-only condition.
 
-3. **Role substitution is structurally superior to UBI at extreme displacement:** At 95%, `roles` achieves sink 0.472 and 0% collapse probability, versus 0.743 and 87.3% for `ubi_only`. The difference persists in `ablation_interventions.csv`, where `roles_matched` averages sink 0.582 versus 0.746 for `ubi_pure`.
-
-4. **UBI alone performs poorly at extreme displacement:** At PL=0.95 in the full-grid sweep, `ubi_only` averages collapsed_frac 0.325 but crosses the run-level collapse threshold in 87.3% of runs. Economic security without restored role access is insufficient to prevent behavioral sink at extreme displacement in this model.
-
-5. **Fairness redistribution is insufficient alone:** Fairness-only scenarios show 12% collapse and high sink (0.661) because they don't address role absence.
-
-6. **No single intervention eliminates elevated sink:** Even the best single intervention (roles, 0.472) leaves nearly half the population in suboptimal states at 95% displacement. Multi-pillar bundles are essential.
-
-**The structural roles-vs-UBI decomposition.** In the intervention-decoupling ablation, `ubi_pure`, `roles_matched`, and `roles_full` average sink 0.746, 0.582, and 0.471, respectively. The default roles configuration therefore improves on the matched-strength version by 0.110 sink points, but even the matched-strength roles condition substantially outperforms the income-only condition.
+In plain language, the advantage of roles is not just that they are turned up more strongly; the mechanism itself is doing different work.
 
 ### 3.6 Archetype Trajectories (RQ5 Continued)
 
-Time-series analysis reveals archetype emergence patterns (Figure 6):
+The time-series results show a recognizable progression: people do not jump straight from functioning to collapse, but instead move through increasingly detached states over time (Figure 6).
 
 ![Figure 6: Archetype distribution over 80 timesteps — baseline vs full bundle at 80% post-labor](figures/sweep5_archetypes.png)
 
-**Seeded initial condition (step 0):** Because archetypes are classified before initial data collection in V5, the time series no longer begins with an artificial 100% productive population. The seeded distribution is 70.5% Productive and 29.5% Beautiful Ones under both scenarios.
+**Seeded initial condition (step 0):**
+
+| Scenario | Productive | Beautiful Ones |
+|----------|------------|----------------|
+| Both scenarios at step 0 | 70.5% | 29.5% |
+
+Because archetypes are classified before initial data collection in V5, the time series no longer begins with an artificial 100% productive population.
 
 **Baseline trajectory (80% post-labor):**
-- Steps 0-10: Productive declines from 70.5% to 60.5%, while Withdrawn and Collapsed emerge to 8.9% and 1.3%
-- Steps 10-25: Withdrawn rises from 8.9% to 27.9%, while Collapsed rises from 1.3% to 10.2%
-- Step 80: the population stabilizes at 9.6% Productive, 28.0% Beautiful Ones, 37.1% Withdrawn, 23.7% Collapsed, and 1.6% Aggressors; sink_index = 0.624
+
+| Time window or step | Productive | Beautiful Ones | Withdrawn | Collapsed | Aggressors | Sink index |
+|---------------------|------------|----------------|-----------|-----------|------------|------------|
+| Steps 0-10 | 70.5% to 60.5% | not separately reported | 8.9% by step 10 | 1.3% by step 10 | not separately reported | not separately reported |
+| Steps 10-25 | not separately reported | not separately reported | 8.9% to 27.9% | 1.3% to 10.2% | not separately reported | not separately reported |
+| Step 80 | 9.6% | 28.0% | 37.1% | 23.7% | 1.6% | 0.624 |
+
+In plain language, deterioration happens mainly through withdrawal before it ends in outright collapse.
 
 **Full bundle trajectory:**
-- Step 80 ends at 40.7% Productive and 39.8% Beautiful Ones, with only 16.4% Withdrawn, 3.1% Collapsed, and 0.1% Aggressors
-- Final sink index is 0.195
+
+| Step 80 outcome | Productive | Beautiful Ones | Withdrawn | Collapsed | Aggressors | Sink index |
+|-----------------|------------|----------------|-----------|-----------|------------|------------|
+| Full bundle | 40.7% | 39.8% | 16.4% | 3.1% | 0.1% | 0.195 |
+
+In plain language, the combined intervention package keeps most people in functioning states instead of letting them slide down that pathway.
 
 The dominant pathway is Productive → Beautiful One → Withdrawn → Collapsed, with aggression remaining rare throughout. The Beautiful One phase is already present in the seeded initial condition and remains the most common transitional state before collapse deepens.
 
+In plain language, the model's warning signs appear before full breakdown, which means earlier intervention should in principle be possible.
+
 ### 3.7 Historical Validation: Nauru vs. Gulf States
 
-To assess qualitative plausibility, we mapped two historical cases that share structural features with model conditions (Figure 7). These cases were selected post-hoc as contrasting archetypes; this is not a prospective validation test.
+This comparison is illustrative rather than confirmatory: it asks whether the model's mechanisms resemble two real-world cases with different social outcomes under material abundance (Figure 7).
 
-![Figure 7: Historical analogues — model predictions vs Nauru (collapse) and Gulf states (stability)](figures/historical_analogues.png) The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a case that shares structural features with the UBI-without-purpose scenario. The period was associated with severe social dysfunction: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown. Our model's PL=0.95 baseline full-grid condition yields meaning 0.330, sink 0.790, and 100% collapse probability — broadly consistent with a severe dysfunction analogue despite material sufficiency.
+![Figure 7: Historical analogues — model predictions vs Nauru (collapse) and Gulf states (stability)](figures/historical_analogues.png)
 
-Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). One notable difference between the cases is the role of collectivist social institutions (tribal structures, Islamic community norms), though multiple confounds preclude causal attribution. Our PL=0.80 `UBI+collectivism` full-grid condition yields meaning 0.416, sink 0.526, and 0% collapse probability, which is consistent with a more stable but still strained configuration rather than full flourishing. The more favorable Gulf outcomes likely reflect role preservation (government employment, civic participation) beyond what UBI alone provides, consistent with our finding that role substitution is essential at high displacement.
+| Historical case | Model condition used for comparison | Meaning index | Sink index | Collapse probability | Interpretation |
+|-----------------|-------------------------------------|---------------|------------|----------------------|----------------|
+| Nauru | PL=0.95 baseline full-grid condition | 0.330 | 0.790 | 100% | Severe dysfunction analogue despite material sufficiency |
+| Gulf states (UAE, Qatar, Kuwait) | PL=0.80 income support + collectivism full-grid condition | 0.416 | 0.526 | 0% | More stable but still strained configuration rather than full flourishing |
 
-The dedicated collectivism sweep shows the same directional moderation at PL=0.95 with UBI: sink falls from 0.769 at collectivism 0.0 to 0.704 at collectivism 0.8, and collapse probability falls from 97% to 47%; even at collectivism 1.0, however, 31% of runs still collapse. The model was not fitted to either case; this comparison is illustrative of the framework's mechanisms rather than evidence that collectivism explains the historical contrast.
+The Republic of Nauru experienced rapid resource-driven wealth from phosphate mining (1960s-1990s), providing citizens with income eliminating the need for employment — a case that shares structural features with the UBI-without-purpose scenario. The period was associated with severe social dysfunction: 94% obesity, 31% diabetes, alcohol abuse, and family breakdown.
+
+Gulf states (UAE, Qatar, Kuwait) achieved comparable post-scarcity through oil wealth with radically different outcomes (Ross, 2012). One notable difference between the cases is the role of collectivist social institutions (tribal structures, Islamic community norms), though multiple confounds preclude causal attribution. The more favorable Gulf outcomes likely reflect role preservation (government employment, civic participation) beyond what UBI alone provides, consistent with our finding that role substitution is essential at high displacement.
+
+In plain language, the historical contrast fits the model's core claim that material abundance is not enough by itself; social roles and social structure still matter.
+
+| Income support at PL=0.95 | Sink index | Collapse probability |
+|---------------------------|------------|----------------------|
+| Collectivism 0.0 | 0.769 | 97% |
+| Collectivism 0.8 | 0.704 | 47% |
+| Collectivism 1.0 | 0.684 | 31% |
+
+The dedicated collectivism sweep shows the same directional moderation. The model was not fitted to either case; this comparison is illustrative of the framework's mechanisms rather than evidence that collectivism explains the historical contrast.
+
+In plain language, stronger social cohesion helps, but it still does not close the gap between economic security and meaningful participation.
 
 ---
 
@@ -335,13 +456,13 @@ The dedicated collectivism sweep shows the same directional moderation at PL=0.9
 
 ### 4.2 Policy Implications
 
-**Multi-pillar necessity:** No single intervention suffices at extreme automation. At PL=0.95 in the full-grid sweep, `ubi_only` shows sink 0.743 and 87.3% collapse probability, while `roles` lowers sink to 0.472 but still leaves a large subpopulation in sink states. Policy portfolios must address income (UBI), meaning (role substitution, virtual worlds), and connection (collectivism structures). The `all_bundle` condition (sink 0.115, 0% collapse) demonstrates the advantage of combined approaches.
+**Multi-pillar necessity:** No single intervention suffices at extreme automation. At PL=0.95 in the full-grid sweep, the income-support-only scenario shows sink 0.743 and 87.3% collapse probability, while the roles-only scenario lowers sink to 0.472 but still leaves a large subpopulation in sink states. Policy portfolios must address income (UBI), meaning (role substitution, virtual worlds), and connection (collectivism structures). The all-bundle condition (sink 0.115, 0% collapse) demonstrates the advantage of combined approaches.
 
 **Virtual infrastructure investment:** Virtual worlds show the largest marginal benefit when added to other interventions, and are now especially critical because UBI alone does not restore role access. In the full-grid sweep, adding virtual worlds to UBI lowers sink from 0.743 to 0.535 and reduces collapse from 87.3% to 0% at PL=0.95.
 
 **Transition management:** Our controlled speed comparison shows similar late-run aggregate outcomes for rapid and gradual automation once the same target displacement is reached, but gradual ramps accumulate more distress during the transition. This conclusion is conditional on the equilibrium ABM design, which does not model persistent individual displacement, scarring, or retraining trajectories; a persistent-displacement model is needed before drawing operational guidance about transition speed management. Within that framing, intervention provision matters more than automation speed in shaping the model's late-run state.
 
-**Cultural tailoring:** Collectivism effects suggest UBI programs should be designed differently in different cultural contexts. Even at maximum collectivism, `ubi_only` still shows 31% collapse at PL=0.95, while the same condition collapses in 97% of runs at collectivism 0.0. Cultural infrastructure alone is therefore insufficient without role-targeted interventions.
+**Cultural tailoring:** Collectivism effects suggest UBI programs should be designed differently in different cultural contexts. Even at maximum collectivism, the income-support-only scenario still shows 31% collapse at PL=0.95, while the same condition collapses in 97% of runs at collectivism 0.0. Cultural infrastructure alone is therefore insufficient without role-targeted interventions.
 
 **Early warning systems:** The archetype trajectory (Productive → Beautiful One → Withdrawn → Collapsed, with Aggressors at 1.6% by step 80 in the baseline time series) provides a potential early warning framework. Rising Beautiful One and Withdrawn fractions may predict approaching collapse before sink indices cross thresholds.
 
@@ -412,9 +533,9 @@ The SD model reproduces the same qualitative Nauru-Gulf pattern as the ABM (Naur
 
 This stylized model identifies mechanisms by which post-labor displacement can drive behavioral sink — and mechanisms by which it can be prevented. Our findings do not predict when or whether AI will displace specific populations, but they characterize the dynamics that would follow such displacement.
 
-The central insight is that economic redistribution alone (UBI) is insufficient at extreme displacement. In the PL=0.95 full-grid condition, `ubi_only` averages sink 0.743, mean `collapsed_frac` 0.325, and 87.3% collapse probability under the paper's run-level definition (`sink_index > 0.7`). The V5 structural separation therefore sharpens the substantive interpretation: meaning-generating participation (through role programs, virtual infrastructure, and social cohesion) is not merely complementary to economic policy but a central determinant of whether collapse is avoided. Role substitution alone averages sink 0.472 with 0% collapse probability, and multi-pillar bundles achieve the best outcomes (`all_bundle` sink 0.115, 0% collapse).
+The central insight is that economic redistribution alone (UBI) is insufficient at extreme displacement. In the PL=0.95 full-grid condition, the income-support-only scenario averages sink 0.743, mean `collapsed_frac` 0.325, and 87.3% collapse probability under the paper's run-level definition (`sink_index > 0.7`). The V5 structural separation therefore sharpens the substantive interpretation: meaning-generating participation (through role programs, virtual infrastructure, and social cohesion) is not merely complementary to economic policy but a central determinant of whether collapse is avoided. Role substitution alone averages sink 0.472 with 0% collapse probability, and multi-pillar bundles achieve the best outcomes (all-bundle sink 0.115, 0% collapse).
 
-The model's sensitivity to social cohesion — with `ubi_only` collapse falling from 97% to 31% as collectivism rises from 0.0 to 1.0 at PL=0.95 — highlights that identical economic policies are associated with dramatically different outcomes depending on the social substrate. However, even maximum collectivism cannot prevent collapse without role-targeted interventions. This finding is consistent with the paper's illustrative historical contrast between more collapse-prone and more stable post-labor societies and suggests that cultural and institutional context deserves as much attention as economic policy design.
+The model's sensitivity to social cohesion — with the income-support-only scenario's collapse rate falling from 97% to 31% as collectivism rises from 0.0 to 1.0 at PL=0.95 — highlights that identical economic policies are associated with dramatically different outcomes depending on the social substrate. However, even maximum collectivism cannot prevent collapse without role-targeted interventions. This finding is consistent with the paper's illustrative historical contrast between more collapse-prone and more stable post-labor societies and suggests that cultural and institutional context deserves as much attention as economic policy design.
 
 As a stylized model, these results identify mechanisms and qualitative relationships rather than precise thresholds. The specific numbers (80-90% transition zone, sink indices) are model-dependent and should not be interpreted as predictions. What the model contributes is a framework for thinking about which dimensions of human well-being are at risk under role displacement, and which intervention categories address which risks. The V5 separation of UBI from role access sharpens that framework by cleanly distinguishing economic buffering from meaning restoration.
 
@@ -484,7 +605,7 @@ The authors declare no competing interests.
 
 Supplementary figures, sensitivity analyses, and extended data tables are available in the online repository. This includes:
 - **Supplementary Methods:** Full parameter documentation with justification categories (SDT theory, Calhoun calibration, convenience/sensitivity-tested)
-- **Horizon Robustness:** Convergence table showing all conditions stabilize by T=80 (max Δ < 0.01 to T=240)
+- **Horizon Robustness:** Convergence table showing all conditions are flagged as converged by T=80, with the largest later change equal to 0.0144 between T=120 and T=160
 - **Speed Comparison:** Exposure-time-controlled analysis showing speed convergence
 - **Pathway C:** System dynamics model specification, Nauru/Gulf calibration, and ABM-SD comparison
 - **V4/V5 Validation:** Detailed comparison showing effect of increased stochasticity (V4) and UBI-role separation (V5) on headline results
@@ -505,14 +626,14 @@ Supplementary figures, sensitivity analyses, and extended data tables are availa
 **Figure 3.** Speed comparison — rapid vs gradual automation. In the clean comparison, baseline sink is 0.780 under gradual automation versus 0.638 under rapid automation at t+10 after target displacement, narrowing to 0.790 versus 0.777 by t+40.
 ![Figure 3](figures/sweep2_automation_speed.png)
 
-**Figure 4.** UBI × collectivism interaction at 95% post-labor. Under `ubi_only`, sink decreases from 0.769 at collectivism 0.0 to 0.684 at collectivism 1.0, while collapse probability falls from 97% to 31%.
+**Figure 4.** UBI × collectivism interaction at 95% post-labor. Under the income-support-only condition, sink decreases from 0.769 at collectivism 0.0 to 0.684 at collectivism 1.0, while collapse probability falls from 97% to 31%.
 ![Figure 4](figures/sweep4_ubi_collectivism_interaction.png)
 
-**Figure 5.** Intervention ranking by sink index at 95% post-labor across 10 scenarios. Multi-pillar bundles dominate; `ubi_only` shows sink 0.743 and 87.3% collapse probability, whereas `roles` shows sink 0.472 and 0% collapse probability.
+**Figure 5.** Intervention ranking by sink index at 95% post-labor across 10 scenarios. Multi-pillar bundles dominate; the income-support-only condition shows sink 0.743 and 87.3% collapse probability, whereas the roles-only condition shows sink 0.472 and 0% collapse probability.
 ![Figure 5](figures/sweep6_scenario_ranking.png)
 
-**Figure 6.** Archetype distribution over 80 timesteps — baseline (top) vs full bundle (bottom) at 80% post-labor. The seeded state is 70.5% Productive and 29.5% Beautiful Ones; by step 80, sink is 0.624 in baseline versus 0.195 in `full_bundle`.
+**Figure 6.** Archetype distribution over 80 timesteps — baseline (top) vs full bundle (bottom) at 80% post-labor. The seeded state is 70.5% Productive and 29.5% Beautiful Ones; by step 80, sink is 0.624 in baseline versus 0.195 in the full-bundle condition.
 ![Figure 6](figures/sweep5_archetypes.png)
 
-**Figure 7.** Historical analogues — model predictions mapped to Nauru (baseline collapse) and Gulf states (`UBI+collectivism` stability). The illustrative mappings use PL=0.95 baseline (meaning 0.330, sink 0.790) and PL=0.80 `UBI+collectivism` (meaning 0.416, sink 0.526).
+**Figure 7.** Historical analogues — model predictions mapped to Nauru (baseline collapse) and Gulf states (income support plus collectivism stability). The illustrative mappings use PL=0.95 baseline (meaning 0.330, sink 0.790) and PL=0.80 income support plus collectivism (meaning 0.416, sink 0.526).
 ![Figure 7](figures/historical_analogues.png)

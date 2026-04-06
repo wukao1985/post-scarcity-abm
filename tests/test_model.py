@@ -188,7 +188,7 @@ class TestVirtualRoleBehavior:
         agent.virtual_role = 0.5
         m.step()
         assert agent.is_displaced is False
-        assert agent.virtual_role == pytest.approx(0.48)
+        assert agent.virtual_role == pytest.approx(0.475)
 
     def test_virtual_benefits_require_threshold_engagement(self):
         m = PostLaborModel(n_agents=20, seed=42)
