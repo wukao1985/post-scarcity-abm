@@ -8,21 +8,7 @@
 
 ## Abstract
 
-What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model (ABM) integrating Self-Determination Theory (SDT) with social contagion dynamics to characterize population-level equilibria under sustained role displacement. The model does not represent individual unemployment trajectories; instead, it identifies what stable configurations of meaning, behavioral archetypes, and social cohesion emerge at different displacement levels and intervention regimes. Across six parameter sweeps and two structural ablation studies totaling 18,500 simulation runs, we find:
-
-1. A steep threshold effect occurs in the 80-90% role displacement zone under baseline parameterization (specific percentages are model-dependent), and this threshold is policy-sensitive — shifting higher with combined interventions. Within this equilibrium framing, rapid displacement affects transition duration but not late-run aggregate outcomes once target displacement is reached.
-
-2. Income support (UBI) alone leaves substantial residual sink: at 95% displacement, UBI-only conditions show a sink index of ~0.52 with elevated distress even without full collapse.
-
-3. The roles-vs-UBI comparison is parameter-dependent: under default parameterization (roles_strength=0.35, ubi_strength=0.30), role substitution shows lower sink than UBI (~0.46 vs ~0.52). When interventions are equalized on restoration strength, UBI's fairness co-benefit dominates (sink 0.516 vs 0.575). Both comparisons are conditional on this stylized parameterization; neither intervention dominates unconditionally.
-
-4. Social cohesion moderates sink severity: higher collectivism is associated with substantially lower UBI-associated sink under UBI conditions at 95% displacement.
-
-5. Within this equilibrium ABM, once target displacement is reached, late-run aggregate outcomes are similar across fast and slow ramps; whether this generalizes to persistent-displacement models or real managed transitions requires further work.
-
-All reported numerical values and comparative rankings are conditional on this stylized parameterization; the main contribution is directional and mechanistic rather than predictive.
-
-These equilibrium findings suggest that meaning infrastructure (role programs, social cohesion, virtual role substitutes) is as critical as economic redistribution in determining the stable state a post-labor society reaches. Note that virtual role substitutes provide strong protection at moderate displacement (≤90%) but only partial substitution at extreme levels (95%), where elevated sink persists even at maximum virtual quality. *Note: aggressive behavior is a known validation gap (~2% modeled vs. Calhoun's 10-20% observed); results characterize withdrawal-dominated dynamics and should not be extrapolated to high-aggression scenarios.*
+What equilibrium states does a society reach when large fractions of the population lack productive roles? We present a stylized agent-based model integrating Self-Determination Theory with social contagion dynamics to characterize population-level equilibria under sustained role displacement. Across six parameter sweeps and two ablation studies (18,500 runs), we find: (1) A steep threshold effect in the 80–90% displacement zone under baseline parameterization (specific percentages are model-dependent) that is policy-sensitive, shifting higher with combined interventions. (2) UBI alone leaves substantial residual sink: at 95% displacement, UBI-only conditions yield sink index ~0.52 with elevated distress. (3) The roles-vs-UBI comparison is parameter-dependent: under default parameterization, role substitution shows lower sink (~0.46 vs ~0.52), but when equalized on restoration strength, UBI's fairness co-benefit dominates (0.516 vs 0.575); neither intervention dominates unconditionally. (4) Social cohesion moderates sink severity, with higher collectivism substantially reducing UBI-associated sink at 95% displacement. (5) Once target displacement is reached, late-run aggregate outcomes are similar across fast and slow ramps; generalization to persistent-displacement models requires further work. All numerical values and comparative rankings are conditional on this stylized parameterization; the contribution is directional and mechanistic rather than predictive. These findings suggest meaning infrastructure (role programs, social cohesion, virtual substitutes) is as critical as economic redistribution. Virtual substitutes provide strong protection at moderate displacement (≤90%) but only partial at extreme levels. Aggressive behavior is a validation gap (~2% modeled vs. Calhoun's 10–20%); results characterize withdrawal-dominated dynamics.
 
 ---
 
@@ -65,7 +51,7 @@ We integrate three theoretical strands:
 
 **Self-Determination Theory (SDT):** Deci & Ryan's (2000) framework identifies three core psychological needs: autonomy (self-direction), competence (mastery), and relatedness (social connection). Economic roles typically satisfy all three; displacement threatens all three.
 
-**Social Contagion Theory:** Behavioral sink spreads through social networks via complex contagion — behaviors requiring social reinforcement from multiple contacts rather than simple exposure (Centola & Macy, 2007; Christakis & Fowler, 2007). Our model incorporates contagion dynamics where collapsed agents increase collapse risk among network neighbors.
+**Social Contagion Theory:** Behavioral sink spreads through social networks via network exposure — the proportion of an agent's neighbors in collapsed states increases the agent's own collapse risk (Centola & Macy, 2007; Christakis & Fowler, 2007). Our model implements contagion as a linear exposure mechanism where the fraction of neighbors in sink states (aggressor, withdrawn, collapsed) exerts downward pressure on psychological state, scaled by `contagion_strength`. This is a simple exposure model, not a complex contagion (which would require thresholds or reinforcement from multiple contacts).
 
 **Institutional Capacity:** Following Acemoglu & Robinson (2012), we model interventions as institutional capacities—policy choices that shape how societies respond to technological shocks.
 
@@ -75,13 +61,13 @@ We integrate three theoretical strands:
 
 ### 2.1 Model Overview
 
-We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021), following ODD protocol conventions (Grimm et al., 2020), with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to characterize equilibrium states, not a forecast of specific technological timelines or displacement levels.** The model extends prior work (V1, V2) with refined psychological dynamics and five intervention dimensions.
+We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021), following ODD protocol conventions (Grimm et al., 2020), with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to characterize equilibrium states, not a forecast of specific technological timelines or displacement levels.** The model (V5) extends prior work with a key structural distinction: UBI provides `income_support` (economic security, fairness buffer) without restoring role meaning, while role substitution provides `role_access` (meaning-generating participation) which drives autonomy, competence, relatedness, status, and contribution. This separation makes the UBI-vs-roles comparison a test of structural mechanism rather than parameter difference.
 
-**Modeling displacement as a population-level rate.** In this model, `post_labor_fraction` represents the share of the population lacking productive roles at any given timestep, not a permanent individual state. At each step, this fraction is drawn from the agent pool, representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory — appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. Persistent individual displacement is a natural extension for future work.
+**Modeling displacement as a ramp-to-target process.** In this model, `post_labor_fraction` specifies a target displacement level that the population reaches via a gradual ramp governed by `automation_speed` (default: 0.03/step, reaching 80% by ~step 27). At each step after the ramp, the current displacement fraction is drawn from the agent pool — representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory — appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. The ramp-to-target mechanism means early-timestep outcomes reflect partial displacement rather than the full target level. Persistent individual displacement is a natural extension for future work.
 
 **Agent state variables:**
 - Psychological: autonomy, competence, relatedness, status (0-1 scales)
-- Role: economic_role (displacement status), virtual_role (virtual world engagement)
+- Role: role_access (meaning-generating participation), income_support (economic security), virtual_role (virtual world engagement)
 - Behavioral: archetype (productive, beautiful_one, aggressor, withdrawn, collapsed)
 
 **Model parameters:**
@@ -113,7 +99,7 @@ meaning = 0.25×autonomy + 0.25×competence + 0.25×relatedness + 0.10×status
           + 0.15×contribution − 0.08×contagion + 0.08×resilience
 ```
 
-where contribution = 0.8×economic_role + 0.1×virtual_role, and contagion is the neighborhood sink exposure scaled by contagion_strength. The direct contagion and resilience terms capture social network effects and individual buffering beyond the SDT components.
+where contribution = 0.8×role_access + 0.1×virtual_role, and contagion is the neighborhood sink exposure scaled by contagion_strength. The direct contagion and resilience terms capture social network effects and individual buffering beyond the SDT components. Note that `income_support` (UBI) does not appear in the meaning function or psychological targets — it only affects status gap (inequality) and fairness. This structural separation ensures UBI provides economic security without restoring role meaning, matching the paper's theoretical claim.
 
 **Weight justification:**
 
@@ -124,6 +110,9 @@ where contribution = 0.8×economic_role + 0.1×virtual_role, and contagion is th
 | Contribution | 0.15 | Calibration: captures "mattering" dimension absent from SDT triad |
 | Economic contribution | 0.80 | Assumption: real-world productive roles provide primary meaning |
 | Virtual contribution | 0.10 | Assumption: virtual roles provide partial but limited meaning substitute |
+| Virtual role decay | 0.02/step | Assumption: virtual engagement decays when agent has real role access |
+| role_access (roles) | 0.35 strength | Structural: roles restore meaning-generating participation |
+| income_support (UBI) | 0.30 strength | Structural: UBI provides economic security only |
 | Decay rate | 0.08 | Calibration: produces equilibration within ~30 steps |
 | Noise σ | 0.08 | Calibration: V4 recalibration for realistic between-run variance |
 | Agent shock σ | 0.03 | Calibration: per-step idiosyncratic life-event noise |
@@ -158,7 +147,7 @@ We conducted six parameter sweeps plus two ablation studies, totaling 18,500 run
 | A | Weight ablation (econ:virtual ratio) | 5 | 4 | 50 | 1,000 |
 | B | Intervention decoupling | 1 | 3 | 150 | 450 |
 
-**Intervention coupling.** In our implementation, the UBI scenario includes a fairness boost (reflecting UBI's social legitimacy signal), and role programs enhance both economic role and competence directly. These couplings are intentional design choices reflecting real-world co-occurrence of interventions, but mean that UBI and fairness effects are not fully orthogonal.
+**Intervention structure.** In our implementation, UBI and role substitution target distinct channels. UBI provides `income_support` (economic security, fairness buffer) without restoring role access — it does not directly affect autonomy, competence, or relatedness targets. Role substitution provides `role_access` (meaning-generating participation) which directly drives all four psychological dimensions. The UBI scenario includes an implicit fairness boost (reflecting UBI's social legitimacy signal), and role programs include a competence boost. These are structural differences, not parameter differences: the roles-vs-UBI comparison tests whether meaning channels or economic channels matter more for preventing behavioral sink.
 
 **Validation:** V4 reproduces the directional pattern of V2 findings (threshold effect in the 80-90% zone under baseline conditions), with broader confidence intervals due to increased stochasticity. Note that V4 was calibrated to approximate V2 outputs; this comparison validates implementation consistency, not independent replication.
 
@@ -358,9 +347,9 @@ The collectivism variable is associated with sink severity differences: at PL=0.
 
 **Underrepresented aggressors:** V4 recalibrated aggressor thresholds, increasing prevalence from <1% to ~2-3% at high displacement. However, this remains below the 10-20% expected from Calhoun's observations. The aggression formula `(1-meaning)*(1-social_capital)*0.5 > 0.3` requires extremely low social capital (< 0.14) combined with low meaning — a narrow parameter region. The model effectively treats behavioral sink as withdrawal-dominated, underrepresenting the aggression dimension. Future work should explore alternative aggression mechanisms (e.g., relative deprivation, frustration-aggression dynamics).
 
-**Displacement as population-level rate.** The model treats role displacement as a cross-sectional share rather than a permanent individual state. Each timestep, the displaced fraction is redrawn from the agent pool. This enables equilibrium analysis but precludes conclusions about individual adjustment trajectories, unemployment scarring, or the dynamics of managed transitions. Future work should model persistent individual displacement with explicit re-employment mechanisms.
+**Displacement as ramp-to-target with cross-sectional turnover.** The model ramps displacement toward a target level via `automation_speed`, then each timestep the displaced fraction is redrawn from the agent pool. This enables equilibrium analysis but precludes conclusions about individual adjustment trajectories, unemployment scarring, or the dynamics of managed transitions. Future work should model persistent individual displacement with explicit re-employment mechanisms.
 
-**Intervention coupling.** Our UBI and roles scenarios have partially overlapping effects in the implementation (UBI affects fairness; roles affect competence directly). Ablation analysis (see Supplementary) shows the directional finding (roles > UBI under default parameterization) is directionally consistent across ±20% perturbation of that default (roles_strength range 0.28–0.42 vs ubi_strength range 0.24–0.36), but note the ranking reverses when both are set to 0.30, but the magnitude depends on assumptions about the relative potency of different interventions. When equalized on economic restoration strength, UBI's fairness co-benefit actually outweighs roles' competence pathway, reversing the ranking. The intervention hierarchy reported in §3.5 should therefore be interpreted as conditional on the default parameterization.
+**Intervention coupling.** V5 separates UBI (income_support only) from role substitution (role_access only), making the structural comparison clean: UBI tests economic security alone, while roles test meaning-channel restoration alone. However, UBI still includes an implicit fairness co-benefit (line 236 in model.py: `fairness = ubi * 0.3`), and roles include a competence boost. Ablation analysis shows the directional finding (roles > UBI under default parameterization) is now driven by the structural difference (meaning channels vs economic channels) rather than parameter differences. The intervention hierarchy reported in §3.5 should be interpreted as conditional on the default parameterization.
 
 **No endogenous adaptation:** Agents cannot create new institutions, discover novel purposes, form social movements, or develop emergent cultural responses. Human societies have repeatedly demonstrated capacity for institutional innovation under stress — the Industrial Revolution, post-WWII reconstruction, the digital economy. Our model assumes a fixed institutional landscape, which likely overstates collapse risk.
 
@@ -427,11 +416,11 @@ As a stylized model, these results identify mechanisms and qualitative relations
 
 ## References
 
-Acemoglu, D., & Restrepo, P. (2018). The wrong kind of AI? Artificial intelligence and the future of labour demand. *Cambridge Journal of Regions, Economy and Society*, 11(1), 29-44.
+Acemoglu, D., & Restrepo, P. (2018). The wrong kind of AI? Artificial intelligence and the future of labour demand. *Cambridge Journal of Regions, Economy and Society*, 11(1), 29-44. https://doi.org/10.1093/cjres/rsy025
 
 Acemoglu, D., & Robinson, J. A. (2012). *Why nations fail: The origins of power, prosperity, and poverty*. Crown Business.
 
-Autor, D. H. (2015). Why are there still so many jobs? The history and future of workplace automation. *Journal of Economic Perspectives*, 29(3), 3-30.
+Autor, D. H. (2015). Why are there still so many jobs? The history and future of workplace automation. *Journal of Economic Perspectives*, 29(3), 3-30. https://doi.org/10.1257/jep.29.3.3
 
 Brynjolfsson, E., & McAfee, A. (2014). *The second machine age: Work, progress, and prosperity in a time of brilliant technologies*. WW Norton & Company.
 
@@ -439,19 +428,19 @@ Calhoun, J. B. (1962). Population density and social pathology. *Scientific Amer
 
 Case, A., & Deaton, A. (2020). *Deaths of Despair and the Future of Capitalism*. Princeton University Press.
 
-Centola, D., & Macy, M. (2007). Complex contagions and the weakness of long ties. *American Journal of Sociology*, 113(3), 702-734.
+Centola, D., & Macy, M. (2007). Complex contagions and the weakness of long ties. *American Journal of Sociology*, 113(3), 702-734. https://doi.org/10.1086/521848
 
-Christakis, N. A., & Fowler, J. H. (2007). The spread of obesity in a large social network over 32 years. *New England Journal of Medicine*, 357(4), 370-379.
+Christakis, N. A., & Fowler, J. H. (2007). The spread of obesity in a large social network over 32 years. *New England Journal of Medicine*, 357(4), 370-379. https://doi.org/10.1056/NEJMsa066082
 
 Connell, J. (2006). Nauru: The first failed Pacific state? *The Round Table*, 95(383), 47-63.
 
-Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry*, 11(4), 227-268.
+Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry*, 11(4), 227-268. https://doi.org/10.1207/S15327965PLI1104_01
 
-Felten, E. W., Raj, M., & Seamans, R. (2021). Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses. *Strategic Management Journal*, 42(12), 2195-2217.
+Felten, E. W., Raj, M., & Seamans, R. (2021). Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses. *Strategic Management Journal*, 42(12), 2195-2217. https://doi.org/10.1002/smj.3286
 
-Frey, C. B., & Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation? *Technological Forecasting and Social Change*, 114, 254-280.
+Frey, C. B., & Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation? *Technological Forecasting and Social Change*, 114, 254-280. https://doi.org/10.1016/j.techfore.2016.08.019
 
-Grimm, V., et al. (2020). The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism. *JASSS*, 23(2), 7.
+Grimm, V., Railsback, S. F., Vincenot, C. E., Berger, U., Gallagher, C., DeAngelis, D. L., Edmonds, B., Ge, J., Giske, J., Groeneveld, J., Johnston, A. S. A., Milles, A., Nabe-Nielsen, J., Polhill, J. G., Radchuk, V., Rohwäder, M.-S., Stillman, R. A., Thiele, J. C., & Ayllón, D. (2020). The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism. *JASSS*, 23(2), 7. https://doi.org/10.18564/jasss.4259
 
 Hertog, S. (2010). *Princes, Brokers, and Bureaucrats: Oil and the State in Saudi Arabia*. Cornell University Press.
 
@@ -463,7 +452,7 @@ Kazil, J., Masad, D., & Crooks, A. (2021). Utilizing Python for agent-based mode
 
 Ross, M. (2012). *The oil curse: How petroleum wealth shapes the development of nations*. Princeton University Press.
 
-Rosso, B. D., Dekas, K. H., & Wrzesniewski, A. (2010). On the meaning of work: A theoretical integration and review. *Research in Organizational Behavior*, 30, 91-127.
+Rosso, B. D., Dekas, K. H., & Wrzesniewski, A. (2010). On the meaning of work: A theoretical integration and review. *Research in Organizational Behavior*, 30, 91-127. https://doi.org/10.1016/j.riob.2010.09.001
 
 Standing, G. (2017). *Basic income: And how we can make it happen*. Penguin UK.
 

@@ -30,7 +30,11 @@ class TestModelCreation:
             assert 0 <= a.status <= 1
             assert 0 <= a.meaning <= 1
             assert a.economic_role == 1.0
-            assert a.archetype == "productive"
+            assert a.role_access == 1.0
+            assert a.income_support == 1.0
+            # Initial classification may assign non-productive archetypes
+            assert a.archetype in ("productive", "beautiful_one", "withdrawn",
+                                    "aggressor", "collapsed")
 
     def test_network_is_connected(self):
         m = PostLaborModel(n_agents=200, seed=42)
@@ -86,6 +90,21 @@ class TestModelDynamics:
 
 
 class TestInterventions:
+    def test_ubi_restores_income_support_but_not_role_access(self):
+        """UBI should not restore role-driven meaning channels."""
+        m = PostLaborModel(
+            n_agents=20,
+            post_labor_fraction=1.0,
+            automation_speed=1.0,
+            intervention={"ubi": 0.7},
+            seed=42,
+        )
+        m.step()
+        for a in m.agents:
+            assert a.is_displaced is True
+            assert a.income_support == pytest.approx(0.21)
+            assert a.role_access == pytest.approx(0.0)
+
     def test_ubi_reduces_sink(self):
         """UBI should reduce sink relative to baseline."""
         results = {}
@@ -160,3 +179,30 @@ class TestReproducibility:
             df = m.datacollector.get_model_vars_dataframe()
             results.append(df.iloc[-1]["meaning_index"])
         assert results[0] != pytest.approx(results[1], abs=1e-6)
+
+
+class TestVirtualRoleBehavior:
+    def test_virtual_role_decays_when_not_displaced(self):
+        m = PostLaborModel(n_agents=20, post_labor_fraction=0.0, seed=42)
+        agent = next(iter(m.agents))
+        agent.virtual_role = 0.5
+        m.step()
+        assert agent.is_displaced is False
+        assert agent.virtual_role == pytest.approx(0.48)
+
+    def test_virtual_benefits_require_threshold_engagement(self):
+        m = PostLaborModel(n_agents=20, seed=42)
+        agent = next(iter(m.agents))
+        agent.role_access = 0.0
+        agent.autonomy = 0.5
+        agent.competence = 0.5
+        agent.relatedness = 0.5
+        agent.status = 0.5
+
+        agent.virtual_role = 0.09
+        low_engagement = agent._compute_meaning()
+
+        agent.virtual_role = 0.11
+        high_engagement = agent._compute_meaning()
+
+        assert high_engagement > low_engagement

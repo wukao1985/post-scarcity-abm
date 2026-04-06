@@ -17,7 +17,23 @@ The model investigates what population-level equilibrium states emerge when larg
 
 ---
 
-## 2. Entities, State Variables, and Scales
+## 2. Patterns
+
+The model is designed to reproduce the following macroscopic patterns observed in or hypothesized from empirical and theoretical literature:
+
+1. **Sink threshold at 80–90% displacement.** Under baseline (no-intervention) conditions, aggregate behavioral sink remains low at moderate displacement but rises steeply once 80–90% of the population lacks productive roles, consistent with the nonlinear social-collapse dynamics described by Calhoun (1962) and threshold models of collective behavior.
+
+2. **Residual sink under income support alone.** Even with full UBI provision, a substantial fraction of the population exhibits elevated distress and withdrawal, reflecting Jahoda's (1982) latent-deprivation hypothesis that income replacement does not restore the psychological functions of work.
+
+3. **Cohesion moderation.** Collectivist cultural settings (higher baseline social cohesion) are associated with lower sink severity at equivalent displacement levels, consistent with cross-cultural resilience findings (Hofstede, 2001).
+
+4. **Role substitution vs. income support trade-off.** The relative effectiveness of role programs versus UBI depends on parameterization; neither dominates unconditionally, reflecting the multidimensional nature of work's psychological benefits (Rosso et al., 2010).
+
+5. **Ramp-speed insensitivity at equilibrium.** Once a target displacement level is reached and held, late-run aggregate outcomes converge regardless of whether displacement was introduced rapidly or gradually, consistent with the model's equilibrium-seeking design.
+
+---
+
+## 3. Entities, State Variables, and Scales
 
 ### 2.1 Agents
 
@@ -69,7 +85,7 @@ The model investigates what population-level equilibrium states emerge when larg
 
 ---
 
-## 3. Process Overview and Scheduling
+## 4. Process Overview and Scheduling
 
 Each timestep proceeds in the following order:
 
@@ -80,10 +96,10 @@ Each timestep proceeds in the following order:
 ### 3.2 Agent-Level Processes (random activation order)
 For each agent, in random order:
 1. **Neighborhood assessment:** Compute fraction of neighbors in aggressor, collapsed, and withdrawn states; compute mean neighbor meaning.
-2. **Psychological state update:** Update autonomy, competence, relatedness, and status via mean-reverting dynamics toward condition-dependent targets (see §7.1).
+2. **Psychological state update:** Update autonomy, competence, relatedness, and status via mean-reverting dynamics toward condition-dependent targets (see §8.1).
 3. **Virtual role search:** Displaced agents (economic_role < 0.3) incrementally increase virtual_role engagement.
-4. **Meaning computation:** Derive meaning from weighted combination of psychological states, contribution, contagion, and resilience (see §7.2).
-5. **Archetype classification:** Classify agent based on meaning level and aggression drive (see §7.3).
+4. **Meaning computation:** Derive meaning from weighted combination of psychological states, contribution, contagion, and resilience (see §8.2).
+5. **Archetype classification:** Classify agent based on meaning level and aggression drive (see §8.3).
 6. **Birth intention update:** Compute reproductive motivation from relatedness, meaning, autonomy, and economic role.
 
 ### 3.3 Data Collection (end of step)
@@ -91,7 +107,7 @@ All model-level reporters (mean meaning, sink index, archetype fractions, etc.) 
 
 ---
 
-## 4. Design Concepts
+## 5. Design Concepts
 
 ### 4.1 Basic Principles
 
@@ -162,7 +178,7 @@ Model-level reporters aggregate:
 
 ---
 
-## 5. Initialization
+## 6. Initialization
 
 1. Generate Watts-Strogatz small-world network (N=200, k=6, p=0.1).
 2. Assign agent profiles: 15% resilient, 55% balanced, 30% vulnerable (shuffled randomly).
@@ -179,7 +195,7 @@ Model-level reporters aggregate:
 
 ---
 
-## 6. Input Data
+## 7. Input Data
 
 The model uses no external input data during simulation. All dynamics are endogenous.
 
@@ -187,7 +203,7 @@ Historical validation (post-hoc, not model input): Nauru phosphate boom/bust (19
 
 ---
 
-## 7. Submodels
+## 8. Submodels
 
 ### 7.1 Psychological State Update
 

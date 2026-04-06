@@ -1,0 +1,49 @@
+# Paper 1 — JASSS Submission Readiness Audit
+
+[defaults]
+agent_cmd = "claude"
+agent_flags = "--model claude-opus-4-5"   # Opus for engineers
+max_workers = 3
+
+[worktree]
+setup_instructions = "Run: pip install -r requirements.txt 2>/dev/null || true. This is a READ-ONLY audit — do NOT modify any paper or code files."
+
+[approval]
+ask_before_dispatching = "ask"
+ask_before_reviewing = "auto"
+ask_before_merging = "ask"
+
+[review.dev]
+review_instructions = """
+You are an adversarial reviewer. Run the following codex command and report its FULL output verbatim:
+
+  codex exec -s danger-full-access -c 'shell_environment_policy.inherit=all' \
+  'You are adversarially reviewing a validation report for a research paper.
+   The engineer produced a bead-level audit report. Your job:
+   Apply these criteria strictly:
+   1. FATAL: Any code execution failure OR paper number not matching code output
+   2. FATAL: Any author-identifying information in paper (names, github links, self-citations, acknowledgments)
+   3. FATAL: Any numerical claim in paper that cannot be traced to a specific code file + line
+   4. MAJOR: Any statistical claim that is indefensible (wrong test, missing caveat on deterministic ABM)
+   5. MINOR: JASSS format issues (ODD completeness, abstract word count, reference format)
+   
+   For each criterion: cite specific evidence. Output VERDICT: approved or VERDICT: rejected.
+   List all FATAL/MAJOR/MINOR findings with exact locations.'
+
+If codex is unavailable, perform the adversarial review yourself using the same criteria above.
+Report the full review output.
+"""
+how_to_determine_if_review_passed = "VERDICT: approved with zero FATAL and zero MAJOR findings"
+max_rounds = 3
+
+[review.goal]
+review_instructions = """
+Full goal-level review: consolidate all bead-level findings into a final JASSS submission readiness report.
+List all remaining FATAL/MAJOR/MINOR issues across the entire paper and codebase.
+Output VERDICT: approved (ready to submit) or VERDICT: rejected (issues must be fixed first).
+"""
+max_rounds = 2
+
+[delivery.goal]
+on_completion_instructions = "Write a final submission_readiness_report.md in the reports/ directory summarizing all findings and the final verdict."
+when_to_involve_user_in_delivery = "always"

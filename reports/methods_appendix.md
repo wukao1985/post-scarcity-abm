@@ -1,4 +1,4 @@
-# Methods Appendix: Post-Scarcity ABM (V4)
+# Methods Appendix: Post-Scarcity ABM (V5)
 
 ## 1. Parameter Table
 
@@ -24,7 +24,8 @@
 | Post-labor targets tested | 0.0 to 0.95 | SDT theory -- spans full automation range |
 | `automation_speed` | 0.03 default; 0.006–0.20 in speed comparison sweep | Convenience/sensitivity-tested |
 | `collectivism_index` | 0.3 default (variable in sweeps) | Convenience/sensitivity-tested |
-| UBI economic floor | displaced role = ubi * 0.30 + roles_program * 0.35 | Convenience/sensitivity-tested |
+| UBI economic floor | UBI provides income_support only (ubi * 0.30); roles provide role_access only (roles * 0.35) | V5 structural separation |
+| Displacement model | Ramp-to-target via automation_speed, then cross-sectional redraw | Convenience/sensitivity-tested |
 
 ## 2. Meaning Function Weights
 
@@ -38,7 +39,7 @@ meaning = 0.25 * autonomy + 0.25 * competence + 0.25 * relatedness
 where:
 
 ```
-contribution = economic_role * 0.8 + virtual_role * 0.1
+contribution = role_access * 0.8 + virtual_role * 0.1
 ```
 
 During the step update, meaning also incorporates contagion and resilience adjustments:
@@ -61,7 +62,7 @@ meaning_step = [weighted sum above] - contagion * 0.08 + 0.08 * resilience
 
 | Sub-weight | Component | Source | Rationale |
 |------------|-----------|--------|-----------|
-| 0.80 | `economic_role` | Researcher choice | Assumes that real-world productive roles provide substantially more felt contribution than virtual substitutes |
+| 0.80 | `role_access` | Researcher choice | Assumes that real-world productive roles provide substantially more felt contribution than virtual substitutes |
 | 0.10 | `virtual_role` | Researcher choice | Virtual roles provide partial but limited meaning substitution. The 8:1 ratio with economic role is an assumption, not empirically calibrated |
 
 ### Transparency note
@@ -111,7 +112,7 @@ The specific parameters:
 
 ### Contagion mechanism
 
-Neighbors influence agents through `sink_exposure`, the fraction of neighbors in aggressor, collapsed, or withdrawn states. This is scaled by `contagion_strength` (0.5) and applied as a negative pressure on all four psychological dimensions plus the meaning index directly.
+Neighbors influence agents through `sink_exposure`, the fraction of neighbors in aggressor, collapsed, or withdrawn states. This is scaled by `contagion_strength` (0.5) and applied as a negative pressure on all four psychological dimensions plus the meaning index directly. **Note:** This is a simple linear exposure model, not a complex contagion. There is no threshold, reinforcement requirement, or multi-contact mechanism.
 
 ## 5. Sensitivity Analysis
 
@@ -160,4 +161,4 @@ One-at-a-time (OAT) perturbation of the top 3 internal parameters by ±20%, with
 
 ---
 
-*This appendix documents model V4 as implemented in `models/pathway_a_abm/model.py`. Parameter values are exact as coded; justification categories reflect the authors' honest assessment of theoretical grounding.*
+*This appendix documents model V5 as implemented in `models/pathway_a_abm/model.py`. Parameter values are exact as coded; justification categories reflect the authors' honest assessment of theoretical grounding.*

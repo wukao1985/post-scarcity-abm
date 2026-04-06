@@ -1,11 +1,14 @@
 """
-Post-Scarcity ABM — V4
+Post-Scarcity ABM — V5
 Mesa 3.5+ compatible implementation.
 
-V4 changes from V3:
-- Increased stochasticity (σ=0.08, agent shocks)
-- Fixed gradual speed to always reach target by step 80
-- Recalibrated aggressor thresholds for 10-20% emergence
+V5 changes from V4:
+- Separated income_support from role_access (FATAL 1 fix):
+  UBI only provides income_support; roles provide role_access.
+  Psychological state uses role_access for meaning channels.
+- Added virtual_role decay when agent has real role access (MAJOR 4)
+- Gated virtual benefits on engagement threshold (virtual_role > 0.1) (MAJOR 4)
+- Initial archetype classification before data collection (MAJOR 5)
 """
 import numpy as np
 import random
@@ -13,6 +16,9 @@ import mesa
 from mesa.space import NetworkGrid
 from mesa.datacollection import DataCollector
 import networkx as nx
+
+# Virtual engagement must exceed this threshold before providing psychological benefits
+VIRTUAL_ENGAGEMENT_THRESHOLD = 0.1
 
 
 class PostLaborAgent(mesa.Agent):
@@ -38,17 +44,26 @@ class PostLaborAgent(mesa.Agent):
         self.status      = np.clip(np.random.normal(0.50, 0.08), 0, 1)
 
         # Role and behavior
-        self.economic_role   = 1.0
+        self.role_access     = 1.0   # meaning-generating role participation
+        self.income_support  = 1.0   # economic security (UBI, fairness)
+        self.economic_role   = 1.0   # backward-compatible composite
+        self.is_displaced    = False
         self.virtual_role    = 0.0
         self.archetype       = "productive"
         self.birth_intention = 0.7
 
         self.meaning = self._compute_meaning()
 
+    def _effective_virtual_engagement(self):
+        if self.virtual_role <= VIRTUAL_ENGAGEMENT_THRESHOLD:
+            return 0.0
+        return self.virtual_role
+
     def _compute_meaning(self):
         ew = self.model.economic_weight if hasattr(self, 'model') and self.model else 0.8
         vw = self.model.virtual_weight if hasattr(self, 'model') and self.model else 0.1
-        contribution = self.economic_role * ew + self.virtual_role * vw
+        effective_vr = self._effective_virtual_engagement()
+        contribution = self.role_access * ew + effective_vr * vw
         return np.clip(
             0.25 * self.autonomy +
             0.25 * self.competence +
@@ -56,6 +71,19 @@ class PostLaborAgent(mesa.Agent):
             0.10 * self.status +
             0.15 * contribution,
             0, 1)
+
+    def _classify_archetype(self):
+        aggression_drive = (1 - self.meaning) * (1 - self.social_capital) * 0.5
+        if self.meaning > 0.55:
+            self.archetype = "productive"
+        elif aggression_drive > 0.3 and self.meaning < 0.40:
+            self.archetype = "aggressor"
+        elif self.meaning > 0.42:
+            self.archetype = "beautiful_one"
+        elif self.meaning > 0.30:
+            self.archetype = "withdrawn"
+        else:
+            self.archetype = "collapsed"
 
     def _get_neighbors_state(self):
         neighbors = self.model.grid.get_neighbors(self.pos, include_center=False)
@@ -83,8 +111,8 @@ class PostLaborAgent(mesa.Agent):
         sink_exposure = ns["aggressor_frac"] + ns["collapsed_frac"] + ns["withdrawn_frac"]
         contagion = sink_exposure * m.contagion_strength
 
-        # Status gap (inequality effect)
-        status_gap = np.clip(m.inequality_index * (1 - self.economic_role), 0, 1)
+        # Status gap (inequality effect — driven by income, not role meaning)
+        status_gap = np.clip(m.inequality_index * (1 - self.income_support), 0, 1)
 
         # Mean-reverting dynamics: state decays toward a target determined by conditions
         decay = self.model.decay  # how fast state adjusts toward target
@@ -95,10 +123,13 @@ class PostLaborAgent(mesa.Agent):
         # Noise σ = 0.08 (V4: increased from 0.02 for realistic between-run variance)
         noise_sigma = 0.08
 
-        # Autonomy target depends on economic role, fairness, resilience
+        # Gate virtual benefits on engagement threshold (MAJOR 4)
+        effective_vr = self._effective_virtual_engagement()
+
+        # Autonomy target depends on role access, income support, fairness, resilience
         autonomy_target = base + (
-            0.25 * self.economic_role
-            + 0.10 * self.virtual_role
+            0.25 * self.role_access
+            + 0.10 * effective_vr
             + 0.10 * m.fairness
             + 0.12 * self.resilience
             - 0.06 * status_gap
@@ -112,8 +143,8 @@ class PostLaborAgent(mesa.Agent):
         # Competence target
         roles_comp = 0.10 * m.roles_program if m.roles_competence_boost else 0.0
         competence_target = base + (
-            0.25 * self.economic_role
-            + 0.10 * self.virtual_role * m.virtual_world_quality
+            0.25 * self.role_access
+            + 0.10 * effective_vr * m.virtual_world_quality
             + 0.12 * self.skill_transferability
             + roles_comp
             - 0.05 * contagion
@@ -127,8 +158,8 @@ class PostLaborAgent(mesa.Agent):
         relatedness_target = base + (
             0.18 * self.social_capital
             + 0.10 * m.collectivism_index
-            + 0.10 * self.economic_role
-            + 0.05 * m.virtual_world_quality
+            + 0.10 * self.role_access
+            + 0.05 * effective_vr
             + 0.08 * m.fairness
             - 0.12 * ns["aggressor_frac"]
             - 0.05 * contagion
@@ -140,10 +171,10 @@ class PostLaborAgent(mesa.Agent):
 
         # Status target
         status_target = base + (
-            0.25 * self.economic_role
+            0.25 * self.role_access
             + 0.10 * m.fairness
             + 0.08 * self.relatedness
-            - 0.12 * m.status_concentration * (1 - self.economic_role)
+            - 0.12 * m.status_concentration * (1 - self.role_access)
             - 0.04 * contagion
         )
         self.status = np.clip(
@@ -152,13 +183,18 @@ class PostLaborAgent(mesa.Agent):
             0, 1)
 
         # Virtual role access (endogenous search by displaced workers)
-        if self.economic_role < 0.3:
+        if self.is_displaced:
             self.virtual_role = np.clip(
                 self.virtual_role + 0.05 * m.virtual_world_quality,
                 0, m.virtual_world_quality)
+        else:
+            # Decay virtual_role when agent is not displaced.
+            self.virtual_role = np.clip(
+                self.virtual_role - 0.02, 0, 1)
 
-        # Recompute meaning
-        contribution = self.economic_role * m.economic_weight + self.virtual_role * m.virtual_weight
+        # Recompute meaning (gate on engagement threshold)
+        effective_vr = self._effective_virtual_engagement()
+        contribution = self.role_access * m.economic_weight + effective_vr * m.virtual_weight
         self.meaning = np.clip(
             0.25 * self.autonomy +
             0.25 * self.competence +
@@ -170,24 +206,14 @@ class PostLaborAgent(mesa.Agent):
             0, 1)
 
         # Archetype classification
-        aggression_drive = (1 - self.meaning) * (1 - self.social_capital) * 0.5
-        if self.meaning > 0.55:
-            self.archetype = "productive"
-        elif aggression_drive > 0.3 and self.meaning < 0.40:
-            self.archetype = "aggressor"
-        elif self.meaning > 0.42:
-            self.archetype = "beautiful_one"
-        elif self.meaning > 0.30:
-            self.archetype = "withdrawn"
-        else:
-            self.archetype = "collapsed"
+        self._classify_archetype()
 
         # Birth intention
         self.birth_intention = np.clip(
             0.4 * self.relatedness +
             0.3 * self.meaning +
             0.3 * self.autonomy
-            - 0.2 * (1 - self.economic_role),
+            - 0.2 * (1 - self.role_access),
             0, 1)
 
 
@@ -243,6 +269,10 @@ class PostLaborModel(mesa.Model):
             agent = PostLaborAgent(self, profile=profile)
             self.grid.place_agent(agent, node)
 
+        # Initial classification pass before data collection
+        for a in self.agents:
+            a._classify_archetype()
+
         # Data collector
         self.datacollector = DataCollector(
             model_reporters={
@@ -280,11 +310,18 @@ class PostLaborModel(mesa.Model):
             displaced_ids = set()
 
         for a in agent_list:
-            if a.unique_id in displaced_ids:
-                # UBI provides partial economic floor, roles provide substitute
-                a.economic_role = self.ubi * self.ubi_strength + self.roles_program * self.roles_strength
+            a.is_displaced = a.unique_id in displaced_ids
+            if a.is_displaced:
+                # UBI provides income support only (fairness/economic buffer)
+                # Roles provide role access (meaning-generating participation)
+                a.income_support = self.ubi * self.ubi_strength
+                a.role_access    = self.roles_program * self.roles_strength
             else:
-                a.economic_role = 1.0
+                a.income_support = 1.0
+                a.role_access    = 1.0
+
+            # Backward-compatible composite for data reporting
+            a.economic_role = max(a.income_support, a.role_access)
 
         # Step all agents in random order
         self.agents.shuffle_do("step")
