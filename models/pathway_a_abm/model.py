@@ -19,6 +19,7 @@ import networkx as nx
 
 # Virtual engagement must exceed this threshold before providing psychological benefits
 VIRTUAL_ENGAGEMENT_THRESHOLD = 0.1
+VIRTUAL_ROLE_DECAY_FACTOR = 0.95
 
 
 class PostLaborAgent(mesa.Agent):
@@ -46,7 +47,7 @@ class PostLaborAgent(mesa.Agent):
         # Role and behavior
         self.role_access     = 1.0   # meaning-generating role participation
         self.income_support  = 1.0   # economic security (UBI, fairness)
-        self.economic_role   = 1.0   # backward-compatible composite
+        self.economic_role   = 1.0   # backward-compatible alias for role participation
         self.is_displaced    = False
         self.virtual_role    = 0.0
         self.archetype       = "productive"
@@ -125,6 +126,7 @@ class PostLaborAgent(mesa.Agent):
 
         # Gate virtual benefits on engagement threshold (MAJOR 4)
         effective_vr = self._effective_virtual_engagement()
+        virtual_world_bonus = m.virtual_world_quality if effective_vr > 0 else 0.0
 
         # Autonomy target depends on role access, income support, fairness, resilience
         autonomy_target = base + (
@@ -144,7 +146,7 @@ class PostLaborAgent(mesa.Agent):
         roles_comp = 0.10 * m.roles_program if m.roles_competence_boost else 0.0
         competence_target = base + (
             0.25 * self.role_access
-            + 0.10 * effective_vr * m.virtual_world_quality
+            + 0.10 * effective_vr * virtual_world_bonus
             + 0.12 * self.skill_transferability
             + roles_comp
             - 0.05 * contagion
@@ -188,9 +190,9 @@ class PostLaborAgent(mesa.Agent):
                 self.virtual_role + 0.05 * m.virtual_world_quality,
                 0, m.virtual_world_quality)
         else:
-            # Decay virtual_role when agent is not displaced.
+            # Real-world role access crowds out virtual engagement over time.
             self.virtual_role = np.clip(
-                self.virtual_role - 0.02, 0, 1)
+                self.virtual_role * VIRTUAL_ROLE_DECAY_FACTOR, 0, 1)
 
         # Recompute meaning (gate on engagement threshold)
         effective_vr = self._effective_virtual_engagement()
@@ -253,6 +255,7 @@ class PostLaborModel(mesa.Model):
         self.fairness          = iv.get("fairness", 0.1) + self.ubi * 0.3
         self.status_concentration = 1.0 - iv.get("status_deconc", 0.0) * 0.5
         self.inequality_index  = np.clip(1.0 - self.fairness, 0, 1)
+        self._did_precollect_archetype_sync = False
 
         # Network (small-world, Watts-Strogatz)
         G = nx.watts_strogatz_graph(n_agents, 6, 0.1, seed=seed)
@@ -270,8 +273,7 @@ class PostLaborModel(mesa.Model):
             self.grid.place_agent(agent, node)
 
         # Initial classification pass before data collection
-        for a in self.agents:
-            a._classify_archetype()
+        self._classify_all_archetypes()
 
         # Data collector
         self.datacollector = DataCollector(
@@ -292,6 +294,10 @@ class PostLaborModel(mesa.Model):
             }
         )
         self.datacollector.collect(self)
+
+    def _classify_all_archetypes(self):
+        for agent in self.agents:
+            agent._classify_archetype()
 
     def step(self):
         # Advance automation
@@ -320,9 +326,12 @@ class PostLaborModel(mesa.Model):
                 a.income_support = 1.0
                 a.role_access    = 1.0
 
-            # Backward-compatible composite for data reporting
-            a.economic_role = max(a.income_support, a.role_access)
+            # Backward-compatible field tracks role participation only; UBI lives in income_support.
+            a.economic_role = a.role_access
 
         # Step all agents in random order
         self.agents.shuffle_do("step")
+        if not self._did_precollect_archetype_sync:
+            self._classify_all_archetypes()
+            self._did_precollect_archetype_sync = True
         self.datacollector.collect(self)
