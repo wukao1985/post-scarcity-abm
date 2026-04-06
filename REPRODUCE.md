@@ -32,7 +32,7 @@ Every figure and table referenced in the paper:
 |---|---|---|---|
 | §3.1, Figure 1 | Phase transition curve (sink vs post-labor) | `models/pathway_a_abm/report.py` | `data/simulation/sweep1_results.csv` |
 | §3.2, Figure 2 | Virtual world quality effect | `scripts/sweep3_figures.py` | `data/simulation/sweep3_virtual_world.csv` |
-| §3.3 | Speed comparison table | Inline from `data/simulation/speed_clean_comparison.csv` | `data/simulation/speed_clean_comparison.csv` |
+| §3.3 | Speed comparison table | `scripts/run_speed_clean_comparison.py` | `data/simulation/speed_clean_comparison.csv` |
 | §3.4, Figure 4 | Collectivism as moderator | `scripts/sweep4_figures.py` | `data/simulation/sweep4_collectivism.csv` |
 | §3.5 | Intervention ranking table | Inline from sweep6 data | `data/simulation/sweep6_full_grid.csv` |
 | §3.6, Figure 5 | Archetype trajectories | `scripts/sweep5_figures.py` | `data/simulation/sweep5_archetypes.csv` |
@@ -63,6 +63,7 @@ python models/pathway_a_abm/runner.py 6    # Sweep 6: full grid (4,500 runs, ~30
 # Step 2: Run ablation studies (~15 min total)
 python scripts/run_ablation_weights.py         # Weight ablation (1,000 runs, ~8 min)
 python scripts/run_ablation_interventions.py   # Intervention decoupling (450 runs, ~5 min)
+python scripts/run_speed_clean_comparison.py   # Exposure-time-controlled speed comparison (300 runs, ~5 min)
 
 # Step 3: Generate all figures
 python models/pathway_a_abm/report.py    # Sweep 1 figures
@@ -86,7 +87,7 @@ make figures       # Step 3
 make test          # Step 5
 ```
 
-Note: Sensitivity analysis, horizon robustness, and speed comparison CSVs were generated in interactive analysis sessions and are committed to the repository. The primary sweeps and ablation studies are fully reproducible from the scripts above.
+Note: Sensitivity analysis and horizon robustness CSVs were generated in interactive analysis sessions and are committed to the repository. The primary sweeps, ablation studies, and clean speed comparison are reproducible from the scripts above.
 
 ## 4. Expected Runtime
 
@@ -100,9 +101,11 @@ Note: Sensitivity analysis, horizon robustness, and speed comparison CSVs were g
 | 1 | Sweep 6 (full grid) | 4,500 | ~30 min |
 | 2 | Ablation: weights | 1,000 | ~8 min |
 | 2 | Ablation: interventions | 450 | ~5 min |
+| 2 | Clean speed comparison | 300 | ~5 min |
 | 3 | Figure generation | — | ~2 min |
 | 4 | Pathway C | — | ~1 sec |
-| **Total** | | **18,500** | **~2.5 hours** |
+| **Total (primary sweeps + ablations)** | | **18,500** | **~2.5 hours** |
+| **Supplementary** | Clean speed comparison | 300 | ~5 min |
 
 Estimates based on Apple M-series. Intel/AMD may be ~2x slower.
 
@@ -114,7 +117,7 @@ After running all sweeps:
 python -m pytest tests/ -v
 ```
 
-Expected: 14 tests pass (with FutureWarning about Mesa `seed` → `rng` migration).
+Expected: 17 tests pass (with FutureWarning about Mesa `seed` → `rng` migration).
 
 ## Reproducibility Notes
 

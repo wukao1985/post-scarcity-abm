@@ -50,7 +50,10 @@ The model is designed to reproduce the following macroscopic patterns observed i
 | relatedness | float | [0, 1] | SDT core need: social connection and belonging |
 | status | float | [0, 1] | Perceived social standing |
 | meaning | float | [0, 1] | Derived composite: overall psychological well-being |
-| economic_role | float | [0, 1] | Access to productive economic activity (1.0=employed, 0=displaced) |
+| role_access | float | [0, 1] | Access to meaning-generating productive roles |
+| income_support | float | [0, 1] | Economic security provided by employment or UBI |
+| economic_role | float | [0, 1] | Backward-compatible composite summary of role_access and income_support |
+| is_displaced | boolean | true/false | Whether the agent is in the displaced subset for the current step |
 | virtual_role | float | [0, 1] | Engagement with virtual role substitutes |
 | archetype | categorical | productive/beautiful_one/aggressor/withdrawn/collapsed | Behavioral classification based on meaning and aggression |
 | birth_intention | float | [0, 1] | Proxy for reproductive motivation |
@@ -91,16 +94,16 @@ Each timestep proceeds in the following order:
 
 ### 3.1 Model-Level Processes (sequential)
 1. **Automation advance:** `current_post_labor` increases by `automation_speed` toward `target_post_labor`.
-2. **Role assignment:** `n_displaced = current_post_labor × N` agents are randomly sampled for displacement. Displaced agents receive `economic_role = ubi × ubi_strength + roles_program × roles_strength`. Non-displaced agents retain `economic_role = 1.0`. Displacement is re-randomized each step (population-level rate, not persistent individual state).
+2. **Role assignment:** `n_displaced = current_post_labor × N` agents are randomly sampled for displacement. Displaced agents receive `income_support = ubi × ubi_strength` and `role_access = roles_program × roles_strength`; non-displaced agents retain `income_support = 1.0` and `role_access = 1.0`. `economic_role` is retained only as a backward-compatible composite (`max(income_support, role_access)`). Displacement is re-randomized each step (population-level rate, not persistent individual state).
 
 ### 3.2 Agent-Level Processes (random activation order)
 For each agent, in random order:
 1. **Neighborhood assessment:** Compute fraction of neighbors in aggressor, collapsed, and withdrawn states; compute mean neighbor meaning.
 2. **Psychological state update:** Update autonomy, competence, relatedness, and status via mean-reverting dynamics toward condition-dependent targets (see §8.1).
-3. **Virtual role search:** Displaced agents (economic_role < 0.3) incrementally increase virtual_role engagement.
+3. **Virtual role search:** Displaced agents incrementally increase `virtual_role` engagement; non-displaced agents decay back toward zero virtual engagement.
 4. **Meaning computation:** Derive meaning from weighted combination of psychological states, contribution, contagion, and resilience (see §8.2).
 5. **Archetype classification:** Classify agent based on meaning level and aggression drive (see §8.3).
-6. **Birth intention update:** Compute reproductive motivation from relatedness, meaning, autonomy, and economic role.
+6. **Birth intention update:** Compute reproductive motivation from relatedness, meaning, autonomy, and role access.
 
 ### 3.3 Data Collection (end of step)
 All model-level reporters (mean meaning, sink index, archetype fractions, etc.) are recorded.
@@ -113,7 +116,7 @@ All model-level reporters (mean meaning, sink index, archetype fractions, etc.) 
 
 The model integrates three theoretical frameworks:
 - **Self-Determination Theory (SDT; Deci & Ryan, 2000):** Three core psychological needs — autonomy, competence, relatedness — drive well-being. Economic roles satisfy all three; displacement threatens all three.
-- **Social contagion (Centola & Macy, 2007):** Distressed behavioral states spread through social networks via complex contagion.
+- **Social contagion (Centola & Macy, 2007):** Distressed behavioral states spread through social networks via linear network exposure in the implemented model.
 - **Behavioral sink (Calhoun, 1962):** Populations lacking meaningful social roles exhibit withdrawal, aggression, and reproductive failure.
 
 ### 4.2 Emergence
@@ -189,9 +192,9 @@ Model-level reporters aggregate:
 4. Initialize psychological states from Gaussian distributions:
    - autonomy, competence: N(0.55, 0.08)
    - relatedness, status: N(0.50, 0.08)
-5. Set economic_role=1.0, virtual_role=0.0, archetype="productive" for all agents.
-6. Compute initial meaning for all agents.
-7. Set current_post_labor=0.0.
+5. Set `role_access=1.0`, `income_support=1.0`, `economic_role=1.0`, `virtual_role=0.0`, `is_displaced=False` for all agents.
+6. Compute initial meaning for all agents, then run one archetype classification pass before initial data collection.
+7. Set `current_post_labor=0.0`.
 
 ---
 
@@ -215,31 +218,33 @@ state_{t+1} = state_t + decay × (target - state_t) + N(0, σ) + agent_shock
 
 where decay=0.08, σ=0.08, agent_shock ~ N(0, 0.03).
 
+Define `virtual_engagement = virtual_role` when `virtual_role > 0.1`, else `0.0`.
+
 **Autonomy target:**
 ```
-base + 0.25×economic_role + 0.10×virtual_role + 0.10×fairness
+base + 0.25×role_access + 0.10×virtual_engagement + 0.10×fairness
 + 0.12×resilience − 0.06×status_gap − 0.05×contagion
 ```
 
 **Competence target:**
 ```
-base + 0.25×economic_role + 0.10×virtual_role×virtual_world_quality
+base + 0.25×role_access + 0.10×virtual_engagement×virtual_world_quality
 + 0.12×skill_transferability + 0.10×roles_program − 0.05×contagion
 ```
 
 **Relatedness target:**
 ```
-base + 0.18×social_capital + 0.10×collectivism_index + 0.10×economic_role
-+ 0.05×virtual_world_quality + 0.08×fairness − 0.12×aggressor_frac − 0.05×contagion
+base + 0.18×social_capital + 0.10×collectivism_index + 0.10×role_access
++ 0.05×virtual_engagement + 0.08×fairness − 0.12×aggressor_frac − 0.05×contagion
 ```
 
 **Status target:**
 ```
-base + 0.25×economic_role + 0.10×fairness + 0.08×relatedness
-− 0.12×status_concentration×(1−economic_role) − 0.04×contagion
+base + 0.25×role_access + 0.10×fairness + 0.08×relatedness
+− 0.12×status_concentration×(1−role_access) − 0.04×contagion
 ```
 
-where base=0.32, contagion = sink_exposure × contagion_strength, status_gap = inequality_index × (1 − economic_role), and sink_exposure = aggressor_frac + collapsed_frac + withdrawn_frac among neighbors.
+where base=0.32, contagion = sink_exposure × contagion_strength, status_gap = inequality_index × (1 − income_support), and sink_exposure = aggressor_frac + collapsed_frac + withdrawn_frac among neighbors.
 
 ### 7.2 Meaning Function
 
@@ -248,7 +253,7 @@ meaning = 0.25×autonomy + 0.25×competence + 0.25×relatedness + 0.10×status
           + 0.15×contribution − 0.08×contagion + 0.08×resilience
 ```
 
-where contribution = economic_weight × economic_role + virtual_weight × virtual_role (default weights: 0.8 economic, 0.1 virtual).
+where contribution = economic_weight × role_access + virtual_weight × virtual_engagement (default weights: 0.8 role access, 0.1 virtual).
 
 ### 7.3 Archetype Classification
 
@@ -264,22 +269,28 @@ where aggression_drive = (1 − meaning) × (1 − social_capital) × 0.5.
 
 ### 7.4 Virtual Role Search
 
-Displaced agents (economic_role < 0.3) seek virtual roles:
+Displaced agents seek virtual roles; non-displaced agents decay virtual engagement:
 ```
 virtual_role_{t+1} = clip(virtual_role_t + 0.05 × virtual_world_quality, 0, virtual_world_quality)
 ```
+when displaced, and
+```
+virtual_role_{t+1} = clip(virtual_role_t − 0.02, 0, 1)
+```
+when not displaced.
 
 ### 7.5 Birth Intention
 
 ```
-birth_intention = clip(0.4×relatedness + 0.3×meaning + 0.3×autonomy − 0.2×(1−economic_role), 0, 1)
+birth_intention = clip(0.4×relatedness + 0.3×meaning + 0.3×autonomy − 0.2×(1−role_access), 0, 1)
 ```
 
 ### 7.6 Role Assignment (Model Level)
 
 Each step, `n_displaced = current_post_labor × N` agents are randomly selected for displacement:
-- Displaced: economic_role = ubi × ubi_strength + roles_program × roles_strength
-- Non-displaced: economic_role = 1.0
+- Displaced: `income_support = ubi × ubi_strength`, `role_access = roles_program × roles_strength`
+- Non-displaced: `income_support = 1.0`, `role_access = 1.0`
+- Reporting composite: `economic_role = max(income_support, role_access)`
 
 Default strengths: ubi_strength=0.30, roles_strength=0.35.
 
