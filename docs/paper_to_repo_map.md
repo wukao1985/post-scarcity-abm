@@ -21,7 +21,7 @@ Maps every section of `reports/paper_draft.md` to the specific code, data, and a
 | **3.4 Collectivism (RQ4)** | `data/simulation/sweep4_collectivism.csv` | 3,600 runs, 6 collectivism levels |
 | **3.5 Interventions (RQ5)** | `data/simulation/sweep6_full_grid.csv` | 4,500 runs, 10 scenarios × 3 PL levels |
 | **3.6 Archetype Trajectories** | `data/simulation/sweep5_archetypes.csv` | 100 runs, full 81-step time series |
-| **3.7 Historical Validation** | `reports/historical_validation.md` | Nauru vs Gulf states mapping |
+| **3.7 Historical Analogues** | `reports/historical_validation.md` | Nauru vs Gulf states mapping |
 | **4.1-4.3 Discussion** | `reports/paper_draft.md` | Interpretation + limitations |
 | **4.4 Pathway C Triangulation** | `models/pathway_c_sd/sd_model.py`, `reports/pathway_c_initial.md` | SD model + comparison |
 | **V4 Validation** | `reports/v4_validation.md` | V3 vs V4 comparison table |
@@ -54,6 +54,6 @@ Maps every section of `reports/paper_draft.md` to the specific code, data, and a
 
 | Test File | Coverage |
 |---|---|
-| `tests/test_model.py` | 14 tests: agent creation, dynamics, interventions, reproducibility |
+| `tests/test_model.py` | 17 tests: agent creation, dynamics, interventions, reproducibility, virtual role |
 
 Run: `python -m pytest tests/ -v`

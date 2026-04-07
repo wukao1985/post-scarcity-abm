@@ -36,7 +36,7 @@ Every figure and table referenced in the paper:
 | §3.4, Figure 4 | Collectivism as moderator | `scripts/sweep4_figures.py` | `data/simulation/sweep4_collectivism.csv` |
 | §3.5 | Intervention ranking table | Inline from sweep6 data | `data/simulation/sweep6_full_grid.csv` |
 | §3.6, Figure 5 | Archetype trajectories | `scripts/sweep5_figures.py` | `data/simulation/sweep5_archetypes.csv` |
-| §3.7 | Historical validation (Nauru/Gulf) | `scripts/sweep6_figures.py` | `data/simulation/sweep6_full_grid.csv` |
+| §3.7 | Historical analogues (Nauru/Gulf) | `scripts/sweep6_figures.py` | `data/simulation/sweep6_full_grid.csv` |
 | §2.5 | Sensitivity analysis table | Inline from sensitivity data | `data/simulation/sensitivity_analysis.csv` |
 | §2.4 | Horizon robustness table | Inline from convergence data | `data/simulation/convergence_summary.csv` |
 | §3.2 (ablation) | Weight ablation results | `scripts/run_ablation_weights.py` | `data/simulation/ablation_weights.csv` |
@@ -117,7 +117,7 @@ After running all sweeps:
 python -m pytest tests/ -v
 ```
 
-Expected: 17 tests pass (with FutureWarning about Mesa `seed` → `rng` migration).
+Expected: 16 tests pass, 1 failure (with FutureWarning about Mesa `seed` → `rng` migration). Note: `test_virtual_role_decay` expects 0.48 but the implementation uses 0.95 decay factor producing 0.475; this is a known documentation-model mismatch per referee report.
 
 ## Reproducibility Notes
 

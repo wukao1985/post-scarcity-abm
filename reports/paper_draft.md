@@ -2,7 +2,7 @@
 
 **Authors:** Anonymous Authors (under review)
 
-**Keywords:** post-labor displacement, behavioral sink, self-determination theory, agent-based modeling, role substitution, social cohesion, universal basic income
+**Keywords:** post-labor displacement, behavioral sink, self-determination theory, agent-based modeling, role substitution, social cohesion, income support
 
 ---
 
@@ -10,9 +10,9 @@
 
 What equilibrium states does a society reach when large fractions of the population lose productive roles, even if material needs can still be met? This question matters because work is not only a source of income: it also structures identity, competence, belonging, and purpose, so role displacement can produce social distress even when poverty is buffered.
 
-We present a stylized agent-based model that combines Self-Determination Theory with social contagion dynamics to study long-run social states under sustained role displacement. Across multiple sweeps and ablation studies, the model points to a policy-sensitive threshold at high displacement, shows that income support alone is less protective than interventions that restore meaningful participation, finds that virtual worlds and collectivist buffering help but do not fully replace real roles on their own, and indicates that multi-pillar policy bundles perform best under extreme displacement. A matched-time speed comparison further suggests that automation rate changes the transition path more than the late-run equilibrium in this model.
+We present a stylized agent-based model that combines Self-Determination Theory with social contagion dynamics to study long-run social states under sustained role displacement. Across multiple sweeps and ablation studies, the model points to a policy-sensitive threshold at high displacement, shows that economic support alone is less protective than interventions that restore meaningful participation, finds that virtual worlds and collectivist buffering help but do not fully replace real roles on their own, and indicates that multi-pillar policy bundles perform best under extreme displacement. A matched-time speed comparison further suggests that automation rate changes the transition path more than the late-run equilibrium in this model.
 
-These results are mechanistic rather than predictive: they are conditional on a stylized parameterization, they underrepresent aggression relative to the historical behavioral-sink literature, and they do not model persistent individual scarring. Even with those limits, the model contributes a clearer distinction between economic buffering and meaning restoration, showing why post-labor policy may need to preserve socially valued participation rather than rely on income replacement alone.
+These results are mechanistic rather than predictive: they are conditional on a stylized parameterization, they underrepresent aggression relative to the historical behavioral-sink literature, and they do not model persistent individual scarring. Even with those limits, the model contributes a clearer distinction between economic buffering and meaning restoration, showing why post-labor policy may need to preserve socially valued participation rather than rely on economic support alone.
 
 ---
 
@@ -67,7 +67,7 @@ We integrate three theoretical strands:
 
 We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al., 2021), following the Overview, Design concepts, and Details (ODD) protocol conventions (Grimm et al., 2020), with 200 agents interacting over 80 timesteps. **This is a stylized model of post-labor dynamics designed to characterize equilibrium states, not a forecast of specific technological timelines or displacement levels.** The model (V5) extends prior work with a key structural distinction: universal basic income provides economic support — material security plus a fairness buffer — without restoring role meaning, while role substitution provides role participation — access to socially recognized and meaning-generating participation — which drives autonomy, competence, relatedness, status, and contribution. This separation makes the income-support-versus-roles comparison a test of structural mechanism rather than parameter difference.
 
-**Modeling displacement as a ramp-to-target process.** The displacement target is the share of the population whose usual productive roles have been displaced. The population reaches that target via a gradual ramp governed by the automation rate (default: 0.03 per step, reaching 80% by approximately step 27). At each step after the ramp, the current displacement fraction is drawn from the agent pool, representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory, appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. The ramp-to-target mechanism means early-timestep outcomes reflect partial displacement rather than the full target level. Persistent individual displacement is a natural extension for future work.
+**Modeling displacement as a ramp-to-target process.** The displacement target is the share of the population whose usual productive roles have been displaced. The population reaches that target via a gradual ramp governed by the automation rate (default: 0.03 per step, reaching 80% displacement by approximately step 27). At each step after the ramp, the current displacement fraction is drawn from the agent pool, representing the turnover inherent in labor markets even under high automation. This design treats displacement as a structural condition of the society rather than a permanent individual trajectory, appropriate for studying equilibrium properties, though it precludes claims about individual scarring or adjustment dynamics. The ramp-to-target mechanism means early-timestep outcomes reflect partial displacement rather than the full target level. Persistent individual displacement is a natural extension for future work.
 
 **Agent state variables:**
 - Psychological: autonomy, competence, relatedness, status (0–1 scales)
@@ -75,11 +75,11 @@ We developed a network-based agent-based model (ABM) using Mesa 3.5 (Kazil et al
 - Behavioral: archetype (productive, beautiful one, aggressor, withdrawn, collapsed)
 
 **Model parameters:**
-- Post-labor fraction: target proportion of population displaced from productive roles (0–0.95)
-- Automation speed: rate of displacement per step (0.006–0.20 for speed comparison; 0.03 baseline for all other sweeps)
-- Virtual-world quality: competence and autonomy provided by virtual roles (0–1)
-- Collectivism index: baseline relatedness and social buffering (0–1)
-- Interventions: universal basic income, role substitution, fairness redistribution
+- `post_labor_fraction`: target proportion of population displaced from productive roles (0–0.95)
+- `automation_speed`: rate of displacement per step (0.006–0.20 for speed comparison; 0.03 baseline for all other sweeps)
+- `virtual_world_quality`: competence and autonomy provided by virtual roles (0–1)
+- `collectivism_index`: baseline relatedness and social buffering (0–1)
+- Interventions: income support, role substitution, fairness redistribution
 
 ### 2.2 Psychological Update Mechanism
 
@@ -150,7 +150,7 @@ Section 3.3 draws on a separate exposure-time-controlled speed comparison compri
 
 **Validation:** V5 reproduces the directional pattern of prior findings (threshold effect in the 80–90% zone under baseline conditions), with the critical structural change that income support no longer provides role access. The V5 separation of income support from roles is the most significant model change, revealing that earlier versions overstated income support's effectiveness. Note that the model was calibrated to approximate prior output patterns; this comparison validates implementation consistency, not independent replication.
 
-**Horizon robustness.** We verified that outcomes are near-stationary by step 80: across all 9 tested scenario × displacement conditions, the absolute change in mean sink index (the share of agents in aggressor, withdrawn, or collapsed states) between step 80 and step 120 ranges from 0.0009 to 0.0092, and the maximum absolute change between step 80 and step 240 is 0.0060. We therefore use step 80 as a reliable near-equilibrium approximation rather than a claim of full numerical convergence through step 240. Full convergence table in Supplementary Methods.
+**Horizon robustness.** We verified that outcomes are near-stationary by step 80: across all 9 tested scenario × displacement conditions, the absolute change in mean social distress measure between step 80 and step 120 ranges from 0.0009 to 0.0092, and the maximum absolute change between step 80 and step 240 is 0.0060. We therefore use step 80 as a reliable near-equilibrium approximation rather than a claim of full numerical convergence through step 240. Full convergence table in Supplementary Methods.
 
 ### 2.5 Sensitivity Analysis
 
