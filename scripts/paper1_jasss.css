@@ -1,0 +1,133 @@
+@page {
+  size: A4;
+  margin: 16mm 17mm 18mm 17mm;
+
+  @top-center {
+    content: "JASSS Submission Draft";
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #666666;
+    letter-spacing: 0.04em;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #666666;
+  }
+}
+
+body {
+  margin: 0;
+  color: #1f2933;
+  background: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.45;
+}
+
+.paper-shell {
+  max-width: 172mm;
+  margin: 0 auto;
+}
+
+.paper-title {
+  margin: 0 0 10pt;
+  font-size: 22pt;
+  line-height: 1.16;
+  text-align: center;
+  font-weight: 700;
+  color: #16212b;
+}
+
+.authors,
+.keywords {
+  text-align: center;
+}
+
+.authors {
+  margin-top: 0;
+  margin-bottom: 6pt;
+  font-size: 11pt;
+}
+
+.keywords {
+  margin-top: 0;
+  margin-bottom: 14pt;
+  font-size: 9.8pt;
+  color: #43515d;
+}
+
+.section-rule {
+  border: 0;
+  border-top: 0.8pt solid #cfd8df;
+  margin: 10pt 0 15pt;
+}
+
+h2,
+h3 {
+  color: #16212b;
+  page-break-after: avoid;
+}
+
+h2 {
+  margin: 18pt 0 8pt;
+  font-size: 14pt;
+  border-bottom: 0.8pt solid #d7dfe5;
+  padding-bottom: 3pt;
+}
+
+h3 {
+  margin: 16pt 0 6pt;
+  font-size: 11.8pt;
+}
+
+p {
+  margin: 0 0 8pt;
+  text-align: justify;
+}
+
+.abstract-paragraph {
+  background: #f7f9fb;
+  border-left: 2.2pt solid #456b8c;
+  padding: 8pt 10pt;
+  margin-bottom: 9pt;
+}
+
+.reference-item {
+  font-size: 10.2pt;
+  margin-left: 16pt;
+  text-indent: -16pt;
+}
+
+.paper-figure {
+  margin: 12pt 0 16pt;
+  page-break-inside: avoid;
+}
+
+.paper-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0.8pt solid #d8e0e6;
+  box-sizing: border-box;
+}
+
+.paper-figure figcaption {
+  margin-top: 6pt;
+  font-size: 9.5pt;
+  line-height: 1.34;
+  text-align: left;
+  color: #32404a;
+}
+
+strong {
+  color: #16212b;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.92em;
+}
