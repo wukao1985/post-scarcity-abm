@@ -1,0 +1,8 @@
+# Local data dumps — never commit (huge, and reproducible from public sources)
+data/
+*.7z
+*.xml
+*.parquet
+*.sqlite
+__pycache__/
+*.pyc

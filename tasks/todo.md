@@ -1,5 +1,21 @@
 # Project Tasks — Post-Scarcity ABM
 
+> ## ⛔ 方向变更声明（2026-05-30）
+>
+> **旧的 ABM 后稀缺/behavioral-sink 模拟路线已停止。**
+>
+> 原因：经 ~20 轮评审，该模型卡在两个结构性、无法治愈的问题上：
+> (1) **循环论证** — 核心结论几乎被 meaning 函数的定义直接推出，非模型涌现；
+> (2) **不可证伪** — 模拟假想的 80% 失业未来，无 ground truth。
+>
+> **新方向**见 `so_sdt_study/`：用 ChatGPT 冲击（2022-11-30）这一真实自然实验 +
+> 公开 Stack Exchange 数据，检验"按 SDT 动机类型分组的贡献者差异化流失"这一可证伪假说。
+> 详见 `so_sdt_study/DESIGN.md`（预注册式设计文档）。
+>
+> 下方旧的 ABM 任务清单**仅作历史保留**，不再推进。
+
+---
+
 ## 🟡 Next Up
 
 ### Pathway B — LLM Agents
