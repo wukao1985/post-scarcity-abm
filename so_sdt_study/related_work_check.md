@@ -29,7 +29,20 @@
 - **理论**：**无 SDT**（self-determination/intrinsic/relatedness/reputation 全 0 命中）。
 - **流失**：未涉及。
 
-### 3. Burtch, Lee & Chen (2024), *Scientific Reports* 14:10413
+### 3. Shan & Qiu (SSRN 4462976, forthcoming *Information Systems Research*), "Examining the Impact of Generative AI on Users' Voluntary Knowledge Contribution: ... Stack Overflow"
+全文已读（`docs/literature/shan-qiu-ssrn-4462976-generative-ai-stack-overflow.pdf`）。**这是最贴身的一篇：同平台（SO）、同冲击（ChatGPT）、同主题（答题贡献）。**
+
+- **结论**：**正向**——AI 让用户答得**更多、更短、更易读**（学习效应）；仅在高强度使用时认知负荷拖累数量。
+- **方法**：DID + 合成控制。**用了 Cox 比例风险模型** —— 但用途见下。
+- **它的 Cox 用来测什么**：**inter-answer duration（两次答题的间隔时间）**，作为机制检查，发现用 AI 的人**答题更快**。**不是测流失/退出。**
+- **分组/调节**：cumulative usage、usage intensity、answering experience/expertise —— 按**使用强度与经验**，**非动机类型**。
+- **SDT**：无（self-determination/autonomy/competence/relatedness 全 0 命中；intrinsic 仅在文献综述里引用他人）。
+- **退出/流失**：无（churn/attrition 0；exit 仅出现在参考文献标题）。
+
+**对我们的关键影响**：不能再说"没人在 SO 场景用过生存分析"。措辞必须精确——
+> 我们将生存分析用于**贡献者退出（time-to-exodus）**，而非 Shan & Qiu 用的**答题间隔（inter-answer duration）**。同一工具，不同结局变量：他们问"还在的人答得多快"，我们问"人还在不在"。
+
+### 4. Burtch, Lee & Chen (2024), *Scientific Reports* 14:10413
 （前期文献检索 + 经由 Li & Kim 正文引用确认）
 
 - **平台/冲击**：SO；ChatGPT。Reddit 作负对照。
@@ -39,20 +52,27 @@
 
 ## 二、综合结论：novelty 总账
 
-| 维度 | Li & Kim | Su et al. | Burtch | **so_sdt_study 空地** |
-|---|---|---|---|---|
-| 平台 | SO | Quora | SO | SO |
-| 测流失/生存分析 | ❌ 只测"答得少" | ❌ | ❌ | ✅ Cox 生存分析 |
-| SDT 三需求拆分 | ❌ 仅"地位"一维 | ❌ | ❌ | ✅ 精通/地位/关系 |
-| 关系型韧性 | ❌ | ❌ | 提"culture"未拆 | ✅ |
-| 退出 vs 迁移 | ❌ 仅提议 | ❌ | ❌ | ✅ |
-| 时间尺度 | 9 天 | — | 周级 | ✅ 12 个月 |
+| 维度 | Li & Kim | Su et al. | Shan & Qiu | Burtch | **so_sdt_study 空地** |
+|---|---|---|---|---|---|
+| 平台 | SO | Quora | **SO** | SO | SO |
+| 结论 | 贡献↓ | ↑ | **↑（学习效应）** | 整体↓ | 待测 |
+| 用 Cox/生存分析 | ❌ | ❌ | ✅**测答题间隔** | ❌ | ✅**测退出** |
+| 测流失/退出 | ❌ 只测"答得少" | ❌ | ❌ | ❌ | ✅ time-to-exodus |
+| SDT 三需求拆分 | ❌ 仅"地位"一维 | ❌ | ❌ | ❌ | ✅ 精通/地位/关系 |
+| 关系型韧性 | ❌ | ❌ | ❌ | 提"culture"未拆 | ✅ |
+| 退出 vs 迁移 | ❌ 仅提议 | ❌ | ❌ | ❌ | ✅ |
+| 时间尺度 | 9 天 | — | 数月 | 周级 | ✅ 12 个月 |
 
 ## 三、对 so_sdt_study 定位的影响
 
 **需让步（不能再当首要卖点）**：
 - "地位/声望驱动型受冲击最大" —— **Li & Kim 已做**（按 reputation 分，DID）。
   → 降级为"复现并延伸前人发现"，而非原创主张。
+- "在 SO 场景用生存分析" —— **Shan & Qiu 已做**（但测的是答题间隔 inter-answer duration）。
+  → 措辞必须精确：我们用生存分析测**贡献者退出（time-to-exodus）**，不同结局变量。
+
+**有利的背景**：Shan & Qiu 与 Su et al. 都发现 AI 让人**贡献更多**（学习效应），平均效应正向/中性。
+因此"特定动机类型（地位型）反而永久流失"会是更反直觉、更有张力的发现——平均向上时谁在向下。
 
 **仍然成立的核心 novelty（三篇原文核实后确认无人占）**：
 1. **从"答得少"升级到"永久流失"**——生存分析（Cox），12 个月尺度。【主轴】
@@ -66,6 +86,11 @@
 
 ## 四、尚存风险
 
-- 文件名为 "shan-qiu" 但实际作者是 Su et al.；若另有一篇真正的 Shan & Qiu (ISR 0332) 仍未核实，
-  题目（SO voluntary knowledge contribution）高度相似，建议后续补查其是否触及生存分析/SDT。
-- 其余为常规风险（数据可得性、关系型样本量、投票是否匿名），见 DESIGN §9。
+- 四篇贴身论文已全部读原文核实完毕（Li&Kim / Su et al. / Shan&Qiu / Burtch）。核心 novelty 成立。
+- 常规风险（数据可得性、关系型样本量、投票是否匿名），见 DESIGN §9。
+
+## 五、命名澄清
+
+- `shan-qiu-ssrn-4628786-...knowledge-sharing.pdf` 实际作者为 **Su, Zhang, Wang & Qiu**（平台 Quora）。
+- `shan-qiu-ssrn-4462976-...stack-overflow.pdf` 才是真正的 **Shan & Qiu**（ISR，平台 Stack Overflow）。
+- 两篇共享作者 Qiu、题目相近，易混；下载命名沿用，正文已按真实作者区分。
