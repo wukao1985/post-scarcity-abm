@@ -14,18 +14,30 @@ whole book.
 Start with the surprise, because intellectual honesty demands we lead with the evidence against
 alarm.
 
-As of 2026, the broad white-collar catastrophe has **not** shown up in the aggregate data. By
-several serious measures, industries *more* exposed to AI have so far seen employment and wages
-hold up or even grow. The job market has not visibly cratered for the exposed professions. The
-single clearest signal of harm is narrow and specific: a relative decline in **entry-level**
-hiring for the youngest workers (roughly 22–25) in the most AI-exposed fields — and even that is
-contested, with some economists arguing the dip began before ChatGPT and can't be cleanly pinned
-on AI at all.
+As of 2026, the broad white-collar catastrophe has **not** shown up in the aggregate data, and we
+should sit with how genuinely uncertain the picture is. AI adoption itself is no longer in doubt:
+Anthropic's Economic Index, built from around a million real Claude conversations, finds roughly
+40% of US employees now use AI at work, up from about 20% in 2023 — and that on Claude.ai as of
+late 2025, usage still tilts slightly toward *augmentation* over *automation* (about 52% to 45%).
+People are using it, heavily, and so far more to extend their work than to replace it. Meanwhile
+the aggregate job market for exposed professions has not cratered; by several measures employment
+and wages in AI-exposed industries have held up.
+
+But there is one exception, and it is precise enough to take seriously. The Stanford Digital
+Economy Lab — Erik Brynjolfsson and colleagues, using high-frequency ADP payroll records covering
+millions of US workers — found that workers aged **22 to 25 in the most AI-exposed occupations**
+saw their employment fall by roughly **16% in relative terms** after generative AI spread, even as
+*older* workers in those very same jobs grew by 6–9%. The damage, where it shows up at all, is
+concentrated exactly where AI *automates* rather than augments — and it lands on the youngest, at
+the entry level. (Even this is contested: some economists note the entry-level dip began before
+ChatGPT and resist pinning it cleanly on AI. I'll honour that uncertainty rather than wave it
+away.)
 
 I have to give the optimist their due here. If you expected AI to be visibly gutting white-collar
 work by 2026, the aggregate data says: not yet, and maybe the adjustment really is being absorbed
 the way it was every time before. Anyone who tells you the white-collar apocalypse is *currently
-measurable* is getting ahead of the evidence.
+measurable* is getting ahead of the evidence. What we have is one narrow, real signal — the young,
+at the bottom rung — inside an aggregate that is otherwise holding.
 
 But "not yet, in aggregate" is not the same as "nowhere." There is one place where the future
 this book worries about is not a forecast at all. It has already, fully, happened. And it
@@ -107,9 +119,10 @@ preparation. That's the darkest chapter, and it's next.
 
 ---
 
-> 🔬 **研究事项 RT-04A (✅已核实 2026-05):** "白领宏观未崩、仅入门岗信号"已核实——Stanford
-> "Canaries"（Brynjolfsson 等，ADP 真实薪资）：22–25 岁最暴露职业就业相对降~16%，年长者反增
-> 6–9%。可作为🟢写入。仍需在正文点出真实张力（部分研究认为入门岗下滑早于/不全归因于 ChatGPT）。
+> 🔬 **研究事项 RT-04A (✅已核实并写入正文 2026-05):** "白领宏观未崩、仅入门岗信号"已核实并
+> 写成🟢正文——Stanford "Canaries"（Brynjolfsson 等，ADP 薪资）：22–25 岁最暴露职业就业相对
+> 降~16%，年长者反增6–9%；Anthropic 指数：~40% 雇员用 AI、增强:自动化≈52:45。正文已点出真实
+> 张力（部分研究认为入门岗下滑早于/不全归因于 ChatGPT）。
 
 > 🔬 **研究事项 RT-04B (低):** "合同黏性 = 白领宏观显现慢的主因"是一个有力的🟡机制论证，但
 > 目前是推断。有无办法对照检验？（如：高 gig/无合同比例的行业，是否比高正式雇佣的行业更早
