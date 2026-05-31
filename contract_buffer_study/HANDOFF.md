@@ -1,3 +1,11 @@
+> ✅ **COMPLETED 2026-05-31.** The study described below was executed end-to-end: design frozen
+> and committed *before* outcomes (`DESIGN.md`), full CPS 2021-07…2026-04 extract built from NBER +
+> Census (parser validated against NBER, exact), and the frozen analysis run. **Result: a
+> pre-registered NULL — the contract-buffer hypothesis is not confirmed** (β₃ = −2.2%/SD, p=0.21;
+> placebo-identical; event-study flat; gradient reversed; robust). See `PAPER.md` / `RESULTS.md`.
+> Chapter 4 (EN+ZH) has absorbed the null and lowered the forerunner-hinge confidence. The handoff
+> below is retained as the historical brief.
+
 # RT-04B — Contract-Buffer Study · Handoff for next session
 
 **Written 2026-05-31 by the prior session, for a fresh full-network-access session to execute autonomously.**
