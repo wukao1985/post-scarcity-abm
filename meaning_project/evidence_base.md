@@ -111,6 +111,30 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   the answer leans no: the value of care depends partly on a *human* being its source. Anchors
   Ch.6's relatedness path and Q7. VERIFIED 2026-05.
 
+## Intrinsic vs extrinsic goals — the 🟢 spine of Ch.6's "turn"
+
+- **Kasser & Ryan / SDT aspirations research** (1990s onward, replicated across cultures & ages).
+  *Shows:* pursuing **extrinsic** goals (money, status, image, others' approval) is associated
+  with **lower** wellbeing and more distress; pursuing **intrinsic** goals (growth, relationships,
+  community/contribution) supports wellbeing via need satisfaction. VERIFIED 2026-05.
+- **Niemiec, Ryan & Deci (2009), "The Path Taken," J. Research in Personality** (1-yr post-college
+  longitudinal). *The killer finding:* **attaining** intrinsic aspirations raised wellbeing and
+  lowered ill-being — but **attaining extrinsic aspirations did NOT raise wellbeing and actually
+  related to ill-being.** i.e. even *succeeding* at money/status/recognition didn't help. This is
+  the strongest 🟢 empirical backing for Ch.6's central turn (anchor meaning to process / what you
+  control, not to external outcomes — AI is now devaluing exactly the external outcomes, and even
+  winning them wouldn't have delivered the meaning). VERIFIED 2026-05.
+
+## Retraining / active labor market policy — the honest 🟢 for Ch.7
+
+- **US worker-retraining evaluations** (WIA/WIOA national randomized eval; TAA studies; LaLonde
+  Hamilton Project review). *Shows:* training streams largely **did not** improve earnings or
+  employment vs control over 30 months; TAA participants sometimes earned *less*. Active labor
+  market retraining has "produced disappointing results relative to cost and expectations."
+  *Use honestly:* the obvious policy answer to displacement (just retrain people) mostly doesn't
+  work as advertised — so Ch.7 must NOT lean on it as a 🟢 solution; it's a cautionary 🟢.
+  VERIFIED 2026-05.
+
 ---
 
 ## Gaps to fill (future 🟢 pillars to consider)

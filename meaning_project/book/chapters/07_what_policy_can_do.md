@@ -44,8 +44,16 @@ with the least slack — the ones Chapter 6's individual path can't yet reach.
   *time* — the damage spread across generations. The cruelest version of an AI transition is a
   fast, unbuffered one concentrated on specific living people. A great deal of what policy can
   helpfully do is simply *slow the landing for those caught underneath it*: transition support,
-  retraining that's real rather than ceremonial, time to reorient. Not slowing AI — slowing the
-  fall of the people it displaces.
+  time to reorient — and here I have to be honest in a way that complicates the obvious answer.
+  The reflexive policy response to displacement is "retrain them." But the evidence on retraining
+  is genuinely sobering: large US evaluations of government training programs (WIA/WIOA, Trade
+  Adjustment Assistance) have repeatedly found little or no improvement in earnings or employment
+  versus a control group — in some cases participants did *worse*. (🟢) So "just retrain people"
+  is not the solution it's usually waved around as. That doesn't mean abandon transition support;
+  it means be honest that cushioning the fall is mostly about *time, income, and dignity* during
+  the adjustment, not a confident promise that we can re-skill everyone into the next good job.
+  Not slowing AI — slowing the fall of the people it displaces, without overpromising about where
+  they land.
 - **Distributing the gains.** AI's productivity dividend is real and growing. The central
   distributive question of the next decades is whether that dividend flows mostly to whoever owns
   the models and capital, or reaches ordinary citizens. This isn't a technical question; it's the
@@ -93,9 +101,9 @@ time, about what we know, what we're guessing, and how to live in the space betw
 
 ---
 
-> 🔬 **研究事项 RT-07A (高):** "降低伤害/放大利益"的具体杠杆需要真实经验证据，否则是设计推演。
-> 优先：①再培训项目的真实有效性（多数评估很惨淡——诚实写）；②AI 生产力红利的分配现状（谁拿走了）；
-> ③"普及 AI 可及性"是否真提升了弱势群体的能动性。接 Q11/Q12。
+> 🔬 **研究事项 RT-07A (部分✅ 2026-05):** ①再培训有效性已核实并写入正文——美国 WIA/WIOA/TAA
+> 评估显示相对对照组收入/就业几乎无改善（诚实的🟢：'只要再培训'不成立）。仍待检索：②AI 生产力
+> 红利的分配现状（谁拿走了）；③'普及 AI 可及性'是否真提升弱势群体能动性。接 Q11/Q12。
 > 🔬 **研究事项 RT-07B (中):** robust decision-making / 深度不确定性下决策——找可引用的正式框架
 > （Lempert/RAND），支撑"稳健赌注"论证。
 > 🔬 **研究事项 RT-07C (中):** UBI 作为"地板非引擎"在政策层的最新讨论（区别于第2章的心理证据，

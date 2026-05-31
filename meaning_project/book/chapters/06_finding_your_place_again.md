@@ -71,6 +71,24 @@ every year — and anchoring it to process is a bet that gets safer.** It's not 
 It's the more clear-eyed allocation of where to place the thing that makes your days feel worth
 living.
 
+And here I can offer more than my own experience, because psychologists have actually measured
+this. Decades of research within Self-Determination Theory (Kasser, Ryan, Deci and colleagues,
+replicated across cultures and age groups) find that people who orient their lives around
+*extrinsic* goals — money, status, image, the approval of others — report **lower** wellbeing and
+more distress than people oriented toward *intrinsic* goals: growth, relationships, contribution.
+That much you might have guessed. But one study cuts deeper and is worth pausing on. Niemiec, Ryan
+and Deci followed people through the year after college and looked not at what they *pursued* but
+at what they *attained*. The people who achieved their intrinsic goals got the wellbeing boost you'd
+expect. The people who achieved their **extrinsic** goals — who actually got the money, the status,
+the recognition they were chasing — got **no boost at all**, and if anything reported *more*
+ill-being. (🟢) Read that again: *succeeding* at the external goals didn't deliver. The prize, even
+when won, was empty of the thing they wanted from it.
+
+That finding mattered before AI. What AI does is press on exactly the same nerve from the outside:
+it is driving down the value of the external prizes *and* the evidence says those prizes wouldn't
+have made you whole even if you'd kept them. Both blades of the scissors point the same way — toward
+moving your weight onto what was load-bearing all along.
+
 ### The thing people will get wrong
 
 There's a tempting, and dangerous, misreading of all this, and I want to head it off because I
@@ -140,11 +158,9 @@ individual path runs out and something larger has to take over. That's the next 
 
 ---
 
-> 🔬 **研究事项 RT-06A (中，重定向):** 旧 RT-06A（找"抗AI领域"）随本章转向作废。新方向：核心
-> 主张"意义锚于过程/可控之物比锚于产出/外部结果更稳"——找证据。最强的🟢锚仍是第2章退休研究
-> （主动重建者过得好）。补充候选：内在动机 vs 外在动机与幸福的文献（SDT 的 intrinsic/extrinsic
-> 区分有大量实证）；"过程导向 vs 结果导向"目标设定的心理学（process vs outcome goals）。这能把
-> 本章核心从🔴/🟡 推向🟢。
+> 🔬 **研究事项 RT-06A (✅已核实并写入正文 2026-05):** 核心转身现有🟢支撑——Kasser/Ryan SDT
+> 内在 vs 外在目标（外在目标→更低幸福，跨文化重复）；尤其 Niemiec/Ryan/Deci 2009：*达成*外在
+> 目标（钱/地位/认可）不提升幸福、甚至关联 ill-being，而达成内在目标提升幸福。已写入第6章正文。
 > 🔬 **研究事项 RT-06B (低):** "从不会到会的速度可迁移、是最耐AI的元技能"——这是有力的🟡断言，
 > 找学习迁移 / meta-learning 的证据，但小心别夸大。
 > 🔬 **研究事项 RT-06C (中):** "AI 既是杠杆又削护城河"——这个双面性能否用真实数据展示？（如：
