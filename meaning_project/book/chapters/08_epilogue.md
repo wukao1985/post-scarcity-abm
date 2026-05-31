@@ -1,11 +1,8 @@
 # Epilogue — Living Honestly With Uncertainty
 ## 终章 · 诚实地活在不确定里
 
-> **状态：🟫 部分成稿。** 终章不需要新证据——它收束全书的姿态。骨架已立，待全书定稿后回头打磨
-> 与各章呼应。
-
-I can't tell you how this ends. That's not modesty; it's the truth, and a book that pretended
-otherwise would have betrayed its one promise on the first page.
+I can't tell you how this ends. That isn't modesty; it's the truth — and a book that pretended
+otherwise would have broken, on its last page, the one promise it made on its first.
 
 But across these chapters I've tried to show that "we can't predict it" is very far from "we can
 say nothing" — and even further from "do nothing." Let me gather what we *can* stand on.
@@ -27,8 +24,9 @@ say nothing" — and even further from "do nothing." Let me gather what we *can*
   defensible against AI than meaning sourced in output. (Ch.6)
 
 ### What we have to choose (🔴)
-- Whether to build, deliberately, the institutions that manufacture mattering. (Ch.7)
-- And, individually: where to anchor a life when output no longer defines us.
+- At the level of society: whether to steward AI so it amplifies what citizens gain and softens
+  what they lose — rather than fighting it, or leaving the gains to whoever owns the models. (Ch.7)
+- And at the level of a single life: where to anchor meaning when output no longer defines us. (Ch.6)
 
 ### Two things to carry out
 
@@ -54,17 +52,19 @@ We started with the anxious professional watching AI move into their craft, and 
 everyone, because the professional was only ever the first to be handed a question that's coming
 for all of us: *when what you make can be made without you, who are you?*
 
-Here is the consolation I actually believe, stated at its true epistemic weight. The premise of
-that frightening question — that you *are* what you produce — was never true in the first place.
-It was a convenient fiction of an economy that needed your output and so taught you to find
-yourself in it. AI is, brutally and perhaps usefully, calling that fiction's bluff. What's left
-when output no longer defines you is not nothing. It might even be more *you* than what the old
-arrangement let you be.
+Here is the consolation I actually believe, stated at its true weight. The premise hidden inside
+that frightening question — that you *are* what you produce — was never true to begin with. It was
+a convenient fiction of an economy that needed your output, and so taught you to look for yourself
+in it. AI is calling that fiction's bluff: brutally, and perhaps in the end mercifully. What is
+left when output no longer defines you is not nothing. It may turn out to be more *you* than the
+old bargain ever let you be.
 
-That's not a prediction. The future stays unknown, and I'll end where I'm allowed to end: not
-with an answer, but with a way of facing the question honestly — clear about what we know, humble
-about what we don't, and unwilling, in either direction, to lie to ourselves about which is
-which.
+That is not a prediction, and I won't dress it as one. The future stays unknown. So I end where I
+am allowed to end: not with an answer, but with a way of standing in front of the question without
+flinching and without lying — clear about the little we know, honest about the much we don't, and
+unwilling, in either direction, to mistake one for the other. If this book leaves you even
+slightly better equipped to do that — and a little less alone in it — it has done what it set out
+to do.
 
 ---
 
