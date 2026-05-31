@@ -1,73 +1,101 @@
 # Chapter 5 — How Badly Can This Go?
 ## 第5章 · 会崩坏到什么程度
 
-> **状态：🟫 部分成稿（写到证据边界）。** 这是最暗的一章，也是最容易滑向危言耸听的一章——
-> 因此对诚实纪律要求最高。本章的论证骨架已立，但几处关键的"社会层崩坏"论断目前是 🟡/🔴，
-> 需要研究事项支撑才能写成可信的成稿。先把能诚实写的写了，把缺口标清楚。
+Every chapter so far has been tightening a worry. Work supplies five things money can't replace.
+Cash doesn't fill the gap. The reassuring history of automation might not repeat. And in the one
+place we've watched the future arrive without a buffer, the collapse was near-total. It would be
+dishonest to spend four chapters building that and then flinch from the obvious next question:
+*at the scale of a whole society, how bad can this get?*
 
-The last four chapters built a worry: work supplies five things money can't replace (Ch.1);
-cash doesn't fill the gap (Ch.2); the historical reassurance has three places it might snap
-(Ch.3); and in the one unbuffered laboratory we have, the collapse was near-total (Ch.4). This
-chapter asks the frightening version of the question: *at the scale of a whole society, how bad
-can the meaning-loss get?* And it tries to answer without either flinching or exaggerating.
+This is the darkest chapter in the book, and also the one where it would be easiest to lie to
+you — in either direction. I could frighten you with a collapse the evidence doesn't support, or
+reassure you with a calm the evidence doesn't earn. I'm going to try to do neither, which means
+being unusually careful about the line between what we actually know and what we only fear.
 
-### What we can say honestly
+### The one thing we know is grim
 
-The one piece of hard ground here is grim and solid: **deaths of despair.** Case and Deaton's
-work documented rising mortality — suicide, overdose, alcohol — among American working-class
-adults as stable work and the communities built around it eroded over decades. This is solid in the
-sense that matters most — the deaths are real and measured; it is the strongest evidence we have that when work
-*and* the meaning and community bundled with it collapse for a population, the result is not just
-sadness but elevated death. **But** — and the honesty matters — it is correlational and heavily
-confounded (opioids, healthcare, deindustrialisation, specific to a time and place). It shows the
-*stakes* are mortal. It does not prove that a future post-work society would follow the same
-path; that is an extrapolation, and I'll keep flagging it as one.
+Start with the firm ground, because it is solid and it is sobering.
 
-### Where I have to stop and flag the guesswork
+For decades, the economists Anne Case and Angus Deaton tracked something they came to call
+**deaths of despair** — suicide, drug overdose, alcoholic liver disease. Among middle-aged
+American adults without a college degree, these deaths rose steeply as the stable work that had
+anchored their communities drained away over a generation. Between the late 1990s and the late
+2010s, overdose deaths in this group rose more than fourfold; suicides and alcohol-related deaths
+climbed with them. Case and Deaton's argument is not that these people simply ran out of money.
+It is that they lost the whole structure that work had organised — the standing, the routine, the
+sense of a place in the world — and that the loss showed up, in the end, in the mortality
+statistics. When work and the meaning and community bundled with it collapse for a population,
+the result is not only sadness. It is earlier death.
 
-Three things this chapter *wants* to argue, but can't yet do honestly without more work:
+That is the strongest evidence we have that the stakes here are mortal, and I want it to land
+with its full weight. But I also have to fence it honestly, because this is exactly the kind of
+finding it's tempting to stretch. It is correlational, and badly confounded — the opioid epidemic,
+the American healthcare system, the specific wreckage of deindustrialisation in particular towns
+in a particular era all run through it. It tells us, unmistakably, that the loss of work-and-
+meaning *can* be lethal at population scale. It does not tell us that a future shaped by AI would
+follow the same path. That last step is a guess, and I'll keep treating it as one.
 
-- **The "behavioural sink" temptation.** There's a famous set of experiments (Calhoun's rodents)
-  in which abundance plus loss of meaningful role produced social breakdown — withdrawal,
-  aggression, collapse of normal behaviour. It is a seductive metaphor for a post-work society.
-  It is also *just a metaphor*, from rodents, and it has been widely over-applied. I will not
-  lean on it as evidence. (I once built an entire model around this analogy and had to abandon
-  it as unfalsifiable — a mistake I'd rather learn from than repeat.) → see research item.
-- **Status competition turning zero-sum.** If AI can out-produce everyone, status — which is
-  relative — doesn't disappear; it may migrate to new grounds (authenticity, being human,
-  attention). This is plausible reasoning, but it's reasoning — I have little hard evidence here.
-- **The contagion / unravelling question.** Does meaning-loss spread socially — does one
-  person's withdrawal raise their neighbour's? My own Stack Overflow study found the community's
-  motivation structure was *stable* across the shock, which is a small piece of evidence *against*
-  dramatic social contagion in at least that setting. That cuts against the scary story and I'm
-  obliged to weight it. → research item.
+### Where the frightening stories outrun the evidence
+
+Past that single piece of hard ground, the darkness gets speculative fast — and here I owe you the
+discipline of *not* dressing up fear as knowledge.
+
+There is, for instance, a famous and seductive parallel: the "behavioural sink." In the 1960s the
+ethologist John Calhoun gave colonies of rats unlimited food and space but let their social roles
+collapse, and watched them descend into withdrawal, aggression, and the breakdown of normal
+behaviour and reproduction. As a metaphor for a society of abundance without purpose, it is almost
+irresistible — and it has been reached for, again and again, by people describing everything from
+falling birth rates to online life. I am deliberately not going to lean on it, and I want to be
+candid about why. It is a metaphor, drawn from rodents, and metaphors from rodents are not evidence
+about human societies. I know the pull of it firsthand: I once built an entire computational model
+on this very analogy, and eventually had to abandon it precisely because it could explain anything
+and therefore predicted nothing. I'd rather show you that scar than sell you the metaphor.
+
+A second fear is more abstract but worth naming: if AI can out-produce everyone, what happens to
+*status* — which is, by nature, relative and zero-sum? It may simply migrate to new ground —
+authenticity, presence, being visibly human — but I have little hard evidence for how that plays
+out, and I'll flag it as the speculation it is.
+
+And there is a third question, the one that actually decides whether "bad" becomes "catastrophic":
+does meaning-loss *spread*? Does one person's withdrawal quietly pull down the people around them,
+so that disengagement compounds through a community the way a contagion would? If it does, the
+downside is far worse than any individual tally suggests. Here, for once, I have a thread of real
+evidence — and, interestingly, it cuts *against* the scary version. In my own study of Stack
+Overflow, the community's underlying motivational structure stayed remarkably *stable* straight
+through the shock; the people who left didn't appear to detonate a cascade in those who remained.
+That is a single setting, and a narrow one, and I won't over-read it. But honesty runs in both
+directions, and when the one piece of evidence I have points away from the frightening story, I'm
+obliged to say so.
 
 ### The honest shape of the danger
 
-Here is what I can say without overreaching. The risk is real and the stakes (deaths of despair)
-are mortal — but the *form* the danger takes is not fixed; it depends heavily on institutional
-response, which is exactly what the back half of the book is about. The darkest outcomes in
-history were not automatic; they happened where the adjustment was fast, unbuffered, and met with
-no institutional answer. That is a warning, not a prophecy — and a warning is actionable in a way
-a prophecy is not.
+So here is what I can actually claim, with neither flinch nor exaggeration.
 
-*(Personal layer, written carefully:)* For you, individually, the takeaway of this chapter is
-**not** "society will collapse, despair." It is: the downside is serious enough to take
-seriously, *and* it is conditional on factors that can be changed — which is precisely why
-preparing, personally and collectively, is worth doing. Despair is the one response the evidence
-does *not* license, because the bad outcomes are contingent, not fated.
+The risk is real, and the stakes — the deaths of despair tell us this much — can be mortal. But
+the *shape* the danger takes is not fixed in advance. The worst outcomes in history were never
+automatic; they happened in the specific places where the adjustment came fast, hit people without
+a buffer, and was met with no institutional response at all. That is the crucial distinction, and
+it's the hinge of everything that follows in this book: this is a **warning, not a prophecy.** A
+prophecy you can only await. A warning you can act on.
 
-The next two chapters turn to that contingency: where a person can still find meaning when work
-recedes (Ch.6), and how policy might steward AI so that more people get the chance to (Ch.7).
+And that distinction is also where I can offer you something, personally, even in the bleakest
+chapter. The honest takeaway here is *not* "society will collapse, so despair." It is the opposite.
+The downside is serious enough to take seriously — and it is conditional, hanging on factors that
+can still be changed, which is the entire reason that preparing, both in your own life and
+collectively, is worth the effort. Despair is the one response the evidence specifically does *not*
+license, because the bad endings are contingent, not fated.
+
+The rest of the book is about that contingency: where a person can still find meaning when work
+recedes, and how a society might steward AI so that more people get the chance to. We turn to the
+first of those next.
 
 ---
 
-> 🔬 **研究事项 RT-05A (✅已核实 2026-05):** 绝望之死已核实——1998–2017 中年非大学白人：
-> overdose 死亡 >4×、酒精肝 +50%、自杀 +37%（Case & Deaton）。可作🟢锚。正文已诚实标注
-> 相关/混淆/不可外推。
-> 🔬 **研究事项 RT-05B (低):** behavioural sink / Calhoun —— 写一节诚实的"为什么这个诱人的隐喻
-> 不能当证据"，可引本项目自己弃用 ABM 的教训。需查 Calhoun 研究被批评/证伪的文献。
-> 🔬 **研究事项 RT-05C (中):** 意义损失是否社会传染？这是"会不会大规模崩坏"的关键机制。本项目
-> SO 研究的"结构稳定"是反向小证据。需找社会传染（孤独、失业、自杀的网络扩散）的真实文献来权衡。
-> 🔬 **研究事项 RT-05D (低):** 地位竞争在 AI 全面超越后向何处迁移——找"真实性经济/人类制造溢价"
-> 的早期经验信号（接 Q9）。
+> 🔬 研究事项（内部，非读者可见）：
+> - RT-05A (✅已核实 2026-05): 绝望之死——1998–2017 中年非大学白人 overdose 死亡 >4×、酒精肝
+>   +50%、自杀 +37%（Case & Deaton）。正文已诚实标注相关/混淆/不可外推。
+> - RT-05B (低): Calhoun/行为沉沦——已在正文写为"诱人但不能当证据的隐喻"，并引本项目弃用 ABM 的
+>   教训。若深做，可补 Calhoun 研究被批评/证伪的文献。
+> - RT-05C (中): 意义损失是否社会传染——正文用 SO"结构稳定"作反向小证据。若深做，需找孤独/失业/
+>   自杀的网络扩散文献来正式权衡。
+> - RT-05D (低): 地位竞争向何处迁移——找"真实性经济/人类制造溢价"的早期经验信号（接 Q9）。
