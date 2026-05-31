@@ -105,9 +105,13 @@ in the market to begin with:
   satisfying — is *judgment*: knowing what's worth making, what's good, what matters. For some
   people the reorientation isn't doing more, it's developing taste and direction. (🟡)
 - **Toward the people in front of you.** The most durable anchor of all, and the one with the
-  strongest evidence behind it (Ch.2's retirement research): care, presence, being someone
-  specific people actually rely on. AI doesn't compete here, because the value was always in a
-  *human* being the one there. (🟢/🔴)
+  strongest evidence behind it: care, presence, being someone specific people actually rely on.
+  AI doesn't compete here, because the value was always in a *human* being the one there — and
+  this is now more than a hunch. Across nine experiments with over 6,000 people, the *identical*
+  caring words were rated more empathic and more satisfying when believed to come from a human
+  than from an AI; merely disclosing AI authorship lowered the felt empathy. The thing care gives
+  is partly constituted by a human being its source — which is exactly the part AI can't supply.
+  (🟢)
 - **Redefining "enough."** Not every adaptation is finding a new place to *strive*. For some it's
   moving the weight of meaning off work and output altogether — toward family, community, craft,
   faith, the plain experience of a day. This is the oldest wisdom there is, and AI's pressure may

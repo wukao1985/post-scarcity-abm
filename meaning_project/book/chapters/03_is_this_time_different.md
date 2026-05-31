@@ -100,10 +100,10 @@ surprising place where the damage is, and isn't, already visible — is the next
 
 ---
 
-> 🔬 **研究事项 RT-03A (中):** 本章的"三个仪表盘"需要一节**当前实证读数**（放第4章或本章末）。
-> 已有素材（research_log 抓到、待全文核实）：Anthropic 2026 真实使用数据（augmentation:
-> automation ≈ 4:1）、ILO 2025 暴露指数、"Crashing Waves" arxiv 2604.01363（文本任务成功率
-> 2024 Q2 ~50% → 2025 Q3 ~65%，外推 2029 达 80–95%）。**需逐篇核实原文**后才能作为🟢写入。
+> 🔬 **研究事项 RT-03A (✅已核实 2026-05):** "三个仪表盘"的当前实证读数已核实并入 evidence_base：
+> Anthropic Economic Index 2026（Claude.ai 上 2025-11 增强:自动化 ≈ 52:45；~40% 美国雇员用 AI）；
+> Stanford "Canaries"（ADP 薪资，22–25岁暴露职业就业相对降~16%）。可作为🟢读数写入正文（保留
+> "暴露≠替代/单一来源"caveat）。**写作待办**：把这节"当前读数"实际写进本章或第4章。
 
 > 🔬 **研究事项 RT-03B (中):** "速度 vs 调整尺度"目前是🟡论证。可否找到一个**可量化的"调整
 > 速度"基准**（历次技术转型中职业周转/再培训的真实时间常数），把"AI 是否更快"变成可对照的数字？

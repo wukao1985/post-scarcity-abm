@@ -76,7 +76,40 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
 
 - Brynjolfsson, Li & Raymond 2023 (call-center: AI lifts novices most); Noy & Zhang 2023
   (writing tasks); occupational-exposure studies (Felten; Eloundou et al.). *Shows:* real,
-  measurable, uneven near-term effects. *Growing, moderately solid. Expand this section.*
+  measurable, uneven near-term effects. *Growing, moderately solid.*
+- **Stanford Digital Economy Lab — "Canaries in the Coal Mine?"** (Brynjolfsson, Chandar & Chen,
+  working paper, Nov 2025). High-frequency **ADP payroll** records. *Shows:* workers aged 22–25
+  in the most AI-exposed occupations saw a **~16% relative decline** in employment after genAI
+  spread (≈6% absolute decline late-2022→Jul-2025), while older workers in the same roles grew
+  6–9%. Declines concentrated where AI **automates** rather than augments. The single clearest
+  🟢 signal of labor harm so far — and it's narrow (young + entry-level). VERIFIED 2026-05.
+- **Anthropic Economic Index** (5th report, 2026; ~1M Claude.ai + API conversations). *Shows:*
+  ~40% of US employees use AI at work (up from ~20% in 2023); on Claude.ai, **Nov 2025 split ≈
+  52% augmentation / 45% automation** (automation briefly led in Aug 2025; API skews automated).
+  Human capital enables AI use (input/output education level r>0.92; experienced users automate
+  better). *Caveat:* single-provider usage data, not the whole economy. VERIFIED 2026-05.
+  → use for the "what's being automated" + augmentation-vs-automation watchlist (Q5/Q6).
+
+## Deaths of despair (the 🟢 floor for the "how bad" chapter)
+
+- **Case & Deaton** (2015 onward; *Deaths of Despair and the Future of Capitalism*, 2020).
+  "Deaths of despair" = suicide + drug/alcohol poisoning + alcoholic liver disease. *Shows:*
+  rising mortality among **middle-aged, non-college-educated white Americans** (45–54); 1998–2017
+  overdose deaths up >4×, alcoholic liver disease +~50%, suicide +~37%; they attribute it to loss
+  of employment, security, mobility — i.e. work-and-meaning erosion, not just income. *Limits
+  (state honestly):* correlational, heavily confounded (opioid supply, healthcare, specific
+  demographic/era); shows the stakes are mortal, does NOT prove a future post-work society repeats
+  it. VERIFIED 2026-05.
+
+## Relatedness / care as AI-resistant (direct test of "can AI supply mattering?")
+
+- **"People prefer human empathy even when AI says the same thing"** (9 experiments, >6,000
+  participants; 2025). *Shows:* identical LLM-written responses are rated **more empathic,
+  supportive, and emotionally satisfying when labelled "human" than when labelled "AI"**; a
+  one-sentence AI disclosure *reduces* felt empathy; people will wait longer for a human reply.
+  This is a **direct 🟢 test** of Q3's open question ("can virtual/AI supply *mattering*?") — and
+  the answer leans no: the value of care depends partly on a *human* being its source. Anchors
+  Ch.6's relatedness path and Q7. VERIFIED 2026-05.
 
 ---
 

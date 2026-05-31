@@ -107,10 +107,9 @@ preparation. That's the darkest chapter, and it's next.
 
 ---
 
-> 🔬 **研究事项 RT-04A (中):** 本章"白领宏观未崩、仅入门岗信号"依赖 research_log 抓到的
-> 2026 数据（NY Fed、Stanford Digital Economy Lab、MIT Tech Review 综述）。**出版前需逐篇
-> 核实原文**，并解决其中的真实张力（NY Fed：入门岗下滑早于 ChatGPT；Stanford：有 AI 特异
-> 的年轻队列效应）。当前作为🟡/🟢混合写，核实后定层级。
+> 🔬 **研究事项 RT-04A (✅已核实 2026-05):** "白领宏观未崩、仅入门岗信号"已核实——Stanford
+> "Canaries"（Brynjolfsson 等，ADP 真实薪资）：22–25 岁最暴露职业就业相对降~16%，年长者反增
+> 6–9%。可作为🟢写入。仍需在正文点出真实张力（部分研究认为入门岗下滑早于/不全归因于 ChatGPT）。
 
 > 🔬 **研究事项 RT-04B (低):** "合同黏性 = 白领宏观显现慢的主因"是一个有力的🟡机制论证，但
 > 目前是推断。有无办法对照检验？（如：高 gig/无合同比例的行业，是否比高正式雇佣的行业更早
