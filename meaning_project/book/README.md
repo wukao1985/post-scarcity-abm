@@ -5,7 +5,11 @@
 
 写作语言：英文为主（Medium 主受众），关键概念保留中文对照。遵循 `../STYLE.md` + 三层诚实铁律。
 
-## 章节文件
+## 双语
+- `chapters/` — 英文版（主，Medium 受众）
+- `chapters_zh/` — 中文版（与英文逐章对应，平行维护）
+
+## 章节文件（英文 chapters/ ；中文 chapters_zh/ 同名对应）
 - `chapters/00_prologue.md` — 序章：错误的问题
 - `chapters/01_what_work_was_doing.md` — 第1章 工作偷偷给了你什么
 - `chapters/02_money_cant_fill_it.md` — 第2章 钱补不上那个洞
