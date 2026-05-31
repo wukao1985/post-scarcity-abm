@@ -135,6 +135,25 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   work as advertised — so Ch.7 must NOT lean on it as a 🟢 solution; it's a cautionary 🟢.
   VERIFIED 2026-05.
 
+## Robust Decision Making (the formal method behind Ch.7's "robust bet")
+
+- **RDM — Lempert & colleagues, RAND** (foundational 2003/2006; widely used for "decisionmaking
+  under deep uncertainty," DMDU). *Shows / provides:* a formal method to "make good decisions
+  *without* predictions" — stress-test strategies across many plausible futures and pick those
+  that hold up broadly, rather than betting on one forecast. This is the named, citable backing
+  for Ch.7's "robust bet" standard (and the project's 🔴-policy posture generally). VERIFIED 2026-05.
+
+## UBI fiscal / political-economy honesty (Ch.7, distinct from Ch.2's psychological evidence)
+
+- *Fiscal scale:* Yang's $1k/mo-per-adult costed at ~$2.8–3.0T/yr (Tax Foundation); not supportable
+  under current US fiscal structure without major reform. *Dividend idea:* fund from the AI surplus
+  via sovereign-fund / equity-stake / land-value models (Alaska Permanent Fund analogy); one
+  analysis estimates AI need only reach ~5–6× current automation productivity to finance an
+  ~11%-of-GDP UBI even if no new tasks appear. *The catch (political economy):* the AI dividend
+  accrues to **capital first** (2025 hyperscaler capex ~$142B/quarter), wages later and unevenly —
+  so "can we afford UBI" is less a technical question than a *distributional/political* one. This is
+  the honest backing for Ch.7's "distributing the gains is the political question." VERIFIED 2026-05.
+
 ---
 
 ## Gaps to fill (future 🟢 pillars to consider)

@@ -54,10 +54,19 @@ with the least slack — the ones Chapter 6's individual path can't yet reach.
   the adjustment, not a confident promise that we can re-skill everyone into the next good job.
   Not slowing AI — slowing the fall of the people it displaces, without overpromising about where
   they land.
-- **Distributing the gains.** AI's productivity dividend is real and growing. The central
-  distributive question of the next decades is whether that dividend flows mostly to whoever owns
-  the models and capital, or reaches ordinary citizens. This isn't a technical question; it's the
-  political question, and it's where "reduce the harm" and "amplify the benefit" meet.
+- **Distributing the gains.** AI's productivity dividend is real and growing, and this is where
+  the honest fiscal picture matters. A meaningful UBI is expensive — Andrew Yang's $1,000-a-month
+  proposal was costed at roughly $2.8–3 trillion a year, which the current US tax structure simply
+  can't carry without major reform. The standard rejoinder is "fund it from the AI surplus" — via
+  sovereign wealth funds, public equity stakes in AI firms, or land-value taxes, on the model of
+  Alaska's oil dividend; by one estimate AI need only reach about 5–6× today's automation
+  productivity to finance a UBI worth ~11% of GDP. That may well become true. But notice where the
+  surplus goes *first*: in late 2025, the big AI firms' capital spending was running around $142
+  billion a *quarter* — vastly more new money flowing to capital than any legislature has moved
+  toward citizens. The dividend accrues to whoever owns the models first, and to wages later and
+  unevenly. So "can we afford to share AI's gains" is not really a technical question. It's a
+  political one — about who captures the surplus — and it's where "reduce the harm" and "amplify
+  the benefit" meet.
 
 ### Amplifying the benefit
 
@@ -80,7 +89,15 @@ The benefit side is the half that usually gets left to markets, but policy shape
 
 I can't tell you AI will definitely cause mass displacement, so I can't justify any of this with
 "it's coming, prepare." The honest justification is the robust-bet logic: these are choices that
-look good across many futures. If AI displaces enormous amounts of work, a floor, a cushion,
+look good across many futures. And this isn't just a rhetorical dodge — it's an actual,
+named method. Analysts at RAND (Robert Lempert and colleagues) formalized it as **Robust Decision
+Making**: when the future is *deeply* uncertain, you stop trying to predict the one true outcome
+and instead stress-test each option across a wide range of plausible futures, keeping the ones
+that hold up broadly. "Make good decisions without predictions" is a real discipline, used for
+problems like climate and water policy where, as here, no one can forecast and stakeholders don't
+even agree on the assumptions. That is exactly the standard I'm applying to AI policy.
+
+By that standard: if AI displaces enormous amounts of work, a floor, a cushion,
 distributed gains, and a widely available lever are essential. If the disruption stays mild,
 they're still good — just less urgent. There's no plausible future in which "ordinary people share
 more of AI's benefit and absorb less of its harm" turns out to be the wrong thing to have aimed
@@ -101,10 +118,9 @@ time, about what we know, what we're guessing, and how to live in the space betw
 
 ---
 
-> 🔬 **研究事项 RT-07A (部分✅ 2026-05):** ①再培训有效性已核实并写入正文——美国 WIA/WIOA/TAA
-> 评估显示相对对照组收入/就业几乎无改善（诚实的🟢：'只要再培训'不成立）。仍待检索：②AI 生产力
-> 红利的分配现状（谁拿走了）；③'普及 AI 可及性'是否真提升弱势群体能动性。接 Q11/Q12。
-> 🔬 **研究事项 RT-07B (中):** robust decision-making / 深度不确定性下决策——找可引用的正式框架
-> （Lempert/RAND），支撑"稳健赌注"论证。
-> 🔬 **研究事项 RT-07C (中):** UBI 作为"地板非引擎"在政策层的最新讨论（区别于第2章的心理证据，
-> 这里要财政可行性 + 政治经济学的诚实账）。
+> 🔬 **研究事项 RT-07A (大部✅ 2026-05):** ①再培训无效、②AI 红利先归资本（季度 capex ~$142B vs
+> UBI 拨款）均已核实并写入正文。仍开放：③'普及 AI 可及性'是否真提升弱势群体能动性（待检索）。
+> 🔬 **研究事项 RT-07B (✅已核实并写入正文 2026-05):** Robust Decision Making（Lempert/RAND,
+> 2003/2006，DMDU）——"无预测下做好决策"，已作为第7章"稳健赌注"的正式方法论写入。
+> 🔬 **研究事项 RT-07C (✅已核实并写入正文 2026-05):** UBI 财政账（Yang $1k/mo ≈ $2.8-3T/yr；
+> AI 红利funding模型 ~5-6×自动化生产力；但红利先归资本）已写入"分配收益"。
