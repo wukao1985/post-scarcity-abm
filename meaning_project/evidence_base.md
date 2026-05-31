@@ -31,8 +31,10 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   - Finland (2017–18): improved life satisfaction, mental health, trust; small employment
     effects. Public microdata (FSD). *Shows:* cash reduces financial stress, modest wellbeing
     lift — not evidence of restored purpose.
-  - OpenResearch / Altman ($1k/mo, 2024): stress relief in year 1, faded by years 2–3. *Shows:*
-    psychological gains fragile without structural change.
+  - OpenResearch / Altman ($1k/mo, 3yr, 2024): officially "mixed results" — financial relief
+    without broad life transformation. ⚠️ NEEDS RE-VERIFICATION: an earlier note here claimed
+    "stress relief in year 1, faded by years 2–3"; could not confirm that specific temporal
+    claim from primary source (2026-05, fetch blocked). Use only "mixed results" until verified.
   - GiveDirectly Kenya: wellbeing + aspiration gains; framing (community vs basic-needs) matters.
   - Meta-analyses: cash → small positive subjective-wellbeing (d≈0.13), larger on
     depression/anxiety, often not sustained post-program.
