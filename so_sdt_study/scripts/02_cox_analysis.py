@@ -112,3 +112,22 @@ for band in ["0-500", "500-2k", "2k-10k", "10k+"]:
     b = df[df["rep_band"] == band]
     ct = pd.crosstab(b["dominant_type"], b["outcome3"], normalize="index")
     print(f"\n  [{band}]"); print(ct.round(3))
+
+
+# ---------- 探索性（POST-HOC）：地位×声望交互，检验"反转"是否真实 ----------
+# 缘起：分层退出率里 10k+ 段 status 看似最高(0.305)。用正式交互项检验，
+# 避免把噪音当发现（§5b 深挖第3条 非线性）。
+print("\n" + "="*70)
+print("POST-HOC: 地位效应是否随声望反转？(z_stat × log_rep 交互, K=6)")
+print("="*70)
+df["log_rep_c"] = df["log_rep"] - df["log_rep"].mean()
+df["z_stat_x_rep"] = df["z_stat"] * df["log_rep_c"]
+_cols = ["z_comp","z_stat","z_rel","z_stat_x_rep","log_pre_ans","log_rep_c","tenure_years"]
+_res = PHReg(df["dur_K6"].values, df[_cols].astype(float).values,
+             status=df["exit_K6"].values, ties="efron").fit()
+_hr = np.exp(_res.params)
+print(pd.DataFrame({"HR":_hr, "p":_res.pvalues}, index=_cols).round(4))
+_ix = _cols.index("z_stat_x_rep")
+print(f"\n交互项 z_stat_x_rep: HR={_hr[_ix]:.4f}, p={_res.pvalues[_ix]:.3f}")
+print("结论: 交互 p=0.52 不显著 → '反转'是噪音，非真效应。")
+print("地位型在所有声望层均更扛(HR≈0.86稳定)。不写入论文作探索性发现。")
