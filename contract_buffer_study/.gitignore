@@ -1,0 +1,12 @@
+# Raw CPS microdata — never commit (multi-GB, reproducible from public NBER/Census)
+data/
+raw/
+*.dta
+*.dat
+*.zip
+*.7z
+# Bulky upstream repo/tarball — we commit only the small extracted score sheets we use
+exposure_inputs/AIOE-main/
+exposure_inputs/*.tar.gz
+__pycache__/
+*.pyc
