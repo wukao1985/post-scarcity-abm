@@ -86,10 +86,9 @@ never able to see the reaction in the first place. I'm not guessing at that weak
 fact: I built a placebo test into the study precisely to catch myself, and it caught exactly this
 — a pattern I'd been ready to read as a real effect turned out to be the tool measuring
 temperament, not change. The stability I found is therefore weak comfort. It is genuinely some
-evidence against the contagion story — honesty runs in both directions, and when the one piece of
-evidence I have leans away from the frightening version I'm obliged to say so — but it is evidence
-I hold loosely, because the instrument that produced it may simply have been blind to the thing we
-most fear.
+evidence against the contagion story, and honesty runs in both directions: when the one piece of
+evidence I have leans away from the frightening version, I'm obliged to say so. But I hold it
+loosely. The instrument that produced it may simply have been blind to the very thing we most fear.
 
 ### The honest shape of the danger
 
