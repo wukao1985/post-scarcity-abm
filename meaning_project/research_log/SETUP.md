@@ -8,16 +8,31 @@ Both prompts already instruct Claude to **commit and push** (scheduled runs do n
 — it must be in the prompt). Point them at the working branch
 `claude/paper-repo-review-E0GJA` (or merge to `main` and target that).
 
-## Option A — native scheduling in Claude Code on the web (if available)
-If the web UI (code.claude.com) offers a "schedule / recurring session / routine" option:
-1. Create a scheduled session on this repo + branch.
-2. Paste the contents of `ROUTINE_DAILY.md` as the prompt; set cadence = daily.
-3. Create a second scheduled session; paste `ROUTINE_WEEKLY.md`; set cadence = weekly (e.g. Mon).
-4. Ensure the environment's network policy allows web search, and the session may push to the
-   branch.
+## Option A — native "Routines" (recommended; confirmed supported)
+Claude Code has a native scheduler called **Routines** (research preview). Docs:
+https://code.claude.com/docs/en/routines.md
 
-> Note: as of this writing it is not certain the web UI exposes a native scheduler. If you
-> don't see one, use Option B, which is the officially documented path.
+Routines run autonomously on Anthropic's cloud (no machine open, no permission prompts), can
+web-search and push to git. **Two important defaults to change:**
+- **Network:** default "Trusted" does NOT allow web search. In the routine's environment, set
+  network access to **Custom** (add the domains you want) or **Full**. Web search needs this.
+- **Branch:** by default Claude can only push to `claude/`-prefixed branches — which is exactly
+  our working branch `claude/paper-repo-review-E0GJA`, so **no change needed** unless you later
+  move the routine to push to `main` (then enable "Allow unrestricted branch pushes").
+- Commits appear under your GitHub identity. There's a per-account daily run cap.
+
+Steps (at https://claude.ai/code/routines, or run `/schedule` in any CLI session):
+1. **New routine** → name it "Daily research scan".
+2. Select this repository; pick/confirm an environment, and set its **network = Full** (so web
+   search works).
+3. Prompt: paste the entire contents of `ROUTINE_DAILY.md`. (The prompt itself tells Claude to
+   read MANIFESTO, scan, write the dated file, and `git push origin
+   claude/paper-repo-review-E0GJA`.)
+4. Trigger: **Schedule → daily**. Create.
+5. Repeat for a second routine "Weekly research digest": prompt = `ROUTINE_WEEKLY.md`,
+   Schedule → weekly (e.g. Monday).
+
+That's it — the prompts already contain the commit+push step (Routines do NOT auto-commit).
 
 ## Option B — GitHub Actions cron (documented, robust)
 Docs: https://docs.claude.com/en/docs/claude-code/github-actions
