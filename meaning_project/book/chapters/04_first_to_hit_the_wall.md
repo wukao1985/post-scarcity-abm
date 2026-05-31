@@ -96,22 +96,51 @@ swallow whole. If that's the real reason, then Stack Overflow isn't a preview of
 at all; it's just the one corner of knowledge-work that happened to map one-to-one onto what the
 machine does, and the rest of us are safer than its collapse makes us feel.
 
-I can't fully rule that out, and I won't pretend the data settles it. Both stories — "no contract
-buffer" and "uniquely substitutable" — fit what we observed, and they probably both contain truth.
+So I tried to settle it, rather than just worry about it in prose — and the attempt is worth
+telling you about, because it failed in an instructive way. The contract theory makes a sharp,
+checkable prediction. Take two people doing the same exposed work, equally substitutable by the
+machine — one salaried, one freelance. If the contract is what matters, the freelancer's job
+should erode first and fastest, because nothing buffers it. So I built a small pre-registered study
+on three years of U.S. Current Population Survey data — froze the hypothesis before looking at the
+outcome, the discipline that keeps you honest — and compared, within the same occupations, the
+employment of unincorporated self-employed workers (no contract) against salaried employees (full
+contract), as a function of how exposed each occupation is to language models.
+
+The honest result: I could not find the effect. Through early 2026, no-contract workers in the
+most AI-exposed occupations were not losing jobs measurably faster than salaried workers in those
+very same occupations. The estimate leaned the way the theory predicts, but it was statistically
+indistinguishable from zero — and, tellingly, a placebo test run on the year *before* ChatGPT
+produced exactly the same faint lean, which means even that whisper of a signal wasn't ChatGPT's
+doing. It held no matter how I cut the data.
+
+I want to be careful, because this cuts both ways. It does not refute the contract idea. The broad
+data are noisy, self-employment is measured crudely, and — most importantly — the AI employment
+shock is barely visible in this data *for anyone* yet, even salaried workers in exposed jobs, so
+there may simply be nothing for a contract to be buffering against so far. The test may be too
+early. But it does fail to confirm the idea exactly where I most expected it to show — and that
+costs me something. If the no-contract workforce were really being hit fast and unbuffered, three
+years of national data ought to be starting to show it, and they aren't. On this evidence the
+Stack Overflow collapse looks a little less like the leading edge of a broad no-contract
+unravelling, and a little more like what the objection warned: a uniquely substitutable special
+case. I have to let that pull my confidence down a notch, and I will.
+
 So let me be exact about what kind of claim the next step is. The leap from "Stack Overflow
-collapsed" to "the professionals are forerunners for everyone" is not a measured finding; it is
-*reasoning*, an inference I find more likely than not but cannot prove. It rests on a bet that
-contracts are mostly *delaying* the same force, not permanently exempting most work from it — and
-that bet could be wrong. Held that honestly, the claim is still worth making, because the
-mechanism is plausible and the stakes are high. But you should hold it as a reasoned worry, not a
-demonstrated fact, and so will I.
+collapsed" to "the professionals are forerunners for everyone" is not a measured finding — and it
+is now an inference with one failed confirmation behind it. It is *reasoning*: a bet that contracts
+are mostly *delaying* the same force, not permanently exempting most work from it. I still find it
+plausible, because the mechanism is sound and the early signals on the salaried side (the young, at
+the entry level) point that way — but after a direct test came back empty, I can no longer call it
+*more likely than not* with a straight face. It is a live, unsettled worry. Held that honestly, it
+is still worth making, because the stakes are high and the data are early. But you should hold it
+as a reasoned worry shadowed by a null result, not a demonstrated fact, and so will I.
 
 With that fence built, here is the inference itself. This is why I've written a book that starts
 with programmers and translators and illustrators but is not, finally, about them. The
-contract-based stickiness that is currently keeping the aggregate numbers calm is most likely a
-delay, not a reprieve. What hit Stack Overflow without a buffer will probably reach the rest of
-work with one — slower, messier, cushioned by institutions — as the same underlying force, *if*
-the substitution objection above doesn't turn out to be the whole story. On that reading, the
+contract-based stickiness that is currently keeping the aggregate numbers calm may well be a delay
+rather than a reprieve. What hit Stack Overflow without a buffer may yet reach the rest of work with
+one — slower, messier, cushioned by institutions — as the same underlying force, *if* the
+substitution objection above doesn't turn out to be the whole story. I no longer get to assume it
+won't. On that reading, the
 forerunners are seeing, early and undisguised, the question that is eventually everyone's:
 
 **When the thing you produce can be produced without you — when your output no longer needs you —
@@ -145,9 +174,16 @@ preparation. That's the darkest chapter, and it's next.
 > 降~16%，年长者反增6–9%；Anthropic 指数：~40% 雇员用 AI、增强:自动化≈52:45。正文已点出真实
 > 张力（部分研究认为入门岗下滑早于/不全归因于 ChatGPT）。
 
-> 🔬 **研究事项 RT-04B (低):** "合同黏性 = 白领宏观显现慢的主因"是一个有力的🟡机制论证，但
-> 目前是推断。有无办法对照检验？（如：高 gig/无合同比例的行业，是否比高正式雇佣的行业更早
-> 显现 AI 冲击？）这能把核心论证从🟡推向🟢。
+> 🔬 **研究事项 RT-04B (✅已做，结果为预注册零结果，2026-05):** 用 CPS basic monthly（2021-07
+> 至 2026-04，53 个月）+ Language-Modeling AIOE 暴露度，做了预注册三重差分：同一职业内，无合同
+> 者（非法人自雇）post-ChatGPT 的就业是否比受薪者下降更早更深。**结论：未能证实合同缓冲假说。**
+> β₃ = Post×暴露×无合同 = −2.2%/SD，p=0.21，95%CI[−5.5%,+1.2%]；安慰剂（2022-05，ChatGPT 前）
+> 给出几乎相同的 −2.2%（p=0.37）→ 那点微弱负向并非 ChatGPT 所致；事件研究 pre-trend 平、冲击后
+> 无下行；H2 梯度反向（更受合同保护的法人自雇反而动得更多）；换 base AIOE / 年龄段 / 单元阈值 /
+> 工时 均为零。β₁（共同暴露效应）=+1.7% → CPS 里到 2026 连受薪暴露岗都没缩，AI 就业冲击几乎不可
+> 见，故本检验部分"为时过早/功效不足"。**正文已据此下调置信度（🟡 维持，但现明确引用这次"未能证实"
+> 的直接检验，并承认 SO 崩塌更可能是"高可替代特例"）。** 详见 `contract_buffer_study/PAPER.md`。
+> 这是继 SO 研究之后第二根自有实证支柱——同样诚实地是一个零结果。
 
 > 🔬 **研究事项 RT-04C (低):** SO 研究本身（H1/H3、退出vs迁移）在本章只一笔带过（"留待后文"）。
 > 需决定：SO 的细节放本章、还是单独成章/附录？它是全书唯一的自有🟢支柱，值得充分呈现。

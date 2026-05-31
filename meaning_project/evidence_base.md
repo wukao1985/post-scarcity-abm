@@ -71,6 +71,21 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   cohort's ~50% → early collapse is driven by existing contributors ceasing to produce.
   *Shows:* SO is an early "post-labour lab" — voluntary, no employment stickiness, so AI's hit
   lands unbuffered and fast. VERIFIED 2026-05 (own API pull).
+- **Our own contract-buffer null** (`contract_buffer_study/PAPER.md`, RT-04B): pre-registered
+  triple-difference on CPS basic-monthly microdata (2021-07…2026-04) × Language-Modeling AIOE
+  exposure, testing whether **no-contract** workers (unincorporated self-employed) lose
+  employment faster than **salaried** workers in the *same* AI-exposed occupations after ChatGPT.
+  *Shows (null):* no significant differential — β₃ = −2.2%/SD (p=0.21, 95% CI [−5.5%,+1.2%]);
+  a placebo shock one year *before* ChatGPT reproduces the same −2.2% (p=0.37), so even the faint
+  tilt is not shock-driven; event-study pre-trends flat, no post-shock descent; the buffer-gradient
+  test runs the *wrong* way; null across base AIOE, age bands, cell thresholds, hours. Crucially
+  β₁ (common exposure effect) = **+1.7%** — AI exposure produced *no* employment decline in CPS
+  by 2026 even for salaried workers, so the test is partly too-early / under-powered.
+  *Use:* a 🟢 pillar that **fails to confirm the contract-buffer mechanism** behind the Ch.4
+  forerunner hinge. It does not refute it, but it weakens the broad-generalisation claim and lends
+  weight to the rival reading that the SO collapse was a uniquely substitutable special case. A
+  second self-owned, pre-registered **null** beside the SO study; the book now cites it openly and
+  lowers its confidence accordingly. VERIFIED 2026-05 (own NBER+Census pull; parser validated vs NBER).
 
 ## Productivity / labour-market effects of generative AI (for the economics layer)
 
