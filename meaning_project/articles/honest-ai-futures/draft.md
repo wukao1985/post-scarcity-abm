@@ -67,20 +67,28 @@ was wrong. That placebo test could have quietly stayed in a drawer; instead it k
 result, and that's exactly why the framework demands it.
 
 A real example with bigger stakes: **does giving people money restore their sense of meaning?**
-We have actual evidence, not vibes. Finland ran a basic-income experiment (2017–2018) and found
-recipients reported better mental wellbeing and a stronger sense of economic security — but
-employment effects were small, and the gains were about *relief and security*, not a
-transformation of *purpose*. A large privately-funded US study giving people \$1,000 a month
-for three years reported decidedly mixed results: real financial breathing room, without the
-broader life transformation some had hoped for. Across the cash-transfer literature, the
-pattern is stubborn enough to state plainly: **money reliably buys relief from material stress;
-it does not reliably buy meaning.**
+We have actual evidence, not vibes. Finland ran a basic-income experiment (2017–2018): 2,000
+unemployed people got €560 a month, no strings. Employment barely moved — a difference of about
+*0.39 days* of work in the first year — but recipients reported meaningfully better mental
+wellbeing, less depression and loneliness, and a stronger sense of economic security. The gains
+were real, and they were about *relief and security*, not a transformation of *purpose*.
 
-(Full disclosure, and exactly in the spirit of this piece: I wanted to tell you the US study
-found its early wellbeing benefits *faded* by years two and three. I had it in my notes. But
-when I went to verify it against the source before publishing, I couldn't confirm that specific
-claim — so I've left it out. "Mixed results" is what I can stand behind. This is the framework
-in action: if I can't show you the green, I don't get to paint it green.)
+The largest US version — Sam Altman's OpenResearch study, \$1,000 a month for three years to
+1,000 people — sharpens the point in a way I want to walk through slowly, because it's a perfect
+specimen of how easily a 🟢 claim can be over-read. The headline finding: stress and mental
+distress *did* improve — but mostly in **year one**, and the effect had faded by **year two**.
+
+Here's the honest part. It would be easy to package that as "see — money's psychological lift is
+shallow and temporary." But the researchers themselves point to two confounds: year one
+overlapped with extra COVID relief payments (which may have amplified the early effect), and
+inflation then ate into the purchasing power of a fixed \$1,000 over time. So even this 🟢
+finding comes fenced: the *fade* might be about COVID and inflation, not about some law that
+money's comfort always evaporates. The data is real; what it proves is narrower than the tidy
+story you could spin from it.
+
+Put the studies together and the pattern is stubborn enough to state plainly — while resisting
+the urge to overstate it: **money reliably buys relief from material stress; there is no good
+evidence it buys meaning.** That is a 🟢 claim precisely because of how little it tries to say.
 
 Notice how narrow that 🟢 claim is. It's not "UBI will save us" or "UBI won't work." It's a
 specific, evidenced, bounded finding. That narrowness is the point. The green layer is small on
@@ -177,6 +185,6 @@ offer. It's the only thing I have worth giving. Hold me to it.
 ---
 
 *This is the first piece in an ongoing project on human meaning in the post-AI era. The Stack
-Overflow study described here, including the data and the code that killed my hypotheses, is
-public. Next: what the UBI experiments actually measured — and why "money buys relief, not
-meaning" is the most important boring finding in this whole debate.*
+Overflow study described here — including the data and the code that killed my hypotheses — is
+public. Next, a 🟡 piece: is AI really like the Industrial Revolution? I'll try to map exactly
+where that analogy holds, and the three places it might break.*

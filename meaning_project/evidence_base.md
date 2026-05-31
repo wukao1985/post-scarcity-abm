@@ -28,13 +28,18 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   life satisfaction but not mental health much; many keep working. *Shows:* money alone is a
   weak lever on deeper wellbeing. *Reasonably solid (some good natural experiments).*
 - **UBI / unconditional cash experiments** (see also so_sdt_study lit review):
-  - Finland (2017–18): improved life satisfaction, mental health, trust; small employment
-    effects. Public microdata (FSD). *Shows:* cash reduces financial stress, modest wellbeing
-    lift — not evidence of restored purpose.
-  - OpenResearch / Altman ($1k/mo, 3yr, 2024): officially "mixed results" — financial relief
-    without broad life transformation. ⚠️ NEEDS RE-VERIFICATION: an earlier note here claimed
-    "stress relief in year 1, faded by years 2–3"; could not confirm that specific temporal
-    claim from primary source (2026-05, fetch blocked). Use only "mixed results" until verified.
+  - Finland (2017–18): 2,000 unemployed, €560/mo. Employment barely moved (~0.39 days yr 1);
+    recipients reported better mental wellbeing, less depression/loneliness, stronger economic
+    security. Public microdata (FSD). *Shows:* cash reduces stress + lifts wellbeing modestly —
+    relief/security, not restored purpose. VERIFIED 2026-05 (VATT / Finnish Gov / Kela results).
+  - OpenResearch / Altman ($1k/mo, 3yr, 1000 recipients, 2020–2023; results Jul 2024):
+    stress & mental distress improved in **year 1** but **faded by year 2**. Researchers
+    attribute the fade partly to confounds: year-1 overlap with COVID relief payments, and
+    inflation eroding the fixed $1k. Also: spending went to essentials (rent/food/transport),
+    minimal physical-health effects, slight drop in work hours, parenting gains for lowest-income.
+    *Shows:* cash → real but bounded/temporary psychological relief; "fade" is confounded, so
+    don't over-read it as "money's comfort always evaporates." VERIFIED 2026-05 (multiple
+    secondary sources incl. openresearchlab.org findings, CBS, Michigan Ross summaries).
   - GiveDirectly Kenya: wellbeing + aspiration gains; framing (community vs basic-needs) matters.
   - Meta-analyses: cash → small positive subjective-wellbeing (d≈0.13), larger on
     depression/anxiety, often not sustained post-program.
