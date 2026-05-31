@@ -57,8 +57,8 @@ seriously, *and* it is conditional on factors that can be changed — which is p
 preparing, personally and collectively, is worth doing. Despair is the one response the evidence
 does *not* license, because the bad outcomes are contingent, not fated.
 
-The next two chapters turn to the contingency: where meaning can still be sourced (Ch.6) and what
-institutions could deliberately supply it (Ch.7).
+The next two chapters turn to that contingency: where a person can still find meaning when work
+recedes (Ch.6), and how policy might steward AI so that more people get the chance to (Ch.7).
 
 ---
 
