@@ -64,6 +64,9 @@ The long-term aim: to contribute, honestly, to how humanity thinks about meaning
 
 This repo is the project's long-term memory (the AI assistant's memory resets each session;
 the repo does not). Everything worth keeping lives here:
+- `SYNTHESIS.md` — the central living document: a layered overview of everything we currently
+  understand, organised by sub-question (Q1–Q13), each tagged 🟢/🟡/🔴 with evidence, gaps, and
+  an upgrade path. Articles are its branches; new data upgrades its layers. **Start here.**
 - `MANIFESTO.md` — this file. The north star.
 - `evidence_base.md` — the running catalogue of 🟢 empirical anchors.
 - `idea_pool.md` — incubating article ideas.

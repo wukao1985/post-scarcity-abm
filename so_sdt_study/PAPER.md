@@ -41,6 +41,17 @@ roughly 16–25% within months (del Rio-Chanona et al., 2024, *PNAS Nexus*; Burt
 2024, *Marketing Letters*). A separate study using a Cox model on *inter-answer duration*
 found that adopters answer *faster* after using AI (Shan & Qiu, forthcoming *ISR*).
 
+A note on what is declining. The right quantity is **public contribution activity** (questions
+and answers), not user counts. Our own platform-level pull of the Stack Exchange API shows new
+questions and answers down roughly 45% within a year of ChatGPT and ~95% by early 2026, whereas
+new-account counts are noisy and even *rose* in 2024 (almost certainly a bot/spam artifact). So
+the phenomenon is a collapse in contribution, not a documented exodus of *registered users* —
+a distinction we keep throughout: our outcome is whether a contributor stops *answering*, which
+a person can do while remaining a registered (and even still-reading) user. Notably, the
+platform-wide ~45% first-year answer drop closely matches the ~50% drop over the same window
+among our 50,305 pre-shock core contributors, indicating the early collapse is driven mainly by
+existing contributors ceasing to produce, not merely by newcomers staying away.
+
 Every one of these studies measures activity **volume or quality** and segments users by
 **volume, tenure, or reputation**. None asks the psychological question: do contributors who
 participate for different **reasons** respond differently? Laboratory work shows that AI

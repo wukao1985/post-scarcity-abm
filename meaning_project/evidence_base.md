@@ -28,11 +28,18 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   life satisfaction but not mental health much; many keep working. *Shows:* money alone is a
   weak lever on deeper wellbeing. *Reasonably solid (some good natural experiments).*
 - **UBI / unconditional cash experiments** (see also so_sdt_study lit review):
-  - Finland (2017–18): improved life satisfaction, mental health, trust; small employment
-    effects. Public microdata (FSD). *Shows:* cash reduces financial stress, modest wellbeing
-    lift — not evidence of restored purpose.
-  - OpenResearch / Altman ($1k/mo, 2024): stress relief in year 1, faded by years 2–3. *Shows:*
-    psychological gains fragile without structural change.
+  - Finland (2017–18): 2,000 unemployed, €560/mo. Employment barely moved (~0.39 days yr 1);
+    recipients reported better mental wellbeing, less depression/loneliness, stronger economic
+    security. Public microdata (FSD). *Shows:* cash reduces stress + lifts wellbeing modestly —
+    relief/security, not restored purpose. VERIFIED 2026-05 (VATT / Finnish Gov / Kela results).
+  - OpenResearch / Altman ($1k/mo, 3yr, 1000 recipients, 2020–2023; results Jul 2024):
+    stress & mental distress improved in **year 1** but **faded by year 2**. Researchers
+    attribute the fade partly to confounds: year-1 overlap with COVID relief payments, and
+    inflation eroding the fixed $1k. Also: spending went to essentials (rent/food/transport),
+    minimal physical-health effects, slight drop in work hours, parenting gains for lowest-income.
+    *Shows:* cash → real but bounded/temporary psychological relief; "fade" is confounded, so
+    don't over-read it as "money's comfort always evaporates." VERIFIED 2026-05 (multiple
+    secondary sources incl. openresearchlab.org findings, CBS, Michigan Ross summaries).
   - GiveDirectly Kenya: wellbeing + aspiration gains; framing (community vs basic-needs) matters.
   - Meta-analyses: cash → small positive subjective-wellbeing (d≈0.13), larger on
     depression/anxiety, often not sustained post-program.
@@ -57,6 +64,13 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   but the motivation→behaviour structure is *stable across* the ChatGPT shock (placebo-
   confirmed). *Shows:* AI lowered volume without selectively restructuring the community along
   motivational lines. A 🟢 pillar and a cautionary case study for the writing.
+- **Our own SO platform-level trend** (`so_sdt_study/platform_trend/`, Stack Exchange API):
+  public contribution activity collapsed — answers −45% (2023) → −95% (early 2026); questions
+  similar. New-user counts are noisy (a ~99% spike in 2024 = bot artifact), so report
+  *contribution activity*, not *user counts*. Platform-wide ~45% first-year answer drop ≈ our
+  cohort's ~50% → early collapse is driven by existing contributors ceasing to produce.
+  *Shows:* SO is an early "post-labour lab" — voluntary, no employment stickiness, so AI's hit
+  lands unbuffered and fast. VERIFIED 2026-05 (own API pull).
 
 ## Productivity / labour-market effects of generative AI (for the economics layer)
 
