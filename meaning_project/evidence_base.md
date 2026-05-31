@@ -64,6 +64,13 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   but the motivation→behaviour structure is *stable across* the ChatGPT shock (placebo-
   confirmed). *Shows:* AI lowered volume without selectively restructuring the community along
   motivational lines. A 🟢 pillar and a cautionary case study for the writing.
+- **Our own SO platform-level trend** (`so_sdt_study/platform_trend/`, Stack Exchange API):
+  public contribution activity collapsed — answers −45% (2023) → −95% (early 2026); questions
+  similar. New-user counts are noisy (a ~99% spike in 2024 = bot artifact), so report
+  *contribution activity*, not *user counts*. Platform-wide ~45% first-year answer drop ≈ our
+  cohort's ~50% → early collapse is driven by existing contributors ceasing to produce.
+  *Shows:* SO is an early "post-labour lab" — voluntary, no employment stickiness, so AI's hit
+  lands unbuffered and fast. VERIFIED 2026-05 (own API pull).
 
 ## Productivity / labour-market effects of generative AI (for the economics layer)
 

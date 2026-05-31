@@ -1,0 +1,6 @@
+month_bucket,questions_monthly_avg,answers_monthly_avg,new_users_monthly_avg,note
+pre_chatgpt_2021_01_to_2022_11,120700,155700,242600,baseline (ChatGPT released 2022-11-30)
+2023,65800,85600,187200,
+2024,33300,47300,481800,new_users anomalously high — likely bot/spam/account-creation artifact
+2025,9500,15800,257400,
+2026_jan_may,3100,7700,130300,partial year (Jan–May)
