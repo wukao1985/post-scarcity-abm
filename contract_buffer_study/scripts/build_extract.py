@@ -21,7 +21,7 @@ import pandas as pd, numpy as np, pyreadstat
 
 HERE  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.environ.get("CPS_CACHE", "/tmp/cps_raw"); os.makedirs(CACHE, exist_ok=True)
-OUT   = os.path.join(HERE, "data_cells.csv")
+OUT   = os.path.join(HERE, "data_cells.csv.gz")
 
 NBER_LAST = (2023, 11)          # NBER cps-basic2 coverage end
 START     = (2021, 7)           # frozen primary window start

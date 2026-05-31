@@ -23,7 +23,7 @@ import statsmodels.formula.api as smf
 warnings.simplefilter("ignore")
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CELLS = os.path.join(HERE, "data_cells.csv")
+CELLS = os.path.join(HERE, "data_cells.csv.gz")
 EXP   = os.path.join(HERE, "exposure_inputs", "occ_exposure.csv")
 SHOCK = 202211
 PLACEBO = 202205
@@ -129,9 +129,9 @@ def main():
           f"[{pct(b3['lo']):+.1f}%, {pct(b3['hi']):+.1f}%]")
     print(f"beta1  Post x Exp (common)      = {b1['coef']:+.4f}  (p={b1['p']:.4g})  ~ {pct(b1['coef']):+.1f}%")
     print(f"beta2  Post x NoContract        = {b2['coef']:+.4f}  (p={b2['p']:.4g})")
-    verdict = ("CONTRACT-BUFFER supported (beta3<0, sig)" if (b3["hi"]<0)
-               else "PURE-SUBSTITUTABILITY favoured (beta3 not<0)" if (b3["lo"]<0<b3["hi"] or b3["lo"]>0)
-               else "ambiguous")
+    verdict = ("CONTRACT-BUFFER supported (beta3 sig<0)" if (b3["hi"]<0)
+               else "CONTRACT-BUFFER refuted (beta3 sig>0)" if (b3["lo"]>0)
+               else "FAILS TO CONFIRM contract-buffer (beta3 not sig; CI crosses 0)")
     print(f"\nVERDICT (primary): {verdict}")
     out["primary"]["verdict"] = verdict
 

@@ -10,3 +10,6 @@ exposure_inputs/AIOE-main/
 exposure_inputs/*.tar.gz
 __pycache__/
 *.pyc
+
+# uncompressed cell file — commit only the .gz
+data_cells.csv
