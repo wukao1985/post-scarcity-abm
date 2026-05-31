@@ -39,10 +39,12 @@ single question is the best defence I know against the confident nonsense this s
 will not tell you the future. It will keep you from being fooled about it, which is more useful.
 
 The second is a **stance**, and I'll be honest that this one is my counsel, not my finding — I'll
-keep that line bright even here at the end. It is this: begin, now, to loosen your sense of meaning from
-your output and your job title, and re-anchor it in the things this book's evidence and reasoning
-keep pointing back to — being needed, being present, connection, craft, the people and the place
-that are specifically yours. I can't prove that's the answer. I can tell you it's where the
+keep that line bright even here at the end. It is the one move this whole
+book turns on, the one I named in Chapter 6: shift from outcome-anchoring toward
+process-anchoring. Begin, now, to loosen your sense of meaning from
+your output and your job title — from the result you're chasing — and re-anchor it in the doing
+itself and in the things this book's evidence and reasoning keep pointing back to: being needed,
+being present, connection, craft, the people and the place that are specifically yours. I can't prove that's the answer. I can tell you it's where the
 honest version of the argument leads, that it's a robust bet across the futures we can't choose
 between, and that it's the bet I'm making with my own life.
 

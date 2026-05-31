@@ -86,12 +86,33 @@ once: their work is among the most exposed to AI, **and** — especially for the
 freelance, the gig-bound, the between-jobs — they often have the least contractual buffer
 protecting them from it. They are, in both senses, the first to hit the wall.
 
-This is why I've written a book that starts with programmers and translators and illustrators but
-is not, finally, about them. The contract-based stickiness that is currently keeping the
-aggregate numbers calm is a delay, not a reprieve. What hit Stack Overflow without a buffer will
-reach the rest of work with one — slower, messier, cushioned by institutions — but it is the same
-underlying force. The forerunners are simply seeing, early and undisguised, the question that is
-eventually everyone's:
+But I have to stop and steelman the strongest objection to this whole move, because it's a good
+one and the honesty of the book depends on facing it. Maybe Stack Overflow didn't collapse because
+it lacked a contract. Maybe it collapsed because it was a *perfectly substitutable special case*:
+asking a coding question and getting an answer is almost exactly what a chatbot does, end to end,
+with no residue. Very little white-collar work is substitutable that cleanly — most of it is
+tangled up with judgment, accountability, relationships, and context that a model can't simply
+swallow whole. If that's the real reason, then Stack Overflow isn't a preview of everyone's future
+at all; it's just the one corner of knowledge-work that happened to map one-to-one onto what the
+machine does, and the rest of us are safer than its collapse makes us feel.
+
+I can't fully rule that out, and I won't pretend the data settles it. Both stories — "no contract
+buffer" and "uniquely substitutable" — fit what we observed, and they probably both contain truth.
+So let me be exact about what kind of claim the next step is. The leap from "Stack Overflow
+collapsed" to "the professionals are forerunners for everyone" is not a measured finding; it is
+*reasoning*, an inference I find more likely than not but cannot prove. It rests on a bet that
+contracts are mostly *delaying* the same force, not permanently exempting most work from it — and
+that bet could be wrong. Held that honestly, the claim is still worth making, because the
+mechanism is plausible and the stakes are high. But you should hold it as a reasoned worry, not a
+demonstrated fact, and so will I.
+
+With that fence built, here is the inference itself. This is why I've written a book that starts
+with programmers and translators and illustrators but is not, finally, about them. The
+contract-based stickiness that is currently keeping the aggregate numbers calm is most likely a
+delay, not a reprieve. What hit Stack Overflow without a buffer will probably reach the rest of
+work with one — slower, messier, cushioned by institutions — as the same underlying force, *if*
+the substitution objection above doesn't turn out to be the whole story. On that reading, the
+forerunners are seeing, early and undisguised, the question that is eventually everyone's:
 
 **When the thing you produce can be produced without you — when your output no longer needs you —
 who are you, and where does your life get its meaning?**

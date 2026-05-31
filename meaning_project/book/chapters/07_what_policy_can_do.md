@@ -49,8 +49,13 @@ with the least slack — the ones Chapter 6's individual path can't yet reach.
   is genuinely sobering: large US evaluations of government training programs (WIA/WIOA, Trade
   Adjustment Assistance) have repeatedly found little or no improvement in earnings or employment
   versus a control group — in some cases participants did *worse*. That is the measured record, not
-  my skepticism talking. So "just retrain people"
-  is not the solution it's usually waved around as. That doesn't mean abandon transition support;
+  my skepticism talking. There is one honest exception worth naming, because it points at what
+  does work: training tied to a *specific employer or a concrete job waiting at the end* —
+  sectoral and employer-linked programs — has a markedly better record than the generic "go learn
+  new skills and hope" model. So "just retrain people"
+  is not the solution it's usually waved around as — though "retrain people into a job that
+  actually exists, with the employer in the room" is a real exception. That doesn't mean abandon
+  transition support;
   it means be honest that cushioning the fall is mostly about *time, income, and dignity* during
   the adjustment, not a confident promise that we can re-skill everyone into the next good job.
   Not slowing AI — slowing the fall of the people it displaces, without overpromising about where
@@ -111,7 +116,8 @@ So read this chapter as context, not instruction. You don't set policy. But know
 *could* do — and what it would take to push it toward stewardship rather than either denial or
 panic — is part of seeing your situation clearly. And there's a quiet handoff between this chapter
 and the last one: the better the floor, the cushion, and the access to the lever, the more people
-get to reach the individual path of Chapter 6 at all. Policy's deepest job, in the end, is to widen
+get to reach the individual path of Chapter 6 — the move from outcome-anchoring to
+process-anchoring — at all. Policy's deepest job, in the end, is to widen
 the doorway through which people can go and find their place again.
 
 That's nearly the whole argument. What remains is to gather it up — and to be honest, one last

@@ -27,6 +27,17 @@ sense of a place in the world — and that the loss showed up, in the end, in th
 statistics. When work and the meaning and community bundled with it collapse for a population,
 the result is not only sadness. It is earlier death.
 
+It helps to picture the texture behind that statistic, because the number alone lets you keep it
+at arm's length. Think of one of the towns this actually happened in: built around a single mill
+or plant, its whole day once organised by the shift whistle — the same men clocking out together,
+filling the same bar at four in the afternoon, the union hall, the church softball league, the
+sense of being somebody who *did* something. Then the work goes. A decade later the plant is a
+fenced lot, and the same men are home on a weekday afternoon with the television on and the hours
+unmarked, no reason to be anywhere by any particular time. It is the same scene Marienthal
+described from the other side of an ocean and a century — people who slowly stopped knowing what
+day it was — only this time the slow unravelling shows up, eventually, in the overdose and suicide
+counts at the county coroner's office. That is what the curve is made of.
+
 That is the strongest evidence we have that the stakes here are mortal, and I want it to land
 with its full weight. But I also have to fence it honestly, because this is exactly the kind of
 finding it's tempting to stretch. It is correlational, and badly confounded — the opioid epidemic,
@@ -60,12 +71,25 @@ And there is a third question, the one that actually decides whether "bad" becom
 does meaning-loss *spread*? Does one person's withdrawal quietly pull down the people around them,
 so that disengagement compounds through a community the way a contagion would? If it does, the
 downside is far worse than any individual tally suggests. Here, for once, I have a thread of real
-evidence — and, interestingly, it cuts *against* the scary version. In my own study of Stack
-Overflow, the community's underlying motivational structure stayed remarkably *stable* straight
-through the shock; the people who left didn't appear to detonate a cascade in those who remained.
-That is a single setting, and a narrow one, and I won't over-read it. But honesty runs in both
-directions, and when the one piece of evidence I have points away from the frightening story, I'm
-obliged to say so.
+evidence — and, interestingly, it seems to cut *against* the scary version. In my own study of
+Stack Overflow, the community's underlying motivational structure stayed remarkably *stable*
+straight through the shock; the people who left didn't appear to detonate a cascade in those who
+remained.
+
+But I have to be harder on that reassurance than my instincts want to be, because the honesty of
+this whole book lives exactly here — in not over-trusting evidence just because it points the way
+I'd like. The truth is I don't fully trust even this reverse-evidence, and I'll tell you why. My
+measure of that community's "structure" was built from *behaviour* — who comments, who edits, who
+answers — and behaviour like that mostly captures people's stable dispositions, not their inner
+reaction to a shock. So a finding of "structure stayed stable" might just mean my instrument was
+never able to see the reaction in the first place. I'm not guessing at that weakness after the
+fact: I built a placebo test into the study precisely to catch myself, and it caught exactly this
+— a pattern I'd been ready to read as a real effect turned out to be the tool measuring
+temperament, not change. The stability I found is therefore weak comfort. It is genuinely some
+evidence against the contagion story — honesty runs in both directions, and when the one piece of
+evidence I have leans away from the frightening version I'm obliged to say so — but it is evidence
+I hold loosely, because the instrument that produced it may simply have been blind to the thing we
+most fear.
 
 ### The honest shape of the danger
 

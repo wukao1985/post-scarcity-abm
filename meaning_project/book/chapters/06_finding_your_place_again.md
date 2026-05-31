@@ -64,6 +64,13 @@ things you don't control, and AI is now yanking hard on exactly those things. Me
 what you can control — your own growth, the experience of doing, the people right in front of you
 — was never for sale, so there's nothing for AI to devalue.
 
+It's worth giving this choice a name, because once you have it you'll start seeing it everywhere.
+Call it **outcome-anchoring versus process-anchoring**: whether the thing that makes your effort
+feel worth it sits in the *result* you're chasing — the money, the status, the win — or in the
+*doing* itself — the learning, the making, the people you do it with. It isn't a slogan and it
+isn't a personality type; it's just a question about where you've set the anchor, and you can move
+it. Almost everything practical in this book comes down to that one move.
+
 This isn't resignation. I'm not telling you to give up on outcomes and be content with crumbs. I'm
 telling you something more practical: **in a world where AI is systematically driving down the
 scarcity value of almost any output, anchoring your meaning to outcomes is a bet that gets worse
@@ -81,8 +88,11 @@ and Deci followed people through the year after college and looked not at what t
 at what they *attained*. The people who achieved their intrinsic goals got the wellbeing boost you'd
 expect. The people who achieved their **extrinsic** goals — who actually got the money, the status,
 the recognition they were chasing — got **no boost at all**, and if anything reported *more*
-ill-being. That is a measured result, not a hunch. Read it again: *succeeding* at the external goals didn't deliver. The prize, even
-when won, was empty of the thing they wanted from it.
+ill-being. Read it again: *succeeding* at the external goals didn't deliver. The prize, even
+when won, was empty of the thing they wanted from it. I'll be precise about its weight: this is a
+single longitudinal study, not a settled law, so I lean on it as a sharp illustration rather than
+proof — but its direction lines up with a large body of Self-Determination research pointing the
+same way, which is why I trust the arrow even if I won't oversell any one study.
 
 That finding mattered before AI. What AI does is press on exactly the same nerve from the outside:
 it is driving down the value of the external prizes *and* the evidence says those prizes wouldn't
