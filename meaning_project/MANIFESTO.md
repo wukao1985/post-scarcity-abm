@@ -74,7 +74,7 @@ the repo does not). Everything worth keeping lives here:
 ## Lineage
 
 This project grew out of, and supersedes, two earlier efforts kept in this repo for history:
-the unfalsifiable post-scarcity ABM (`models/`, `reports/`), and the falsifiable Stack
-Overflow null-result study (`so_sdt_study/`). The ABM taught the lesson *polishing ≠ fixing an
+the unfalsifiable post-scarcity ABM (archived in `../archive/abm_v1/`), and the falsifiable
+Stack Overflow null-result study (`../so_sdt_study/`). The ABM taught the lesson *polishing ≠ fixing an
 unfalsifiable foundation*; the SO study proved the author can do honest, pre-registered,
 placebo-controlled empirical work — and can serve as a 🟢 pillar / case study in the writing.

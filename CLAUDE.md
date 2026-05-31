@@ -1,53 +1,38 @@
-# CLAUDE.md — Post-Scarcity ABM
+# CLAUDE.md — project guide
 
-## Project Overview
-Multi-pathway simulation of behavioral sink under AI automation.
-Read `docs/v3-experiment-design.md` before starting any work.
-Read `tasks/todo.md` for current task status.
+This repository hosts a lifelong inquiry into **human meaning in the post-AI / post-labour
+era**, plus the empirical studies and archived work that feed it.
 
-## Stack
-- Python 3.11+
-- Mesa (agent-based modeling)
-- PySD (system dynamics)
-- pandas, numpy, matplotlib, seaborn
-- Jupyter notebooks for analysis
+> New session? Read `meaning_project/MANIFESTO.md` and `meaning_project/STYLE.md` first, then
+> `LESSONS.md`. They carry the north star, the writing voice, and the hard-won lessons. The
+> repo is the long-term memory — Claude's own memory resets each session.
 
-## Setup
-```bash
-pip install mesa pysd pandas numpy matplotlib seaborn jupyter
-```
+## Structure
 
-## Project Structure
-```
-models/pathway_a_abm/    # Main ABM code
-models/pathway_b_llm/    # LLM agent experiments
-models/pathway_c_sd/     # System dynamics
-data/historical/         # Calibration datasets (CSV)
-data/simulation/         # Model outputs (CSV/JSON)
-reports/                 # PDF reports
-notebooks/               # Analysis .ipynb files
-```
+- **`meaning_project/`** — the active hub. Medium writing (bilingual, English-led) on
+  post-labour meaning. Three-layer honesty method (🟢 empirical / 🟡 analogical / 🔴
+  normative-design, never blurred). Contains MANIFESTO, evidence_base, idea_pool, concepts,
+  STYLE, and `articles/`.
+- **`so_sdt_study/`** — a completed, pre-registered, placebo-controlled empirical study of
+  Stack Overflow contributors after ChatGPT. Result: an honest null. Reusable as a 🟢
+  "load-bearing pillar" / case study in the writing. Fully reproducible.
+- **`archive/abm_v1/`** — the original post-scarcity behavioural-sink ABM, retired (circular +
+  unfalsifiable) but kept intact for possible future revival when ABM is the right tool.
 
-## Coding Standards
-- Every model run must save parameters + outputs to data/simulation/
-- Use seed for reproducibility: `np.random.seed(42)` per run
-- Monte Carlo: always 150 runs minimum per parameter point
-- Output format: CSV with columns [run_id, step, param_*, metric_*]
-- Report generation: use matplotlib, save to reports/
+## Working norms
 
-## Key Constants (from V2)
-- Population: 200 agents
-- Time horizon: 80 steps
-- Collapse threshold: sink_index > 0.7
-- Known threshold: ~80% post-labor
+- **Honesty first.** Never present 🟡/🔴 claims as 🟢. State limitations in the open. When
+  citing studies, cite what they actually showed — verify from primary text, not search
+  summaries. This is the project's only real capital.
+- **Falsifiability for empirical work.** Pre-register before seeing outcomes; freeze designs;
+  use placebos/controls; let the data win even when it kills the hypothesis.
+- **Commit & push** meaningful progress to the working branch so the repo stays the reliable
+  memory.
 
-## Git
-```bash
-git add -A
-git commit -m "description"
-git push origin main
-```
-Remote: https://github.com/wukao1985/post-scarcity-abm
+## Per-article workflow
+See `meaning_project/STYLE.md`. Briefly: `articles/<slug>/brief.md` → optional 🟢 analysis/
+figure → `draft.md` → polish against STYLE + honesty rules → publish, record URL.
 
-## After Each Task
-Update tasks/todo.md with completed items.
+## Stack (for empirical pillars)
+Python: pandas, numpy, scipy, statsmodels (PHReg for survival), matplotlib. Data via public
+sources (e.g. Stack Exchange Data Explorer). Keep analyses reproducible from committed scripts.
