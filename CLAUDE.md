@@ -3,9 +3,10 @@
 This repository hosts a lifelong inquiry into **human meaning in the post-AI / post-labour
 era**, plus the empirical studies and archived work that feed it.
 
-> New session? Read `meaning_project/MANIFESTO.md` and `meaning_project/STYLE.md` first, then
-> `LESSONS.md`. They carry the north star, the writing voice, and the hard-won lessons. The
-> repo is the long-term memory — Claude's own memory resets each session.
+> New session? Read `meaning_project/SYNTHESIS.md` (the living layered overview of everything
+> we understand), then `meaning_project/MANIFESTO.md` and `STYLE.md`, then `LESSONS.md`. They
+> carry the current state of knowledge, the north star, the writing voice, and the hard-won
+> lessons. The repo is the long-term memory — Claude's own memory resets each session.
 
 ## Structure
 
