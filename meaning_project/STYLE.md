@@ -7,8 +7,15 @@ So drafts come out aligned with the author's voice. Update as the voice develops
   hype, no doom-porn, no false confidence. Where we don't know, say so — that *is* the value.
 - **Thinking out loud, but rigorous.** Essay register: a smart, curious person reasoning
   carefully in public. Personal, first-person, but every claim earns its place.
-- **Mark the claim type.** Lead readers to see which sentences are 🟢 data, 🟡 analogy, 🔴
-  values. Can be explicit (callouts) early on; later it becomes the natural texture.
+- **Convey the claim type in words, not labels.** Readers should *feel* which sentences are
+  data, which are inference, which are the author's values — but **never via 🟢/🟡/🔴 emoji or
+  tags in the prose.** That's scaffolding showing; it reads as affected and interrupts. Instead,
+  let the language carry it: "that is a measured result, not a hunch" (data); "this is reasoning,
+  but it's reasoning — I have little hard evidence here" (inference); "this is my counsel, not my
+  finding" (values). The 🟢/🟡/🔴 markers live ONLY in the back-office files (SYNTHESIS,
+  evidence_base, RESEARCH_TODO, research-note footers) as an internal index — never in reader-
+  facing prose. The one allowed exception: the methodology may be *named and explained in words*
+  once (e.g. the epilogue's three-way recap) — as content, still without emoji.
 - **Steelman before you counter.** Engage the strongest version of opposing views.
 - **Concrete over abstract.** Anchor with real studies, real cases, real numbers from
   `evidence_base.md`. Avoid the airy futurism that makes this genre cheap.

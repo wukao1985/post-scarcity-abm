@@ -81,7 +81,7 @@ and Deci followed people through the year after college and looked not at what t
 at what they *attained*. The people who achieved their intrinsic goals got the wellbeing boost you'd
 expect. The people who achieved their **extrinsic** goals — who actually got the money, the status,
 the recognition they were chasing — got **no boost at all**, and if anything reported *more*
-ill-being. (🟢) Read that again: *succeeding* at the external goals didn't deliver. The prize, even
+ill-being. That is a measured result, not a hunch. Read it again: *succeeding* at the external goals didn't deliver. The prize, even
 when won, was empty of the thing they wanted from it.
 
 That finding mattered before AI. What AI does is press on exactly the same nerve from the outside:
@@ -121,7 +121,7 @@ in the market to begin with:
 
 - **From producing to discerning.** When AI can generate infinite output, what stays scarce — and
   satisfying — is *judgment*: knowing what's worth making, what's good, what matters. For some
-  people the reorientation isn't doing more, it's developing taste and direction. (🟡)
+  people the reorientation isn't doing more, it's developing taste and direction.
 - **Toward the people in front of you.** The most durable anchor of all, and the one with the
   strongest evidence behind it: care, presence, being someone specific people actually rely on.
   AI doesn't compete here, because the value was always in a *human* being the one there — and
@@ -129,17 +129,17 @@ in the market to begin with:
   caring words were rated more empathic and more satisfying when believed to come from a human
   than from an AI; merely disclosing AI authorship lowered the felt empathy. The thing care gives
   is partly constituted by a human being its source — which is exactly the part AI can't supply.
-  (🟢)
 - **Redefining "enough."** Not every adaptation is finding a new place to *strive*. For some it's
   moving the weight of meaning off work and output altogether — toward family, community, craft,
   faith, the plain experience of a day. This is the oldest wisdom there is, and AI's pressure may
-  simply be making it legible again. (🔴)
+  simply be making it legible again.
 
-I'll be plain about what these are. The structural claim — that meaning rooted in *what you
-control and experience* is safer from AI than meaning rooted in *outcomes and output* — is
-something I think the evidence and the reasoning in this book genuinely support (🟢/🟡). But which
-of these paths is right *for you*, or whether it's one I haven't thought of, is not something I can
-hand you. That part is yours. (🔴) What I can do — what this whole book is trying to do — is help
+I'll be plain about what these are, and what they aren't. The structural claim — that meaning
+rooted in *what you control and experience* is safer from AI than meaning rooted in *outcomes and
+output* — is something I think the evidence and the reasoning in this book genuinely support. But
+which of these paths is right *for you*, or whether it's one I haven't thought of, is not something
+I can hand you, and I won't pretend otherwise. That part is yours. What I can do — what this whole
+book is trying to do — is help
 you see the choice clearly, so that you're making it on purpose instead of having it made for you.
 
 ### What this asks, and what it can't reach

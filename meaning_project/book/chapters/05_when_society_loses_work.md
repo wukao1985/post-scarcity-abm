@@ -11,19 +11,19 @@ cash doesn't fill the gap (Ch.2); the historical reassurance has three places it
 chapter asks the frightening version of the question: *at the scale of a whole society, how bad
 can the meaning-loss get?* And it tries to answer without either flinching or exaggerating.
 
-### What we can say honestly (🟢)
+### What we can say honestly
 
 The one piece of hard ground here is grim and solid: **deaths of despair.** Case and Deaton's
 work documented rising mortality — suicide, overdose, alcohol — among American working-class
-adults as stable work and the communities built around it eroded over decades. This is 🟢 in the
-sense that the deaths are real and measured; it is the strongest evidence we have that when work
+adults as stable work and the communities built around it eroded over decades. This is solid in the
+sense that matters most — the deaths are real and measured; it is the strongest evidence we have that when work
 *and* the meaning and community bundled with it collapse for a population, the result is not just
 sadness but elevated death. **But** — and the honesty matters — it is correlational and heavily
 confounded (opioids, healthcare, deindustrialisation, specific to a time and place). It shows the
 *stakes* are mortal. It does not prove that a future post-work society would follow the same
-path; that's a 🟡 extrapolation I'll mark as such.
+path; that is an extrapolation, and I'll keep flagging it as one.
 
-### Where I have to stop and flag (🟡 / 🔴)
+### Where I have to stop and flag the guesswork
 
 Three things this chapter *wants* to argue, but can't yet do honestly without more work:
 
@@ -35,7 +35,7 @@ Three things this chapter *wants* to argue, but can't yet do honestly without mo
   it as unfalsifiable — a mistake I'd rather learn from than repeat.) → see research item.
 - **Status competition turning zero-sum.** If AI can out-produce everyone, status — which is
   relative — doesn't disappear; it may migrate to new grounds (authenticity, being human,
-  attention). This is plausible 🔴/🟡 reasoning but I have little hard evidence. → research item.
+  attention). This is plausible reasoning, but it's reasoning — I have little hard evidence here.
 - **The contagion / unravelling question.** Does meaning-loss spread socially — does one
   person's withdrawal raise their neighbour's? My own Stack Overflow study found the community's
   motivation structure was *stable* across the shock, which is a small piece of evidence *against*

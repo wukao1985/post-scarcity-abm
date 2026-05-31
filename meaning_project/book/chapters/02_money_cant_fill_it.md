@@ -10,8 +10,8 @@ behind it. It is also, on the specific question of *meaning*, almost certainly w
 unusually for this book, we don't have to guess. This is one of the rare places where we can
 actually check, because the experiment has been run, more than once, on real people.
 
-So this is the most heavily **🟢** chapter in the book. Let me walk through what the money
-actually bought.
+So this is the most evidence-heavy chapter in the book — the one where I'm leaning hardest on real
+data rather than reasoning. Let me walk through what the money actually bought.
 
 ### What the cash experiments found
 
@@ -49,7 +49,7 @@ the researchers themselves point to two confounds I'm obliged to pass on to you:
 overlapped with extra pandemic relief payments, which may have inflated the early effect, and
 inflation then steadily ate the purchasing power of a fixed $1,000. So even this finding comes
 fenced. The *fade* might be about COVID and inflation, not about some iron law that money's
-comfort always evaporates. 🟢 The data is real; what it proves is narrower than the tidy story
+comfort always evaporates. The data is real; what it proves is narrower than the tidy story
 you could spin from it. I'd rather hand you the fenced truth than the clean lie.
 
 **The people who got rich, and the people who stopped working.** Two more bodies of evidence
@@ -72,7 +72,7 @@ point the same way, from completely different directions:
 
 Put it all together and resist, hard, the urge to overstate it:
 
-> **🟢 Money reliably buys relief from material stress. There is no good evidence that it buys
+> **Money reliably buys relief from material stress. There is no good evidence that it buys
 > meaning.**
 
 That is a deliberately small claim, and its smallness is the point. I am *not* saying money
@@ -111,7 +111,7 @@ That's a fair challenge, and it deserves the most honest chapter in the book.
 
 ---
 
-*Sources for this chapter's 🟢 claims: Kela/VATT Finnish basic income results (2020);
+*Sources for this chapter's empirical claims: Kela/VATT Finnish basic income results (2020);
 OpenResearch Unconditional Cash Study (2024); lottery-windfall wellbeing studies; the
 retirement-and-wellbeing literature. All logged and (where noted) verified in
 `../../evidence_base.md`.*

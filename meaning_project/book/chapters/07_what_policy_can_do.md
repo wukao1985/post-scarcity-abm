@@ -26,9 +26,9 @@ should orbit, is simple to state:
 > **Amplify the benefit AI brings to citizens; reduce the likelihood and severity of the harm it
 > does to them.**
 
-Not resistance. Stewardship. Everything below is a variation on that one sentence — and all of it
-is 🔴: these are design and value choices, not predictions, and the honest test for each is not
-"is it true" but "is it a robust bet — worth doing across a wide range of how AI actually unfolds?"
+Not resistance. Stewardship. Everything below is a variation on that one sentence — and none of it
+is a prediction. These are design and value choices, and the honest test for each is not "is it
+true" but "is it a robust bet — worth doing across a wide range of how AI actually unfolds?"
 
 ### Reducing the harm
 
@@ -48,7 +48,8 @@ with the least slack — the ones Chapter 6's individual path can't yet reach.
   The reflexive policy response to displacement is "retrain them." But the evidence on retraining
   is genuinely sobering: large US evaluations of government training programs (WIA/WIOA, Trade
   Adjustment Assistance) have repeatedly found little or no improvement in earnings or employment
-  versus a control group — in some cases participants did *worse*. (🟢) So "just retrain people"
+  versus a control group — in some cases participants did *worse*. That is the measured record, not
+  my skepticism talking. So "just retrain people"
   is not the solution it's usually waved around as. That doesn't mean abandon transition support;
   it means be honest that cushioning the fall is mostly about *time, income, and dignity* during
   the adjustment, not a confident promise that we can re-skill everyone into the next good job.

@@ -15,7 +15,8 @@ claiming this time is different.* That deserves to be met head on, not dismissed
 So: is this time different? The honest answer has to be split in two, because part of it we can
 reason about and part of it we simply have to watch.
 
-This is a **🟡** chapter — analogy and mechanism, not data about a future that hasn't happened.
+A note on what kind of chapter this is. We're leaving the firm ground of data now — what follows
+is reasoning by analogy and mechanism, not measurement of a future that hasn't happened.
 My job here is not to tell you how it turns out. It's to hand you the cleanest way I know to
 *think* about it: to mark exactly where the reassuring historical analogy holds, and the
 specific places it might snap.
@@ -83,7 +84,7 @@ it.
 ### What this chapter can and can't tell you
 
 Notice what I have and haven't claimed. I have *not* told you AI will cause mass unemployment —
-that's a 🔴 forecast I'm not entitled to make. I've told you the three conditions under which the
+that's a forecast I'm not entitled to make. I've told you the three conditions under which the
 reassuring history would fail to repeat, and I've told you they're observable.
 
 So the honest stance for the anxious professional is neither panic nor the breezy "we've always

@@ -52,8 +52,9 @@ smaller of the two things their job was doing for them.*
 
 ### This is not just a beautiful old theory
 
-Here is where I have to be careful, because a 1933 village study is a 🟡 anecdote, however
-haunting. The reason Jahoda's framework counts as 🟢 — something we actually *know* — is what
+Here is where I have to be careful, because a 1933 village study, however haunting, is in the end
+a single vivid story — suggestive, not yet proof. The reason Jahoda's framework counts as
+something we actually *know*, rather than something I'm asking you to take on faith, is what
 happened in the ninety years after.
 
 Her "latent deprivation" model became one of the most tested ideas in the psychology of work.
@@ -69,7 +70,7 @@ Moser's 2009 analysis is the landmark) — converge on two findings that matter 
   hit to their bank account.
 
 That second finding is the empirical spine of this chapter, so let me be exact about what it
-does and doesn't say. 🟢 It says: across the existing literature, the psychological harm of
+does and doesn't say. What the evidence supports is this: across the existing literature, the psychological harm of
 unemployment is driven more by the loss of structure, contact, purpose, status, and activity
 than by the loss of income. It does *not* say money doesn't matter (it does), and it is built on
 *involuntary* unemployment in societies organised around work — which, I'll argue later, is both
@@ -106,7 +107,7 @@ simply buy our way out. That's the next chapter.
 
 ---
 
-*Sources for this chapter's 🟢 claims: Jahoda (1982), the Marienthal study (Jahoda, Lazarsfeld
+*Sources for this chapter's empirical claims: Jahoda (1982), the Marienthal study (Jahoda, Lazarsfeld
 & Zeisel, 1933); Paul & Moser (2009), "Unemployment impairs mental health: Meta-analyses,"
 Journal of Vocational Behavior; the latent deprivation meta-analytic literature. See
 `../../evidence_base.md`.*
