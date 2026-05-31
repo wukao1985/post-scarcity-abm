@@ -54,11 +54,14 @@ Note any real-world movement on these this week.
 `evidence_base.md`, new ideas to `idea_pool.md`, notes to `concepts.md`. (These updates are
 the compounding value — the digest is the staging area, these files are the asset.)
 
-**Finally, commit and push** (mandatory):
+**Finally, commit and push to `main`** (mandatory). Sync first so you never commit from a stale
+state; do NOT create a new branch:
 ```
+git fetch origin main
+git checkout main && git pull --ff-only origin main
 git add meaning_project/
 git commit -m "research log: weekly digest YYYY-Www (+ evidence_base/idea_pool updates)"
-git push origin <the working branch>
+git push origin main
 ```
 
 **Honesty rules (non-negotiable):** mark claims 🟢/🟡/🔴; never inflate certainty; cite what

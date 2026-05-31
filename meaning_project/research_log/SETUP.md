@@ -5,8 +5,12 @@ Two routines (prompts in this folder):
 - `ROUTINE_WEEKLY.md` — weekly synthesis → `weekly/YYYY-Www.md`, feeds `evidence_base.md` etc.
 
 Both prompts already instruct Claude to **commit and push** (scheduled runs do not auto-commit
-— it must be in the prompt). Point them at the working branch
-`claude/paper-repo-review-E0GJA` (or merge to `main` and target that).
+— it must be in the prompt). **They push directly to `main`** — the daily/weekly log is the
+project's long-term memory and belongs on the trunk. The prompts `git fetch` + `pull --ff-only`
+before committing so a run never starts from a stale state and never spawns a parallel branch.
+(History lesson: earlier runs each pushed to their own `claude/…` branch and drifted apart,
+producing three conflicting same-day logs that had to be merged by hand. Pushing to `main`
+avoids that.)
 
 ## Option A — native "Routines" (recommended; confirmed supported)
 Claude Code has a native scheduler called **Routines** (research preview). Docs:
@@ -16,9 +20,11 @@ Routines run autonomously on Anthropic's cloud (no machine open, no permission p
 web-search and push to git. **Two important defaults to change:**
 - **Network:** default "Trusted" does NOT allow web search. In the routine's environment, set
   network access to **Custom** (add the domains you want) or **Full**. Web search needs this.
-- **Branch:** by default Claude can only push to `claude/`-prefixed branches — which is exactly
-  our working branch `claude/paper-repo-review-E0GJA`, so **no change needed** unless you later
-  move the routine to push to `main` (then enable "Allow unrestricted branch pushes").
+- **Branch — IMPORTANT:** by default Claude can only push to `claude/`-prefixed branches. These
+  routines push to **`main`**, so you MUST enable **"Allow unrestricted branch pushes"** in the
+  routine's environment, or the push will be rejected. (If you'd rather not, change the two
+  prompts back to a single fixed branch — but then merge it to `main` regularly so logs don't
+  drift; the whole point of targeting `main` is to avoid that drift.)
 - Commits appear under your GitHub identity. There's a per-account daily run cap.
 
 Steps (at https://claude.ai/code/routines, or run `/schedule` in any CLI session):
@@ -26,8 +32,8 @@ Steps (at https://claude.ai/code/routines, or run `/schedule` in any CLI session
 2. Select this repository; pick/confirm an environment, and set its **network = Full** (so web
    search works).
 3. Prompt: paste the entire contents of `ROUTINE_DAILY.md`. (The prompt itself tells Claude to
-   read MANIFESTO, scan, write the dated file, and `git push origin
-   claude/paper-repo-review-E0GJA`.)
+   read MANIFESTO, scan, write the dated file, and `git push origin main` after a
+   `pull --ff-only`.) Enable **"Allow unrestricted branch pushes"** so the push to `main` works.
 4. Trigger: **Schedule → daily**. Create.
 5. Repeat for a second routine "Weekly research digest": prompt = `ROUTINE_WEEKLY.md`,
    Schedule → weekly (e.g. Monday).
@@ -55,7 +61,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/paper-repo-review-E0GJA
+          ref: main
+          fetch-depth: 0          # full history so the prompt's pull --ff-only works
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}

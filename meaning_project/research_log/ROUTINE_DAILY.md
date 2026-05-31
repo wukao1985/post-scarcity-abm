@@ -48,13 +48,20 @@ line and stop — do not pad.**
 - One line: overall read of the day, or "nothing substantive new today."
 ```
 
-**Finally, commit and push** (this is mandatory — the run is wasted otherwise):
+**Finally, commit and push to `main`** (this is mandatory — the run is wasted otherwise).
+The daily log belongs on `main` (the project's long-term memory); do NOT create a new branch.
+Sync first so you never commit from a stale state (this is what caused orphaned parallel logs
+before):
 ```
+git fetch origin main
+git checkout main && git pull --ff-only origin main
 git add meaning_project/research_log/
 git commit -m "research log: daily scan YYYY-MM-DD"
-git push origin <the working branch>
+git push origin main
 ```
-If nothing new, still commit the short "nothing substantive" entry so the cadence is recorded.
+If the daily file for today already exists (a run earlier today), APPEND/merge your items into
+it rather than overwriting. If nothing new, still commit the short "nothing substantive" entry so
+the cadence is recorded.
 
 **Honesty rules (non-negotiable):** mark every item 🟢/🟡/🔴; never upgrade a claim's
 certainty; cite what the source shows, not its headline; if you couldn't verify something,
