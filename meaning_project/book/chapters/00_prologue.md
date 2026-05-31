@@ -91,13 +91,18 @@ This is also a book with two readers in mind, who turn out to be the same reader
 The first is the professional watching it happen to their own craft right now — the programmer,
 the translator, the illustrator, the copywriter, the analyst — the people standing closest to
 the edge as AI moves into work they spent years learning to do well. If that's you, this book is
-trying to give you something more useful than reassurance or alarm.
+trying to give you something more useful than reassurance or alarm: a little help, honestly come
+by, as you go about the work of finding your place again.
 
 The second reader is everyone, eventually. Because the professionals are not a special case.
 They are the *forerunners*. What is happening to them first is, I'll argue, a preview of a
 question the rest of us will each have to answer in our own time: when what you produce no
 longer defines you — because something else can produce it — who are you, and where does your
 life get its meaning?
+
+I can't answer that question for you; no honest book could. But I can walk a little of the way
+with you — clear about what we know, what we're only guessing, and what each of us has to choose
+for ourselves. That's the whole offer.
 
 We'll start where the loss is easiest to underestimate: with what work was quietly doing for us
 all along.
