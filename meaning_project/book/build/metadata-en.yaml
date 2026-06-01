@@ -4,23 +4,18 @@ subtitle: "On Meaning After the Income Question Is Solved"
 author: "Cloud Wu"
 date: "May 2026"
 lang: en-US
-documentclass: book
+documentclass: article
 classoption:
-  - 10pt
-  - oneside
-  - openany
+  - 11pt
+  - letterpaper
 geometry:
-  - paperwidth=6in
-  - paperheight=9in
-  - inner=0.85in
-  - outer=0.7in
-  - top=0.75in
-  - bottom=0.85in
+  - letterpaper
+  - margin=1in
 mainfont: "Palatino"
 sansfont: "Helvetica Neue"
 monofont: "Menlo"
-linestretch: 1.05
-fontsize: 10pt
+linestretch: 1.15
+fontsize: 11pt
 colorlinks: true
 linkcolor: black
 urlcolor: linknavy
@@ -35,6 +30,6 @@ header-includes:
   - \usepackage{titlesec}
   - \usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
   - \addbibresource{references.bib}
-  - \titleformat{\chapter}[display]{\normalfont\LARGE\bfseries\filright}{}{0pt}{\LARGE}
-  - \titlespacing*{\chapter}{0pt}{0pt}{20pt}
+  - \titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
+  - \titlespacing*{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 ---

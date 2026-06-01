@@ -63,6 +63,7 @@ build_lang() {
     --from=markdown+smart+raw_tex \
     --to=latex \
     --standalone \
+    --top-level-division=section \
     --metadata-file="$BUILD_DIR/metadata-$lang.yaml" \
     --resource-path="$BUILD_DIR" \
     --output="$tmp/book.tex" \
