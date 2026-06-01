@@ -165,13 +165,3 @@ individual reorientation this chapter describes works best for people who alread
 of agency and slack — and saying so honestly is important, because it's exactly where the
 individual path runs out and something larger has to take over. That's the next chapter: not what
 *you* do, but what a society owes the people for whom "just adapt" isn't enough on its own.
-
----
-
-> 🔬 **研究事项 RT-06A (✅已核实并写入正文 2026-05):** 核心转身现有🟢支撑——Kasser/Ryan SDT
-> 内在 vs 外在目标（外在目标→更低幸福，跨文化重复）；尤其 Niemiec/Ryan/Deci 2009：*达成*外在
-> 目标（钱/地位/认可）不提升幸福、甚至关联 ill-being，而达成内在目标提升幸福。已写入第6章正文。
-> 🔬 **研究事项 RT-06B (低):** "从不会到会的速度可迁移、是最耐AI的元技能"——这是有力的🟡断言，
-> 找学习迁移 / meta-learning 的证据，但小心别夸大。
-> 🔬 **研究事项 RT-06C (中):** "AI 既是杠杆又削护城河"——这个双面性能否用真实数据展示？（如：
-> AI 工具普及后，某创作领域的进入者激增 vs 单个作品的平均回报下降。）接平台级 SO 数据的精神。

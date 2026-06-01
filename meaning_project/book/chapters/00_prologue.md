@@ -106,9 +106,3 @@ for ourselves. That's the whole offer.
 
 We'll start where the loss is easiest to underestimate: with what work was quietly doing for us
 all along.
-
----
-
-> 🔬 **研究事项 RT-00 (minor):** 序章引用的 SO −45%/−95% 数字来自我们自己的平台级 API 拉取
-> （`so_sdt_study/platform_trend/`）。出版前需把拉取脚本补成可复现，并交叉核对一个独立来源
-> （如 SEDE 年度计数）确认量级。

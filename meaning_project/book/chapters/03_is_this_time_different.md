@@ -93,22 +93,10 @@ creativity, or stalling at the routine? Is it moving at generational speed or fa
 new kinds of work appear, are humans doing them — or is the AI doing those too? You will, in your
 own field, often have a better early read on these than any pundit.
 
-The trouble is, reading those dials requires looking at what is *actually happening right now* in
-the labour market — and that turns out to be genuinely contested, even among the economists who
-do it for a living. Sorting out what the live data does and doesn't yet show is its own task, and
-I owe you an honest accounting of it rather than a cherry-picked one. That accounting — and the
-surprising place where the damage is, and isn't, already visible — is the next chapter.
-
----
-
-> 🔬 **研究事项 RT-03A (✅已核实 2026-05):** "三个仪表盘"的当前实证读数已核实并入 evidence_base：
-> Anthropic Economic Index 2026（Claude.ai 上 2025-11 增强:自动化 ≈ 52:45；~40% 美国雇员用 AI）；
-> Stanford "Canaries"（ADP 薪资，22–25岁暴露职业就业相对降~16%）。可作为🟢读数写入正文（保留
-> "暴露≠替代/单一来源"caveat）。**写作待办**：把这节"当前读数"实际写进本章或第4章。
-
-> 🔬 **研究事项 RT-03B (中):** "速度 vs 调整尺度"目前是🟡论证。可否找到一个**可量化的"调整
-> 速度"基准**（历次技术转型中职业周转/再培训的真实时间常数），把"AI 是否更快"变成可对照的数字？
-
-> 🔬 **研究事项 RT-03C (低):** "无更高地可退"是本书最强的🟡主张之一，但纯属推断。有无任何
-> 经验信号能侧面检验（如：AI 进入某领域后，人类是否真的找到了新的、AI 暂时做不了的细分高地）？
-> 这与 Q7（抗AI意义源）相关。
+It would be a cheat, though, to leave you with three abstract dials and no early readings. As
+of 2026, the picture is genuinely mixed: AI's diffusion is no longer in doubt (roughly 40% of
+US employees now use it at work), but on Claude.ai the usage still tilts toward *augmenting*
+human work over *automating* it (about 52% to 45%) — and the broad job market for exposed
+professions has, in aggregate, held up. There is one sharp exception, and it lands exactly
+where the analogy is most stressed. I owe you the full account of where the live data points
+and where it doesn't — that is the next chapter.

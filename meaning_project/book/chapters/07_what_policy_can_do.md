@@ -19,7 +19,7 @@ read it the way a sailor reads weather, not the way a captain gives orders.
 **Second, the frame is not "fight AI."** I want to be clear about this because the obvious
 instinct — and a lot of policy talk — treats AI as a threat to be walled off, contained, slowed.
 That's the wrong frame, and not just tactically. AI is going to arrive and stay, and it may bring
-enormous good. The honest question is not *how do we hold it back* but *how is its benefit and its
+enormous good. The better question is not *how do we hold it back* but *how is its benefit and its
 harm distributed among ordinary people?* So the right center for policy, the thing everything else
 should orbit, is simple to state:
 
@@ -44,7 +44,7 @@ with the least slack — the ones Chapter 6's individual path can't yet reach.
   *time* — the damage spread across generations. The cruelest version of an AI transition is a
   fast, unbuffered one concentrated on specific living people. A great deal of what policy can
   helpfully do is simply *slow the landing for those caught underneath it*: transition support,
-  time to reorient — and here I have to be honest in a way that complicates the obvious answer.
+  time to reorient — and the obvious answer here is more complicated than it looks.
   The reflexive policy response to displacement is "retrain them." But the evidence on retraining
   is genuinely sobering: large US evaluations of government training programs (WIA/WIOA, Trade
   Adjustment Assistance) have repeatedly found little or no improvement in earnings or employment
@@ -60,19 +60,23 @@ with the least slack — the ones Chapter 6's individual path can't yet reach.
   the adjustment, not a confident promise that we can re-skill everyone into the next good job.
   Not slowing AI — slowing the fall of the people it displaces, without overpromising about where
   they land.
-- **Distributing the gains.** AI's productivity dividend is real and growing, and this is where
-  the honest fiscal picture matters. A meaningful UBI is expensive — Andrew Yang's $1,000-a-month
-  proposal was costed at roughly $2.8–3 trillion a year, which the current US tax structure simply
-  can't carry without major reform. The standard rejoinder is "fund it from the AI surplus" — via
-  sovereign wealth funds, public equity stakes in AI firms, or land-value taxes, on the model of
-  Alaska's oil dividend; by one estimate AI need only reach about 5–6× today's automation
-  productivity to finance a UBI worth ~11% of GDP. That may well become true. But notice where the
-  surplus goes *first*: in late 2025, the big AI firms' capital spending was running around $142
-  billion a *quarter* — vastly more new money flowing to capital than any legislature has moved
-  toward citizens. The dividend accrues to whoever owns the models first, and to wages later and
-  unevenly. So "can we afford to share AI's gains" is not really a technical question. It's a
-  political one — about who captures the surplus — and it's where "reduce the harm" and "amplify
-  the benefit" meet.
+- **Distributing the gains.** AI's productivity dividend is real and growing, and the fiscal
+  picture here is worth being concrete about. A meaningful UBI is expensive — Andrew Yang's
+  $1,000-a-month proposal was costed at roughly $2.8–3 trillion a year, which the current US tax
+  structure simply can't carry without major reform. The standard rejoinder is "fund it from the
+  AI surplus" — via sovereign wealth funds, public equity stakes in AI firms, or land-value taxes.
+  The clearest working precedent is small but real: since 1982 every Alaskan, including children,
+  has received an annual check from oil royalties pooled into a sovereign fund — usually
+  $1,000–$2,000, occasionally more — credited with measurably reducing poverty there without
+  measurably cutting work. It is the proof of concept that a citizen dividend funded from a
+  natural resource *can* run for decades; by one estimate AI need only reach about 5–6× today's
+  automation productivity to finance a UBI worth ~11% of GDP on the same logic. That may well
+  become true. But notice where the surplus goes *first*: in late 2025, the big AI firms'
+  capital spending was running around $142 billion a *quarter* — vastly more new money flowing to
+  capital than any legislature has moved toward citizens. The dividend accrues to whoever owns
+  the models first, and to wages later and unevenly. So "can we afford to share AI's gains" is
+  not really a technical question. It's a political one — about who captures the surplus — and
+  it's where "reduce the harm" and "amplify the benefit" meet.
 
 ### Amplifying the benefit
 
@@ -80,23 +84,25 @@ The benefit side is the half that usually gets left to markets, but policy shape
 
 - **Lowering the barrier to the lever.** Chapter 6's lever — AI letting an ordinary person go from
   *can't* to *can* — is currently most available to people who already have the access, the
-  literacy, and the confidence to use it. The single most democratizing thing policy could do is
-  make that lever genuinely available to everyone: access, education, the basic capability to turn
-  AI into agency. That's "amplify the benefit" at its most concrete — and it's also the bridge
-  back to Chapter 6, because it widens the door to the individual path for the people currently
-  shut out of it.
+  literacy, and the confidence to use it. The most democratizing thing policy could plausibly do
+  is make that lever genuinely available to everyone: access, education, the basic capability to
+  turn AI into agency. I should mark this one's status carefully: that broader access *would*
+  expand agency for those currently shut out is reasoning, not a measured fact — the rigorous
+  evaluations of past technology-access programs are still coming in. But it is the bridge back to
+  Chapter 6, because it widens the door to the individual path for the people currently shut out
+  of it.
 - **Protecting the spaces where humans matter to each other.** The most durable sources of meaning
   (Ch.6: care, presence, the people in front of you) are also the ones markets chronically
   underfund. Policy that resources care work, community, and the institutions where people are
   genuinely needed isn't nostalgia — it's investing in exactly the meaning-sources that survive
   AI, on behalf of the people who can't privately afford to build them.
 
-### Why "robust" is the honest standard
+### Why "robust" is the right standard
 
 I can't tell you AI will definitely cause mass displacement, so I can't justify any of this with
-"it's coming, prepare." The honest justification is the robust-bet logic: these are choices that
-look good across many futures. And this isn't just a rhetorical dodge — it's an actual,
-named method. Analysts at RAND (Robert Lempert and colleagues) formalized it as **Robust Decision
+"it's coming, prepare." The defensible justification is the robust-bet logic: these are choices
+that look good across many futures. And this isn't a rhetorical dodge — it's an actual, named
+method. Analysts at RAND (Robert Lempert and colleagues) formalized it as **Robust Decision
 Making**: when the future is *deeply* uncertain, you stop trying to predict the one true outcome
 and instead stress-test each option across a wide range of plausible futures, keeping the ones
 that hold up broadly. "Make good decisions without predictions" is a real discipline, used for
@@ -120,14 +126,5 @@ get to reach the individual path of Chapter 6 — the move from outcome-anchorin
 process-anchoring — at all. Policy's deepest job, in the end, is to widen
 the doorway through which people can go and find their place again.
 
-That's nearly the whole argument. What remains is to gather it up — and to be honest, one last
-time, about what we know, what we're guessing, and how to live in the space between.
-
----
-
-> 🔬 **研究事项 RT-07A (大部✅ 2026-05):** ①再培训无效、②AI 红利先归资本（季度 capex ~$142B vs
-> UBI 拨款）均已核实并写入正文。仍开放：③'普及 AI 可及性'是否真提升弱势群体能动性（待检索）。
-> 🔬 **研究事项 RT-07B (✅已核实并写入正文 2026-05):** Robust Decision Making（Lempert/RAND,
-> 2003/2006，DMDU）——"无预测下做好决策"，已作为第7章"稳健赌注"的正式方法论写入。
-> 🔬 **研究事项 RT-07C (✅已核实并写入正文 2026-05):** UBI 财政账（Yang $1k/mo ≈ $2.8-3T/yr；
-> AI 红利funding模型 ~5-6×自动化生产力；但红利先归资本）已写入"分配收益"。
+That's nearly the whole argument. What remains is to gather it up — and to mark, one last time,
+what we know, what we're guessing, and how to live in the space between.
