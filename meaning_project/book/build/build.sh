@@ -3,7 +3,7 @@
 #
 # Output: meaning_project/book/dist/post-labour-meaning-{en,zh}.pdf
 #
-# Dependencies: pandoc, xelatex (BasicTeX or MacTeX), biber, biblatex.
+# Dependencies: pandoc, xelatex, biber, latexmk (BasicTeX/MacTeX/TexLive).
 # See README.md for install instructions.
 
 set -euo pipefail
@@ -14,13 +14,13 @@ OUT_DIR="$BOOK_DIR/dist"
 
 mkdir -p "$OUT_DIR"
 
-# Ensure dependencies. macOS BasicTeX installs into /Library/TeX/texbin which is
-# often not on PATH for non-interactive shells; prepend it if present.
+# macOS BasicTeX installs into /Library/TeX/texbin, often missing from PATH in
+# non-interactive shells. Prepend if present.
 if [ -d /Library/TeX/texbin ] && ! command -v xelatex >/dev/null 2>&1; then
   export PATH="/Library/TeX/texbin:$PATH"
 fi
 
-for tool in pandoc xelatex biber; do
+for tool in pandoc xelatex biber latexmk; do
   if ! command -v "$tool" >/dev/null 2>&1; then
     echo "ERROR: $tool not found on PATH." >&2
     echo "See $BUILD_DIR/README.md for install instructions." >&2
@@ -38,6 +38,9 @@ build_lang() {
   tmp="$(mktemp -d)"
   trap 'rm -rf "$tmp"' RETURN
 
+  # references.bib must be in the same dir as the .tex for biber to find it.
+  cp "$BUILD_DIR/references.bib" "$tmp/"
+
   local input="$tmp/book.md"
   : > "$input"
 
@@ -46,7 +49,6 @@ build_lang() {
   local f
   for f in "$chapters_dir"/[0-9][0-9]_*.md; do
     awk -v pat="$strip_re" '
-      # On the first ~5 lines of each file, drop the parallel-language H2.
       NR <= 5 && $0 ~ pat { next }
       { print }
     ' "$f" >> "$input"
@@ -56,18 +58,25 @@ build_lang() {
   # Append references page.
   cat "$BUILD_DIR/refs-$lang.md" >> "$input"
 
-  echo "[$lang] pandoc -> xelatex -> $OUT_DIR/$out_name.pdf"
+  echo "[$lang] pandoc -> book.tex"
   pandoc \
     --from=markdown+smart+raw_tex \
-    --pdf-engine=xelatex \
-    --pdf-engine-opt=-interaction=nonstopmode \
-    --pdf-engine-opt=-halt-on-error \
-    --biblatex \
+    --to=latex \
+    --standalone \
     --metadata-file="$BUILD_DIR/metadata-$lang.yaml" \
     --resource-path="$BUILD_DIR" \
-    --output="$OUT_DIR/$out_name.pdf" \
+    --output="$tmp/book.tex" \
     "$input"
 
+  echo "[$lang] latexmk -> $OUT_DIR/$out_name.pdf"
+  ( cd "$tmp" && latexmk -xelatex -interaction=nonstopmode \
+        -file-line-error book.tex >latexmk.log 2>&1 ) || {
+    echo "[$lang] latexmk FAILED. Tail of log:" >&2
+    tail -40 "$tmp/latexmk.log" >&2
+    return 1
+  }
+
+  cp "$tmp/book.pdf" "$OUT_DIR/$out_name.pdf"
   echo "[$lang] done."
 }
 

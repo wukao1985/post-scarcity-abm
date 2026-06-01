@@ -3,7 +3,6 @@ title: "当工作消失之后"
 subtitle: "在收入问题解决之后，谈意义"
 author: "Cloud Wu"
 date: "2026 年 5 月"
-lang: zh-Hans
 documentclass: ctexbook
 classoption:
   - 11pt
@@ -22,11 +21,13 @@ linestretch: 1.45
 fontsize: 11pt
 colorlinks: true
 linkcolor: black
-urlcolor: "[HTML]{1F4E79}"
+urlcolor: linknavy
 toc: true
 toc-depth: 1
 secnumdepth: 0
 header-includes:
+  - \usepackage{xcolor}
+  - \definecolor{linknavy}{HTML}{1F4E79}
   - \usepackage{microtype}
   - \usepackage{setspace}
   - \usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
