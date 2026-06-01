@@ -1,13 +1,18 @@
 # 书稿 / Book manuscript
 
-按 `../BOOK_OUTLINE.md` 的弧线写作。**已知部分（🟢证据扎实）写成真正的成稿文字；需深挖/研究
-的部分就地标 `> 🔬 研究事项 RT-NN`**，并汇总到 `RESEARCH_TODO.md` 供讨论。
+按 `../BOOK_OUTLINE.md` 的弧线写作。已成稿的部分写成真正的读者文字；需深挖/研究的事项汇总
+到 `RESEARCH_TODO.md`（不在章节正文中——读者面前不挂🔬/🟢/🟡/🔴 脚手架，见 `../STYLE.md`）。
 
 写作语言：英文为主（Medium 主受众），关键概念保留中文对照。遵循 `../STYLE.md` + 三层诚实铁律。
 
 ## 双语
 - `chapters/` — 英文版（主，Medium 受众）
 - `chapters_zh/` — 中文版（与英文逐章对应，平行维护）
+
+## 排版与 PDF
+- `build/` — 一键出片的 LaTeX 管线（pandoc + XeLaTeX + biblatex），见 `build/README.md`。
+- `dist/` — 最新版 PDF（双语），committed 进 repo，"时刻是当前章节的标准排版版本"。
+- 改完章节后跑 `cd build && ./build.sh` 重出；或交给 Stop hook 自动重出。
 
 ## 章节文件（英文 chapters/ ；中文 chapters_zh/ 同名对应）
 - `chapters/00_prologue.md` — 序章：错误的问题
