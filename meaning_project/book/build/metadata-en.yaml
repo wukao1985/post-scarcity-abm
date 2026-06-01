@@ -6,21 +6,21 @@ date: "May 2026"
 lang: en-US
 documentclass: book
 classoption:
-  - 11pt
+  - 10pt
   - oneside
   - openany
 geometry:
   - paperwidth=6in
   - paperheight=9in
-  - inner=0.9in
-  - outer=0.75in
-  - top=0.85in
+  - inner=0.85in
+  - outer=0.7in
+  - top=0.75in
   - bottom=0.85in
 mainfont: "Palatino"
 sansfont: "Helvetica Neue"
 monofont: "Menlo"
-linestretch: 1.15
-fontsize: 11pt
+linestretch: 1.05
+fontsize: 10pt
 colorlinks: true
 linkcolor: black
 urlcolor: linknavy
@@ -35,6 +35,6 @@ header-includes:
   - \usepackage{titlesec}
   - \usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
   - \addbibresource{references.bib}
-  - \titleformat{\chapter}[display]{\normalfont\Huge\bfseries\filright}{}{0pt}{\Huge}
-  - \titlespacing*{\chapter}{0pt}{0pt}{30pt}
+  - \titleformat{\chapter}[display]{\normalfont\LARGE\bfseries\filright}{}{0pt}{\LARGE}
+  - \titlespacing*{\chapter}{0pt}{0pt}{20pt}
 ---
