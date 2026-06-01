@@ -111,14 +111,3 @@ license, because the bad endings are contingent, not fated.
 The rest of the book is about that contingency: where a person can still find meaning when work
 recedes, and how a society might steward AI so that more people get the chance to. We turn to the
 first of those next.
-
----
-
-> 🔬 研究事项（内部，非读者可见）：
-> - RT-05A (✅已核实 2026-05): 绝望之死——1998–2017 中年非大学白人 overdose 死亡 >4×、酒精肝
->   +50%、自杀 +37%（Case & Deaton）。正文已诚实标注相关/混淆/不可外推。
-> - RT-05B (低): Calhoun/行为沉沦——已在正文写为"诱人但不能当证据的隐喻"，并引本项目弃用 ABM 的
->   教训。若深做，可补 Calhoun 研究被批评/证伪的文献。
-> - RT-05C (中): 意义损失是否社会传染——正文用 SO"结构稳定"作反向小证据。若深做，需找孤独/失业/
->   自杀的网络扩散文献来正式权衡。
-> - RT-05D (低): 地位竞争向何处迁移——找"真实性经济/人类制造溢价"的早期经验信号（接 Q9）。

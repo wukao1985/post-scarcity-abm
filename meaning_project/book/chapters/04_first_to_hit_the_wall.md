@@ -166,24 +166,3 @@ it (Chapter 2), and start building the alternative *before* you need it.
 The rest of this book is about that building. But first we have to be honest about the stakes —
 about how badly this can go at the level of a whole society when the wall is hit without
 preparation. That's the darkest chapter, and it's next.
-
----
-
-> 🔬 **研究事项 RT-04A (✅已核实并写入正文 2026-05):** "白领宏观未崩、仅入门岗信号"已核实并
-> 写成🟢正文——Stanford "Canaries"（Brynjolfsson 等，ADP 薪资）：22–25 岁最暴露职业就业相对
-> 降~16%，年长者反增6–9%；Anthropic 指数：~40% 雇员用 AI、增强:自动化≈52:45。正文已点出真实
-> 张力（部分研究认为入门岗下滑早于/不全归因于 ChatGPT）。
-
-> 🔬 **研究事项 RT-04B (✅已做，结果为预注册零结果，2026-05):** 用 CPS basic monthly（2021-07
-> 至 2026-04，53 个月）+ Language-Modeling AIOE 暴露度，做了预注册三重差分：同一职业内，无合同
-> 者（非法人自雇）post-ChatGPT 的就业是否比受薪者下降更早更深。**结论：未能证实合同缓冲假说。**
-> β₃ = Post×暴露×无合同 = −2.2%/SD，p=0.21，95%CI[−5.5%,+1.2%]；安慰剂（2022-05，ChatGPT 前）
-> 给出几乎相同的 −2.2%（p=0.37）→ 那点微弱负向并非 ChatGPT 所致；事件研究 pre-trend 平、冲击后
-> 无下行；H2 梯度反向（更受合同保护的法人自雇反而动得更多）；换 base AIOE / 年龄段 / 单元阈值 /
-> 工时 均为零。β₁（共同暴露效应）=+1.7% → CPS 里到 2026 连受薪暴露岗都没缩，AI 就业冲击几乎不可
-> 见，故本检验部分"为时过早/功效不足"。**正文已据此下调置信度（🟡 维持，但现明确引用这次"未能证实"
-> 的直接检验，并承认 SO 崩塌更可能是"高可替代特例"）。** 详见 `contract_buffer_study/PAPER.md`。
-> 这是继 SO 研究之后第二根自有实证支柱——同样诚实地是一个零结果。
-
-> 🔬 **研究事项 RT-04C (低):** SO 研究本身（H1/H3、退出vs迁移）在本章只一笔带过（"留待后文"）。
-> 需决定：SO 的细节放本章、还是单独成章/附录？它是全书唯一的自有🟢支柱，值得充分呈现。
