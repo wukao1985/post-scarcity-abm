@@ -40,6 +40,24 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   to-others is the part virtual/UBI can't replace, what would institutions that manufacture
   "mattering" look like?
 
+## Tier 2 — added 2026-W22
+
+- 💡 🟢 **"Purpose is a vital sign."** The Emile (2026, HRS) mortality-mediation finding makes the
+  case that framing meaning-loss as a soft cultural issue is miscalibrated: purpose erosion is
+  measurable and, at population scale, lethal — it mediates ~88% of the loneliness→mortality link.
+  Reframes the whole project's stakes from "nice to have" to "health variable." Caveat the
+  older-adult sample honestly. Pairs with deaths-of-despair as the 🟢 floor.
+- 💡 🟢/🟡 **"How you use AI decides whether it erodes your meaning."** Lee et al. (2026): *passive*
+  AI use corrodes self-efficacy/ownership/meaning (and it persists); *active* collaboration
+  preserves them. The economic augmentation-vs-automation split is *also* a psychological one — the
+  same axis governs whether AI hollows your job and whether it hollows your sense of authorship. A
+  rare piece of *actionable* meaning advice grounded in a pre-registered experiment.
+- 💡 🟡 **"Experience creep: how AI raised the bottom rung out of reach."** The entry-level effect
+  isn't mass layoffs — it's junior roles mutating into mid-level ones (Washington Monthly, May
+  2026), corroborated by the Stanford/ADP young-cohort drop and NY Fed postings. The career ladder
+  loses its first step. Watch whether the rung is rebuilt or stays hollow. (Hold the executive-
+  survey counter-evidence honestly.)
+
 ## Parking lot (raw sparks)
 
 - The "behavioral sink" metaphor: useful or misleading for digital society? (honest critique)

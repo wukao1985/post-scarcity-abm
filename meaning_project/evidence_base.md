@@ -104,6 +104,27 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   Human capital enables AI use (input/output education level r>0.92; experienced users automate
   better). *Caveat:* single-provider usage data, not the whole economy. VERIFIED 2026-05.
   → use for the "what's being automated" + augmentation-vs-automation watchlist (Q5/Q6).
+- **Anthropic Economic Index — "Learning curves" report** (Mar 2026; Nov 2025→Feb 2026 data).
+  *Shows:* on Claude.ai **augmentation increased slightly** (validation/learning patterns) and
+  still leads (>half), while **automation decreased sharply in the 1P API**; coding is migrating
+  from augmentative (Claude.ai) toward automated (API); customer-service & automated-trading API
+  workflows ~doubled. New: **6-month+ tenured users have a ~10% higher conversation success rate**
+  (after controls) — "skill-biased technological change," early-adopter advantage compounding.
+  *Honesty note:* this resolves a 2026-06-01 daily flag — the Yale Budget Lab secondary framing
+  ("Claude usage now more automation than augmentation") conflated API with consumer; on the
+  **consumer** surface augmentation still leads. So the project's "augmentation-dominant on the
+  human-facing side" reading **holds** (verified from primary, not the headline). VERIFIED
+  2026-06 (primary report). → augmentation-vs-automation watchlist; the dual (economic+
+  psychological) breakpoint.
+- **IMF Staff Discussion Note SDN/2026/001, "Bridging Skill Gaps … New Jobs Creation in the AI
+  Age"** (Goraya, Mendes Tavares et al., IMF, 9 Jan 2026; Lightcast job-postings). *Shows:*
+  new-skill postings carry a 2–3.4% wage premium and +1.3pp local employment — **but
+  AI-specific** skill postings carry higher wages (~7.5–8% UK) with **no overall employment gain**
+  in local US markets; middle-skilled workers capture no significant benefit; polarisation
+  reinforced. *Limits:* postings ≠ filled jobs; Lightcast skews formal employment. *Use:* the
+  honest empirical basis for "the 'new jobs' mechanism holds for general new skills but, for the
+  AI-specific slice, delivers **wages without headcount** and skips the middle." Pairs with the
+  Stanford/ADP young-cohort finding. VERIFIED 2026-06.
 
 ## Deaths of despair (the 🟢 floor for the "how bad" chapter)
 
@@ -125,6 +146,31 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   This is a **direct 🟢 test** of Q3's open question ("can virtual/AI supply *mattering*?") — and
   the answer leans no: the value of care depends partly on a *human* being its source. Anchors
   Ch.6's relatedness path and Q7. VERIFIED 2026-05.
+
+## How AI is used (not whether) governs its meaning effect — the augmentation/automation axis as psychology
+
+- **Lee et al., "Relying on AI at work reduces self-efficacy, ownership, and meaning while active
+  collaboration mitigates the effects"** — *Scientific Reports* 16:13583 (2026). Pre-registered
+  experiment (N=269) + follow-up (N=270). *Shows:* **passive** AI use (copy the output) reliably
+  undermined self-efficacy, psychological ownership and perceived work meaningfulness — and the
+  declines **persisted** after returning to manual work; **active** collaboration (draft first,
+  then AI-refine) preserved all three at levels indistinguishable from independent work. *Use:*
+  AI use *per se* does not corrode the psychological sources of meaning — *how* you use it does.
+  Makes augmentation-vs-automation a **psychological** category, not only an economic one; pairs
+  with the SO study and the human-empathy/care findings. VERIFIED 2026-06.
+
+## Purpose as a measurable health (mortality) variable — the 🟢 floor under "meaning matters"
+
+- **Emile, "Loneliness predicts mortality risk via the erosion of purpose in life"** — *Social
+  Science & Medicine* 368 (23 Jan 2026). Prospective, Health and Retirement Study, N=8,351 US
+  adults, 11-yr follow-up. *Shows:* purpose in life statistically explains **~88%** of the
+  loneliness→premature-mortality association; the mediation runs primarily through *changes* in
+  purpose over time (not baseline alone); robust to adjustment for depression, social isolation,
+  neuroticism. *Limits (state honestly):* observational, older-adult sample (mean age ~68) — so
+  causality and generalisation to working-age populations require care. *Use:* the clearest 🟢 yet
+  that "purpose erosion" is not a soft cultural concern but a **measurable mediator of a mortality
+  outcome** — grounds Q3 ("can AI supply mattering?") and the "meaning as a health variable"
+  framing. VERIFIED 2026-06.
 
 ## Intrinsic vs extrinsic goals — the 🟢 spine of Ch.6's "turn"
 

@@ -29,6 +29,21 @@ The open question of whether a "next rung" exists. (Analogy with an explicit bre
 The historical reassurance ("new jobs always appear") secretly assumes humans are better than
 machines at the new jobs. Name and interrogate that precondition.
 
+## 🌰 The augmentation/automation axis as a *dual* breakpoint
+The augmentation-vs-automation distinction is doing double duty. *Economically* it predicts where
+jobs go (automation-type usage → the entry-rung employment signal; augmentation-type → growth, e.g.
+software devs). *Psychologically* it predicts where meaning goes (Lee et al. 2026: passive/automation
+use erodes self-efficacy/ownership/meaning and persists; active/augmentation use preserves them).
+The same axis governs both layers — which makes "keep humans in the augmentative loop" a candidate
+🔴 design principle, not just an economic forecast. (Strengthened 2026-W22.)
+
+## 🌰 Experience creep / the raised rung
+AI's first labour effect arrives not as mass dismissal but as a *raised threshold*: routine junior
+tasks are absorbed, so "entry-level" roles quietly demand mid-level experience and the bottom rung
+of the career ladder disappears. Names the mechanism behind the young-cohort employment signal — and
+locates where post-labour meaning-loss would surface first (those who can't get on the ladder at
+all). (Seeded 2026-W22, from Washington Monthly + Stanford/ADP + NY Fed.)
+
 ## 🌰 Meaning infrastructure / manufacturing "mattering"
 If contribution-to-others is what UBI and virtual worlds can't supply, what would institutions
 that deliberately produce "mattering" look like? (Design / 🔴.)
