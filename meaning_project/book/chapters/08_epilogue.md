@@ -18,9 +18,10 @@ say nothing" — and even further from "do nothing." Let me gather what we *can*
 ### What we can reasonably infer — the careful reasoning
 - The reassuring history of automation might not repeat, and there are three observable dials
   that will tell us — what's being automated, how fast, and whether humans do the new work. (Ch.3)
-- The professionals hit first are *most likely* forerunners rather than a special case;
-  contractual stickiness is *probably* delaying, not preventing, the broader arrival of the
-  same question — though this much remains reasoning, not a settled finding. (Ch.4)
+- The professionals hit first *may well be* forerunners rather than a special case;
+  contractual stickiness *may well be* delaying, not preventing, the broader arrival of the
+  same question — though a pre-registered direct test of that mechanism came back null, so
+  this is a reasoned worry shadowed by that null, not a finding. (Ch.4)
 - Meaning sourced in *being-human-doing-it* — care, craft, presence — is structurally more
   defensible against AI than meaning sourced in output. (Ch.6)
 
