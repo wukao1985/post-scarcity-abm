@@ -98,6 +98,26 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   spread (≈6% absolute decline late-2022→Jul-2025), while older workers in the same roles grew
   6–9%. Declines concentrated where AI **automates** rather than augments. The single clearest
   🟢 signal of labor harm so far — and it's narrow (young + entry-level). VERIFIED 2026-05.
+  **⚠️ CONFOUND (added 2026-W23):** the NY Fed remote-work paper (Emanuel/Harrington/Pallais,
+  below) finds remote work — not AI — explains ~two-thirds of the *same* young-grad unemployment
+  rise in 2022–24, with AI exposure not explaining the divergence in that window. The drop is
+  real; its *cause* is now genuinely contested (AI-automation vs remote-work mentorship loss).
+  Cite ADP with this caveat; do not present the young-cohort signal as settled AI harm.
+- **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
+  Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
+  Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-
+  firm case study. *Shows:* unemployment among college grads <29 rose ~20% post-pandemic (2022–24
+  vs 2017–19) while older grads' held/fell; the gap concentrates in **"remotable" jobs**; remote
+  work accounts for **~64%** of the rise; mechanism is reduced mentoring/feedback for juniors
+  hired remotely (engineers got ~20% more feedback seated near colleagues; the case firm shifted
+  hiring ~a decade older after going remote, reversed on return-to-office). **AI exposure "didn't
+  explain the divergence" in 2022–24** (authors note it could in later years). *Limits:* one
+  case firm + index-based macro analysis; observational; the AI-null is window-specific.
+  *Use:* the load-bearing **confounder** on the entry-rung/experience-creep thread — a well-
+  identified rival to the AI reading of the young-cohort drop. In the spirit of the contract-
+  buffer null: the AI-attribution is weaker than the headline. VERIFIED 2026-06 (multi-source;
+  primary blog 503'd at fetch, specifics corroborated across NPR/CNBC/KCLU coverage).
+  https://libertystreeteconomics.newyorkfed.org/
 - **Anthropic Economic Index** (5th report, 2026; ~1M Claude.ai + API conversations). *Shows:*
   ~40% of US employees use AI at work (up from ~20% in 2023); on Claude.ai, **Nov 2025 split ≈
   52% augmentation / 45% automation** (automation briefly led in Aug 2025; API skews automated).
@@ -125,6 +145,18 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   honest empirical basis for "the 'new jobs' mechanism holds for general new skills but, for the
   AI-specific slice, delivers **wages without headcount** and skips the middle." Pairs with the
   Stanford/ADP young-cohort finding. VERIFIED 2026-06.
+- **Macro/labour texture, June 2026** (compact 🟢-with-caveats note; details in daily logs
+  2026-06-04…08). *Goldman Sachs* payroll decomposition: gross AI substitution ~25K jobs/mo,
+  augmentation ~+9K, net ~−11–16K — and the offsetting "new jobs" are **data-centre construction,
+  not re-employed admin workers** (proprietary model, read via journalism). *BLS May 2026:* +172K
+  payrolls, U 4.3%, but **financial activities −107K/12mo** and **information −342K since Nov-22**
+  persist in high-exposure sectors while growth comes from low-exposure ones (hospitality, health,
+  local gov) — BLS assigns no cause. *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
+  headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
+  quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
+  macro still calm; sector pattern cohering with selective high-exposure displacement; skills
+  goalposts moving faster than any retraining cycle. None individually a pillar; together they
+  texture the "early innings, loop not closing for the displaced" reading. VERIFIED 2026-06.
 
 ## Deaths of despair (the 🟢 floor for the "how bad" chapter)
 
@@ -146,6 +178,25 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   This is a **direct 🟢 test** of Q3's open question ("can virtual/AI supply *mattering*?") — and
   the answer leans no: the value of care depends partly on a *human* being its source. Anchors
   Ch.6's relatedness path and Q7. VERIFIED 2026-05.
+- **AI companions crowd out human connection (Replika)** — Aalto University; *CHI 2026*.
+  Quasi-experiment: ~2,000 Replika users' public Reddit language, year-before vs year-after first
+  use, matched controls. *Shows:* short-term comfort, but over time **more** loneliness,
+  depression and suicidal-ideation signals than controls; mechanism is a **crowd-out** — AI
+  companionship "raises the perceived cost of human relationships," so users reach out to people
+  less. *Limits:* observational (reverse causality possible — the distressed may seek companions),
+  single platform, Reddit language a proxy. *Use:* the **behavioural** counterpart to the
+  empathy-preference result above — together they push Q3 toward "AI cannot supply relatedness,
+  and deployed as a loneliness fix it may backfire." VERIFIED 2026-06.
+  https://dl.acm.org/doi/10.1145/3772318.3790558
+- **OECD, "Social Connections and Loneliness in OECD Countries"** (OECD, Oct 2025). Cross-national
+  survey synthesis; descriptive, not causal. *Shows:* in-person interaction declining across the
+  OECD; **young people (16–24) and men** saw the steepest recent deteriorations; loneliness + low
+  social interaction associated with ~**871,000 premature deaths/yr** globally. *Limits:*
+  descriptive trends; cross-national comparability caveats; the mortality figure is a global
+  estimate under varying assumptions. *Use:* demographic precision the canon lacks — the socially
+  most-at-risk group (young men) is the same group taking the early entry-level hit ("double
+  exposure"); pairs with Emile's mortality mediation. VERIFIED 2026-06.
+  https://www.oecd.org/en/publications/social-connections-and-loneliness-in-oecd-countries_6df2d6a0-en.html
 
 ## How AI is used (not whether) governs its meaning effect — the augmentation/automation axis as psychology
 
@@ -158,6 +209,25 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   AI use *per se* does not corrode the psychological sources of meaning — *how* you use it does.
   Makes augmentation-vs-automation a **psychological** category, not only an economic one; pairs
   with the SO study and the human-empathy/care findings. VERIFIED 2026-06.
+- **Ranjit et al., "Are We Automating the Joy Out of Work?"** — arXiv:2603.14963; *CHI 2026*.
+  Survey of workers/developers rating 171 representative tasks, then LM-scaled to 10,131 O*NET
+  computer-assisted tasks. *Shows:* tasks workers associate with **agency and happiness are
+  disproportionately AI-exposed** relative to tasks they rate routine/low-meaning; plus a
+  worker↔developer mismatch on what AI should optimise. *Limits:* self-reported meaning ratings,
+  LM-inferred scaling (not independent measurement), design-advocacy venue, no causal/longitudinal
+  arm. *Use:* the **task-selection** layer above Lee et al.'s individual mechanism — reframes the
+  risk from "some jobs vanish" to "the parts of jobs that *produce* wellbeing are the parts being
+  targeted." VERIFIED 2026-06. https://arxiv.org/abs/2603.14963
+- **Giuntella, Koenig & Stella, "AI and the wellbeing of workers"** — *Scientific Reports* 15:20087
+  (Jun 2025). German SOEP, two decades, DiD/event-study; observational; data ends ~2020 (pre-
+  generative-AI). *Shows:* **no average harm** from AI occupational exposure to mental health/
+  subjective wellbeing (slight health gains via reduced physical job intensity) — **but** among
+  workers who *actually report using AI tools*, "indications of declining life and job
+  satisfaction." *Limits:* occupational exposure ≠ individual use; self-report subsample smaller/
+  selected; German co-determination may buffer harms. *Use:* the **reconciliation** anchor — the
+  population-average null and Lee et al.'s task-level mechanism operate at different levels; the
+  actual-user nuance bridges them and warns the null may not survive deeper AI penetration.
+  VERIFIED 2026-06. https://www.nature.com/articles/s41598-025-98241-3
 
 ## Purpose as a measurable health (mortality) variable — the 🟢 floor under "meaning matters"
 

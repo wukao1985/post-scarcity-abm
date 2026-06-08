@@ -58,7 +58,38 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   loses its first step. Watch whether the rung is rebuilt or stays hollow. (Hold the executive-
   survey counter-evidence honestly.)
 
+## Tier 1/2 — added 2026-W23
+
+- 💡 🟡/🟢 **"Was it ever AI? The confounded canary."** The methodology piece the project is built
+  to write. The young-cohort employment drop — the headline "AI is already taking jobs" datum — is
+  now genuinely contested: Stanford/ADP read it as AI-automation; the NY Fed (Emanuel/Harrington/
+  Pallais, Jun 2026) attributes ~two-thirds to **remote work**, with AI not explaining the 2022–24
+  divergence. Use it to show calibrated honesty in action: how to hold a contested 🟢, why
+  attribution matters more than the headline, and what would actually resolve it. *Strong fit for
+  the author's brand; pairs with the three-layer framework piece.*
+- 💡 🟢/🔴 **"The relatedness trap."** AI companions, sold as a loneliness cure, may worsen it by
+  raising the perceived cost of human-relationship effort (Aalto/CHI crowd-out + empathy-preference
+  + Emile/OECD mortality). Design reversal: companions as *bridges* to human connection, not
+  endpoints. A rare piece with both a strong 🟢 spine and a concrete 🔴 design lever.
+- 💡 🟢 **"What gets automated first is what felt most human."** Ranjit/CHI: the agency- and
+  happiness-producing tasks are disproportionately AI-exposed. Reframes the risk from "jobs vanish"
+  to "the meaningful parts go first" — remedy is task-allocation design, not just retraining.
+- 💡 🟡/🔴 **"The ungiven hours."** BCG: AI frees ~a day/week but 66% of workers get no framework
+  for the freed time; the default is drift, not meaning. The real problem isn't automation, it's
+  the absence of institutions for redirecting freed human capacity.
+
 ## Parking lot (raw sparks)
+- "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
+  competence trail its benefits, so they're under-reported and under-regulated).
+- "The double exposure" (OECD: young men take both the first employment hit and the steepest
+  loneliness rise — the pressures compound in the group where work was the main social organiser).
+- "The average lies" (Giuntella: population-level wellbeing nulls mask the harm pathway in heavy
+  passive users; risk grows as AI embeds deeper into workflows).
+- "The moving goalposts" (NACEWEB: quarterly skills-churn makes "just retrain" structurally
+  impossible before one even asks whether retraining works).
+- "Two-speed desocialization" (Bousquet: the post-work meaning problem already arrived for gig/
+  low-wage workers via desocialization while professionals debate it as a future scenario).
+
 
 - The "behavioral sink" metaphor: useful or misleading for digital society? (honest critique)
 - Status competition when AI can out-produce everyone — does status migrate to "being human"?
