@@ -78,6 +78,42 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   for the freed time; the default is drift, not meaning. The real problem isn't automation, it's
   the absence of institutions for redirecting freed human capacity.
 
+## Tier 1/2 — added 2026-W24
+
+- 💡 🟢 **"The stranger works."** Li et al.'s pre-registered RCT: a *random human stranger* you text
+  for two weeks reliably reduces loneliness, while a chatbot purpose-built for maximal empathy does
+  no better than journaling to no one. Inverts the "AI as scalable loneliness fix" pitch — the bar for
+  human connection is surprisingly low, and a sophisticated AI fails to clear it. Pairs with Folk &
+  Dunn (panel) + Aalto (quasi-exp) as the closing argument on Q3. *Strong, vivid, well-evidenced.*
+- 💡 🟢 **"The cognitive stakes."** Kouchekinia et al. (NBER): involuntary job loss *causally* ages
+  cognition ~2 years (men 51–64), via the employment channel, not income. The harm from displacement
+  isn't only lost income or meaning — it may be neurological. "Find purpose elsewhere" underestimates
+  how cognitively protective structured work is. Hold the inference honestly (data pre-genAI).
+- 💡 🟡 **"The tide that reaches everywhere."** Mertens et al. (MIT): AI capability rises as broad,
+  gradual *rising tides* across all text-based tasks, not *crashing waves* on single occupations
+  (50%→65% on 3–4-hr tasks in 5 quarters). The adjustment question changes from "which job survives?"
+  to "what is human text-based contribution at an 80–95% floor?" Empirical legs for "the retreat that
+  runs out of high ground." The meaning question gets *more* pressing under rising tides, not less.
+- 💡 🔴 **"What the builder left out."** Amodei's "Policy on the AI Exponential" is detailed on income
+  support (wage insurance → tax-funded UBI) and *silent on meaning*. The income-only framing of even
+  the most thoughtful industry proposal is itself evidence that the psychological layer is the
+  neglected question — exactly the gap this project fills. (Pair with Acemoglu/Autor/Johnson, same gap.)
+- 💡 🟡 **"Expertise-leveling as a false friend."** Acemoglu/Autor/Johnson: AI that *democratises*
+  expert knowledge looks pro-worker but may commodify the very skills it spreads. Psychological
+  counterpart: if competence satisfaction (SDT) rests on scarce expertise, leveling expertise can
+  erode competence-based meaning even while nominally "augmenting." The augmentation/automation dual
+  breakpoint gets a third mode that *looks* benign and isn't.
+- 💡 🔴 **"Two threats, one mechanism."** ILO WP170: AI threatens meaning via displacement (removing
+  competence + structured purpose) AND via surveillance/algorithmic management (removing autonomy from
+  those who *stay* employed). The SDT needs-satisfaction picture worsens on both paths; policy that
+  addresses only income replacement misses the second entirely. A 🔴 piece naming the second lever
+  (algorithmic-management regulation).
+- 💡 🟢 **"Does money ever buy purpose? The German exception."** The methodology/honesty piece. The
+  project's recurring "money buys relief, not meaning" anchor meets a German RCT that found a *stable*
+  +0.25 SD purpose-in-life gain (no fade). A worked example of updating a load-bearing claim when a
+  well-identified result pushes back — without over-correcting (N=107, smallest of three effects).
+  Pairs with the three-layer framework and "Money doesn't buy meaning."
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).
