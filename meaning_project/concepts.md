@@ -16,6 +16,11 @@ spine. → likely the first article.
 Even in the most economically optimistic post-labour future (jobs appear, UBI is ample), the
 *meaning* question stays fully open. Separating these two debates is itself a contribution,
 because ~99% of discourse conflates them.
+**Demand-side evidence added 2026-W25:** Chueri et al. (Perspectives on Politics) find that when
+people fear automation they do *not* mainly demand more income support — they demand measures that
+preserve work's *social role* (robot taxes, income-regardless-of-employment). The public, in survey
+data, independently affirms the decoupling: it wants the role of work protected, not just its income
+replaced. The decoupling is not only an analyst's distinction; it is already a political preference.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
@@ -62,6 +67,12 @@ the high-exposure vacancy decline **predates ChatGPT** and shows **no junior/sen
 exposed occupations — cutting against the "entry-rung selectively closing" reading on its own terms,
 and sitting in unresolved tension with Massenkoff & McCrory's (Anthropic) *hiring-flow* narrowing. Net:
 the *phenomenon* may be partly secular; the AI attribution is now the most-contested 🟢 in the project.
+**Reframe added 2026-W25 ("the raised floor"):** PwC's Jobs Barometer offers a *third* shape — entry
+roles aren't vanishing but are re-specified *upward* (AI-exposed entry roles grew 35% yet demand ~7×
+more senior skills). So the rung may be less "removed" than "raised out of reach," disrupting the
+competence-building developmental arc rather than eliminating the job. Useful framing, but the source
+is conflicted (PwC sells AI advisory) and clashes with the NY Fed postings null; phenomenon-real /
+attribution-contested read unchanged.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
@@ -80,6 +91,14 @@ prospective panel + Li et al. pre-registered RCT (a random *stranger* beats a pu
 chatbot, which ties journaling). Three independent designs, one direction. This is the project's
 best-evidenced sub-question; the crowd-out is the working causal story for *why* AI companionship
 worsens the deficit in the very people who adopt it.
+**Mechanism specified 2026-W25:** Yoneda et al. (JPSP, 175,000 adults, 18 countries) names the
+*pathogenic variable* — it is **subjective loneliness (the feeling), not objective isolation (the
+contact count)**, that predicts cognitive impairment and shorter life. This pins down *why* the
+crowd-out bites: AI companions cut *isolation* without touching *loneliness*, and loneliness is the
+limb with the health cost. The clean one-line form: **AI companions target the wrong variable.**
+(Note the recurring **"vital sign"** framing — Yoneda urges screening loneliness as one; the project
+already calls purpose a vital sign (Emile) — so both limbs of the meaning case now read, from outside
+researchers, as measurable health variables, not soft concerns.)
 
 ## Borrowed terms worth tracking (not our coinages)
 - **"Asymptomatic harm" / "intuition rust"** (Passi et al., Microsoft/CHI 2026): AI's benefits are

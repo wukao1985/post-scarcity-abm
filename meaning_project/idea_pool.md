@@ -114,6 +114,30 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   well-identified result pushes back — without over-correcting (N=107, smallest of three effects).
   Pairs with the three-layer framework and "Money doesn't buy meaning."
 
+## Tier 1/2 — added 2026-W25
+
+- 💡 🟢 **"The wrong variable."** Yoneda et al. (JPSP, 175,000 adults, 18 countries): it is
+  *subjective loneliness* (the felt experience), not *objective isolation* (lack of contact), that
+  predicts cognitive impairment and shorter life — isolation shows no consistent cognitive link. AI
+  companions reduce isolation ("you're talking to someone") while leaving loneliness unmoved or worse
+  (Folk & Dunn, Aalto, Li et al.) — so the companion-as-cure pitch is solving the wrong problem at
+  scale, and the right problem is the one with the lethal consequences. The cleanest, most vivid
+  closing of the Q3 argument yet; pairs with "The relatedness trap." *Strong, well-evidenced.*
+- 💡 🟡/🟢 **"Preserve the job, not just the income."** Chueri et al. (Perspectives on Politics): when
+  people fear automation they don't mainly ask for more unemployment benefits — they ask for measures
+  that protect work's *role* (robot taxes, income regardless of employment). The public's own answer
+  to the economic–meaning decoupling, in survey data — Jahoda's latent functions surfacing as a
+  *political preference*. A 🔴-policy piece with a real 🟢/🟡 spine; counters "income support is enough."
+- 💡 🟡 **"The raised floor."** PwC Jobs Barometer: AI-exposed entry roles grew 35% but now demand ~7×
+  more senior-level skills. The entry-level problem may not be "the door is closed" but "the bottom
+  rung was lifted out of reach" — breaking the competence-building developmental arc of early work.
+  Refines *experience creep*. (Hold the conflicted-source caveat and the NY Fed/IMF tension honestly.)
+- 💡 🟡 **"Meaning in the lag."** The ILO J-curve / aggregation-paradox papers: AI's aggregate payoff
+  lags organisational and institutional adaptation by years-to-decades (electrification/ICT precedent),
+  so the gains that would fund meaning-sustaining institutions are invisible in the near term. The
+  meaning question is acute *during* the adjustment, not after it — and the measurement gap itself
+  weakens the political case for distributing the gains.
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).

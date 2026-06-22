@@ -194,6 +194,31 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   terms, while sitting in unresolved **tension with Massenkoff & McCrory's hiring-flow narrowing**. The
   fourth institutional null/complication after our contract-buffer null, the NY Fed remote-work confound,
   and the M&M stock-null. VERIFIED 2026-06. https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/
+- **PwC 2026 Global AI Jobs Barometer — "the raised floor"** (PwC, 15 Jun 2026; >1B job ads, 27
+  countries). 🟡 **only** (descriptive job-ad analysis from a firm that *sells* AI advisory —
+  structural conflict of interest; proprietary undisclosed methodology; postings ≠ filled jobs; no
+  causal identification). *Shows:* AI-skill jobs grew 69% vs 9% market-wide; the meaning-relevant
+  finding is the entry level — **AI-exposed entry roles grew 35% since 2019 (non-exposed fell 10%)
+  but now require ~7× more traditionally senior-level skills** (judgment, leadership, creativity); a
+  "professionalised vs democratised" two-track split. *Use:* a **reframe** of experience creep — the
+  entry problem may be less "the door is closed" (NY Fed postings find no junior/senior divergence)
+  than **"the floor of expected competence has been raised out of reach,"** disrupting the SDT
+  *competence*-building developmental arc of early work. Logged 🟡, not as a 🟢 anchor: conflicted
+  source, in unresolved tension with the NY Fed postings null and the IMF wages-without-headcount
+  finding. VERIFIED 2026-06 (secondary).
+  https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html
+- **ILO macro pair (J-curve / micro-signal, macro-null)** — *"The Impact of GenAI on Jobs,
+  Productivity and Work Organization"* (1 Jun 2026, 7 countries) and *"The Aggregation Paradox of
+  AI"* (6 May 2026). 🟡 (institutional synthesis; **primary text not retrieved — flagged for
+  retrieval before any 🟢 use**). *Show:* a consistent **micro-signal / macro-null** — real but uneven,
+  often unverified task-level productivity gains that have **not** translated into measured output,
+  earnings, employment, or any official aggregate productivity signal; AI sits early on a **J-curve**,
+  with the electrification/ICT precedent implying the aggregate payoff lags *organisational and
+  institutional* adaptation by years-to-decades. *Use:* sharpens the **speed-vs-adjustment** breakpoint
+  — the live question is not "will AI pay off?" but "what do people do for meaning *in the lag*?"; the
+  measurement gap itself weakens the near-term political case for distributing AI gains (and funding
+  meaning-sustaining institutions). VERIFIED 2026-06 (secondary; primary pending).
+  https://www.ilo.org/publications/impact-genai-jobs-productivity-and-work-organization-review-empirical
 - **Mertens, Kuzee et al., "Crashing Waves vs. Rising Tides"** (MIT FutureTech, arXiv:2604.01363,
   Apr 2026). 🟢 (17,000+ worker evaluations of 3,000+ text-based O*NET tasks; preprint; 2029 figures
   are extrapolations). *Shows:* little evidence of "crashing waves" (sudden occupational wipeouts);
@@ -294,6 +319,25 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   most-at-risk group (young men) is the same group taking the early entry-level hit ("double
   exposure"); pairs with Emile's mortality mediation. VERIFIED 2026-06.
   https://www.oecd.org/en/publications/social-connections-and-loneliness-in-oecd-countries_6df2d6a0-en.html
+- **Subjective loneliness — not objective isolation — predicts cognitive impairment and shorter
+  life.** Yoneda et al. (24-author international team, UC Davis-led); *Journal of Personality and
+  Social Psychology* (15 Jun 2026). 175,000 adults aged 50+ across 18 countries, **harmonized
+  coordinated-analysis** design (multiple cohorts modelled in parallel — a strong replication frame).
+  *Shows:* with loneliness and isolation statistically separated, **subjective loneliness** (the
+  *feeling* of disconnection) consistently predicts higher risk of severe cognitive impairment (a
+  10% rise in reported loneliness ≈ 8–9% higher impairment risk), shorter life, and ~3% lower chance
+  of recovering from mild impairment — while **objective social isolation showed no consistent
+  cognitive link** and only a weak mortality association. Authors recommend screening loneliness as a
+  clinical **"vital sign."** *Limits:* observational; older-adult sample (mean 50+); loneliness
+  self-reported; **primary text not retrieved — specifics from the UC Davis/UC press release and
+  secondary coverage.** *Use:* the **mechanism** upgrade to Q3 — it names the *pathogenic variable*
+  (the felt experience, not the contact count). This closes the AI-companion loop: companions reduce
+  *isolation* ("talking to someone") without moving *loneliness*, and loneliness is what carries the
+  cognitive/mortality cost — so companions target the wrong variable. Adds **cognitive decline** as a
+  third relatedness health-stake (beside purpose-erosion and premature mortality) and pairs with
+  Kouchekinia et al. (job loss → ~2 yrs' cognitive ageing): work supplies both structured contact and
+  purpose, so its erosion reaches the same neurological endpoint by two routes. VERIFIED 2026-06
+  (secondary). https://www.ucdavis.edu/news/loneliness-drives-cognitive-impairment-and-shorter-life-more-social-isolation-new-study
 
 ## How AI is used (not whether) governs its meaning effect — the augmentation/automation axis as psychology
 
@@ -392,6 +436,21 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   accrues to **capital first** (2025 hyperscaler capex ~$142B/quarter), wages later and unevenly —
   so "can we afford UBI" is less a technical question than a *distributional/political* one. This is
   the honest backing for Ch.7's "distributing the gains is the political question." VERIFIED 2026-05.
+- **The public wants work's *role* preserved, not just its income — Chueri et al.** "AI, the Future
+  of Work, and the Politics of the Welfare State," *Perspectives on Politics* (Cambridge, 28 Apr
+  2026; OECD "Risks that Matter" 2024 survey; replication data on Harvard Dataverse). 🟡/🟢
+  (peer-reviewed political science; cross-national *attitudinal* survey — observational, stated not
+  revealed preferences; pre-dates the fullest post-ChatGPT debate; **primary text not retrieved — from
+  the Cambridge abstract + secondary**). *Shows:* fear of AI automation is widespread across
+  educational groups and does **not** chiefly raise support for traditional income-support
+  (unemployment benefits, retraining); it drives demand for measures that **preserve the social role
+  of work** — robot taxes, guaranteed income *regardless of employment status*. *Use:* a rare
+  *political-science* 🟢-quality datum and the **demand-side mirror** of the project's economic–meaning
+  decoupling — the public, asked, does not say "just replace the income"; it implicitly recognises
+  Jahoda's latent functions and wants work's *role* protected. Empirical counterweight to the
+  techno-optimist "income support alone will do" reading; feeds Ch.7's 🔴 policy layer. VERIFIED
+  2026-06 (secondary).
+  https://www.cambridge.org/core/journals/perspectives-on-politics/article/ai-the-future-of-work-and-the-politics-of-the-welfare-state/92E806B812B86A8944003B77038DCAA8
 
 ---
 
