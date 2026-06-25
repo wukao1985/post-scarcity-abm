@@ -58,7 +58,98 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   loses its first step. Watch whether the rung is rebuilt or stays hollow. (Hold the executive-
   survey counter-evidence honestly.)
 
+## Tier 1/2 — added 2026-W23
+
+- 💡 🟡/🟢 **"Was it ever AI? The confounded canary."** The methodology piece the project is built
+  to write. The young-cohort employment drop — the headline "AI is already taking jobs" datum — is
+  now genuinely contested: Stanford/ADP read it as AI-automation; the NY Fed (Emanuel/Harrington/
+  Pallais, Jun 2026) attributes ~two-thirds to **remote work**, with AI not explaining the 2022–24
+  divergence. Use it to show calibrated honesty in action: how to hold a contested 🟢, why
+  attribution matters more than the headline, and what would actually resolve it. *Strong fit for
+  the author's brand; pairs with the three-layer framework piece.*
+- 💡 🟢/🔴 **"The relatedness trap."** AI companions, sold as a loneliness cure, may worsen it by
+  raising the perceived cost of human-relationship effort (Aalto/CHI crowd-out + empathy-preference
+  + Emile/OECD mortality). Design reversal: companions as *bridges* to human connection, not
+  endpoints. A rare piece with both a strong 🟢 spine and a concrete 🔴 design lever.
+- 💡 🟢 **"What gets automated first is what felt most human."** Ranjit/CHI: the agency- and
+  happiness-producing tasks are disproportionately AI-exposed. Reframes the risk from "jobs vanish"
+  to "the meaningful parts go first" — remedy is task-allocation design, not just retraining.
+- 💡 🟡/🔴 **"The ungiven hours."** BCG: AI frees ~a day/week but 66% of workers get no framework
+  for the freed time; the default is drift, not meaning. The real problem isn't automation, it's
+  the absence of institutions for redirecting freed human capacity.
+
+## Tier 1/2 — added 2026-W24
+
+- 💡 🟢 **"The stranger works."** Li et al.'s pre-registered RCT: a *random human stranger* you text
+  for two weeks reliably reduces loneliness, while a chatbot purpose-built for maximal empathy does
+  no better than journaling to no one. Inverts the "AI as scalable loneliness fix" pitch — the bar for
+  human connection is surprisingly low, and a sophisticated AI fails to clear it. Pairs with Folk &
+  Dunn (panel) + Aalto (quasi-exp) as the closing argument on Q3. *Strong, vivid, well-evidenced.*
+- 💡 🟢 **"The cognitive stakes."** Kouchekinia et al. (NBER): involuntary job loss *causally* ages
+  cognition ~2 years (men 51–64), via the employment channel, not income. The harm from displacement
+  isn't only lost income or meaning — it may be neurological. "Find purpose elsewhere" underestimates
+  how cognitively protective structured work is. Hold the inference honestly (data pre-genAI).
+- 💡 🟡 **"The tide that reaches everywhere."** Mertens et al. (MIT): AI capability rises as broad,
+  gradual *rising tides* across all text-based tasks, not *crashing waves* on single occupations
+  (50%→65% on 3–4-hr tasks in 5 quarters). The adjustment question changes from "which job survives?"
+  to "what is human text-based contribution at an 80–95% floor?" Empirical legs for "the retreat that
+  runs out of high ground." The meaning question gets *more* pressing under rising tides, not less.
+- 💡 🔴 **"What the builder left out."** Amodei's "Policy on the AI Exponential" is detailed on income
+  support (wage insurance → tax-funded UBI) and *silent on meaning*. The income-only framing of even
+  the most thoughtful industry proposal is itself evidence that the psychological layer is the
+  neglected question — exactly the gap this project fills. (Pair with Acemoglu/Autor/Johnson, same gap.)
+- 💡 🟡 **"Expertise-leveling as a false friend."** Acemoglu/Autor/Johnson: AI that *democratises*
+  expert knowledge looks pro-worker but may commodify the very skills it spreads. Psychological
+  counterpart: if competence satisfaction (SDT) rests on scarce expertise, leveling expertise can
+  erode competence-based meaning even while nominally "augmenting." The augmentation/automation dual
+  breakpoint gets a third mode that *looks* benign and isn't.
+- 💡 🔴 **"Two threats, one mechanism."** ILO WP170: AI threatens meaning via displacement (removing
+  competence + structured purpose) AND via surveillance/algorithmic management (removing autonomy from
+  those who *stay* employed). The SDT needs-satisfaction picture worsens on both paths; policy that
+  addresses only income replacement misses the second entirely. A 🔴 piece naming the second lever
+  (algorithmic-management regulation).
+- 💡 🟢 **"Does money ever buy purpose? The German exception."** The methodology/honesty piece. The
+  project's recurring "money buys relief, not meaning" anchor meets a German RCT that found a *stable*
+  +0.25 SD purpose-in-life gain (no fade). A worked example of updating a load-bearing claim when a
+  well-identified result pushes back — without over-correcting (N=107, smallest of three effects).
+  Pairs with the three-layer framework and "Money doesn't buy meaning."
+
+## Tier 1/2 — added 2026-W25
+
+- 💡 🟢 **"The wrong variable."** Yoneda et al. (JPSP, 175,000 adults, 18 countries): it is
+  *subjective loneliness* (the felt experience), not *objective isolation* (lack of contact), that
+  predicts cognitive impairment and shorter life — isolation shows no consistent cognitive link. AI
+  companions reduce isolation ("you're talking to someone") while leaving loneliness unmoved or worse
+  (Folk & Dunn, Aalto, Li et al.) — so the companion-as-cure pitch is solving the wrong problem at
+  scale, and the right problem is the one with the lethal consequences. The cleanest, most vivid
+  closing of the Q3 argument yet; pairs with "The relatedness trap." *Strong, well-evidenced.*
+- 💡 🟡/🟢 **"Preserve the job, not just the income."** Chueri et al. (Perspectives on Politics): when
+  people fear automation they don't mainly ask for more unemployment benefits — they ask for measures
+  that protect work's *role* (robot taxes, income regardless of employment). The public's own answer
+  to the economic–meaning decoupling, in survey data — Jahoda's latent functions surfacing as a
+  *political preference*. A 🔴-policy piece with a real 🟢/🟡 spine; counters "income support is enough."
+- 💡 🟡 **"The raised floor."** PwC Jobs Barometer: AI-exposed entry roles grew 35% but now demand ~7×
+  more senior-level skills. The entry-level problem may not be "the door is closed" but "the bottom
+  rung was lifted out of reach" — breaking the competence-building developmental arc of early work.
+  Refines *experience creep*. (Hold the conflicted-source caveat and the NY Fed/IMF tension honestly.)
+- 💡 🟡 **"Meaning in the lag."** The ILO J-curve / aggregation-paradox papers: AI's aggregate payoff
+  lags organisational and institutional adaptation by years-to-decades (electrification/ICT precedent),
+  so the gains that would fund meaning-sustaining institutions are invisible in the near term. The
+  meaning question is acute *during* the adjustment, not after it — and the measurement gap itself
+  weakens the political case for distributing the gains.
+
 ## Parking lot (raw sparks)
+- "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
+  competence trail its benefits, so they're under-reported and under-regulated).
+- "The double exposure" (OECD: young men take both the first employment hit and the steepest
+  loneliness rise — the pressures compound in the group where work was the main social organiser).
+- "The average lies" (Giuntella: population-level wellbeing nulls mask the harm pathway in heavy
+  passive users; risk grows as AI embeds deeper into workflows).
+- "The moving goalposts" (NACEWEB: quarterly skills-churn makes "just retrain" structurally
+  impossible before one even asks whether retraining works).
+- "Two-speed desocialization" (Bousquet: the post-work meaning problem already arrived for gig/
+  low-wage workers via desocialization while professionals debate it as a future scenario).
+
 
 - The "behavioral sink" metaphor: useful or misleading for digital society? (honest critique)
 - Status competition when AI can out-produce everyone — does status migrate to "being human"?
