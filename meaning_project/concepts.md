@@ -21,6 +21,13 @@ people fear automation they do *not* mainly demand more income support — they 
 preserve work's *social role* (robot taxes, income-regardless-of-employment). The public, in survey
 data, independently affirms the decoupling: it wants the role of work protected, not just its income
 replaced. The decoupling is not only an analyst's distinction; it is already a political preference.
+**Made empirical 2026-W26 ("still waters, rapid currents").** The over-determined macro-null — ECB
+(reallocation but wage-null), Humlum & Vestergaard (precise null + task reorganisation underneath),
+Yotzov (nine-in-ten execs see no impact) — recasts the decoupling as the project's *opening*, not a
+complication. Aggregate employment stability does **not** imply psychological stability, because the
+tasks reorganised away beneath the calm surface may be the competence- and autonomy-bearing ones, and
+the hours expand (Jiang). The honest move: stop treating the null defensively — *the calm aggregate is
+precisely what makes the meaning question the live one.*
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
@@ -73,6 +80,14 @@ more senior skills). So the rung may be less "removed" than "raised out of reach
 competence-building developmental arc rather than eliminating the job. Useful framing, but the source
 is conflicted (PwC sells AI advisory) and clashes with the NY Fed postings null; phenomenon-real /
 attribution-contested read unchanged.
+**Demand-side + cohort added 2026-W26.** Two extensions, both sub-🟢 (preprint / prospective). *Demand
+side:* Siddiq & Zhang (Upwork) find AI-exposed markets reward **price over skill/reputation** — the
+human-capital premium erodes ("commoditization"). So the raised rung has a market-pricing companion: even
+on the rung, distinctiveness is worth less. *Who it hits hardest:* Manning & Aguirre locate a
+**"double-jeopardy" cohort** — ~6.1M (4.2%) clerical/admin workers both highly exposed *and* low adaptive
+capacity. This is **distinct from the young-graduate thread** (older, more marginal, weakest capacity to
+substitute Jahoda's latent functions) — and the likeliest place the *meaning* cost concentrates, vs the
+adaptable knowledge-worker majority.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
@@ -117,6 +132,17 @@ relatedness — AI puts pressure on all three at once, via different mechanisms 
 The policy consequence: income replacement addresses (at most) the first path's *material* layer and
 none of the autonomy or relatedness paths. Names why "just pay people" is structurally incomplete.
 (Seeded 2026-W24, from ILO WP170 + Lee et al. + the relatedness cluster.)
+**Extended 2026-W26 — a fourth vector: time, and the "augmentation isn't safe" corollary.** Beyond the
+SDT triad, AI also erodes the *container* of non-work meaning — **post-work time itself**. Jiang et al.'s
+"extended workday" (ATUS) shows AI exposure → longer hours, less leisure, with productivity rents
+captured by firms — so the space where purpose, relationships, and recovery would otherwise be rebuilt
+*contracts*. Crucially this lands even on workers who keep their jobs and even where AI nominally
+*augments* them, which forces a corollary: **augmentation is not automatically meaning-safe.** The same
+"augmenting" AI can extend hours (Jiang), reorganise away the satisfying tasks (Ranjit), and — from the
+demand side — **commoditize distinctiveness** (Siddiq & Zhang: AI-exposed markets reward price over
+skill/reputation, eroding the human-capital premium). So Lee et al.'s "keep humans in the augmentative
+loop" is necessary but not sufficient: augmentation preserves *task-level* ownership while hours,
+rent-capture, and commoditization can still hollow the job around it.
 
 ## 🌰 Meaning infrastructure / manufacturing "mattering"
 If contribution-to-others is what UBI and virtual worlds can't supply, what would institutions

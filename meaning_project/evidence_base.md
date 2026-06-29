@@ -237,6 +237,61 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   productivity *gains* lack reliable internet, so gains lag. *Use:* the global-distributional companion
   to the domestic attribution debate; mostly economics-layer. Distinct from ILO WP170 (below).
   VERIFIED 2026-06. https://www.ilo.org/resource/news/new-ilo-world-bank-paper-highlights-uneven-global-impact-generative-ai-jobs
+- **ECB — employment reallocation by AI-risk gradient (wage-null).** "AI and the US labour market:
+  effects on employment growth," *ECB Economic Bulletin* 4/2026 Focus (June 2026). 🟢 **with caveats**
+  (ECB institutional economists; DiD with industry/COVID controls; **but exposure is capability-based
+  "substitution risk," not measured deployment**, and the 2019–2025 window includes a long pre-ChatGPT
+  period, so the reallocation is not cleanly GenAI-caused; primary retrieved via search; junior-
+  vulnerability note from secondary). *Shows:* the **clearest DiD evidence so far that employment
+  reallocation is underway** — high-risk occupations (economists, graphic designers) −4% on average,
+  low-risk (electricians, teachers) +13%, a ~15pp gap; high-risk share of US employment 35%→33%, low-risk
+  23%→25%; **no significant wage impact**; aggregate effect "muted so far." *Use:* reallocation is
+  visible, but the declining occupations are the cognitive/creative *professional* tier and the wage-null
+  beside it means the displaced are not (yet?) finding equivalent wages — reinforces, doesn't change, the
+  "early reallocation without aggregate harm; loop not closing for the displaced" reading. One of the
+  over-determined macro-null cluster (with Humlum & Vestergaard and Yotzov, below). VERIFIED 2026-06.
+  https://www.ecb.europa.eu/press/economic-bulletin/focus/2026/html/ecb.ebbox202604_01~d9259db536.en.html
+- **Humlum & Vestergaard, "Still Waters, Rapid Currents" (precise macro-null + task reorganisation).**
+  NBER WP 33777 (Chicago Booth CAAI, May 2025). 🟢 **with caveats** (Danish administrative earnings/
+  hours records + adoption surveys; DiD, strong identification; **single-country** — Denmark's worker
+  protections / co-determination buffer effects and slow restructuring vs US/UK; admin data captures no
+  quality-of-work/meaning dimension; the "rapid currents" finding is survey-based, not from the admin
+  records). *Shows:* **precise null** earnings/hours effects two years post-ChatGPT (rules out effects
+  larger than ~2%) — but beneath it, substantial **task reorganisation**: new AI tasks (content
+  generation, AI oversight, AI integration) proliferate; adopters transition into higher-paying
+  AI-relevant occupations (still "too few to move average earnings"). *Use:* the organising metaphor for
+  the macro layer and the high-quality causal leg under the null — **aggregate employment stability does
+  NOT mean psychological stability**, because the *tasks* reorganised away may be the competence- and
+  autonomy-bearing ones (Ranjit, Lee et al., ILO WP170). The project's wedge against "if jobs hold,
+  meaning is fine." VERIFIED 2026-06. https://www.nber.org/papers/w33777
+- **Jiang, Park, Xiao & Zhang, "AI and the Extended Workday" (work intensification / rent capture —
+  the new *time* pathway).** NBER WP 33536 (Columbia / USC, Feb 2025; SSRN:5119118). 🟢 **with caveats**
+  (individual-level American Time Use Survey 2004–2023; ChatGPT shock as natural experiment; **data ends
+  2023** — narrow window; **ATUS does not measure job satisfaction directly** — the "declining
+  satisfaction" is a *modelled channel*, not a measured outcome; occupation-level exposure; NBER WP).
+  *Shows:* higher AI occupational exposure → **longer work hours and reduced leisure** after the ChatGPT
+  shock, via three channels — (1) higher marginal productivity from AI–human **complementarity**, (2)
+  improved contracting efficiency from **AI-enabled monitoring**, (3) lower worker reservation utility —
+  amplified in competitive markets where workers have **weak bargaining power**; productivity gains accrue
+  primarily to **firms**, not to workers as reduced hours/leisure. *Use:* a **fourth "meaning-diminishing"
+  pathway** beside competence (Lee et al.), autonomy (ILO WP170), and task-meaning (Ranjit) — AI can erode
+  the *post-work time* in which purpose, relationships and recovery are built, **even for workers who keep
+  their jobs and even where AI augments rather than automates**. The monitoring channel ties to ILO WP170;
+  the rent-capture finding reinforces Falk & Tsoukalas's "two-instrument problem" (below). Resolves the
+  work-hours half of the Brookings June-25 synthesis flag (the *satisfaction* half still needs a separate
+  primary source — Jiang's satisfaction is modelled, not measured). VERIFIED 2026-06.
+  https://www.nber.org/papers/w33536
+- **Yotzov et al., "Firm Data on AI" — the employer/worker expectations gap.** NBER WP 34836 (Atlanta
+  Fed, Bank of England, Bundesbank, Macquarie; Mar 2026). 🟢 **only for the pattern of expectations** —
+  first representative multi-country firm survey (~6,000 CEOs/CFOs across US/UK/Germany/Australia,
+  Nov 2025–Jan 2026), **but self-reported expectations, not realised outcomes**, one round, advanced-
+  economy bias; **not a 🟢 anchor for job-loss claims**. *Shows:* 69% of firms actively use AI; **nine-in-
+  ten executives report no employment or productivity impact over three years** (corroborating the
+  macro-null); but going forward, executives forecast **−0.7% own-firm employment** over three years while
+  **workers at the same firms forecast +0.5%** — a ~1.2pp **expectations gap**. *Use:* a psychological-
+  preparedness dimension — workers appear **not yet to have internalised the risk their employers
+  anticipate**; if the employer forecast is closer to right, displacement arrives unprepared. Pairs with
+  "still waters, rapid currents." VERIFIED 2026-06. https://www.nber.org/papers/w34836
 
 ## Deaths of despair (the 🟢 floor for the "how bad" chapter)
 
@@ -380,6 +435,25 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   "work reshaped in meaning-diminishing directions" picture. Policy lever: algorithmic-management
   regulation, not income support. *Caveat:* effect sizes/quality unverifiable from summaries.
   VERIFIED 2026-06 (secondary). https://www.ilo.org/publications/ai-systems-work-changing-psychosocial-work-environment
+- **Competence pressure from the demand side + who is least able to adapt (compact note, added
+  2026-W26; sub-🟢, flagged).** Two back-filled papers extend the competence story beyond the individual
+  task level. (1) **Siddiq & Zhang, "Human Capital, AI, and Labor Commoditization"** (UCLA Anderson;
+  arXiv:2606.21880, Jun 2026): DiD around ChatGPT on real Upwork data (text embeddings) finds that in
+  more AI-exposed categories the predictive importance of **human capital (skills, reputation) for demand
+  declines** while **price rises** — the skilled-human-capital premium erodes ("commoditization"). 🟡-
+  leaning (preprint; **online-freelance market**, not salaried; category-level exposure; authors' framing)
+  — the **SDT-competence threat from the *demand* side**: AI can devalue distinctiveness independently of
+  task substitution; pairs with PwC "raised floor" and Lee et al. The freelance channel may be an early,
+  *extreme* signal. (2) **Manning & Aguirre, "How Adaptable Are American Workers…?"** (NBER WP 34705,
+  Jan 2026): an adaptive-capacity index over 356 occupations finds AI exposure and adaptive capacity
+  *positively* correlated overall, **but 6.1M workers (4.2%) sit in a "double-jeopardy" zone** — highly
+  exposed *and* below-median adaptive capacity, concentrated in **clerical/administrative** roles. 🟡/🟢
+  (**prospective** index, not outcome data; "adaptive capacity" is economic-transition, not psychological
+  resilience; not peer-reviewed) — names a cohort **distinct from the young-graduate thread**: older, more
+  marginal, most reliant on work's latent functions and least able to substitute them, so **the meaning
+  cost likely concentrates here**. Neither a full 🟢 anchor yet; both flagged for peer review / outcome
+  data. VERIFIED 2026-06 (preprints/secondary). https://arxiv.org/abs/2606.21880 ·
+  https://www.nber.org/papers/w34705
 
 ## Purpose as a measurable health (mortality) variable — the 🟢 floor under "meaning matters"
 
@@ -451,6 +525,31 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   techno-optimist "income support alone will do" reading; feeds Ch.7's 🔴 policy layer. VERIFIED
   2026-06 (secondary).
   https://www.cambridge.org/core/journals/perspectives-on-politics/article/ai-the-future-of-work-and-the-politics-of-the-welfare-state/92E806B812B86A8944003B77038DCAA8
+- **The two-instrument problem — UBI doesn't correct the automation incentive (Falk & Tsoukalas).**
+  "The AI Layoff Trap" (UPenn / Boston University; arXiv:2603.20617, rev. Jun 2026). 🟡 **only**
+  (game-theoretic model, not empirical; **McEntire sensitivity analysis (SSRN:6592220) shows the sign/
+  magnitude depend entirely on parameter choices** — under standard alternatives the model yields
+  stability or under-automation, so the trap is *possible, not inevitable*). *Argues:* each firm captures
+  the full cost-saving from automating a task but bears only a fraction of the demand loss it creates — a
+  **demand externality** that drives an automation arms race beyond the social optimum. Of six tested
+  fixes (UBI, capital-income taxes, worker equity, retraining, Coasean bargaining, Pigouvian automation
+  tax), **only the automation tax** corrects the distortion. *Use:* a conceptual point for Ch.7 even
+  though the quantitative result is parameter-sensitive — the *distributional* fix (UBI) and the
+  *incentive* fix (automation tax) are **logically separable**; a package handling both displacement and
+  meaning is necessarily multi-instrument. Pairs with Jiang et al. (firms capture the productivity rents)
+  and the "two-path meaning threat." 🟡 scaffolding, not a 🟢 finding. VERIFIED 2026-06.
+  https://arxiv.org/abs/2603.20617
+- **The bundle hypothesis — cash + structured participation beats cash alone (WorkFREE).** "Evaluating a
+  'UBI Plus' Intervention: A Needs-based Analysis of WorkFREE," *Social Indicators Research* 182(1)
+  (Mar 2026). 🟡 (peer-reviewed, Max-Neef needs framework, mixed-methods; **Indian slum context** —
+  INR 500–1,000/mo, 1,400 residents, dollar amounts/context not comparable to Western pilots; primary
+  not retrieved). *Shows:* unconditional cash + monthly community "Plus meetings" out-performed cash-alone
+  (vs the HudsonUP companion study) on **both** material and **psychological/relational** needs — cash
+  alone left relational/psychological needs only partially met. *Use:* modest evidence that the missing
+  ingredient is **structured social participation, not income per se** — echoes Jahoda's latent functions
+  and the German RCT's purpose gain (what supplies purpose may be what cash is *bundled with*). Far from
+  the OECD post-labour scenario and hard to scale; monitor for a Western replication. VERIFIED 2026-06
+  (secondary). https://doi.org/10.1007/s11205-026-03806-y
 
 ---
 
