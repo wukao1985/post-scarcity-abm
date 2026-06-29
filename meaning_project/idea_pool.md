@@ -138,6 +138,46 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   meaning question is acute *during* the adjustment, not after it — and the measurement gap itself
   weakens the political case for distributing the gains.
 
+## Tier 1/2 — added 2026-W26
+
+- 💡 🟢 **"The extended workday."** Jiang et al. (NBER, ATUS time-diary data): higher AI exposure →
+  *longer* hours and *less* leisure, with the productivity gains accruing to firms, not workers (via
+  complementarity + AI-enabled monitoring + weak worker bargaining power). Inverts the "AI frees your
+  time for meaningful pursuits" promise — AI took your time, it didn't give it back. The *fourth*
+  meaning-diminishing pathway, and the freshest: it erodes the **post-work time** where purpose,
+  relationships, and recovery live, even for workers who keep their jobs and even where AI "augments."
+  *Strong, counter-intuitive, actionable-adjacent; pairs with "The ungiven hours" (BCG) and the
+  intensification HBR piece.*
+- 💡 🟡 **"Still waters, rapid currents."** Humlum & Vestergaard (Denmark) + ECB + Yotzov: two-plus years
+  post-ChatGPT the aggregate is calm (precise nulls, nine-in-ten execs see no impact) — but task structure
+  reorganises underneath. The argument the project is built to make: **the macro-null is not psychological
+  reassurance.** Aggregate employment stability ≠ meaning stability, because the tasks reorganised away
+  may be the competence- and autonomy-bearing ones. Recasts the economic–meaning decoupling as the
+  project's *opening*, not a complication.
+- 💡 🟢/🟡 **"Commoditized competence."** Siddiq & Zhang (Upwork DiD): in AI-exposed categories, demand
+  rewards *price* over *skill/reputation* — the human-capital premium erodes. The SDT-competence route to
+  meaning is blocked from *both* ends: AI does the tasks that built mastery, *and* the market stops paying
+  for distinctiveness. (Hold the preprint / freelance-market caveats honestly.)
+- 💡 🟡 **"The expectations gap."** Yotzov et al.: employers forecast −0.7% own-firm employment over three
+  years while their own workers forecast +0.5% — a ~1.2pp gap. Workers haven't priced in the risk
+  employers already see. A piece on *psychological preparedness* — displacement may arrive to people who
+  never saw it coming, with the meaning shock undampened by anticipation.
+- 💡 🟡/🔴 **"The double-jeopardy cohort."** Manning & Aguirre: 6.1M clerical/admin workers are both
+  highly AI-exposed *and* low adaptive capacity — distinct from the young-graduate headline. Who actually
+  bears the meaning cost? Not the adaptable knowledge-worker majority, but an older, more marginal group
+  for whom work supplied Jahoda's latent functions and who can least substitute them. Sharpens the "who
+  bears the meaning cost" framing for the policy chapter.
+- 💡 🔴 **"The two-instrument problem."** Falk & Tsoukalas (🟡 theory, parameter-sensitive): UBI handles
+  the income/material gap but does *not* correct the automation over-incentive — only an automation tax
+  does in the model. Addressing displacement *and* meaning may require instruments aimed at different
+  parts of the problem. The distributional fix and the incentive fix are logically separable. Pairs with
+  "Two threats, one mechanism" and the Chueri demand-side finding.
+- 💡 🟡 **"The bundle hypothesis."** WorkFREE (Indian "UBI Plus"): cash + structured community
+  participation beat cash alone on psychological/relational needs. If the purpose dividend comes from what
+  cash is *bundled with* (not the cash itself), the post-labour policy question changes: what institutions
+  do for post-work life what the workplace used to do for Jahoda's bundle? Echoes the German RCT. (Hold the
+  Indian-slum-context disanalogy honestly.)
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).
