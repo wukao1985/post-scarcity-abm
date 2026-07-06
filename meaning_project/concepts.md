@@ -28,6 +28,12 @@ complication. Aggregate employment stability does **not** imply psychological st
 tasks reorganised away beneath the calm surface may be the competence- and autonomy-bearing ones, and
 the hours expand (Jiang). The honest move: stop treating the null defensively — *the calm aggregate is
 precisely what makes the meaning question the live one.*
+**Triangulated across live US instruments 2026-W27.** The null is no longer only a study result: within
+one week BLS June payrolls (no sector acceleration), Census BTOS (adoption gradient matches the decline
+gradient), California's CAIT UI-claims tracker (no statewide surge, concentrated pockets), and Challenger
+(falling volume, rising AI-*attribution*) all returned the same shape — survey, admin-claims, payroll and
+layoff-announcement instruments converging. The decoupling's empirical footing is now method-robust, and
+CAIT gives it a *monthly* live dashboard rather than periodic papers.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
@@ -57,6 +63,13 @@ software devs). *Psychologically* it predicts where meaning goes (Lee et al. 202
 use erodes self-efficacy/ownership/meaning and persists; active/augmentation use preserves them).
 The same axis governs both layers — which makes "keep humans in the augmentative loop" a candidate
 🔴 design principle, not just an economic forecast. (Strengthened 2026-W22.)
+**Caveat added 2026-W27 — self-reported optimism can move *opposite* to measured meaning.** Anthropic's
+"Cadences" survey finds heavier-*automation* Claude users report *more* optimism across all six
+dimensions, including felt meaning/autonomy — the reverse of Lee et al.'s experimental erosion result.
+This is not a contradiction: Cadences measures a *self-reported future expectation* among self-selected
+heavy delegators (author-flagged selection confound); Lee et al. measures a *felt-meaning outcome*
+during/after a task. The discipline for citing this axis: **keep expectation and outcome strictly
+separate — "AI users feel optimistic" is not "AI preserves meaning."**
 
 ## 🌰 Experience creep / the raised rung
 AI's first labour effect arrives not as mass dismissal but as a *raised threshold*: routine junior
@@ -88,6 +101,13 @@ on the rung, distinctiveness is worth less. *Who it hits hardest:* Manning & Agu
 capacity. This is **distinct from the young-graduate thread** (older, more marginal, weakest capacity to
 substitute Jahoda's latent functions) — and the likeliest place the *meaning* cost concentrates, vs the
 adaptable knowledge-worker majority.
+**Firm-level counter-signal added 2026-W27 (the phenomenon may be unit-of-analysis-dependent).** Ramp/
+Revelio (21,559 firms, proprietary) find companies with *high-intensity AI spending* **grew** entry-level
+headcount ~12% over two years while light adopters didn't — the opposite valence to the occupation-level
+"raised floor." So the bottom rung may be **raised** when sliced by occupation yet **expanded** when
+sliced by firm AI-intensity: are AI-forward firms rebuilding the rung even as AI-exposed occupations lose
+it? Unresolved (proprietary sample, likely AI-adopter-biased); carry as the freshest live tension on this
+concept, not a refutation.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and

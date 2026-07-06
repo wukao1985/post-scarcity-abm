@@ -178,6 +178,28 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   do for post-work life what the workplace used to do for Jahoda's bundle? Echoes the German RCT. (Hold the
   Indian-slum-context disanalogy honestly.)
 
+## Tier 1/2 — added 2026-W27
+
+- 💡 🟡/🟢 **"Every instrument, same shape."** The attribution-triangulation methodology piece — the
+  project's signature move. In one week five very different instruments (BLS payrolls, Census BTOS
+  adoption rates, California's CAIT UI-claims tracker, Challenger layoff announcements, Ramp/Revelio
+  firm headcount) all returned the *same* picture: **no aggregate surge, real concentration in
+  high-exposure / high-education / tech-hub pockets.** A worked example of calibrated honesty via
+  triangulation — how convergence across methods raises confidence, and where the one discordant
+  instrument (Ramp/Revelio's firm-level entry-level *growth*) marks the live open question. Pairs with
+  the three-layer framework and "Was it ever AI?".
+- 💡 🟢/🟡 **"Optimism isn't meaning."** Anthropic's "Cadences" survey finds heavier-automation users
+  report *more* optimism about meaning/autonomy; Lee et al.'s experiment finds passive/automated use
+  *erodes* felt meaning. The piece is about the category error of conflating a **self-reported
+  expectation** (selection-confounded, future-facing) with a **measured psychological outcome** — and
+  why "AI users feel fine about it" surveys can't rebut experimental meaning-erosion findings. A short,
+  sharp methodology piece; pairs with "How you use AI decides whether it erodes your meaning."
+- 💡 🟡 **"The firm-level counterweight" (angle, not yet a standalone).** Ramp/Revelio: heavy-AI-spending
+  firms grew entry-level headcount 12% while light adopters didn't — the opposite valence to the
+  occupation-level "raised floor." Unit-of-analysis puzzle: is the bottom rung being *raised* (by
+  occupation) or *expanded* (by AI-forward firms)? Carry as a caveat under "The raised floor" /
+  experience-creep until non-proprietary replication appears. (Hold the proprietary-sample caveat.)
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).

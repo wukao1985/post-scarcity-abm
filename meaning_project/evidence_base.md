@@ -161,13 +161,44 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   honest empirical basis for "the 'new jobs' mechanism holds for general new skills but, for the
   AI-specific slice, delivers **wages without headcount** and skips the middle." Pairs with the
   Stanford/ADP young-cohort finding. VERIFIED 2026-06.
+- **Census BTOS — AI-adoption rate by sector (the adoption gradient matches the decline gradient).**
+  U.S. Census Bureau Business Trends and Outlook Survey, 3 May 2026 collection wave (surfaced via a
+  Bloomberg synthesis 1 Jul 2026, **verified directly at census.gov**). 🟢 (federal survey; primary
+  figures). *Shows:* the **first sector-level AI-*adoption-rate* figures** in this base (distinct from
+  the capability/exposure proxies elsewhere) — **Information 39.7%** and **Finance/Insurance 33.9%**
+  reporting AI use, both ~**double the 19.8% national average**; Retail ~14%; very large firms in
+  Information/Professional-Services/Finance reach 50–70% (employment-weighted). *Use:* the two sectors
+  the project tracks *declining* on payrolls (information −342K since Nov-22; financial −107K/12mo) are
+  precisely the two **adopting AI fastest** — the adoption gradient lines up with the employment
+  gradient. A **sourcing upgrade**: cite census.gov adoption rates directly rather than via journalism.
+  *Limits:* "used AI in the past two weeks" is a low bar (trivial vs transformative use
+  undistinguished); adoption ≠ causation of the sector decline (correlational co-location). VERIFIED
+  2026-W27 (primary). https://www.census.gov/library/stories/2026/05/ai-use-businesses.html
+- **California AI-Unemployment Tracker (CAIT) — a new *ongoing government* attribution instrument.**
+  California EDD + California Policy Lab (UCLA); launched 25 Jun 2026, first coverage wave ~2 Jul 2026.
+  🟡/🟢 (first government-partnered, continuously-updating AI-attributed UI-claims dashboard;
+  methodologically closer to Massenkoff & McCrory's observed-exposure measure than to capability indices;
+  **but** UI-claims data — self-reported occupations, excludes non-filers/ineligible/labour-force-exiters;
+  the tracker's own stated limit is "exposure ≠ causation"; administrative claims, single-state,
+  preliminary — **not a standalone pillar**). *Shows (through May 2026):* **no statewide surge** in
+  AI-related claims since ChatGPT's 2022 release, and no statistically significant rise in the AI-exposed
+  share of claims — **but** claims from **college-educated workers in high-AI-exposure occupations** rose
+  and stayed elevated, and the **SF Bay Area + information/professional-services** show a sharp, sustained
+  increase since late 2022. *Use:* sits *inside* the existing synthesis (aggregate calm + selective
+  high-exposure/high-education displacement) rather than overturning it — but it is a genuinely new
+  **instrument** that **updates monthly**, so it becomes the project's live early-warning dashboard for
+  the attribution question (unlike one-off papers). VERIFIED 2026-W27 (institutional; CPL primary report).
+  https://capolicylab.org/california-ai-unemployment-tracker/
 - **Macro/labour texture, June 2026** (compact 🟢-with-caveats note; details in daily logs
   2026-06-04…08). *Goldman Sachs* payroll decomposition: gross AI substitution ~25K jobs/mo,
   augmentation ~+9K, net ~−11–16K — and the offsetting "new jobs" are **data-centre construction,
   not re-employed admin workers** (proprietary model, read via journalism). *BLS May 2026:* +172K
   payrolls, U 4.3%, but **financial activities −107K/12mo** and **information −342K since Nov-22**
   persist in high-exposure sectors while growth comes from low-exposure ones (hospitality, health,
-  local gov) — BLS assigns no cause. *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
+  local gov) — BLS assigns no cause. *(BLS June 2026, added W27:* +57K payrolls, U 4.2%, Apr/May revised
+  down a combined 74K; information/financial-activities showed "little or no change" this month — i.e.
+  **no acceleration** in the high-exposure decline. One month, no cause assigned; mild reinforcement of
+  macro-calm, not a new signal.) *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
   headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
   quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
   macro still calm; sector pattern cohering with selective high-exposure displacement; skills
@@ -435,6 +466,22 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   "work reshaped in meaning-diminishing directions" picture. Policy lever: algorithmic-management
   regulation, not income support. *Caveat:* effect sizes/quality unverifiable from summaries.
   VERIFIED 2026-06 (secondary). https://www.ilo.org/publications/ai-systems-work-changing-psychosocial-work-environment
+- **Anthropic Economic Index "Cadences" — a 🟡 self-report *counterpoint* to Lee et al. (do not
+  conflate) (added 2026-W27).** Anthropic, 26 Jun 2026. 🟡 (self-report survey; single-provider;
+  explicitly correlational — authors flag the confound). *Shows:* a linked survey (N≈9,700; **not
+  representative** — skews computer/mathematical 30% + management 23%, active Claude users only) found
+  respondents with a **higher "automation share"** of their Claude use reported **more optimistic
+  expectations across all six dimensions** — pay, job security, job-finding (economic) *and* **meaning,
+  autonomy, human interaction** (intrinsic). The authors state it "*is possible that this relationship
+  is explained by selection.*" (Also: ~10% rated own job loss likely within 12 months; early-career
+  workers reported the highest displacement anxiety.) *Use — the discipline matters:* this is the
+  *opposite valence* to Lee et al. (passive/automated use *causally* reduces self-efficacy, ownership,
+  felt meaning), but the two are **not necessarily in tension** — Lee et al. measures felt meaning
+  *during/after a task* (a measured outcome); Cadences measures *general future-optimism* among people
+  who already chose to delegate heavily (a self-reported expectation, selection-confounded). **Never
+  conflate self-reported optimism about AI with a measured meaning outcome.** Logged 🟡, not 🟢; a
+  caveat/counterpoint beside Lee et al./Ranjit/Giuntella, not a revision of them. VERIFIED 2026-W27.
+  https://www.anthropic.com/research/economic-index-june-2026-report
 - **Competence pressure from the demand side + who is least able to adapt (compact note, added
   2026-W26; sub-🟢, flagged).** Two back-filled papers extend the competence story beyond the individual
   task level. (1) **Siddiq & Zhang, "Human Capital, AI, and Labor Commoditization"** (UCLA Anderson;
