@@ -55,6 +55,13 @@ question becomes "what is human contribution at an 80–95% floor?" rather than 
 ## 🌰 The "new-jobs mechanism" precondition
 The historical reassurance ("new jobs always appear") secretly assumes humans are better than
 machines at the new jobs. Name and interrogate that precondition.
+**Institutional backing added 2026-W28.** The UN Independent International Scientific Panel on AI
+(Preliminary Report, 1 Jul 2026; 40 scientists) states the mechanism as explicitly **conditional**, not
+automatic: AI "will likely create new jobs" **only with** "complementary investments in skills …
+workflows, infrastructure and labour-market institutions"; **without** them it "risks … displacing
+workers and shifting wealth from labour to capital." So a UN scientific panel now frames "new jobs
+always appear" as a *precondition to be met by policy*, not a law — the concept's exact claim, in
+institutional language. (Report flagged for a dedicated primary-text read; see evidence_base.md.)
 
 ## 🌰 The augmentation/automation axis as a *dual* breakpoint
 The augmentation-vs-automation distinction is doing double duty. *Economically* it predicts where
@@ -163,6 +170,11 @@ demand side — **commoditize distinctiveness** (Siddiq & Zhang: AI-exposed mark
 skill/reputation, eroding the human-capital premium). So Lee et al.'s "keep humans in the augmentative
 loop" is necessary but not sufficient: augmentation preserves *task-level* ownership while hours,
 rent-capture, and commoditization can still hollow the job around it.
+**Autonomy path gains a named mediator 2026-W28 (thin).** The algorithmic-management/surveillance route
+now has a first measured mediator: a Chinese SEM survey (N=338; *Frontiers in Digital Health*, Jul 2026)
+finds perceived algorithmic management → **frustrated autonomy** → "**workplace AI replacement anxiety**"
+→ worse health. Single-country, cross-sectional, self-report — corroborating texture inside ILO WP170,
+not a revision; the value is that the autonomy path acquires a *testable* construct + health endpoint.
 
 ## 🌰 Meaning infrastructure / manufacturing "mattering"
 If contribution-to-others is what UBI and virtual worlds can't supply, what would institutions

@@ -200,6 +200,16 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   occupation) or *expanded* (by AI-forward firms)? Carry as a caveat under "The raised floor" /
   experience-creep until non-proprietary replication appears. (Hold the proprietary-sample caveat.)
 
+## W28 note (2026-W28 — a quiet week, no new standalone idea)
+- No new standalone article idea rose (quiet weeks rarely produce one — logged honestly). Two additions
+  to *existing* angles: (1) the **UN Independent Scientific Panel on AI** (Preliminary Report, 1 Jul
+  2026) gives the **"Is AI like the Industrial Revolution?" / new-jobs-precondition** piece its most
+  citable *institutional* hook — a UN scientific panel stating new jobs appear *only with* complementary
+  skills/institutions investment, else wealth shifts labour→capital. Weave it in when that piece is
+  drafted (pending a primary-text read). (2) Parked spark: **"AI replacement anxiety"** as a named,
+  measured construct (China SEM, Jul 2026) — a possible concrete peg for the autonomy limb of "Two
+  threats, one mechanism," if a non-China replication appears.
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).

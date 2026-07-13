@@ -250,6 +250,24 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   measurement gap itself weakens the near-term political case for distributing AI gains (and funding
   meaning-sustaining institutions). VERIFIED 2026-06 (secondary; primary pending).
   https://www.ilo.org/publications/impact-genai-jobs-productivity-and-work-organization-review-empirical
+- **UN Independent International Scientific Panel on AI — Preliminary Report (PENDING PRIMARY READ,
+  added 2026-W28).** United Nations; released **1 Jul 2026**; 40 scientists/experts from every region;
+  **preliminary**, ahead of a full 2027 report. 🟡 (institutional evidence-based *assessment*, not
+  primary research; **full report text not yet parsed** — labour framing below is from the UN press
+  release + UN News + secondary coverage; flagged for a dedicated primary-text session before any 🟢
+  use). *Shows (labour-relevant):* the first global, IPCC-style independent scientific assessment of AI.
+  On employment it is explicitly **conditional** — AI "*will likely create new jobs*" **only with**
+  "complementary investments in skills … workflows, infrastructure and labour-market institutions";
+  **without** them it "risks widening inequality, displacing workers and **shifting wealth from labour
+  to capital** rather than creating sustainable good jobs — those with fair compensation, **worker
+  autonomy** and a reliable path to social **dignity**." Invokes the "60% of 2018 jobs are new vs 1945"
+  new-jobs precedent; flags agentic AI "will soon complete tasks that currently take human programmers
+  days or weeks." *Use:* institutional backing (a UN scientific panel) for two of the project's moves —
+  the **new-jobs mechanism as a precondition, not a law**, and **autonomy/dignity, not just headcount**,
+  as the outcome that matters (the economic–meaning decoupling in institutional language). Not a 🟢
+  datum; the most citable *institutional* framing yet. **Caught 2026-W28 as a missed item** (slipped
+  past every daily Jun 21–Jul 12); to be written up once the full text is read.
+  https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report
 - **Mertens, Kuzee et al., "Crashing Waves vs. Rising Tides"** (MIT FutureTech, arXiv:2604.01363,
   Apr 2026). 🟢 (17,000+ worker evaluations of 3,000+ text-based O*NET tasks; preprint; 2029 figures
   are extrapolations). *Shows:* little evidence of "crashing waves" (sudden occupational wipeouts);
@@ -466,6 +484,12 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   "work reshaped in meaning-diminishing directions" picture. Policy lever: algorithmic-management
   regulation, not income support. *Caveat:* effect sizes/quality unverifiable from summaries.
   VERIFIED 2026-06 (secondary). https://www.ilo.org/publications/ai-systems-work-changing-psychosocial-work-environment
+  *Texture note (added 2026-W28, sub-🟢 — do not anchor alone):* a Chinese SEM survey (N=338; *Frontiers
+  in Digital Health* 8:1877221, accepted 7 Jul 2026) gives this qualitative autonomy-erosion pathway a
+  **testable mediator and a health outcome** — perceived algorithmic management → **frustrated work
+  autonomy** → a newly-named "**workplace AI replacement anxiety**" → worse physical/mental health
+  (sequential chain). Single-country, cross-sectional, self-report, no causal inference — corroborating
+  texture inside WP170, not a revision; watch for a non-China replication. https://doi.org/10.3389/fdgth.2026.1877221
 - **Anthropic Economic Index "Cadences" — a 🟡 self-report *counterpoint* to Lee et al. (do not
   conflate) (added 2026-W27).** Anthropic, 26 Jun 2026. 🟡 (self-report survey; single-provider;
   explicitly correlational — authors flag the confound). *Shows:* a linked survey (N≈9,700; **not
