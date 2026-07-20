@@ -210,6 +210,32 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   measured construct (China SEM, Jul 2026) — a possible concrete peg for the autonomy limb of "Two
   threats, one mechanism," if a non-China replication appears.
 
+## Tier 1/2 — added 2026-W29
+
+- 💡 🟢 **"The edges fray first."** CRR (Sanzenbacher, June 2026) gives the **late-career** mirror of the
+  Stanford/ADP young-cohort drop: since ChatGPT, AI-exposed workers 55+ are leaving work *more*, and the
+  rise is **involuntary** (unemployment, not retirement). Paired with the young-cohort finding, the shape
+  is **both ends of the career fraying while the middle holds** — a sharper "who bears the AI labour cost"
+  story than either alone, and it ties to the double-jeopardy cohort (Manning & Aguirre) and the cognitive
+  stakes (Kouchekinia: men 51–64). *Hold the cohort-selection caveat honestly:* the "edges vs middle" read
+  may partly reflect which cohorts have dedicated instruments (young + old measured; the middle less so).
+  Pairs with "Was it ever AI?" and the three-layer framework. *Strong, and a genuinely new synthesis peg.*
+- 💡 🟢 **"Displacement, not opt-out."** The methodology/honesty sub-point inside CRR: press coverage (WSJ)
+  read older AI-exposed workers' exits as *voluntary retirement to dodge AI*; the hard CPS data locate the
+  rise in the **involuntary unemployment** channel. A vivid worked example of citing what the data show, not
+  the headline — and it matters because the *involuntary* channel is the one carrying the cognitive/mortality
+  cost (Kouchekinia). Could fold into "The edges fray first" or stand as a short honesty piece.
+- 💡 🟡 **"When the skeptics signed."** "We Must Act Now" (13 Jul 2026): 200+ economists and 16 Nobel
+  laureates — including **Acemoglu and Johnson, long-time AI-displacement skeptics** — warning AI's *pace*
+  may outrun institutions. The institutional hook for the "Is AI like the Industrial Revolution?" / speed
+  pieces: the mainstream-economics center of gravity moving on the *pace* variable is itself the news. (No
+  new data — a consensus-shift piece, held as 🟡; pairs with the UN Panel and ILO J-curve.)
+- 💡 🟡 **"Where developers draw the line" (spark, under *meaning-targeted automation*).** Choudhuri et al.
+  (Microsoft, 448 devs, arXiv Jul 2026): workers accept AI autonomy *least* for identity-defining,
+  human-facing, design-oriented tasks. The preference-side mirror of Ranjit's *meaning-targeted automation* —
+  workers want to keep exactly the tasks AI is being pointed at. Preferences ≠ outcomes; carry as texture
+  under "What gets automated first is what felt most human," not a standalone.
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).

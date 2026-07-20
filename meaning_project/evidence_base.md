@@ -119,6 +119,28 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   rise in 2022–24, with AI exposure not explaining the divergence in that window. The drop is
   real; its *cause* is now genuinely contested (AI-automation vs remote-work mentorship loss).
   Cite ADP with this caveat; do not present the young-cohort signal as settled AI harm.
+- **CRR — "Are the Careers of Older Workers Being Cut Short by AI?" (the late-career mirror of the
+  young-cohort drop; added 2026-W29).** Geoffrey T. Sanzenbacher, Center for Retirement Research at
+  Boston College, *Issue in Brief* 26-13 (June 2026; read from the CRR primary PDF). 🟢 **with caveats**
+  (CPS longitudinal panel 2014–2026, N=102,097 observations of workers 55+, matched to occupation-level
+  AI exposure from Tufts' Digital Planet Initiative; probit with a pre/post-ChatGPT interaction term +
+  demographic/job controls). *Shows:* **before** ChatGPT, older workers in more AI-exposed occupations
+  were *less* likely to leave work (1-SD exposure → **−0.55pp** exit probability — the normal high-skill
+  pattern); **after** ChatGPT the gap reversed to **+0.50pp**, driven specifically by a **+0.28pp rise
+  in unemployment (involuntary job loss)** — **not** retirement or voluntary exit (near-zero). Computer
+  programmers' predicted non-employment transitions rose 8.7%→11.1% (>25% relative); painters (low
+  exposure) 13.5%→13.7% (~2%). Secondary framing: "55+ in AI-exposed jobs ~25% more likely to leave than
+  before ChatGPT." *Limits (author's own):* correlational, not a clean natural experiment — Trump-admin
+  R&D cuts to AI-exposed sectors could *exaggerate* the estimate, an AI-startup hiring boom could
+  *understate* it; occupation-to-Census crosswalk imperfect; single country; data through ~April 2025.
+  *Use:* the **older-worker mirror** of the Stanford/ADP young-cohort anchor — together they point to
+  **AI-exposed career *edges* (entry 22–25 + late 55+) fraying while the middle holds** (hold the
+  cohort-selection caveat: the "edges vs middle" read may partly reflect which cohorts have dedicated
+  instruments). Also **corrects an anecdote** — the rise is in the *involuntary* channel, not the
+  "workers voluntarily retiring to dodge AI" press narrative — i.e. displacement, not opt-out. Strengthens
+  the cognitive/mortality stakes (Kouchekinia: involuntary job loss → ~2 yrs cognitive ageing, men 51–64,
+  the overlapping demographic). VERIFIED 2026-W29 (primary PDF).
+  https://crr.bc.edu/are-the-careers-of-older-workers-being-cut-short-by-ai/
 - **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
   Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
   Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-
@@ -189,6 +211,23 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   **instrument** that **updates monthly**, so it becomes the project's live early-warning dashboard for
   the attribution question (unlike one-off papers). VERIFIED 2026-W27 (institutional; CPL primary report).
   https://capolicylab.org/california-ai-unemployment-tracker/
+- **Ramp × Revelio Labs — firm-level AI *spending* vs headcount (the entry-level counterweight; primary
+  source verified 2026-W29).** Ramp Economics Lab / Revelio Labs, "A New Look at AI's Impact on Jobs,"
+  released 30 Jun 2026 (ramp.com/data/ai-jobs-impact). 🟡 (real corporate-card AI-vendor *spending*
+  matched to workforce panel data across ~21,600 US firms — richer than survey or exposure proxy — **but**
+  Ramp is a commercially interested fintech, and the authors flag selection: "AI adopters are not a random
+  sample of employers"; correlational, not causal; lead economist calls it "early results… we will update
+  over time"). *Shows:* firms in the **top third** of AI spending-per-employee grew total headcount ~**10.2%**
+  and entry-level headcount ~**12%** over the two post-adoption years, while the bottom two-thirds saw no
+  significant change. *Use:* the firm-level **counterweight** to the occupation-level "raised floor"
+  (Stanford/ADP, PwC) — heavy-AI-adopting *firms* grew the entry rung even as AI-exposed *occupations* saw
+  it raised. Different unit of analysis (firm AI-spend intensity vs occupational exposure), opposite
+  entry-level valence, **unresolved** — sits in tension with Census BTOS (the fastest-adopting sectors are
+  the fastest-declining on payrolls); both can hold if AI-spend marks already-fast-growing firms displacing
+  slower competitors within a shrinking sector, but that reconciliation is untested. *Provenance note:* first
+  folded into W27 via the Bloomberg synthesis; the primary source + figures were verified directly 2026-W29
+  (sourcing upgrade). Watch for non-proprietary replication. VERIFIED 2026-W29 (primary).
+  https://ramp.com/data/ai-jobs-impact
 - **Macro/labour texture, June 2026** (compact 🟢-with-caveats note; details in daily logs
   2026-06-04…08). *Goldman Sachs* payroll decomposition: gross AI substitution ~25K jobs/mo,
   augmentation ~+9K, net ~−11–16K — and the offsetting "new jobs" are **data-centre construction,
