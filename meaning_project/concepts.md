@@ -62,6 +62,13 @@ workflows, infrastructure and labour-market institutions"; **without** them it "
 workers and shifting wealth from labour to capital." So a UN scientific panel now frames "new jobs
 always appear" as a *precondition to be met by policy*, not a law — the concept's exact claim, in
 institutional language. (Report flagged for a dedicated primary-text read; see evidence_base.md.)
+**Economist-consensus backing added 2026-W29.** The "We Must Act Now" statement (13 Jul 2026; 200+
+economists, 16 Nobel laureates) puts the *pace* concern — that AI may transform the economy "larger than
+the Industrial Revolution… arriving much faster" — behind the mainstream-economics center of gravity.
+Most telling is the roster shift: **Acemoglu and Johnson, previously prominent AI-displacement skeptics,
+signed.** Not new data (an advocacy statement, explicitly *not* a prediction), but the credentialed
+consensus moving onto the project's speed-vs-adjustment breakpoint is itself the signal — the "new jobs
+appear only with complementary investment / in time" reading is no longer a fringe caution.
 
 ## 🌰 The augmentation/automation axis as a *dual* breakpoint
 The augmentation-vs-automation distinction is doing double duty. *Economically* it predicts where
@@ -115,6 +122,18 @@ headcount ~12% over two years while light adopters didn't — the opposite valen
 sliced by firm AI-intensity: are AI-forward firms rebuilding the rung even as AI-exposed occupations lose
 it? Unresolved (proprietary sample, likely AI-adopter-biased); carry as the freshest live tension on this
 concept, not a refutation.
+**A second fraying edge added 2026-W29 — "the edges fray first."** CRR (Sanzenbacher, June 2026) supplies
+the **late-career mirror** of the young-cohort signal: since ChatGPT, AI-exposed workers 55+ leave work
+*more*, via the **involuntary** (unemployment) channel, not retirement. So the "who bears the cost"
+question now has *two* fraying edges — entry (22–25) and late (55+) — with the mid-career middle holding,
+alongside the double-jeopardy cohort (older clerical/admin, low adaptive capacity). This tightens the
+concept from "the bottom rung is raised" toward an **"edges vs middle"** shape: AI's early labour bite
+lands on those getting *on* the ladder and those near the *top* of their working life, not the
+mid-career core. **Caveat (kept explicit):** the shape may partly be an artifact of *which* cohorts have
+dedicated instruments — young and old are well-measured; the middle is under-measured — so "edges vs
+middle" is a hypothesis to test, not a settled finding. CRR also corrects the *voluntary-retirement*
+framing: it's displacement, not opt-out, and the involuntary channel is the one carrying the
+cognitive/mortality cost (Kouchekinia, men 51–64).
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
@@ -122,6 +141,13 @@ satisfying are disproportionately the ones being offloaded to AI (Ranjit et al.,
 where augmentation nominally "leads," the *good parts* can be the parts that go first. Reframes the
 risk from job loss to meaning loss, and points to task-allocation design as a 🔴 lever. (Seeded
 2026-W23.)
+**Preference-side corroboration added 2026-W29 (thin).** Choudhuri et al. (Microsoft; 448 developers;
+arXiv:2607.00533, Jul 2026) find workers accept AI autonomy *least* for tasks that are **identity-defining,
+human-facing, or design-oriented** — i.e. they want to *keep* exactly the meaning-bearing tasks that Ranjit
+shows AI is disproportionately pointed at. The concept now has two sides: the *supply* side (AI is aimed at
+the satisfying tasks) and the *demand/preference* side (workers draw their autonomy line there). The
+tension between them is where "designing meaningful work" lives. Caveat: stated preferences, single firm,
+developers only — preferences ≠ measured meaning outcomes; texture, not an anchor.
 
 ## 🌰 Relatedness crowd-out (AI companionship is not a substitute)
 AI companions don't fill the relatedness gap — they *raise the perceived cost* of effortful human
