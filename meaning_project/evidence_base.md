@@ -493,6 +493,28 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   AI use *per se* does not corrode the psychological sources of meaning — *how* you use it does.
   Makes augmentation-vs-automation a **psychological** category, not only an economic one; pairs
   with the SO study and the human-empathy/care findings. VERIFIED 2026-06.
+- **Chi et al., "Optimized but Unowned: How AI-Authored Goals Undermine the Motivation They Are Meant
+  to Drive" — the ownership-erosion mechanism, pushed upstream to goal-authorship (added 2026-W30).**
+  Chi, Rietsche, Göldi, Ungar & Guntuku; arXiv:2605.12344 (submitted 12 May, rev. 13 May 2026; Univ. of
+  Pennsylvania / Bern Univ. of Applied Sciences). 🟢 **preregistered experiment, with caveats** (N=470;
+  two-week behavioural follow-up; **preprint — not yet peer-reviewed**; single-session goal-setting task,
+  not workplace field data; short horizon; US/university-adjacent sample likely). *Shows:* participants
+  given **LLM-authored** personal goals (vs self-authored) ended up with objectively *better-formed* goals
+  by SMART criteria (d=2.26) but reported **lower psychological ownership** (d=1.38), commitment (d=1.19)
+  and perceived importance (d=1.13); at 2-week follow-up only **46.6%** had acted on ≥2 goals vs **72.8%**
+  of the self-authored group. **Mediation:** psychological ownership — *not* objective goal quality —
+  explains every downstream motivational/behavioural gap. **Heterogeneity:** people **low in trait
+  self-efficacy** (most likely to reach for AI help) showed the **steepest** ownership erosion. *Use:* a
+  **second, independent, preregistered *causal*** test of the mechanism Lee et al. (above) found for task
+  *execution* — but applied to **goal-setting itself**, one level *upstream* of execution: the corrosive
+  thing isn't doing the task with AI, it's the *intention* not being one's own. Strengthens the "how you
+  use AI, not whether" thread with a distinct paradigm. The low-self-efficacy interaction is the notable
+  wrinkle — it may **reverse** the augmentation-optimist "AI helps the least-skilled most" (Brynjolfsson
+  call-center; Anthropic human-capital-enables-use) *on the ownership/meaning axis*: those least equipped
+  to compensate may lose the most sense of authorship. *Limits (state honestly):* preprint, lab goal-task
+  not field/workplace, 2-week horizon, no income/employment context. VERIFIED 2026-W30 (primary arXiv
+  HTML v2 + abstract; ~10-week catch-up, missed by prior daily scans, grep-confirmed never previously
+  logged). https://arxiv.org/abs/2605.12344
 - **Ranjit et al., "Are We Automating the Joy Out of Work?"** — arXiv:2603.14963; *CHI 2026*.
   Survey of workers/developers rating 171 representative tasks, then LM-scaled to 10,131 O*NET
   computer-assisted tasks. *Shows:* tasks workers associate with **agency and happiness are

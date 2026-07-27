@@ -69,6 +69,17 @@ Most telling is the roster shift: **Acemoglu and Johnson, previously prominent A
 signed.** Not new data (an advocacy statement, explicitly *not* a prediction), but the credentialed
 consensus moving onto the project's speed-vs-adjustment breakpoint is itself the signal — the "new jobs
 appear only with complementary investment / in time" reading is no longer a fringe caution.
+**Made empirically *measurable* 2026-W30 (BPC "Trapped Workers").** The precondition this concept names —
+that displaced workers can actually *move* to a safe next role — stops being an assumption and becomes a
+**mobility-network property that can be measured.** BPC (595K observed transitions 2019–2026) distinguishes
+"escapable" occupations (realistic next steps are lower-exposure) from "trapped" (next steps are equally
+exposed), and finds the trapped share scenario-dependent: ~a third (10/31) of highly-exposed occupations
+under a moderate-capability scenario, ~two-thirds (58/85) under an aggressive one. So the reassurance
+"new jobs appear" secretly assumes *escape routes exist* — and this instrument lets us ask whether the
+routes themselves are closing, not just whether current jobs are exposed. **Caveats (kept explicit):**
+backward-looking transitions (can't see roles AI *creates*), no augmentation-vs-replacement distinction,
+single think-tank release, scenario-sensitive headline — a way to *ask* the precondition empirically, not
+a settled answer. Watch for the companion "Who AI Leaves Behind" brief and independent replication.
 
 ## 🌰 The augmentation/automation axis as a *dual* breakpoint
 The augmentation-vs-automation distinction is doing double duty. *Economically* it predicts where
@@ -84,6 +95,17 @@ This is not a contradiction: Cadences measures a *self-reported future expectati
 heavy delegators (author-flagged selection confound); Lee et al. measures a *felt-meaning outcome*
 during/after a task. The discipline for citing this axis: **keep expectation and outcome strictly
 separate — "AI users feel optimistic" is not "AI preserves meaning."**
+**Mechanism extended upstream 2026-W30 (Chi et al., "Optimized but Unowned").** The psychological limb of
+this axis now has a *second independent preregistered paradigm* and reaches a level *above* task execution.
+Lee et al. found passive/automated *doing* of a task erodes self-efficacy/ownership/meaning; Chi et al.
+(N=470) find that letting AI *author your goals* — deciding *what to pursue* — corrodes **psychological
+ownership → commitment → follow-through** (46.6% vs 72.8% acted on ≥2 goals), with ownership (not the
+objectively-higher goal quality) the mediator. So the ownership-erosion mechanism operates at the
+*intention* layer, not only the execution layer: the corrosive variable is *whose the goal is*, independent
+of how good it is. **Notable wrinkle:** the erosion is **steepest for low-self-efficacy** users — the ones
+most likely to reach for AI — which may **reverse**, on the ownership/meaning axis, the augmentation-optimist
+regularity that AI helps the least-skilled most (Brynjolfsson; Anthropic human-capital-enables-use). Keep
+the preprint / lab-task caveats; the direction now has two designs behind it.
 
 ## 🌰 Experience creep / the raised rung
 AI's first labour effect arrives not as mass dismissal but as a *raised threshold*: routine junior

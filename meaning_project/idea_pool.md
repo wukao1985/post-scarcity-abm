@@ -236,6 +236,26 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   workers want to keep exactly the tasks AI is being pointed at. Preferences ≠ outcomes; carry as texture
   under "What gets automated first is what felt most human," not a standalone.
 
+## Tier 1/2 — added 2026-W30
+
+- 💡 🟢 **"Optimized but unowned."** Chi et al. (arXiv, preregistered, N=470): AI-authored personal goals
+  are *objectively better* (higher SMART quality) yet produce **lower ownership, commitment, and
+  follow-through** — only 46.6% acted on ≥2 goals vs 72.8% for self-authored, with psychological ownership
+  (not goal quality) the mediator. The vivid, actionable companion to "How you use AI decides whether it
+  erodes your meaning" — but one level *upstream*: it's not doing the task with AI, it's letting AI decide
+  *what to pursue*. Sharpest hook is the **inversion**: the augmentation-optimist story is "AI helps the
+  least-skilled most," but here the **low-self-efficacy** users (the ones most likely to reach for AI)
+  suffer the *steepest* ownership erosion — so on the meaning axis, AI may cost the vulnerable the most.
+  Hold the preprint / lab-task / 2-week caveats honestly. Pairs with Lee et al. and the three-layer piece.
+- 💡 🟡 **"Are the exits closing too?"** BPC "Trapped Workers" (network analysis, 595K transitions
+  2019–2026): reframes the "will there be new jobs?" question from *exposure* to *escapability* — not "is
+  this job AI-exposed?" but "is your realistic *next* job also exposed?" Under an aggressive-capability
+  scenario ~two-thirds of highly-exposed occupations are "trapped" (next step equally threatened); under a
+  moderate one, ~a third. A fresh lens for the "Is AI like the Industrial Revolution?" / new-jobs-mechanism
+  piece — the historical reassurance assumes displaced workers can *move*; this asks whether the mobility
+  network itself is closing. Hold the scenario-sensitivity + backward-looking (can't see AI-created roles)
+  caveats — it's a way to *ask* the question empirically, not a settled answer. (No 🟢 anchor; a lens.)
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).
