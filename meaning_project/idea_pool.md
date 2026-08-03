@@ -256,6 +256,16 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   network itself is closing. Hold the scenario-sensitivity + backward-looking (can't see AI-created roles)
   caveats — it's a way to *ask* the question empirically, not a settled answer. (No 🟢 anchor; a lens.)
 
+## W31 note (2026-W31 — the quietest week in the log; no new standalone idea)
+- No new standalone article idea rose (quiet weeks rarely produce one — logged honestly, per W28/W30).
+  One addition to *existing* angles: the **Chicago Fed WP 2026-12** (Broady, Dunson & Barr) sign-flip is
+  a vivid, primary-sourced worked example for the methodology pieces **"Was it ever AI?"** (Tier 1/2,
+  W23) and the **three-layer-framework** piece (Tier 1) — *the same occupations over the same 2019–24
+  years show +4% or −3% employment depending purely on whether you score exposure by AI *usage* or by
+  task *computerizability*, and the press quotes whichever flatters the story.* The cleanest single
+  illustration yet of "cite the construct, not the headline." Weave it in when either piece is drafted;
+  not promoted to a standalone (it's an example, not an argument).
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).

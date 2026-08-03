@@ -106,6 +106,15 @@ of how good it is. **Notable wrinkle:** the erosion is **steepest for low-self-e
 most likely to reach for AI — which may **reverse**, on the ownership/meaning axis, the augmentation-optimist
 regularity that AI helps the least-skilled most (Brynjolfsson; Anthropic human-capital-enables-use). Keep
 the preprint / lab-task caveats; the direction now has two designs behind it.
+**Economic limb caveat added 2026-W31 — the employment forecast is *construct-dependent*.** The
+psychological limb (Lee et al./Chi et al.) is robust, but the *economic* limb rests on a choice of
+exposure metric that can flip its sign. Broady, Dunson & Barr (Chicago Fed WP 2026-12, descriptive/
+non-causal) show that on the *same* occupations over the *same* 2019–24 window, **usage-based** "AI
+applicability" and **task-based** "computerizability" point in *opposite* directions for employment
+(most-exposed +4.05% vs high-risk −3%), though wages rise across every tier. So "automation-type usage
+→ the entry-rung employment signal" is only as firm as the exposure construct behind it; name which
+construct is doing the work. (Does not touch the psychological prediction — passive use still erodes
+ownership/meaning regardless of how exposure is scored.)
 
 ## 🌰 Experience creep / the raised rung
 AI's first labour effect arrives not as mass dismissal but as a *raised threshold*: routine junior

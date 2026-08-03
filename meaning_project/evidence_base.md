@@ -515,6 +515,26 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   not field/workplace, 2-week horizon, no income/employment context. VERIFIED 2026-W30 (primary arXiv
   HTML v2 + abstract; ~10-week catch-up, missed by prior daily scans, grep-confirmed never previously
   logged). https://arxiv.org/abs/2605.12344
+- **Broady, Dunson & Barr, "Rethinking Automation Risk: AI Applicability and Occupational Outcomes,
+  2019–24" — a sub-🟢 *methodological caution*, not a displacement anchor (added 2026-W31).** Federal
+  Reserve Bank of Chicago Working Paper 2026-12 (2 Jul 2026; verified from the primary PDF,
+  doi.org/10.21033/wp-2026-12). 🟢 **descriptive, explicitly non-causal** (BLS occupational
+  employment/wage data + O*NET, 2019–2024; the authors state the findings "do not prove that
+  automation or AI caused the observed employment or wage changes" and flag DiD as future work; COVID
+  sits inside the window; small occupation-level N — the "high AI applicability" group is 38
+  occupations). *Shows:* **which exposure metric you pick can flip the employment sign on the same
+  occupations over the same years** — on Tomlinson et al.'s (2025) Copilot-*usage*-based "AI
+  applicability" scores, the most-exposed occupations *grew* **+4.05%** employment / +21.7% wages;
+  on Frey & Osborne's (2017) *computerizability* risk scores, high-risk occupations *fell* **−3%**
+  (moderate −6%), with wages rising **21–26% across all three risk tiers** and within-tier variance
+  swamping every average. *Use (state honestly):* **do NOT cite as evidence of AI displacement or
+  its absence.** Its value is a *citation-discipline* caution — every exposure-based anchor in this
+  file (Stanford/ADP, ECB, Census BTOS, PwC, Massenkoff & McCrory) rests on a *construct choice*
+  (usage-based vs task-based exposure), and the two can diverge in sign; name which construct is doing
+  the work. The CFO Dive coverage reported the applicability figure but omitted the opposite-signed
+  computerizability result in the same paper — the headline-vs-primary gap the project exists to
+  catch. Revisit if the authors' promised causal (DiD) follow-up appears. VERIFIED 2026-W31 (primary
+  PDF). https://doi.org/10.21033/wp-2026-12
 - **Ranjit et al., "Are We Automating the Joy Out of Work?"** — arXiv:2603.14963; *CHI 2026*.
   Survey of workers/developers rating 171 representative tasks, then LM-scaled to 10,131 O*NET
   computer-assisted tasks. *Shows:* tasks workers associate with **agency and happiness are
