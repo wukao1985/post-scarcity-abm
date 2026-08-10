@@ -237,7 +237,14 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   local gov) — BLS assigns no cause. *(BLS June 2026, added W27:* +57K payrolls, U 4.2%, Apr/May revised
   down a combined 74K; information/financial-activities showed "little or no change" this month — i.e.
   **no acceleration** in the high-exposure decline. One month, no cause assigned; mild reinforcement of
-  macro-calm, not a new signal.) *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
+  macro-calm, not a new signal.) *(BLS July 2026, added W32 — the pre-committed inflection test:* **−23K
+  payrolls** — the *first outright monthly decline in the tracking window* — with May/June revised down a
+  combined **−103K** and U at **4.1%**; **but** the decline is **local-gov education −50K (seasonal) +
+  retail −19K**, while **information was flat** and **financial −14K continued without accelerating**
+  (−121K since May-2025), and the BLS release **assigns no cause / no AI mention.** Six dailies had flagged
+  this report as the next inflection point; it **confirmed the null** — a negative headline resolving to
+  education/retail/revisions, not an AI-attributable signal in the sectors tracked. Texture, not a pillar;
+  reinforces macro-calm through its first negative-headline month.) *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
   headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
   quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
   macro still calm; sector pattern cohering with selective high-exposure displacement; skills

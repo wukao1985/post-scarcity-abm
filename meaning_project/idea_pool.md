@@ -266,6 +266,16 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   illustration yet of "cite the construct, not the headline." Weave it in when either piece is drafted;
   not promoted to a standalone (it's an example, not an argument).
 
+## W32 note (2026-W32 — a quiet week whose one test confirmed the null; no new standalone idea)
+- No new standalone article idea rose (logged honestly, per W28/W30/W31). One addition to *existing*
+  angles: the **July 2026 jobs report** (BLS, 7 Aug) is a clean worked example for the methodology pieces
+  **"Was it ever AI?"** (Tier 1/2, W23) and **"Every instrument, same shape"** (Tier 1/2, W27) — *the
+  tracking window's first negative payroll headline (−23K) turns out to be local-gov education + retail +
+  downward revisions, with information flat and financial not accelerating and no BLS AI attribution; the
+  careful read is the null, the careless read is "AI is finally taking jobs."* The cleanest illustration
+  yet of not over-reading a single scary print, and of an anticipated test returning "no change" being a
+  real update. Weave in when either piece is drafted; not a standalone (an example, not an argument).
+
 ## Parking lot (raw sparks)
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).
