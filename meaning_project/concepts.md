@@ -34,6 +34,13 @@ gradient), California's CAIT UI-claims tracker (no statewide surge, concentrated
 (falling volume, rising AI-*attribution*) all returned the same shape — survey, admin-claims, payroll and
 layoff-announcement instruments converging. The decoupling's empirical footing is now method-robust, and
 CAIT gives it a *monthly* live dashboard rather than periodic papers.
+**Held through its first negative-headline month 2026-W32.** The July 2026 jobs report (BLS, 7 Aug) — the
+inflection point six dailies had pre-committed to watching — produced the tracking window's *first outright
+monthly payroll decline* (−23K, plus −103K in revisions), yet resolved to **education/retail/revisions**
+with **information flat** and **financial not accelerating** and no BLS AI attribution. So the calm
+aggregate survived the one month that generated a scary headline: the null is not just "nothing has
+happened yet" but "the awaited test came back no-change." Reinforces the reading — *the calm aggregate is
+precisely what makes the meaning question live* — through a bad print, not only good ones.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
