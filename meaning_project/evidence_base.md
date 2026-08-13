@@ -42,17 +42,42 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
     secondary sources incl. openresearchlab.org findings, CBS, Michigan Ross summaries).
   - GiveDirectly Kenya: wellbeing + aspiration gains; framing (community vs basic-needs) matters.
   - **Germany — Pilotprojekt Grundeinkommen (RCT).** Bohmann, Fiedler, Kasy, Schupp & Schwerter
-    (DIW Berlin / WU Vienna / Mein Grundeinkommen); DIW Wochenbericht 15/2025; working paper *"Cash
-    Transfers, Mental Health, and Agency: Evidence from an RCT in Germany"* (9 Apr 2025).
-    Randomised controlled trial: €1,200/mo for 3 yr (Jun-2021…May-2024), N=107 recipients.
-    *Shows:* mental health **+0.347 SD**, **purpose in life +0.250 SD**, life satisfaction
-    **+0.417 SD**, **stable across all three years (no fade)**; **no withdrawal from the labour
-    market**. *Limits:* small sample (N=107), single country, self-report; 0.25 SD is the smallest
-    of the three effects. *Use (state honestly):* a **modest but well-identified counterweight** to
-    the "money buys relief, not meaning" synthesis below — unconditional cash here produced a
-    *stable purpose* gain, and the no-fade contrasts with the (confounded) Altman fade. Does not
-    overturn the anchor; it caveats it: cash *can* nudge purpose, not only relief. VERIFIED 2026-06
-    (multiple secondary sources citing the DIW primary; German primary not read directly).
+    (DIW Berlin / WU Vienna / Mein Grundeinkommen); DIW Wochenbericht 15/2025; CESifo Working
+    Paper No. 11989 (original version Jul 2025; this version 23 Mar 2026 — VERIFIED 2026-W33
+    directly from the primary PDF, ifo.de/DocDL/cesifo1_wp11989.pdf).
+    Randomised controlled trial: €1,200/mo for 3 yr (Jun-2021…May-2024), N=107 treated / 1,580
+    control, single-person below-average-income households, AEA RCT Registry #7734.
+    *Shows (during program):* mental health **+0.306 SD**, purpose in life **+0.250 SD**, life
+    satisfaction **+0.426 SD** (MHW index +0.379 SD), **stable across all three years (no
+    fade)**; **no withdrawal from the labour market** (companion paper, Bernhard et al. 2025).
+    **Update (2026-W33): post-program persistence.** The March-2026 revision adds two follow-up
+    waves administered 6 and 18 months *after* the final transfer (through ~Nov 2025). The MHW
+    index was **0.331 SD at 6mo post-program** and **0.362 SD at 18mo post-program** — **91% of
+    the during-program effect persisted after the money stopped flowing**. Component-level detail
+    is decisive: **income satisfaction fades on schedule** (0.68 SD early in the program → 0.35
+    SD by program's end → 0.13 SD at 18mo post, no longer significant — ordinary hedonic
+    adaptation to the lost income stream), **while mental health, general life satisfaction,
+    health satisfaction, sleep satisfaction, and purpose in life hold at 0.28–0.31 SD 18 months
+    after payments ended**, closely tracking in-program magnitudes. Suggestive mechanism
+    (exploratory, not itself causally identified): recipients used the transfer to build
+    self-sustaining life changes — saved ~1/3 of the transfer, gave 7–8% to others, gained 1.3+
+    hrs/week with friends, slept longer, higher perceived autonomy (+0.32 SD) — that outlasted
+    the income itself. The paper explicitly contrasts with the contemporaneous US RCT (Miller/
+    Vivalt/Bartik 2024, USD 1,000/mo to *multi-person* households), which found **no durable**
+    mental-health effect; the authors attribute the divergence to **individual, not
+    household-shared, discretionary control** over the transfer — a falsifiable claim worth
+    tracking against future high-income-country pilots. *Limits:* small sample (N=107,
+    non-representative — single-person households, age 21–40, below-average income),
+    single-country, self-report; the "self-sustaining life changes" mechanism is exploratory.
+    *Use (state honestly):* upgrades the existing counterweight from "stable while the money
+    flows" to **"durable after the money stops"** — the sharpest evidence yet in this base against
+    reading cash-transfer wellbeing gains as mere relief-in-the-moment, and a materially stronger
+    claim than the in-program-only stability first anchored here. Still does not overturn the
+    "money buys relief, purpose is a weak-but-real lever" synthesis below; it is the best-identified
+    exception to date. VERIFIED 2026-W33 (primary PDF; supersedes the 2026-06 secondary-source
+    verification with directly-read effect sizes, which differ slightly from earlier
+    secondary-reported figures — 0.306/0.250/0.426 SD here vs 0.347/0.250/0.417 SD previously
+    logged from secondary sources).
     https://www.diw.de/en/diw_01.c.796681.en/projects/basic_income_pilot_project.html
   - Meta-analyses: cash → small positive subjective-wellbeing (d≈0.13), larger on
     depression/anxiety, often not sustained post-program.
