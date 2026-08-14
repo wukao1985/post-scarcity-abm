@@ -144,6 +144,24 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   rise in 2022–24, with AI exposure not explaining the divergence in that window. The drop is
   real; its *cause* is now genuinely contested (AI-automation vs remote-work mentorship loss).
   Cite ADP with this caveat; do not present the young-cohort signal as settled AI harm.
+  **Update (2026-W33): revised, wider gap, direct test against the remote-work confound.**
+  A 12 Aug 2026 revision (Brynjolfsson, Collis, Lee, Wang, Nguyen & Kazinnik; Stanford Digital
+  Economy Lab × ADP Research) extends the data through **June 2026** (from Jul-2025) and updates
+  the 22–25 AI-exposed employment gap to **~19%** (from ~16%), with the absolute decline now
+  **~11%** for the two most-exposed quintiles vs **~+10%** growth for less-exposed same-age peers
+  (Nov-2022→Jun-2026); mechanism remains **reduced hiring**, not increased separations. **New:**
+  the authors report the gap "remains when we exclude technology firms and computer occupations,
+  when we control for exposure to interest-rate increases and **remote work**, when we include
+  firms that enter or leave the sample, and when we use alternative measures of AI exposure" —
+  i.e. this revision directly re-runs the test the NY Fed confound (above) put in question and
+  reports the AI-linked divergence survives a remote-work control. *Limits (state honestly):*
+  read from the Stanford press release + institutional publication page, not the full primary
+  PDF text (extraction failed this session — the underlying working paper was not independently
+  parsed); "descriptive indicators... rather than causal estimates" per the authors' own framing;
+  does not report the regression coefficient/magnitude with the control applied, only that the
+  gap "remains." *Use:* narrows but does not close the AI-vs-remote-work attribution dispute —
+  worth a dedicated primary-PDF read before treating the confound as resolved. VERIFIED 2026-W33
+  (institutional press page). https://digitaleconomy.stanford.edu/news/canariesaug26/
 - **CRR — "Are the Careers of Older Workers Being Cut Short by AI?" (the late-career mirror of the
   young-cohort drop; added 2026-W29).** Geoffrey T. Sanzenbacher, Center for Retirement Research at
   Boston College, *Issue in Brief* 26-13 (June 2026; read from the CRR primary PDF). 🟢 **with caveats**
