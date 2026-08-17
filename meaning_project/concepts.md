@@ -49,6 +49,14 @@ material stress but is a weak lever on purpose/meaning.
 a *stable* +0.25 SD purpose-in-life gain (no fade), the first well-identified push-back. Honest form:
 money is a *strong* lever on relief and a *weak-but-real* lever on purpose — keep the slogan, drop the
 absolutism.
+**Strengthened 2026-W33 (durability, not just magnitude).** The German RCT's post-program follow-up
+(CESifo WP 11989, Mar-2026 revision) shows the two components *decouple over time*: 18 months after the
+transfer ends, **income satisfaction has faded to non-significance** while **purpose in life and mental
+health hold at 0.28–0.31 SD (91% of the in-program effect).** So the honest slogan should foreground
+*durability*: relief is precisely the part that *fades* when the money stops; the purpose gain is the part
+that *persists*. Money is a strong-but-transient lever on relief and a weak-but-*durable* lever on purpose.
+Caveat unchanged: N=107, self-report, single country; and the persistence mechanism (self-sustaining life
+changes via individual discretionary control) is exploratory, not causally identified.
 
 ## 🌰 The retreat that may run out of high ground
 Each automation wave pushed humans to higher cognitive ground; AI targets that ground itself.
@@ -172,6 +180,15 @@ dedicated instruments — young and old are well-measured; the middle is under-m
 middle" is a hypothesis to test, not a settled finding. CRR also corrects the *voluntary-retirement*
 framing: it's displacement, not opt-out, and the involuntary channel is the one carrying the
 cognitive/mortality cost (Kouchekinia, men 51–64).
+**⚠️ Attribution caveat updated 2026-W33 — the remote-work confound was tested directly, and the signal
+survived.** The Stanford/ADP "Canaries in the Coal Mine?" Aug-2026 revision (data through Jun-2026) widened
+the 22–25 AI-exposed employment gap from ~16% to **~19%** and reported it **"remains when we control for …
+remote work"** — the first direct author-level response to the W23 confound (NY Fed: remote work explains
+~⅔ of the young-grad rise), engaging rather than sidestepping it. Update the read from "attribution open"
+to **"contested but the AI reading strengthened: the confound was tested directly and the signal survived
+*and* widened."** Not yet closed — no magnitude/coefficient for the remote-work-controlled specification
+could be verified (read from the press/publication summary, not the primary regression); recovering that
+coefficient is the outstanding primary-PDF task before calling the dispute settled.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and

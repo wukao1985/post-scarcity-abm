@@ -113,6 +113,17 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   +0.25 SD purpose-in-life gain (no fade). A worked example of updating a load-bearing claim when a
   well-identified result pushes back — without over-correcting (N=107, smallest of three effects).
   Pairs with the three-layer framework and "Money doesn't buy meaning."
+  **Sharpened 2026-W33 (post-program persistence → the real question is *durability*, and *why*).** The
+  German RCT's Mar-2026 revision (CESifo WP 11989) adds two post-transfer follow-up waves: **91% of the
+  wellbeing gain persists 18 months after the money stops** — income satisfaction fades to non-significance
+  (hedonic adaptation) while mental health and **purpose in life hold at 0.28–0.31 SD.** So the piece gets a
+  cleaner spine: relief is the *transient* component, purpose the *durable* one — the opposite of the naive
+  read. And it gains a falsifiable hinge: the German effect persists where the contemporaneous US RCT
+  (Miller/Vivalt/Bartik) found *no* durable mental-health effect, and the authors nominate **individual (vs
+  household-shared) discretionary control** over the transfer as the operative variable. Reframe the article
+  from "does money buy purpose?" to **"why do some cash-transfer meaning effects outlast the money and others
+  don't?"** — individual discretionary control as the testable hinge. Still N=107, self-report, single
+  country: keep the honesty caveats. Strongest version of this idea yet.
 
 ## Tier 1/2 — added 2026-W25
 
