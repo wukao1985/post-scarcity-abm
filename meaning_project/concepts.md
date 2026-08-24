@@ -222,6 +222,15 @@ limb with the health cost. The clean one-line form: **AI companions target the w
 (Note the recurring **"vital sign"** framing — Yoneda urges screening loneliness as one; the project
 already calls purpose a vital sign (Emile) — so both limbs of the meaning case now read, from outside
 researchers, as measurable health variables, not soft concerns.)
+**Fourth method + conditionality, 2026-W34:** Zhang et al. (*Nature Human Behaviour*; survey of 1,131
+Character.AI users + 237 donating coded chat transcripts) adds a method the prior three lacked (coded
+transcripts, not Reddit-language proxy or bare self-report) and, more usefully, shows the crowd-out is
+**not uniform**: it bites the **already-isolated companionship-seeker** (small offline network, uses the
+bot for companionship, discloses to it), while **productivity/curiosity** users are unharmed or better
+off. This *localises* the "wrong variable" claim — the tool doesn't harm everyone, it harms exactly the
+group the "companion-as-cure" pitch aims at — and reconciles the coinage with any population-average
+null (harm is subgroup-specific, so the mean washes out). Zhang's own frame, worth borrowing: AI
+companionship as a **"social snack"** — short-term relief, no durable nourishment.
 
 ## Borrowed terms worth tracking (not our coinages)
 - **"Asymptomatic harm" / "intuition rust"** (Passi et al., Microsoft/CHI 2026): AI's benefits are

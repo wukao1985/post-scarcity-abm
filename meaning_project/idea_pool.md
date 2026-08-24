@@ -71,6 +71,13 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   raising the perceived cost of human-relationship effort (Aalto/CHI crowd-out + empathy-preference
   + Emile/OECD mortality). Design reversal: companions as *bridges* to human connection, not
   endpoints. A rare piece with both a strong 🟢 spine and a concrete 🔴 design lever.
+  **Sharpened 2026-W34 (Zhang et al., *Nature Human Behaviour*):** the harm is **conditional, not
+  universal** — it concentrates in users with **small offline networks** who come **for companionship**
+  and **disclose** to the bot, while **productivity/curiosity** users are unharmed or better off. That
+  turns the piece from "companions worsen loneliness" into a sharper *targeting* argument — *for whom*
+  (the already-isolated companionship-seeker) and *not* the tool-users — which supplies a cleaner 🔴
+  design lever (route the vulnerable toward human bridges; leave the tool-users alone) and Zhang's
+  gift of a title/frame: the **"social snack."** Strong 🟢 spine now four-method.
 - 💡 🟢 **"What gets automated first is what felt most human."** Ranjit/CHI: the agency- and
   happiness-producing tasks are disproportionately AI-exposed. Reframes the risk from "jobs vanish"
   to "the meaningful parts go first" — remedy is task-allocation design, not just retraining.
