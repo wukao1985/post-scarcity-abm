@@ -498,11 +498,35 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   (reverse causality/confounding possible despite prospective design), self-report, no chatbot-type
   breakdown, English-speaking only. *Use:* prospective, direct-measure counterpart to Aalto's
   Reddit proxy — two methods, same direction. VERIFIED 2026-06. https://doi.org/10.1177/09567976261427747
-- **Q3 status (updated 2026-W24):** with Aalto (quasi-experiment), Folk & Dunn (prospective panel)
-  and Li et al. (RCT) now converging — plus the empathy-preference result and Emile/OECD mortality —
-  the relatedness sub-question moves from "evidence leans no" to **"consistent multi-method evidence:
-  AI cannot supply relatedness, and deployed as a loneliness fix it likely worsens the deficit."**
-  This is the project's best-evidenced sub-question.
+- **AI companionship harms the *already-isolated* — survey + coded transcripts (Character.AI)** — Zhang,
+  Zhao, Hancock, Kraut & Yang (Stanford), *Nature Human Behaviour* (published ~4 Aug 2026; peer-reviewed
+  version of arXiv 2506.12605). Survey of **N=1,131** US Character.AI users (Prolific), with **237** donating
+  **4,664** chat sessions (≈**464,687** messages) coded by GPT-4o/LLaMA-3-70B/TopicGPT for engagement
+  patterns; well-being via the Comprehensive Inventory of Thriving. *Shows:* the association is **conditional,
+  not uniform** — intense chatbot use tracks *lower* well-being specifically among users with **small offline
+  social networks** who use the bot **for companionship** and **disclose sensitive information** to it (the
+  opposite of what self-disclosure predicts between humans), while users motivated by **productivity or
+  curiosity report higher** well-being. A stated-vs-revealed motive gap runs through it: only ~**12%** name
+  companionship as their primary motive, yet >**80%** of chat content is emotional-support-seeking and >**50%**
+  call the bot "friend"/"companion." Authors' framing: a "**social snack**" — short-term relief, no durable
+  nourishment. *Limits (honest):* **cross-sectional and correlational** (no baseline/panel — self-selected
+  Prolific/Character.AI sample, so the isolated may simply *seek* companion bots; no causal claim); specifics
+  read from **Stanford Report + arXiv preprint, not the paywalled *Nature* full text** — no controlled effect
+  size verified. *Use:* the **fourth independent method** on Q3 (the first using **coded transcripts** rather
+  than Reddit-language proxy or bare self-report), same *direction* as the cluster, and it **localises** the
+  harm to the *already-isolated companionship-seeker* — exactly the group the "companion-as-cure" pitch
+  targets — which is the mechanism the "AI companions target the wrong variable" reading predicts. Caught late
+  (published ~4 Aug, logged 2026-08-22). VERIFIED 2026-W34 (secondary; primary *Nature* text pending).
+  https://www.nature.com/articles/s41562-026-02516-2 · https://arxiv.org/abs/2506.12605
+- **Q3 status (updated 2026-W34):** with Aalto (quasi-experiment), Folk & Dunn (prospective panel),
+  Li et al. (RCT) and now **Zhang et al. (survey + coded transcripts)** converging — plus the
+  empathy-preference result and Emile/OECD mortality — the relatedness sub-question stands at **"consistent
+  four-method evidence: AI cannot supply relatedness, and deployed as a loneliness fix it likely worsens the
+  deficit."** Zhang et al. adds that the harm is **conditional** — concentrated in the already-isolated who use
+  the bot for companionship, absent for productivity/curiosity users — which reconciles this cluster with any
+  population-average null (the average washes out because harm is subgroup-specific). This remains the
+  project's best-evidenced sub-question. (Prior note, 2026-W24: the first three methods established the
+  direction; W34 adds the fourth and the conditionality.)
 - **OECD, "Social Connections and Loneliness in OECD Countries"** (OECD, Oct 2025). Cross-national
   survey synthesis; descriptive, not causal. *Shows:* in-person interaction declining across the
   OECD; **young people (16–24) and men** saw the steepest recent deteriorations; loneliness + low
