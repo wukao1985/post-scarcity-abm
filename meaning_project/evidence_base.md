@@ -184,6 +184,39 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   the cognitive/mortality stakes (Kouchekinia: involuntary job loss → ~2 yrs cognitive ageing, men 51–64,
   the overlapping demographic). VERIFIED 2026-W29 (primary PDF).
   https://crr.bc.edu/are-the-careers-of-older-workers-being-cut-short-by-ai/
+- **Bank of Korea — "Is Youth Employment Contraction Due to AI?" (the first *non-US* institutional
+  replication of the young/old AI-exposed divergence; added 2026-W35).** BOK Issue Note (청년고용 위축,
+  AI탓인가? 변화하는 경력 사다리와 대응 과제), Employment Research Team, Research Department; released
+  **18 Aug 2026**. 🟡 **institutional-via-secondary** (read across 8+ consistent Korean and international
+  outlets — Korea Times, Korea JoongAng Daily, MLex, Xinhua, Seoul Economic Daily, Tech Times, IANS, Seoulz —
+  all attributing the same figures/title/hedge to the same report; **the primary BOK PDF was not retrieved
+  directly** — flagged for a primary read before any article citation). Method: National Pension Service
+  enrollment records merged with the national labour-force survey, individuals tracked **Jun-2022→Jun-2026**,
+  sectors classified by AI-exposure (info/IT services, publishing, computer programming, professional
+  services = high-exposure) and by an automation-heavy vs augmentation-heavy split. *Shows:* youth (15–29)
+  employment fell **285,000** over the four years, of which **268,000 (94%)** was concentrated in high-AI-
+  exposure sectors (info services **−31.4%**, publishing **−27.4%**, computer programming **−16.6%**,
+  professional services **−11.6%**); over the *same* window workers **50+ gained 230,000** jobs, **173,000
+  (~75%)** of them in the same high-exposure sectors — a **near-mirror generational inversion**. Youth share
+  of all new hires fell from a 2014–2019 average of **36.9%** to **29.3%** in 2024–2026. Automation-heavy
+  sectors saw larger youth declines than augmentation-heavy ones (a macro-labour echo of the project's
+  psychological augmentation/automation axis). **The BOK's own conclusion is hedged, not alarmist:** AI is
+  "accelerating or amplifying pre-existing changes in hiring and work patterns" rather than the "culprit" of
+  youth employment contraction — the authors do **not** claim a clean causal identification (their own
+  framing: AI replaces routine entry-level tasks, while senior work involves specialised, organisation-
+  specific tasks harder to automate). *Use:* the **international companion** to the Stanford/ADP young-cohort
+  anchor and the CRR older-worker mirror — the same **edges-fray-first / young-lose-old-gain** shape, now
+  replicated in a structurally different labour market (Korea's seniority-wage system; national-pension data
+  as the source) with the same honest correlational caveat the US findings carry. Strengthens the
+  *international generality* of the "AI-exposed career edges fraying" thread **without overclaiming
+  causation** — and the source institution supplying its own causal hedge is itself the (methodologically
+  useful) point; preserve the "amplifying, not culprit" language verbatim if this becomes a citation.
+  *Limits (state honestly):* 🟡 not 🟢 — read from secondary coverage, primary BOK PDF unread; correlational,
+  not a clean natural experiment (the BOK says as much); single country; the young/old "edges" read shares
+  the cohort-selection caveat that already accompanies the US pair. *Cross-cohort note:* this is a
+  reallocation-*across-cohorts* datum (jobs shifted young→old within exposed sectors), a different mechanism
+  from "new jobs appear." VERIFIED 2026-W35 (secondary; primary PDF pending).
+  https://www.koreajoongangdaily.com/business/94-of-job-losses-among-young-people-over-past-4-years-were-in-aiexposed-industries-bok-says/12830646
 - **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
   Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
   Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-

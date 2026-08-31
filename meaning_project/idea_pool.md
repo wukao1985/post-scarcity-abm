@@ -238,6 +238,15 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   stakes (Kouchekinia: men 51–64). *Hold the cohort-selection caveat honestly:* the "edges vs middle" read
   may partly reflect which cohorts have dedicated instruments (young + old measured; the middle less so).
   Pairs with "Was it ever AI?" and the three-layer framework. *Strong, and a genuinely new synthesis peg.*
+  **Internationalised 2026-W35 (Bank of Korea).** The BOK Issue Note (18 Aug 2026) supplies the **first
+  non-US institutional replication** of the same shape: 94% of a 285K youth (15–29) employment loss over
+  2022–2026 fell in high-AI-exposure sectors while workers 50+ *gained* 230K jobs (75% in the same sectors) —
+  a near-mirror young-lose/old-gain inversion in Korea's structurally different (seniority-wage, national-
+  pension) labour market. Turns a US-only observation into a cross-national one, adding a vivid non-US data
+  point and lifting the piece from "an American pattern" to "a pattern that travels." Keep the honesty
+  scaffolding the BOK itself models: the central bank calls AI an *amplifier* of pre-existing shifts, **not
+  the culprit** — the source hedging its own causation is a gift for the methodology spine. (🟡:
+  read-from-secondary; primary PDF unread.)
 - 💡 🟢 **"Displacement, not opt-out."** The methodology/honesty sub-point inside CRR: press coverage (WSJ)
   read older AI-exposed workers' exits as *voluntary retirement to dodge AI*; the hard CPS data locate the
   rise in the **involuntary unemployment** channel. A vivid worked example of citing what the data show, not
@@ -294,7 +303,23 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   yet of not over-reading a single scary print, and of an anticipated test returning "no change" being a
   real update. Weave in when either piece is drafted; not a standalone (an example, not an argument).
 
+## W35 note (2026-W35 — a quiet week; no new standalone idea, one international strengthening)
+- No new standalone article idea rose (logged honestly, per W28/W30/W31/W32). The week's genuine signal — the
+  **Bank of Korea** Issue Note — *strengthens an existing idea* ("The edges fray first," W29, updated above)
+  rather than seeding a new one: a first non-US institutional replication of the young/old AI-exposed
+  divergence. One **watch-spark** added to the parking lot below (wage-compression), held as a watch item,
+  not promoted — one conflicted source, in tension with the ECB wage-null.
+
 ## Parking lot (raw sparks)
+- "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
+  falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp
+  slower, worst at the bottom quartile, Jul 2026, 🟡 asset-manager source), Jiang et al. (the "extended
+  workday" — longer hours, firms capture the rents), IMF ("wages without headcount"). Sits in explicit
+  **tension with the ECB wage-null** (no significant wage impact in its reallocation DiD), so it is an open
+  question, not a finding. *Why it would matter for meaning:* wage erosion without job loss keeps Jahoda's
+  latent functions nominally intact while degrading the extrinsic reward and the sense of a fair exchange — a
+  quieter, different meaning-threat than displacement. Hold until a peer-reviewed / non-bank source
+  replicates; do not draft on a single conflicted source.
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).
 - "The double exposure" (OECD: young men take both the first employment hit and the steepest

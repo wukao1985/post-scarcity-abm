@@ -189,6 +189,18 @@ to **"contested but the AI reading strengthened: the confound was tested directl
 *and* widened."** Not yet closed — no magnitude/coefficient for the remote-work-controlled specification
 could be verified (read from the press/publication summary, not the primary regression); recovering that
 coefficient is the outstanding primary-PDF task before calling the dispute settled.
+**Internationalised 2026-W35 — the shape now replicates outside the US.** The Bank of Korea Issue Note
+(18 Aug 2026) gives the "edges vs middle" reading its **first non-US institutional replication**: over
+2022–2026, **94%** of a 285K youth (15–29) employment loss fell in high-AI-exposure sectors while workers
+**50+ gained 230K** jobs (75% in the same sectors) — the same young-lose/old-gain inversion, in Korea's
+seniority-wage, national-pension labour market, with automation-heavy sectors hit harder than
+augmentation-heavy ones. This tightens the concept's *generality* claim (not a US-only artifact) **without**
+touching its attribution-contested caveat — the BOK explicitly calls AI an *amplifier* of pre-existing
+hiring shifts, **not the "culprit,"** and claims no clean causal identification (🟡: read-from-secondary,
+primary PDF unread). The source hedging its own causation is the methodologically useful part. Counter-
+texture to hold alongside it: the SIEPR brief (McEntarfer et al., Jul 2026) notes that in *aggregate* US
+unemployment rose slightly *less* among the most-exposed (+0.77pp) than the least-exposed (+0.85pp) — so
+edge-concentration is a *composition* story (who is hired/where), not an aggregate-unemployment story.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
