@@ -41,6 +41,16 @@ with **information flat** and **financial not accelerating** and no BLS AI attri
 aggregate survived the one month that generated a scary headline: the null is not just "nothing has
 happened yet" but "the awaited test came back no-change." Reinforces the reading — *the calm aggregate is
 precisely what makes the meaning question live* — through a bad print, not only good ones.
+**Held through a *strong* print too, and the W32 scare reversed, 2026-W36.** The August 2026 jobs report (BLS,
+Sep 4) — the next pre-committed hard point — came back **calm-to-strong** (+162K, a consensus beat; U 4.1%; no
+BLS AI attribution), so the decoupling has now been tested through *both* a bad print (W32) and a good one (W36)
+and held either way — more robust than either alone. Two updates: (1) **W32's "first outright monthly decline"
+reversed on revision** (July −23K → +21K), retiring it as a revision artifact, not a signal — the sharpest
+worked example yet of "cite the resolved number, not the scary print." (2) The **composition story sharpened
+under the strong aggregate**: **information −23K** in one month (computing-infra/data/web-hosting, publishing,
+broadcasting/content) while financial was little-changed and the top-line beat — i.e. the decoupling's core
+claim (calm/strong aggregate ≠ no sub-surface high-exposure decline) in one clean month, with August's *gains*
+coming from low-exposure food services and local-government education, not new high-value roles.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes

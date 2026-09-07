@@ -310,6 +310,17 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   divergence. One **watch-spark** added to the parking lot below (wage-compression), held as a watch item,
   not promoted — one conflicted source, in tension with the ECB wage-null.
 
+## W36 note (2026-W36 — a one-item week; no new standalone idea, but the cleanest methodology example yet)
+- No new standalone article idea rose (logged honestly, per W28/W30/W31/W32/W35). The week's one hard item — the
+  **August 2026 jobs report** (BLS, Sep 4: +162K, U 4.1%, a consensus beat; **information −23K**; **July −23K
+  revised to +21K**) — *strengthens two existing methodology angles* rather than seeding a new one: **"Was it ever
+  AI?"** (Tier 1/2, W23) and **"Every instrument, same shape"** (Tier 1/2, W27) both gain the sharpest worked
+  example in the log — *the tracking window's first scary payroll headline (July −23K) reversed to +21K on the very
+  next revision, while the strong August aggregate still sat on top of a −23K information-sector decline.* Two
+  lessons in one print: don't over-read a single number (it can flip on revision), and read the **composition**
+  (where the losses and the gains land), not the top-line. Weave in when either piece is drafted; an example, not
+  an argument, so not promoted.
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp

@@ -320,7 +320,19 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   (−121K since May-2025), and the BLS release **assigns no cause / no AI mention.** Six dailies had flagged
   this report as the next inflection point; it **confirmed the null** — a negative headline resolving to
   education/retail/revisions, not an AI-attributable signal in the sectors tracked. Texture, not a pillar;
-  reinforces macro-calm through its first negative-headline month.) *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
+  reinforces macro-calm through its first negative-headline month.) *(BLS **August 2026**, added W36 — the
+  pre-committed inflection test, read directly from empsit.nr0.htm:* **+162K payrolls, U 4.1% (unchanged)**, AHE
+  +0.3% m/m — a **consensus beat** (~53K expected; strongest gain since March), i.e. no aggregate AI-weakening;
+  gains led by food services and **local-government education**. **Information −23K** (computing infrastructure /
+  data processing / web hosting −8K, publishing −7K, broadcasting & content −5K) — the tracked high-exposure
+  sector's decline continuing, a sizeable single month; **financial activities little change** (no acceleration).
+  **June revised +20K→+31K; July revised −23K→+21K** (+55K over two months) — so W32's "first outright monthly
+  decline" **reversed on revision**, a revision artifact rather than a signal. **No AI attribution / no AI mention
+  in the release.** *Use:* the awaited next hard aggregate point came back **calm-to-strong**, reaffirming the
+  macro-null through a *good* print after W32 tested it through a bad one, while the **composition** story sharpened
+  (information −23K under a strong aggregate) — the cleanest single-month instance of "calm/strong surface,
+  concentrated high-exposure decline beneath." One month, will be revised again, no cause assigned. Texture, not a
+  pillar. https://www.bls.gov/news.release/empsit.nr0.htm) *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
   headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
   quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
   macro still calm; sector pattern cohering with selective high-exposure displacement; skills
