@@ -51,6 +51,14 @@ under the strong aggregate**: **information −23K** in one month (computing-inf
 broadcasting/content) while financial was little-changed and the top-line beat — i.e. the decoupling's core
 claim (calm/strong aggregate ≠ no sub-surface high-exposure decline) in one clean month, with August's *gains*
 coming from low-exposure food services and local-government education, not new high-value roles.
+**Confirmed as *not a measurement artifact*, and a wage-side dimension surfaced, 2026-W37.** Two BLS items (caught
+late in the W37 sweep, both pre-dating the week): the **CES preliminary benchmark revision (Aug 28)** cut the year
+through March 2026 by only **−79K** — a tenth of 2025's −911K and 2024's −818K — so the calm aggregate is **not** an
+overcounting artifact, tightening the decoupling's empirical footing. And the **Q2-2026 labor share hit 52.8%, a
+post-1947 low** (real comp −3.3%): the decoupling's "calm aggregate ≠ no sub-surface reorganisation" now has a
+possible *price/share* dimension (output shifting labour→capital) alongside the composition one — **but** kept as a
+watch, not a claim: labour-share decline is a decades-long structural trend and the real-comp drop is an inflation
+bite, **neither AI-identified**. No rewrite of the concept — a quiet week that adds a caveated texture line, not a study.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes

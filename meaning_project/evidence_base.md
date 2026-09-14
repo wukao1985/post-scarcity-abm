@@ -332,7 +332,23 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   macro-null through a *good* print after W32 tested it through a bad one, while the **composition** story sharpened
   (information −23K under a strong aggregate) — the cleanest single-month instance of "calm/strong surface,
   concentrated high-exposure decline beneath." One month, will be revised again, no cause assigned. Texture, not a
-  pillar. https://www.bls.gov/news.release/empsit.nr0.htm) *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
+  pillar. https://www.bls.gov/news.release/empsit.nr0.htm) *(Two prior-week BLS items caught in the W37 broader
+  sweep — both dated before Sep 7 but missed by the W35/W36 digests, folded in here rather than dropped.* **CES
+  preliminary benchmark revision, released Aug 28 2026:** total nonfarm employment for the year through March 2026
+  revised **−79,000 (−0.1%)** (total private −178,000) — the *smallest benchmark markdown in years*, roughly a tenth
+  of the **2025 preliminary −911K** (the largest since ≥2000) and **2024 preliminary −818K** (final −589K). *Use:* a
+  genuine macro-null **confirmation** — the establishment survey was **not** materially overstating job growth this
+  cycle, so the calm aggregate is not a measurement artifact of the kind the prior two years' huge revisions raised.
+  Final revision due Feb 2027. https://www.bls.gov/news.release/prebmk.nr0.htm — **Productivity & Costs, Q2 2026
+  revised, released Sep 3 2026:** the **labor share of nonfarm-business output fell to 52.8%, the lowest in the series
+  since 1947**; **real hourly compensation fell −3.3%** in the quarter (productivity +1.4%, unit labor costs +1.2%).
+  *Use:* the *wage-side* texture under the wage-compression watch-thread — labour's slice of output at a record low
+  while employment stays calm. **Attribution caveat (load-bearing):** the labor-share decline is a **decades-long
+  structural trend** (offshoring, capital deepening, superstar-firm concentration, weakened labour bargaining) and
+  the Q2 real-comp drop is largely an **inflation bite** (August CPI +0.4% m/m, gasoline +3.9%) — **neither is
+  AI-identified**, and pinning either on AI is exactly the over-attribution the project guards against. Held as
+  🟡/attribution-contested texture, **not** an AI-meaning anchor. https://www.bls.gov/news.release/prod2.nr0.htm)*
+  *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
   headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
   quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
   macro still calm; sector pattern cohering with selective high-exposure displacement; skills

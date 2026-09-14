@@ -321,6 +321,16 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   (where the losses and the gains land), not the top-line. Weave in when either piece is drafted; an example, not
   an argument, so not promoted.
 
+## W37 note (2026-W37 — a quiet in-niche week; no new standalone idea)
+- No new standalone article idea rose (logged honestly, per W28/W30/W31/W32/W35/W36). W37 (Sep 7–13) produced **no
+  new in-niche primary research**; its in-window hard data was **August CPI** (Sep 11 — inflation, out of the meaning
+  niche) and a **CNBC** synthesis piece (Sep 13). The week's value was the *broader sweep* catching prior-week items
+  the lapsed dailies missed: the **−79K CES benchmark revision** (Aug 28 — a macro-null confirmation, folded into
+  evidence_base) and the **BLS Q2 labor-share record low** (Sep 3 — wage-side texture). The only *idea-level*
+  movement is the **wage-compression** parking-lot spark, updated above (mainstream framing + labor-share peg, still
+  held below the anchor bar). One relatedness catch (Elon "Rise of AI Companions" prevalence survey, Sep 2) is noted
+  in the digest as scale texture under the existing Q3 cluster, not a new idea.
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp
@@ -331,6 +341,16 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   latent functions nominally intact while degrading the extrinsic reward and the sense of a fair exchange — a
   quieter, different meaning-threat than displacement. Hold until a peer-reviewed / non-bank source
   replicates; do not draft on a single conflicted source.
+  **W37 update — the thread reached mainstream framing, and a vivid (but multi-causal) datum.** CNBC ran the
+  reading as a headline ("AI may not take your job but it may have pinched your paycheck already," Sep 13),
+  and the freshest peg is the **BLS Q2-2026 labor share = 52.8%, the lowest since 1947** (Productivity & Costs
+  revised, Sep 3), with real hourly compensation −3.3% in the quarter. *Why still parked, not promoted:* the
+  labor-share record low is a **decades-long structural trend** and the real-comp drop is largely an **inflation
+  bite** — **not AI-identified**; the mainstream piece leans on the same conflicted Apollo/Slok wage number plus
+  a macro trend, not a new causal study. So the honest state is *thread gaining visibility, evidence unchanged.*
+  If drafted, its cleanest use is a **methodology** cut: "the labour-share record low is real and alarming —
+  and attributing it to AI is a textbook over-attribution error." Still needs a peer-reviewed / non-bank causal
+  wage result before it becomes an *evidence* piece rather than a *how-not-to-misread-data* piece.
 - "The invisible tax" (Passi: asymptomatic harm / intuition rust — AI's costs to identity and
   competence trail its benefits, so they're under-reported and under-regulated).
 - "The double exposure" (OECD: young men take both the first employment hit and the steepest
