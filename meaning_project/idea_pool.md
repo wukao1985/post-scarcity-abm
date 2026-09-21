@@ -78,6 +78,11 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   (the already-isolated companionship-seeker) and *not* the tool-users — which supplies a cleaner 🔴
   design lever (route the vulnerable toward human bridges; leave the tool-users alone) and Zhang's
   gift of a title/frame: the **"social snack."** Strong 🟢 spine now four-method.
+  **Extended 2026-W38 (uOttawa / *JAMA Pediatrics*, ~40k adolescents):** the spine reaches a fifth method and,
+  more importantly, a **new population — children/adolescents** — with ~21% already using affective AI and those
+  users reporting lower **mattering**, more loneliness, and 26%-higher clinical-level difficulties. Turns the piece
+  from an adult-and-student story into "the front line is the youngest." *Cross-sectional; authors say marker-not-
+  cause — keep the reverse-causality honesty visible.*
 - 💡 🟢 **"What gets automated first is what felt most human."** Ranjit/CHI: the agency- and
   happiness-producing tasks are disproportionately AI-exposed. Reframes the risk from "jobs vanish"
   to "the meaningful parts go first" — remedy is task-allocation design, not just retraining.
@@ -141,6 +146,9 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   (Folk & Dunn, Aalto, Li et al.) — so the companion-as-cure pitch is solving the wrong problem at
   scale, and the right problem is the one with the lethal consequences. The cleanest, most vivid
   closing of the Q3 argument yet; pairs with "The relatedness trap." *Strong, well-evidenced.*
+  **W38 add (uOttawa / *JAMA Pediatrics*):** a youth datum for the same argument — affective-AI users report lower
+  **mattering** (a measured correlate, not just isolation), consistent with "companions cut isolation while leaving
+  the pathogenic variable untouched." Cross-sectional; hold the reverse-causality caveat.
 - 💡 🟡/🟢 **"Preserve the job, not just the income."** Chueri et al. (Perspectives on Politics): when
   people fear automation they don't mainly ask for more unemployment benefits — they ask for measures
   that protect work's *role* (robot taxes, income regardless of employment). The public's own answer
@@ -330,6 +338,30 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   movement is the **wage-compression** parking-lot spark, updated above (mainstream framing + labor-share peg, still
   held below the anchor bar). One relatedness catch (Elon "Rise of AI Companions" prevalence survey, Sep 2) is noted
   in the digest as scale texture under the existing Q3 cluster, not a new idea.
+
+## Tier 2 — added 2026-W38
+
+- 💡 🟢 **"The kids reached for the machines first."** The uOttawa / *JAMA Pediatrics* study (Bonnesen &
+  Vaillancourt, Aug 31 2026; N=39,761 Ontario students grades 4–12) finds ~21% already use AI chatbots for
+  emotional support, and those students report **more loneliness, a lower sense of mattering, and 26%-higher
+  clinical-level emotional difficulties** (adjusted). The vivid, under-covered angle: the population furthest
+  ahead on AI-companionship is not adults but **children** — the highest-adoption, least-studied group — and the
+  measured cost lands on **mattering**, the exact variable the project argues UBI and virtual worlds can't supply.
+  Pairs with "The relatedness trap" and "The wrong variable." *Honesty spine (non-negotiable for this piece):* the
+  study is **cross-sectional** and the authors read the association as a **marker of distress, not a cause** — so
+  the piece must be built on "affective-AI use is a *signal* worth heeding," not "chatbots make kids lonely." That
+  honest framing is itself the piece's value (and its title could invert the scare-headline the data will
+  otherwise get). Hold for a *longitudinal* youth study before any causal language. Tier 2, causal caveat explicit.
+
+## W38 note (2026-W38 — a quiet week; one youth-population strengthening, one modest new idea)
+- W38 (Sep 14–20) produced **no new in-niche primary research dated to the window**; the one in-window item was a
+  Sunday Guardian op-ed (Sep 20, "the future of work and human worth" — commentary, below the bar). The week's
+  genuine signal was a *catch*: the **uOttawa / JAMA Pediatrics** youth study (Aug 31), which **strengthens two
+  existing ideas** — "The relatedness trap" (W23) and "The wrong variable" (W25) both gain a large, peer-reviewed
+  **adolescent-population** datum and the first **measured mattering** correlate — and seeds **one modest new Tier-2
+  idea** ("The kids reached for the machines first," above). This is a real population-and-variable novelty, not a
+  manufactured quiet-week idea, but it is held at Tier 2 with the cross-sectional / reverse-causality caveat
+  explicit (per the honesty norm on quiet weeks, W28/W30/W31/W32/W35/W36/W37).
 
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite

@@ -261,6 +261,16 @@ off. This *localises* the "wrong variable" claim — the tool doesn't harm every
 group the "companion-as-cure" pitch aims at — and reconciles the coinage with any population-average
 null (harm is subgroup-specific, so the mean washes out). Zhang's own frame, worth borrowing: AI
 companionship as a **"social snack"** — short-term relief, no durable nourishment.
+**Fifth method + new population + the mattering measure, 2026-W38:** the uOttawa / *JAMA Pediatrics* study
+(Bonnesen, Vaillancourt et al.; N=39,761 Ontario students grades 4–12; published Aug 31 2026) extends the
+coinage to **children/adolescents** — the first in the cluster below university age — finding ~21% use AI for
+emotional support and those users report **greater loneliness, lower mattering, and 26%-higher clinical-level
+emotional difficulties** (adjusted), same direction as the prior four methods. It is also the **first measured
+correlate of "mattering"** in the base (see the mattering concept below). *This broadens the concept — population
+reach + the mattering variable — but does not deepen it causally:* the study is **cross-sectional**, and the
+authors read the association as a **marker of distress, not a cause** (the reverse-causality reading: low-mattering
+/ lonely kids turn to AI). So the crowd-out's *causal* story still rests on Aalto/Folk & Dunn (prospective) and
+Li et al. (RCT); W38 adds who and where, not whether. Keep the marker-not-cause honesty visible when citing.
 
 ## Borrowed terms worth tracking (not our coinages)
 - **"Asymptomatic harm" / "intuition rust"** (Passi et al., Microsoft/CHI 2026): AI's benefits are
@@ -299,3 +309,10 @@ not a revision; the value is that the autonomy path acquires a *testable* constr
 ## 🌰 Meaning infrastructure / manufacturing "mattering"
 If contribution-to-others is what UBI and virtual worlds can't supply, what would institutions
 that deliberately produce "mattering" look like? (Design / 🔴.)
+**First measured correlate of "mattering," 2026-W38.** The uOttawa / *JAMA Pediatrics* youth study (N≈40k
+adolescents) puts a **measured number** on "mattering" for the first time in this project: students who use AI
+chatbots for emotional support report a **lower sense of mattering to others** (alongside more loneliness and
+distress). This is the mattering construct — argued so far analogically — appearing as a *measured variable* in a
+large peer-reviewed sample, and moving in the predicted direction (affective-AI use ↔ lower mattering). *Caveat:*
+cross-sectional and correlational (reverse causality live: kids who feel they don't matter may seek the bot), so
+it is a first empirical *foothold* for the mattering framing, not a causal claim about AI eroding mattering.

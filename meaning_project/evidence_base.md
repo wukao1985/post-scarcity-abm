@@ -579,15 +579,20 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   targets — which is the mechanism the "AI companions target the wrong variable" reading predicts. Caught late
   (published ~4 Aug, logged 2026-08-22). VERIFIED 2026-W34 (secondary; primary *Nature* text pending).
   https://www.nature.com/articles/s41562-026-02516-2 · https://arxiv.org/abs/2506.12605
-- **Q3 status (updated 2026-W34):** with Aalto (quasi-experiment), Folk & Dunn (prospective panel),
-  Li et al. (RCT) and now **Zhang et al. (survey + coded transcripts)** converging — plus the
+- **Q3 status (updated 2026-W38 — now five methods):** with Aalto (quasi-experiment), Folk & Dunn (prospective
+  panel), Li et al. (RCT), **Zhang et al. (survey + coded transcripts)**, and now **Vaillancourt/Bonnesen et al.
+  (JAMA Pediatrics, ~40k adolescents, cross-sectional)** all converging — plus the
   empathy-preference result and Emile/OECD mortality — the relatedness sub-question stands at **"consistent
-  four-method evidence: AI cannot supply relatedness, and deployed as a loneliness fix it likely worsens the
+  five-method evidence: AI cannot supply relatedness, and deployed as a loneliness fix it likely worsens the
   deficit."** Zhang et al. adds that the harm is **conditional** — concentrated in the already-isolated who use
   the bot for companionship, absent for productivity/curiosity users — which reconciles this cluster with any
-  population-average null (the average washes out because harm is subgroup-specific). This remains the
-  project's best-evidenced sub-question. (Prior note, 2026-W24: the first three methods established the
-  direction; W34 adds the fourth and the conditionality.)
+  population-average null (the average washes out because harm is subgroup-specific). The JAMA Pediatrics youth
+  study (below) adds a **fifth method in a new population** — the first covering adolescents/children — and the
+  first *measured* correlate of **mattering**; but it is **cross-sectional** and its authors read the association
+  as a **marker of distress, not a cause**, so it *broadens* the cluster (population + the mattering variable)
+  without adding causal identification beyond Li et al.'s RCT. This remains the project's best-evidenced
+  sub-question. (Prior notes: 2026-W24 — first three methods established the direction; W34 — fourth method +
+  conditionality; W38 — fifth method, adolescent population, mattering measured.)
 - **OECD, "Social Connections and Loneliness in OECD Countries"** (OECD, Oct 2025). Cross-national
   survey synthesis; descriptive, not causal. *Shows:* in-person interaction declining across the
   OECD; **young people (16–24) and men** saw the steepest recent deteriorations; loneliness + low
@@ -616,6 +621,37 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   Kouchekinia et al. (job loss → ~2 yrs' cognitive ageing): work supplies both structured contact and
   purpose, so its erosion reaches the same neurological endpoint by two routes. VERIFIED 2026-06
   (secondary). https://www.ucdavis.edu/news/loneliness-drives-cognitive-impairment-and-shorter-life-more-social-isolation-new-study
+- **Affective AI use tracks worse mattering, loneliness and distress in adolescents — the fifth-method /
+  first-youth relatedness datum (added 2026-W38).** Bonnesen, Vaillancourt et al. (University of Ottawa),
+  "Affective Generative Artificial Intelligence Use and Youth Mental Health," *JAMA Pediatrics* (published
+  **31 Aug 2026**; caught late in the W38 broader sweep — missed by the W36/W37 digests). 🟢 **with prominent
+  caveats** (peer-reviewed, top-tier venue, very large **N=39,761** students grades 4–12 across four Ontario
+  school boards, Ontario Health and Peer Relations Study, fielded May-2025→Mar-2026 — **but cross-sectional,
+  correlational, self-report, single-region; the authors explicitly decline a causal claim**; specifics read
+  from the EurekAlert primary release + journal abstract, **not the paywalled full text** — adjusted effect-size
+  CIs and the mattering-scale details not independently verified). *Shows:* **~21%** of students (8,408) reported
+  using AI chatbots for **emotional support or relationship advice**; those students reported **greater
+  loneliness, a lower sense of mattering to others**, and more serious emotional difficulties — **57.7%** met
+  criteria for serious emotional problems vs **29.2%** of non-users, a gap surviving adjustment for demographics,
+  loneliness, mattering and academic AI use as a **26% higher prevalence of clinical-level emotional
+  difficulties**; affective-AI use skewed **older, racialised, and gender-diverse**. Authors' own framing
+  (Vaillancourt): the behaviour is "a sign worth paying attention to" and "a chance to reconnect a struggling
+  student with meaningful human support" — i.e. **a marker of distress, not proof AI causes it**. *Use:* the
+  **fifth independent method** on Q3, the **first to study children/adolescents** (vs adults / university
+  first-years), and the **first in this base to measure "mattering" directly** (the project's own coinage) —
+  finding it *lower* among affective-AI users, a measured correlate for a construct argued so far only
+  analogically. Same *direction* as the whole cluster, now in a new population and with a new variable. *Limits
+  (load-bearing):* **cross-sectional** — it cannot separate "AI use worsens mattering/loneliness" from "lonely /
+  low-mattering kids turn to AI," and the authors lead with the latter (reverse-causality) reading. So it
+  **corroborates and broadens** the cluster (population reach + the mattering measure) **without** the causal
+  identification Li et al.'s RCT supplies; log and cite as 🟢-with-caveats corroboration, not a clean causal
+  pillar. *Naming-collision note:* distinct from the **RAND/McBain US** study of near-identical title ("AI Chatbot
+  Use and Disclosure for Mental Health Among US Adolescents and Young Adults," *JAMA Pediatrics*, online 1 Jun
+  2026, N=1,009 US youth 12–21) — that one is an older US **prevalence/disclosure** survey ("~1 in 5 use chatbots
+  for mental-health advice; most tell no one"), not this Ontario wellbeing-correlate study. Follow-up: read the
+  *JAMA Pediatrics* full text for the adjusted effect sizes and mattering scale before any citation. VERIFIED
+  2026-W38 (secondary; primary full text pending). https://jamanetwork.com/journals/jamapediatrics/fullarticle/2849307 ·
+  https://www.eurekalert.org/news-releases/1142125
 
 ## How AI is used (not whether) governs its meaning effect — the augmentation/automation axis as psychology
 
