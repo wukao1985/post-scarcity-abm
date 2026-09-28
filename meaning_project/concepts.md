@@ -219,6 +219,20 @@ primary PDF unread). The source hedging its own causation is the methodologicall
 texture to hold alongside it: the SIEPR brief (McEntarfer et al., Jul 2026) notes that in *aggregate* US
 unemployment rose slightly *less* among the most-exposed (+0.77pp) than the least-exposed (+0.85pp) — so
 edge-concentration is a *composition* story (who is hired/where), not an aggregate-unemployment story.
+**Causal identification + reframe added 2026-W39 (Chandar & Klein Teeselink, 41 countries).** The concept gets its
+first **causal, international, firm-level** leg: matched AI-adopting vs non-adopting affiliates of the same
+multinationals, plus a **parent-country-adoption instrumental variable**, across 41 countries (1.25B postings, 154M
+records) find the **junior share −1.9pp** at treated affiliates by Mar-2026, significant across economies as
+different as the US, Brazil and Saudi Arabia. This is a methodological upgrade over the descriptive Stanford/ADP
+anchor and the read-from-secondary BOK note — and it **reframes the mechanism**: the junior-share fall is driven by
+**senior employment *rising* +6.7%**, not junior falling (junior −2.5%, **n.s.**), inside firms that *grow* headcount
++3.3% (a scale effect capturing share from non-adopters). So the raised-rung phenomenon is confirmed as a **relative**
+shift — *seniors capture the AI dividend inside growing firms* — rather than absolute entry-level destruction, which
+tightens the honest form of the concept (and coheres with the Ramp/Revelio counter-signal and the BOK "amplifier,
+not culprit" hedge). The *composition* reading (who is hired/where, not aggregate unemployment) is reinforced, now
+causally. **Caveats (kept explicit):** working paper, not peer-reviewed; AI adoption inferred from job ads;
+LinkedIn-visible-multinational sample (authors flag it as unrepresentative, esp. developing countries); the junior-
+employment estimate itself is not significant; primary PDF unread.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
@@ -271,6 +285,18 @@ reach + the mattering variable — but does not deepen it causally:* the study i
 authors read the association as a **marker of distress, not a cause** (the reverse-causality reading: low-mattering
 / lonely kids turn to AI). So the crowd-out's *causal* story still rests on Aalto/Folk & Dunn (prospective) and
 Li et al. (RCT); W38 adds who and where, not whether. Keep the marker-not-cause honesty visible when citing.
+**Longitudinal test of the mechanism, 2026-W39 (Zhang et al., arXiv 2609.07243).** The crowd-out (social-
+displacement) pathway — the coinage's *working causal story* — now has a **prospective** test: a two-wave
+Character.AI panel (~12mo, N=1,182→439; the same Stanford-led team as the *Nature* study) finds sustained companion
+engagement associated with **lower well-being**, and the links are **"mainly explained by lower in-person social
+interaction"** — the displacement mediator, measured over time rather than inferred. So the coinage's causal footing
+upgrades from cross-sectional + RCT to **cross-sectional + RCT + two prospective panels** (Folk & Dunn + this), with
+the *mechanism* (crowd-out via reduced human interaction) now longitudinally supported and the mediator identified.
+**This is a causal-*direction* upgrade, not causal proof:** a panel is not an RCT, and ~63% attrition + self-
+selection into Character.AI leave open that lower-well-being / lower-interaction users are the ones who *sustain*
+use — so it narrows, without closing, the reverse-causality gap Li et al.'s RCT still bridges. Keep that honesty
+when citing: the crowd-out mechanism is now the *best-longitudinally-supported* of the project's causal stories on
+Q3, still short of experimental identification.
 
 ## Borrowed terms worth tracking (not our coinages)
 - **"Asymptomatic harm" / "intuition rust"** (Passi et al., Microsoft/CHI 2026): AI's benefits are

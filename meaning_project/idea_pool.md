@@ -83,6 +83,14 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   users reporting lower **mattering**, more loneliness, and 26%-higher clinical-level difficulties. Turns the piece
   from an adult-and-student story into "the front line is the youngest." *Cross-sectional; authors say marker-not-
   cause — keep the reverse-causality honesty visible.*
+  **Causal spine upgraded 2026-W39 (Zhang et al. longitudinal, arXiv 2609.07243).** A two-wave Character.AI panel
+  (~12mo, N=1,182→439; same Stanford-led team as the *Nature* study) confirms the crowd-out **prospectively** and
+  names the mediator: sustained companion use → lower well-being, **mainly explained by lower in-person interaction**
+  — the social-displacement pathway measured over time, not just inferred. So the piece's spine is now
+  cross-sectional + RCT + *two* prospective panels (Folk & Dunn + this), with the crowd-out mechanism *longitudinally*
+  supported and the mediator identified — a materially stronger causal footing for the "companions deepen the deficit
+  in those who adopt them" claim. (Still a panel not an RCT; ~63% attrition — narrows, doesn't close, reverse
+  causality.)
 - 💡 🟢 **"What gets automated first is what felt most human."** Ranjit/CHI: the agency- and
   happiness-producing tasks are disproportionately AI-exposed. Reframes the risk from "jobs vanish"
   to "the meaningful parts go first" — remedy is task-allocation design, not just retraining.
@@ -255,6 +263,19 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   scaffolding the BOK itself models: the central bank calls AI an *amplifier* of pre-existing shifts, **not
   the culprit** — the source hedging its own causation is a gift for the methodology spine. (🟡:
   read-from-secondary; primary PDF unread.)
+  **Upgraded 2026-W39 (Chandar & Klein Teeselink) — the piece now has a *causal* spine and a sharper, more honest
+  sub-thesis.** The Stanford DEL 41-country study (matched AI-adopting vs non-adopting affiliates of the same
+  multinationals + a parent-country-adoption **instrumental variable**; 1.25B postings / 154M records) is the first
+  *causal, international, firm-level* identification of the junior-share decline (**−1.9pp** at treated affiliates by
+  Mar-2026, significant across the US/Brazil/Saudi Arabia). **But the honest sub-thesis it forces is better than the
+  original:** the fall is **"senior expansion, not junior destruction"** — senior employment **+6.7%**, junior only
+  −2.5% (**n.s.**), inside firms that *grow* headcount +3.3%. So reframe the piece from "AI slammed the entry door
+  shut" to **"AI redistributes the dividend upward — seniors capture the gains inside growing firms, and the *share*
+  left for juniors shrinks."** That is less alarmist, more defensible, and coheres with the Ramp/Revelio counterweight
+  and the BOK "amplifier" hedge — a stronger, calibrated version of the argument. A clean methodology cut sits inside
+  it: *the causal design confirms the compositional shift while the scariest reading (absolute junior job loss) is
+  the one estimate that isn't significant.* (🟢 with caveats: working paper, job-ad-inferred adoption, LinkedIn-
+  multinational sample; primary PDF unread.)
 - 💡 🟢 **"Displacement, not opt-out."** The methodology/honesty sub-point inside CRR: press coverage (WSJ)
   read older AI-exposed workers' exits as *voluntary retirement to dodge AI*; the hard CPS data locate the
   rise in the **involuntary unemployment** channel. A vivid worked example of citing what the data show, not
@@ -362,6 +383,19 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   idea** ("The kids reached for the machines first," above). This is a real population-and-variable novelty, not a
   manufactured quiet-week idea, but it is held at Tier 2 with the cross-sectional / reverse-causality caveat
   explicit (per the honesty norm on quiet weeks, W28/W30/W31/W32/W35/W36/W37).
+
+## W39 note (2026-W39 — a substantive catch-up week; no new standalone idea, two existing ideas upgraded)
+- W39 (Sep 21–27) broke the recent run of quiet weeks — but by *catching up*, not via a fresh in-window event. The
+  widened sweep recovered **two prior-dated items** the lapsed dailies missed, each upgrading an existing idea rather
+  than seeding a new one (kept honest — a strong week that *strengthens* ideas doesn't need a manufactured new one):
+  (1) **Chandar & Klein Teeselink** (Stanford DEL, 41 countries, Sep 20) gives **"The edges fray first"** (W29) its
+  first *causal, international* leg and a sharper honest sub-thesis — **"senior expansion, not junior destruction"**
+  (junior share −1.9pp, but senior +6.7% and junior −2.5% n.s., inside firms growing +3.3%); (2) **Zhang et al.
+  longitudinal** (arXiv 2609.07243, Sep 7) gives **"The relatedness trap"** (W23) a *prospective* confirmation of the
+  crowd-out mechanism (social-displacement pathway, mediator = lower in-person interaction). Both are updated above.
+  A **process correction** also worth carrying: the shutdown-delay risk W37/W38 flagged for the Sep jobs report was
+  **already moot** (a CR passed Sep 1–2, funding through Dec 11) — a small lesson for the methodology pieces on
+  checking whether a flagged risk is still live before carrying it forward.
 
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite

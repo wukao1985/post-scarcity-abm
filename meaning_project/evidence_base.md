@@ -217,6 +217,40 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   reallocation-*across-cohorts* datum (jobs shifted young→old within exposed sectors), a different mechanism
   from "new jobs appear." VERIFIED 2026-W35 (secondary; primary PDF pending).
   https://www.koreajoongangdaily.com/business/94-of-job-losses-among-young-people-over-past-4-years-were-in-aiexposed-industries-bok-says/12830646
+- **Chandar & Klein Teeselink, "How Does AI Change Labor Demand? Evidence from 41 Countries" — the first *causal,
+  international, firm-level* leg under the junior-share / experience-creep thread (added 2026-W39).** Bharat Chandar
+  (a co-author of the Stanford/ADP "Canaries in the Coal Mine?" young-cohort anchor above) & Bouke Klein Teeselink,
+  Stanford Digital Economy Lab; SSRN #7498743 / Stanford DEL working paper, **posted 20 Sep 2026** (author writeup
+  21 Sep; caught in the W39 broader sweep — missed by the W38 digest, synthesised the same weekend). 🟢 **with
+  caveats** (huge scale — **1.25 billion job postings + 154 million employment records across 41 countries**;
+  **strong quasi-experimental identification** — AI-adopting affiliates of multinationals matched to non-adopting
+  affiliates on pre-2022 country/industry/size/AI-exposure/junior-share, *plus* an **instrumental variable** using
+  the *parent* company's home-country AI-adoption rate as exogenous variation on subsidiary adoption; **but** a
+  **working paper, not peer-reviewed**; AI adoption is **inferred from job ads** mentioning generative-AI use; sample
+  is **LinkedIn-visible, digitally-attached multinationals** — authors flag it as potentially unrepresentative of
+  broader labour markets, especially in developing countries, and that the matching "is not foolproof"; **primary
+  PDF not parsed** — figures from the SSRN listing + the author's writeup). *Shows:* the **junior share of employment
+  at treated (AI-adopting) affiliates falls −1.9pp vs control by March 2026**, **widespread across a majority of the
+  41 countries** (significant in the **US, Brazil, Saudi Arabia**). **The load-bearing nuance:** the fall is driven
+  by **senior employment *rising* +6.7%**, *not* junior employment falling — junior employment is **−2.5%, not
+  statistically significant** — inside adopting firms that **grow total headcount +3.3%** (a scale/productivity
+  effect, capturing share from non-adopters); seniors shift *toward* AI-exposed jobs (+0.9pp), juniors *away*
+  (−0.6pp, n.s.). Author's own framing: **"senior expansion, not junior destruction"** — the story is *who captures
+  the AI dividend* (seniors), not entry-level annihilation. *Use:* the **causal + international** upgrade to the
+  experience-creep / edges-fray thread — a real methodological advance over the descriptive Stanford/ADP anchor and
+  the read-from-secondary BOK note (matched affiliates + a parent-country IV is a cleaner exogenous lever than prior
+  designs, and 41-country replication answers the US-only worry). It **strengthens** the thread *and* **sharpens** it
+  in the project's honest direction: the entry-rung problem is **relative** (seniors capture the gains inside
+  *growing* firms), **not** absolute "the door slammed shut on juniors" — which coheres with the Ramp/Revelio
+  firm-level counterweight and the BOK "amplifier, not culprit" hedge, and lowers the temperature on the scare
+  reading while raising confidence in the compositional shift. *Limits (state honestly):* working paper; job-ad-
+  inferred adoption; multinational/LinkedIn sample; and the *meaning* interpretation (a fraying developmental arc
+  for those who can't get *on* the ladder) is the project's inference, not the paper's claim — the paper is about
+  labour-demand *composition*, not wellbeing; the junior-employment estimate is itself not significant. Follow-up:
+  parse the primary PDF for IV first-stage strength, the country-by-country breakdown, and the junior-employment CI
+  before any citation. VERIFIED 2026-W39 (SSRN listing + author writeup; primary PDF pending).
+  https://digitaleconomy.stanford.edu/publication/how-does-ai-change-labor-demand/ ·
+  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7498743
 - **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
   Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
   Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-
@@ -591,8 +625,16 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   first *measured* correlate of **mattering**; but it is **cross-sectional** and its authors read the association
   as a **marker of distress, not a cause**, so it *broadens* the cluster (population + the mattering variable)
   without adding causal identification beyond Li et al.'s RCT. This remains the project's best-evidenced
-  sub-question. (Prior notes: 2026-W24 — first three methods established the direction; W34 — fourth method +
-  conditionality; W38 — fifth method, adolescent population, mattering measured.)
+  sub-question. **Update (2026-W39): the crowd-out *mechanism* now has a longitudinal test.** Zhang et al.'s two-wave
+  Character.AI panel (arXiv 2609.07243, ~12mo, N=1,182→439; same Stanford-led team as the *Nature* study) finds
+  sustained companion engagement prospectively associated with lower well-being, **mainly explained by lower
+  in-person social interaction** — the social-displacement / crowd-out pathway, measured prospectively with the
+  mediator identified. So the cluster now spans **cross-sectional (Zhang *Nature*, JAMA Pediatrics) + RCT (Li et al.)
+  + *two* prospective panels (Folk & Dunn, Zhang longitudinal)**, all one direction; the causal-direction gap is
+  *narrowed* (a second longitudinal design, mediator identified) though not closed (panels aren't RCTs; ~63%
+  attrition). (Prior notes: 2026-W24 — first three methods established the direction; W34 — fourth method +
+  conditionality; W38 — fifth method, adolescent population, mattering measured; W39 — longitudinal test of the
+  crowd-out mechanism.)
 - **OECD, "Social Connections and Loneliness in OECD Countries"** (OECD, Oct 2025). Cross-national
   survey synthesis; descriptive, not causal. *Shows:* in-person interaction declining across the
   OECD; **young people (16–24) and men** saw the steepest recent deteriorations; loneliness + low
@@ -652,6 +694,33 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   *JAMA Pediatrics* full text for the adjusted effect sizes and mattering scale before any citation. VERIFIED
   2026-W38 (secondary; primary full text pending). https://jamanetwork.com/journals/jamapediatrics/fullarticle/2849307 ·
   https://www.eurekalert.org/news-releases/1142125
+- **Sustained AI companionship predicts lower well-being *through lower human interaction* — the longitudinal test of
+  the crowd-out mechanism (added 2026-W39).** Zhang, Zhao, Wang, Anselmetti, Hancock, Kraut & Yang (the same
+  Stanford-led team as the anchored Zhang et al. *Nature Human Behaviour* Character.AI study above), "Living with AI
+  Companions: Sustained AI Companionship Predicts Lower Well-Being Through Lower Human Interaction," arXiv:2609.07243
+  (**submitted 7 Sep 2026**; caught in the W39 broader sweep — missed by the W37/W38 digests). 🟢 **with caveats /
+  a strengthening of the crowd-out cluster, not a wholly new leg** (a **two-wave *longitudinal* panel** — the design
+  the cross-sectional cluster members lacked; **but correlational** — a panel is not an RCT, so reverse causality is
+  *reduced, not eliminated*; **heavy attrition**, 1,182 baseline → **439** follow-up (~63% dropout — a real threat to
+  representativeness); self-report; **single platform** (Character.AI); **preprint**; read from the arXiv abstract,
+  full text not parsed). *Shows:* over a **mean 12-month** follow-up, interaction intensity, companionship use and
+  self-disclosure **persist** (baseline intensity predicts subsequent intensity/companionship/disclosure), and
+  **sustained social engagement across these dimensions is consistently associated with *lower* well-being** — with
+  the links **"mainly explained by lower in-person social interaction,"** i.e. the study supports the **social-
+  displacement (crowd-out) pathway** over a pure "sustained-engagement" pathway. Authors' design implication: build
+  "AI companions that support human social relationships without displacing them." *Use:* the **longitudinal
+  confirmation of the crowd-out *mechanism*** the project's "relatedness crowd-out" coinage rested on as a *working
+  causal story* — now shown **prospectively**, by the *same group* whose cross-sectional *Nature* study the project
+  anchors, and with the mediator (**lower in-person interaction**) directly measured rather than inferred. Answers
+  the W38 "watch for a *longitudinal* study" gap on the **adult-companion** side (the *youth*-longitudinal gap from
+  JAMA Pediatrics remains open). A **second prospective-panel leg** alongside Folk & Dunn (a distinct 4-wave,
+  4-country, general-AI-companion panel) — two independent longitudinal designs, same direction, now with the
+  *displacement mediator* identified. *Limits (load-bearing, and why it's a strengthening not a clean causal
+  pillar):* ~63% attrition + self-selection into Character.AI mean the panel cannot fully rule out that lower-well-
+  being / lower-interaction users are the ones who *sustain* companion use; it **narrows but does not close** the
+  reverse-causality gap that Li et al.'s RCT is still needed to bridge. Follow-up: read the full text for the panel
+  model, attrition-weighting, and the well-being instrument. VERIFIED 2026-W39 (arXiv abstract; primary full text
+  pending). https://arxiv.org/abs/2609.07243
 
 ## How AI is used (not whether) governs its meaning effect — the augmentation/automation axis as psychology
 
