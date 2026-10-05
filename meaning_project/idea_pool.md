@@ -397,6 +397,35 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   **already moot** (a CR passed Sep 1–2, funding through Dec 11) — a small lesson for the methodology pieces on
   checking whether a flagged risk is still live before carrying it forward.
 
+## Tier 2 — added 2026-W40
+
+- 💡 🟢/🟡 **"The muscle is cheap to automate and expensive to replace."** Anthropic's robot-exposure study
+  (Legate-Yang & Massenkoff, Sep 30 2026) finds robots can *technically* do **74% of physical tasks** (34% of
+  working hours) yet are **cost-competitive with human labour for only 0.3% of work**, ~**40 years** from 10% at
+  historical price-decline rates. The vivid, under-covered angle: **capability is not displacement** — on the
+  *physical* front the binding constraint is *cost*, not ability, and it falls slowly, which is the **mirror image**
+  of the *cognitive* front, where genAI capability is already reorganising labour this cycle (the information-sector
+  decline, the junior-share shift). So the piece reframes the automation-anxiety debate: the robots that dominate the
+  imagination are decades away on economics, while the quieter cognitive reorganisation is the one happening now —
+  a clean empirical peg for the "what's being automated / is there a next rung" family and a complement to "The
+  retreat that ran out of high ground." *Honesty spine:* provider-authored; a Claude-scored O*NET exposure index
+  validated against web-searched deployments (not field measurement); "cost-competitive" is a modelled threshold
+  sensitive to the price assumption — it is a capability/cost *projection*, not realised displacement or a meaning
+  outcome. Tier 2, provider-and-projection caveat explicit.
+
+## W40 note (2026-W40 — the pre-committed macro test landed; no new standalone idea from the macro side)
+- W40 (Sep 28 – Oct 4) carried the quarter's one pre-committed hard datum — the **September jobs report** (BLS, Oct 2:
+  **+29K**, a big miss; **July −10K** and **August +133K** on revision, −60K combined; U 4.2%; health-care
+  decelerating; **information flat, financial −7K, no AI mention**). It **strengthens two existing methodology angles**
+  rather than seeding a new one: **"Was it ever AI?"** (W23) and **"Every instrument, same shape"** (W27) gain their
+  **sharpest worked example yet** — *the window's first genuinely weak, revision-*confirmed* payroll print, which the
+  careless read will call "AI is finally taking jobs" while the careful read locates the weakness in health care and
+  the broad economy, with the tracked high-exposure sectors flat/steady and no BLS attribution.* W32 taught "don't
+  over-read a number that reverses"; W40 teaches the harder lesson — **"don't AI-attribute a number that stays weak,
+  if the composition points elsewhere"** (held with the honest corollary that a weak market can *hide* an AI effect).
+  The week's one genuinely new idea is the Anthropic robots angle above (Tier 2) — a real physical/cognitive asymmetry,
+  not a manufactured quiet-week idea, held with its provider-and-projection caveat.
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp

@@ -382,6 +382,25 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   the Q2 real-comp drop is largely an **inflation bite** (August CPI +0.4% m/m, gasoline +3.9%) — **neither is
   AI-identified**, and pinning either on AI is exactly the over-attribution the project guards against. Held as
   🟡/attribution-contested texture, **not** an AI-meaning anchor. https://www.bls.gov/news.release/prod2.nr0.htm)*
+  *(BLS **September 2026**, added W40 — the pre-committed inflection test, read directly from empsit.nr0.htm; the
+  window's **first non-artifact weak print**:* **+29K payrolls** — a large miss (~84K consensus) — with **July revised
+  down 31K from +21K to −10,000** (an outright loss) and **August revised down 29K from +162K to +133,000** (combined
+  **−60K**), **AHE +0.1% m/m / +3.0% y/y** (wage growth cooling), **U 4.2%** ("remained at 4.2 percent"; the project
+  last logged 4.1% for August in W36 — a 0.1pp uptick or an August revision, flagged, unresolved), **participation
+  61.8% / emp-pop 59.2% "changed little"** (so the household side did not corroborate a collapse — a cooling, not a
+  cliff). **Composition:** the weakness is **not** in the tracked high-exposure sectors — **information "changed
+  little"**, **financial activities −7K** (continuing without accelerating) — but in a **health-care deceleration**
+  (**+17K** vs a **+33K** prior-12-month average; ambulatory +13K, hospitals +12K, nursing/residential −9K) and
+  broad-based softness. **No AI attribution / no AI mention in the release.** *Use:* unlike W32's −23K (which reversed
+  on revision), this weak headline is **reinforced by revisions**, so it marks a **genuine cooling of the US labour
+  market** — the first in the tracking window. But by the project's composition-over-headline discipline the cooling
+  is **broad and health-care-led, NOT AI-shaped** (information flat, financial not accelerating, no attribution). So
+  the macro-null does not break; it **transforms** — from "calm aggregate" to **"cooling aggregate whose cooling is
+  not AI-attributable (this month)."** **Load-bearing caveat:** a single preliminary print (two revisions pending),
+  and a *weak* aggregate is exactly where an AI-driven hiring freeze would be indistinguishable from a macro-driven
+  one — so "not AI-shaped" is a statement about where the losses landed, not an all-clear. Also closes the W37/W38
+  shutdown-delay data-cadence watch: the report **shipped on schedule (Oct 2)**, confirming W39's correction.
+  https://www.bls.gov/news.release/empsit.nr0.htm)*
   *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
   headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
   quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
@@ -525,6 +544,27 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   preparedness dimension — workers appear **not yet to have internalised the risk their employers
   anticipate**; if the employer forecast is closer to right, displacement arrives unprepared. Pairs with
   "still waters, rapid currents." VERIFIED 2026-06. https://www.nber.org/papers/w34836
+- **Anthropic, "Can we predict the jobs robots will do?" — the physical-automation limb (capability ≠ displacement;
+  added 2026-W40).** Russell Legate-Yang & Maxim Massenkoff (Anthropic; Massenkoff co-authored the Anthropic
+  observed-exposure labour measure above); published **30 Sep 2026** (read from the Anthropic research page).
+  🟢 **with a prominent provider-and-method caveat** (a *robot-exposure index* built by having **Claude** score every
+  O*NET task — ~900 occupations, ~19,000 task descriptions — on physical/cognitive/interpersonal demands and then
+  web-search-verify whether a real robot can do it, with cited deployments/sales/demos required; so it is a
+  **capability-and-cost projection**, not a measured labour-market outcome, and the authors are the AI provider).
+  *Shows:* robots can **technically perform 74% of physical tasks** (**34% of working hours**) but are
+  **cost-competitive with human labour for only 0.3% of work** — a stark capability/economics gap stated directly
+  ("while robots can do most physical work tasks today, they are much more expensive than human labor"), with a
+  projection of **~40 years to reach 10% cost-competitive** at historical price-decline rates. Exposure tiers by
+  share of work time: **E0 (no robot) 12%; E1 (purpose-built, e.g. factory line) 23%; E2 (structured workplace, e.g.
+  warehouse) 10%; E3 (unstructured, e.g. city road) 1%.** *Use:* the first *physical-robot* exposure datum in this
+  base, and a watchlist anchor on the **"what is being automated" breakpoint** — the *muscle* limb is **capability-rich
+  but economically inert** (cost-bound, falling slowly), the **mirror** of the *cognitive* limb the project tracks,
+  where genAI capability is already translating into compositional labour effects this cycle. The carry: **near-term
+  labour and meaning pressure is cognitive, not physical.** *Limits (state honestly):* provider-authored;
+  Claude-scored exposure validated against web-searched deployments, not independent field measurement;
+  "cost-competitive" is a modelled threshold sensitive to the price-decline assumption; about technical+economic
+  feasibility, not realised displacement or any meaning outcome. VERIFIED 2026-W40 (Anthropic research page).
+  https://www.anthropic.com/research/what-work-can-robots-do
 
 ## Deaths of despair (the 🟢 floor for the "how bad" chapter)
 

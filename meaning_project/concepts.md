@@ -59,6 +59,19 @@ post-1947 low** (real comp −3.3%): the decoupling's "calm aggregate ≠ no sub
 possible *price/share* dimension (output shifting labour→capital) alongside the composition one — **but** kept as a
 watch, not a claim: labour-share decline is a decades-long structural trend and the real-comp drop is an inflation
 bite, **neither AI-identified**. No rewrite of the concept — a quiet week that adds a caveated texture line, not a study.
+**Held through the window's first *weak* aggregate — and it is still not AI-shaped, 2026-W40.** The September 2026 jobs
+report (BLS, Oct 2) — the pre-committed inflection test — delivered **+29K payrolls (a big miss), with July revised to
+an outright −10K and August cut to +133K** (−60K combined), the **first non-artifact weak print in the tracking
+window** (W32's −23K *reversed* on revision; this one is *reinforced* by revisions). So for the first time the
+aggregate is not merely calm but **cooling.** Yet the composition the concept lives on says the cooling is **not
+AI-shaped**: **information "changed little," financial −7K (not accelerating),** the softness in a **health-care
+deceleration** (+17K vs a +33K average) and the broad economy, with **no BLS AI attribution.** So the decoupling has
+now been tested through a *calm-bad* print (W32, reversed), a *strong* print (W36), and a **genuinely weak** one (W40)
+— and its footing widens from "calm aggregate ≠ psychological calm" to include **"even a *cooling* aggregate isn't
+AI-attributable (this month)."** **Honest corollary (kept explicit):** a weak labour market is precisely where an
+AI-driven hiring freeze would be *indistinguishable* from a macro-driven one, so "not AI-shaped" is a statement about
+*where the losses landed*, not an all-clear — this strengthens the concept's empirical footing without licensing a
+claim that AI is absent. No rewrite — a substantive single-datum extension.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
