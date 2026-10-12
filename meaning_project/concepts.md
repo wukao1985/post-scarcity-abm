@@ -310,6 +310,19 @@ selection into Character.AI leave open that lower-well-being / lower-interaction
 use — so it narrows, without closing, the reverse-causality gap Li et al.'s RCT still bridges. Keep that honesty
 when citing: the crowd-out mechanism is now the *best-longitudinally-supported* of the project's causal stories on
 Q3, still short of experimental identification.
+**Survives its strongest counter-evidence, 2026-W41 (De Freitas et al., "AI Companions Reduce Loneliness," JCR).** The
+acute-relief / durable-harm *time split* this coinage has implied (via Zhang's "social snack") now has a **dedicated
+experimental anchor on the relief side** — and it is the very paper usually cited *against* the crowd-out reading. Six
+studies find a 15-minute AI-companion chat cuts loneliness **on par with talking to a real person**, driven by feeling
+*heard*; but Study 4's one-week daily design finds the relief **recurs each day yet is explicitly non-cumulative** (the
+authors: loneliness is "akin to hunger… satiated, but short-lived"; they decline the substitution claim). So, read
+carefully, the paper **confirms** the coinage rather than challenging it: AI companionship delivers genuine *in-the-moment*
+relief and **does not** lower the *baseline* trajectory — which is exactly what the longitudinal panels (Folk & Dunn;
+Zhang longitudinal) and the subgroup finding (Zhang *Nature*) measure. The two literatures are not in tension; they
+measure different **time horizons**. This is a **robustness result** for the concept (it now has both limbs anchored —
+acute relief *and* durable harm — and survives its best counter-evidence), not a mechanism change; no rewrite. *(Caveat:
+prior-dated 2024/2025–26 paper, not a W41 event; full JCR text unread — effect sizes and any baseline-loneliness
+moderation unverified, so the "lonelier users benefit most" claim is held as unconfirmed.)*
 
 ## Borrowed terms worth tracking (not our coinages)
 - **"Asymptomatic harm" / "intuition rust"** (Passi et al., Microsoft/CHI 2026): AI's benefits are

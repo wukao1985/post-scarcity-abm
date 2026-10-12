@@ -426,6 +426,25 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   The week's one genuinely new idea is the Anthropic robots angle above (Tier 2) — a real physical/cognitive asymmetry,
   not a manufactured quiet-week idea, held with its provider-and-projection caveat.
 
+## W41 note (2026-W41 — a quiet week; no new idea, one methodology sharpening on the relatedness cluster)
+- W41 (Oct 5–11) produced **no new in-niche primary research dated to the window** — no new jobs print (October report
+  due early November), no new Economic Index, no new on-axis UBI result, no new causal AI-labour paper. No new standalone
+  idea rose (logged honestly, per W28/W30/W31/W32/W35/W36/W37/W38). The week's one genuine payoff was a **primary read of
+  the headline counter-evidence** to the project's best-evidenced cluster — **De Freitas, Oğuz-Uğuralp, Uğuralp & Puntoni,
+  "AI Companions Reduce Loneliness"** (JCR; Wharton WP 24-078, arXiv 2407.19096) — which **sharpens two existing ideas**
+  rather than seeding one. **"The relatedness trap"** (W23) and **"The wrong variable"** (W25) both gain a clean
+  **methodology cut**: *the paper whose title ("AI Companions Reduce Loneliness") reads as the clean rebuttal is, read
+  carefully, a confirmation* — it measures **acute, repeatable, explicitly non-cumulative** in-the-moment relief (15-min
+  chat ≈ a real person; Study 4's one-week relief "weren't cumulative"; the authors' analogy is *hunger*), not the durable
+  trajectory the cluster is about (Folk & Dunn; Zhang longitudinal; Zhang *Nature* subgroup). So both pieces now carry a
+  ready answer to the obvious "but a JCR paper says companions *reduce* loneliness" objection: *yes — in the moment, and
+  not over time; the relief limb and the harm limb are different time horizons.* It is a vivid worked example of the
+  project's signature move (separate what a study measures from what its headline says), and it gives the "social snack"
+  frame its experimental relief anchor. Weave in when either piece is drafted; an example/answer, not a standalone, so not
+  promoted. *(Honesty note: the paper is prior-dated — a 2024 working paper / 2025–26 JCR article the sweep surfaced
+  recirculating, not a W41 event; and the oft-repeated "lonelier users benefit most" claim could not be verified from the
+  primary summaries and is dropped as unconfirmed pending the full text.)*
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp

@@ -672,9 +672,17 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   mediator identified. So the cluster now spans **cross-sectional (Zhang *Nature*, JAMA Pediatrics) + RCT (Li et al.)
   + *two* prospective panels (Folk & Dunn, Zhang longitudinal)**, all one direction; the causal-direction gap is
   *narrowed* (a second longitudinal design, mediator identified) though not closed (panels aren't RCTs; ~63%
-  attrition). (Prior notes: 2026-W24 — first three methods established the direction; W34 — fourth method +
+  attrition). **Update (2026-W41): the cluster now survives its strongest counter-evidence.** De Freitas et al.'s "AI
+  Companions Reduce Loneliness" (JCR; the paper most often cited *against* this reading) turns out, on a primary read,
+  to measure an **acute, repeatable, explicitly non-cumulative** relief (15-min chat ≈ a real person; Study 4's one-week
+  relief "weren't cumulative"; the authors' analogy is *hunger*) — i.e. it **confirms the short-term-relief limb**
+  (Zhang's "social snack") and says nothing about the **durable** trajectory the panels track. So the apparent conflict
+  dissolves once time horizons are separated: *AI companions relieve loneliness in the moment and do not reduce it over
+  time.* The sub-question's honest standing is thereby strengthened, not weakened — both limbs are now anchored (acute
+  relief: De Freitas; durable harm: Folk & Dunn / Zhang longitudinal / Zhang *Nature* subgroup). (Prior notes: 2026-W24
+  — first three methods established the direction; W34 — fourth method +
   conditionality; W38 — fifth method, adolescent population, mattering measured; W39 — longitudinal test of the
-  crowd-out mechanism.)
+  crowd-out mechanism; W41 — the acute-relief counterweight read carefully, cluster survives it.)
 - **OECD, "Social Connections and Loneliness in OECD Countries"** (OECD, Oct 2025). Cross-national
   survey synthesis; descriptive, not causal. *Shows:* in-person interaction declining across the
   OECD; **young people (16–24) and men** saw the steepest recent deteriorations; loneliness + low
@@ -761,6 +769,45 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   reverse-causality gap that Li et al.'s RCT is still needed to bridge. Follow-up: read the full text for the panel
   model, attrition-weighting, and the well-being instrument. VERIFIED 2026-W39 (arXiv abstract; primary full text
   pending). https://arxiv.org/abs/2609.07243
+- **AI companions relieve loneliness *in the moment* but not over time — the acute-relief counterweight that, read
+  carefully, *confirms* the crowd-out cluster (added 2026-W41).** De Freitas, Oğuz-Uğuralp, Uğuralp & Puntoni, "AI
+  Companions Reduce Loneliness" (Harvard Business School / Wharton; Wharton School WP 24-078, arXiv:2407.19096,
+  submitted **9 Jul 2024**; published in the *Journal of Consumer Research* 2025–26 — HBS summary says "published… in
+  June," citation "(forthcoming)"). **Prior-dated; surfaced recirculating in the W41 sweep as the headline-level
+  *counter-evidence* to the relatedness crowd-out thread — logged as a standing counterweight, NOT a W41 event.** 🟢
+  **with caveats** (peer-reviewed top venue; **six studies** — Studies 1–2 LLM-coded real conversations + app reviews
+  (field/observational), Study 3 a five-arm controlled experiment (~300 online participants: human / chatbot /
+  chatbot-posing-as-human / YouTube / nothing), Study 4 a **one-week daily longitudinal** arm (15 min/day), Study 5 the
+  "feeling-heard" mechanism, Study 6 a robustness check; **but** the key effect is **acute / in-the-moment**, not a
+  durable baseline reduction; **no numeric effect sizes or most N's available** from the sources read; **full JCR text
+  not parsed** — verified from the arXiv abstract + HBS Working Knowledge primary summary). *Shows:* a **15-minute**
+  interaction with an AI companion reduces loneliness **on par with interacting with another person** (and it "didn't
+  matter whether people knew they were talking to a bot"), **more than** watching YouTube (which didn't help) and better
+  than doing nothing (which *worsened* loneliness); consumers **underestimate** how much companions help; the reduction
+  tracks **whether users feel heard** (a caring/empathetic bot beat a matter-of-fact "assistant" bot). **The
+  load-bearing nuance (and why this is NOT a rebuttal of the cluster):** Study 4's one-week design found relief **recurs
+  reliably each day but is explicitly non-cumulative** — HBS, verbatim: "Each time, people reported feeling temporarily
+  less lonely after the interaction. However, the results weren't cumulative: people did not get even more alleviation
+  the next day or the day after that." De Freitas's own framing: loneliness relief is **"akin to hunger, where you can
+  be satiated, but it's short-lived,"** and he speculates the non-cumulation is *because* "you still know this is not a
+  real person you can rely on." The authors **decline the substitution claim** ("we don't think that it should be used
+  as a substitute for human companionship or therapy… but this is some good news"). *Use (the reconciliation is the
+  point):* the **acute-relief anchor** that *bounds the relatedness cluster from below* — it establishes experimentally
+  that AI companionship **does** deliver genuine in-the-moment relief (which the crowd-out reading has always granted,
+  via Zhang's **"social snack"**), while leaving fully intact the project's actual claim, about the **durable**
+  trajectory tracked by the ~12-month panels (Folk & Dunn; Zhang longitudinal, mediated by lower in-person interaction)
+  and the already-isolated subgroup (Zhang *Nature*). The two literatures are **not in tension** — they measure
+  **different time horizons**: De Freitas measures *acute, repeatable, non-cumulative* relief over a week; the panels
+  measure *baseline wellbeing trajectory* over a year. So the careful read is **"AI companions relieve loneliness in the
+  moment and do not reduce it over time"** — the project's position, now with the relief limb experimentally anchored,
+  and a worked example that the cluster **survives its strongest-looking counter-evidence**. *Limits (state honestly):*
+  prior-dated (not a W41 datum); full JCR text unread (effect sizes, most N's, and any moderation-by-baseline-loneliness
+  result unverified — the widely-repeated **"lonelier users benefit most"** claim is **DROPPED as unconfirmed** pending
+  the full text); acute lab/field relief, not a long-run outcome; the companion was a 15-minute interaction, not
+  habitual adoption. Follow-up: read the JCR full text for effect sizes, the Study-4 model, and any baseline-loneliness
+  moderation before any citation. VERIFIED 2026-W41 (arXiv abstract + HBS Working Knowledge summary; primary JCR text
+  pending). https://arxiv.org/abs/2407.19096 ·
+  https://www.library.hbs.edu/working-knowledge/feeling-lonely-an-attentive-listener-is-an-ai-prompt-away
 
 ## How AI is used (not whether) governs its meaning effect — the augmentation/automation axis as psychology
 
