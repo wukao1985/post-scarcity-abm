@@ -251,6 +251,55 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   before any citation. VERIFIED 2026-W39 (SSRN listing + author writeup; primary PDF pending).
   https://digitaleconomy.stanford.edu/publication/how-does-ai-change-labor-demand/ ·
   https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7498743
+- **Tucker, "You're (not) Hired" + Orr, Tucker & Warren, "Graduating into Disruption" — the *US Census administrative*
+  leg of the experience-creep / edges-fray thread, and an honest "absolute vs relative" complication (caught
+  2026-W42).** Lee C. Tucker (US Census Bureau), "You're (not) Hired: Artificial Intelligence and Early Career Hiring in
+  the Quarterly Workforce Indicators," CES Working Paper **26-27**, **April 2026** (page rev. May 7 2026); and Cody Orr,
+  Lee C. Tucker & Lawrence Warren (US Census Bureau), "Graduating into Disruption: Labor Market Outcomes for AI-Exposed
+  College Majors," CES Working Paper **26-56**, **September 2026**. **Both prior-dated; caught recirculating in the W42
+  sweep** (CNBC Oct 11; the aleximas labour review; Fortune Sep 17) — grep-confirmed never previously logged here. 🟢
+  **with caveats** (Census administrative micro-data — the **Quarterly Workforce Indicators** / **LEHD** matched
+  employer-employee records, covering nearly all US private-sector employment, a materially broader frame than ADP
+  clients (Stanford) or LinkedIn-visible multinationals (Chandar); strong quasi-experimental designs — event studies
+  around the ChatGPT introduction, a triple-difference of early-career vs older workers across exposed/less-exposed
+  industries (Tucker), and a college-major exposure design at the clean point of labour-market entry (Orr et al.);
+  **but** both are **CES working papers, not peer-reviewed** — the series carries its own no-endorsement disclaimer; AI
+  *exposure* is an occupation/industry/major-level construct, not measured deployment; correlational/quasi-experimental,
+  not a clean natural experiment; the QWI figures read from the Census CES landing page, the Graduating-into-Disruption
+  figures from the primary PDF abstract, the full PDFs not parsed). *Shows:* **(Tucker/QWI)** early-career **hires fell
+  immediately and sharply after ChatGPT** in the industry-state cells most exposed to AI, and the decline persisted;
+  **regression-adjusted employment of 22–24-year-olds in the most AI-exposed quintile fell ~12% over the 10 quarters**
+  after ChatGPT, less-exposed industries stable (the hiring *rate* "largely recovered by early 2025," which Tucker
+  attributes to a *smaller employment base*, not a rebound); earnings growth slowed slightly relative to less-exposed
+  industries. **(Orr/Tucker/Warren/LEHD)** post-graduation **employment, earnings and job-switching among the most
+  AI-exposed college majors began to diverge immediately after ChatGPT in late 2022**; the most AI-exposed **decile of
+  majors** saw **initial-employment likelihood decline 5 percentage points** and **full-quarter initial earnings decline
+  13%** — an earnings loss the authors call **"comparable in magnitude to the earnings losses associated with graduating
+  into a large recession"** — with **roughly half** of the earnings decline from a **shift into lower-wage sectors such
+  as restaurants and retail** and the rest from lower earnings *within* sectors; effects **attenuate with time from
+  entry but remain substantial** for the most-exposed majors. *Use:* the **third independent US data source** confirming
+  the young-cohort signal (after Stanford/ADP payroll and Chandar's international firm-level study) and the first on
+  **near-universal Census administrative micro-data** — so the experience-creep / edges-fray thread is no longer exposed
+  to the single-sample worry that dogs ADP (one payroll processor) or Chandar (LinkedIn multinationals), and the
+  Graduating-into-Disruption outcome (AI-exposed-major graduates entering into **restaurants and retail**, a
+  recession-scale earnings hit) is the most *meaning-legible* labour datum in this base — the broken developmental arc
+  the "raised rung" concept predicts, measured at the clean entry margin. **The load-bearing complication (and why this
+  is not just a confirmation):** these US administrative papers find an **absolute, significant** young-worker decline
+  (−12% QWI; −5pp / −13% LEHD-by-major), whereas Chandar & Klein Teeselink (W39, international firm-level) found junior
+  employment only **−2.5% (n.s.)**, driving the "senior expansion, not junior destruction" reading. The two are
+  reconcilable as a **unit/geography** difference (within-firm composition across 41 countries vs US cohort-level entry),
+  but they are not the same claim — so the honest update is that **the W39 "relative-not-absolute" headline is a
+  firm-level, international reading; at the US entry-cohort level the effect is absolute and large.** *Limits (state
+  honestly, load-bearing):* working papers, not peer-reviewed; exposure (not deployment) constructs; and the
+  **attribution stays contested** — Tucker locates young-worker slippage from the **COVID onset**, flags **remote work**
+  and **rising educational attainment** as possible explanations, finds **monetary policy explains at most ~a quarter**
+  of the relative decline, and even suggests firms paused junior hiring out of **uncertainty about** AI rather than
+  demonstrable **use** of it (so, as with the NY Fed remote-work confound below, the AI-attribution is weaker than the
+  headline). Strengthens the *phenomenon* and its *US generality* without resolving the AI-vs-confounder dispute.
+  Follow-up: parse both full PDFs for the triple-difference coefficients, the major-exposure CIs, and the monetary-policy
+  decomposition before any citation. VERIFIED 2026-W42 (Census CES landing page + primary PDF abstract; full PDFs
+  pending). https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html ·
+  https://www2.census.gov/library/working-papers/2026/adrm/ces/CES-WP-26-56.pdf
 - **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
   Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
   Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-

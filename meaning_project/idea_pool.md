@@ -276,6 +276,23 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   it: *the causal design confirms the compositional shift while the scariest reading (absolute junior job loss) is
   the one estimate that isn't significant.* (🟢 with caveats: working paper, job-ad-inferred adoption, LinkedIn-
   multinational sample; primary PDF unread.)
+  **US administrative leg + honest complication added 2026-W42 (Tucker QWI + Orr/Tucker/Warren LEHD, US Census).** Two
+  previously-unlogged Census working papers give the piece its **third US data source** (near-universal administrative
+  coverage, independent of ADP and of Chandar's LinkedIn multinationals): **Tucker** (QWI, Apr 2026) finds 22–24
+  employment **−12%** over 10 quarters in the most-exposed quintile; **Orr/Tucker/Warren** ("Graduating into
+  Disruption," LEHD, Sep 2026) find graduates in the most AI-exposed **decile of majors** **−5pp** initial-employment
+  likelihood and **−13%** initial earnings — a hit the authors call *"comparable to graduating into a large recession,"*
+  half of it from exposed grads **shifting into restaurants and retail.** That last is the piece's most vivid, concrete
+  image yet (people who trained for white-collar fields entering into food service). **But it also forces a sharper,
+  more honest spine:** the W39 "senior expansion, not junior destruction" sub-thesis is a *firm-level, international*
+  reading (Chandar's junior estimate was −2.5%, n.s.), whereas the US administrative micro-data show an **absolute,
+  large, significant** entry-cohort decline — so the honest line is *"the phenomenon triangulates across three US
+  sources and 41 countries; which shape you see (absolute destruction vs relative share-shift) depends on the unit of
+  analysis."* Triangulated and honest-about-disagreement is a stronger brand than a single clean headline. Keep Tucker's
+  own attribution hedges visible (COVID-onset pre-trends, remote work, educational attainment, monetary policy ≤¼;
+  "uncertainty about AI" vs "use of AI") — they also feed **"Was it ever AI?"** (W23) as a textbook worked example of an
+  author naming the confounders that keep a strong young-cohort effect's AI-attribution open. (🟢 with caveats: CES
+  working papers, not peer-reviewed; exposure not deployment; full PDFs unread.)
 - 💡 🟢 **"Displacement, not opt-out."** The methodology/honesty sub-point inside CRR: press coverage (WSJ)
   read older AI-exposed workers' exits as *voluntary retirement to dodge AI*; the hard CPS data locate the
   rise in the **involuntary unemployment** channel. A vivid worked example of citing what the data show, not
@@ -444,6 +461,20 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   promoted. *(Honesty note: the paper is prior-dated — a 2024 working paper / 2025–26 JCR article the sweep surfaced
   recirculating, not a W41 event; and the oft-repeated "lonelier users benefit most" claim could not be verified from the
   primary summaries and is dropped as unconfirmed pending the full text.)*
+
+## W42 note (2026-W42 — a quiet in-window week; no new idea, one existing idea strengthened by a catch)
+- W42 (Oct 12–18) produced **no new in-niche primary research dated to the window** — no new jobs print (October report
+  due Nov 6), no new Economic Index, no new on-axis UBI result, no new causal AI-labour paper. No new standalone idea
+  rose (logged honestly, per W28/W30/W31/W32/W35/W36/W37/W41). The week's value was a **catch** and a **non-event**: (1)
+  two previously-unlogged **US Census young-worker papers** (Tucker, QWI, Apr 2026; Orr/Tucker/Warren, "Graduating into
+  Disruption," LEHD, Sep 2026) **strengthen "The edges fray first"** (W29, updated above) — a third near-universal US
+  administrative-data source, a recession-scale graduate earnings hit, and the restaurants/retail image — while
+  honestly *complicating* the W39 "senior expansion, not junior destruction" headline (US micro-data find absolute,
+  significant young declines vs Chandar's firm-level n.s. junior estimate); (2) a prominent "October jobs report
+  canceled" search result was **verified to be Nov-2025 shutdown coverage about the 2025 reference period, not 2026** —
+  a clean worked example for the methodology pieces ("Was it ever AI?", the three-layer framework): *check the dateline
+  before carrying a scare.* Both updates are above / in evidence_base; neither seeds a standalone, so neither is
+  promoted.
 
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite

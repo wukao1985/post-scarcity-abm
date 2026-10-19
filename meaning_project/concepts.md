@@ -246,6 +246,24 @@ not culprit" hedge). The *composition* reading (who is hired/where, not aggregat
 causally. **Caveats (kept explicit):** working paper, not peer-reviewed; AI adoption inferred from job ads;
 LinkedIn-visible-multinational sample (authors flag it as unrepresentative, esp. developing countries); the junior-
 employment estimate itself is not significant; primary PDF unread.
+**Third US data source + an honest "absolute vs relative" complication added 2026-W42 (US Census: Tucker QWI +
+Orr/Tucker/Warren LEHD).** The concept gains its **third US data source**, and the first on **near-universal Census
+administrative micro-data** (Quarterly Workforce Indicators + LEHD) — independent of ADP (Stanford) and of Chandar's
+LinkedIn multinationals. Tucker (Apr 2026) finds 22–24 employment **−12%** over 10 quarters in the most-exposed
+quintile; Orr/Tucker/Warren ("Graduating into Disruption," Sep 2026) find graduates in the most AI-exposed **decile of
+majors** **−5pp** initial-employment likelihood and **−13%** initial earnings (the authors: *"comparable to graduating
+into a large recession"*), roughly half via a shift into lower-wage **restaurants/retail**. So the phenomenon is now
+very robust and US-general — but the catch **complicates the W39 "senior expansion, not junior destruction" reframe**:
+that reframe rests on Chandar's firm-level international junior estimate of **−2.5% (n.s.)**, whereas the US
+administrative micro-data show an **absolute, significant** entry-cohort decline. Honest reconciliation: a
+**unit/geography** split — Chandar reads *within-firm composition across 41 countries* (relative share-shift), the
+Census papers read *US cohort-level entry* (absolute decline) — so the "relative-not-absolute" line is a firm-level,
+international reading, and at the US entry margin the rung is not merely *raised* but, for exposed graduates, *lowered
+into restaurants/retail*. This is a **triangulation + honest-complication** update (the phenomenon tighter; the
+mechanism *shape* unit-dependent), held with the working-paper and attribution-contested caveats — Tucker himself flags
+COVID-onset pre-trends, remote work, educational attainment, and monetary policy (≤¼), and distinguishes "uncertainty
+about AI" from demonstrable "use of AI." No rewrite — a strengthening + sharpening, not a mechanism change. (🟢 with
+caveats: CES working papers, not peer-reviewed; exposure not deployment; full PDFs unread.)
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
