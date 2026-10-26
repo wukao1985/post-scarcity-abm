@@ -476,6 +476,41 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   before carrying a scare.* Both updates are above / in evidence_base; neither seeds a standalone, so neither is
   promoted.
 
+## Tier 2 — added 2026-W43
+
+- 💡 🟡/🔴 **"A nation braced for meaningless work."** The two Elon / Imagining the Digital Future (ITDF) national surveys
+  ("Human Purpose in Peril," Sep 14; "The Meaning of Work in the AI Age," Oct 13) show the US public has *already
+  concluded* AI will hollow out work's meaning — **64%** expect AI to undermine their sense of purpose and meaning in life,
+  **65%** agree that if AI makes work less meaningful people will lose purpose and dignity, **83%** expect net job loss,
+  **69%** expect weaker human-to-human bonds — while workers still rate paid work as core to meaning (70%), identity (64%),
+  and community (58%). The piece is the **demand-side** of the project's whole question: not "will meaning erode?" but "a
+  public that already believes it will, and a legitimacy vacuum where the response should be" (**59%** want the AI dividend
+  shared, only **11%** trust government to do it; **60%** say workers must self-adapt). *Honesty spine (non-negotiable):*
+  these are **expectation/belief surveys, not measured meaning outcomes** — the piece must be built on "the public has
+  priced in a meaning crisis," not "AI has caused one," and should say plainly that public pessimism neither confirms nor
+  rebuts the base's actual measured evidence (the macro-null, the conditional relatedness harm, the durable German purpose
+  gain). That honest framing is the piece's value and its differentiator. Pairs with "Optimism isn't meaning" (the mirror
+  case), "Preserve the job, not just the income" (Chueri demand-side), and the three-layer framework. Tier 2,
+  expectation-≠-outcome caveat explicit.
+
+## W43 note (2026-W43 — a quiet in-window week; one genuine demand-side catch, two existing ideas sharpened)
+- W43 (Oct 19–25) produced **no new in-niche primary research dated to the window** — no new jobs print (October report
+  due Nov 6), no new Economic Index, no new on-axis UBI result, no new causal AI-labour paper. The week's payoff was a
+  **catch** on the project's central question rather than its labour edge: two previously-unlogged **Elon/ITDF national
+  surveys** on AI and meaning (above, folded into evidence_base as the base's first public-perception leg). It **seeds one
+  modest new Tier-2 idea** ("A nation braced for meaningless work," above — a genuine demand-side catch, not a manufactured
+  quiet-week idea) and **sharpens two existing ones**: (1) **"Optimism isn't meaning"** (W27) gains its **mirror image** —
+  the expectation-≠-outcome discipline now cuts *both* ways (Anthropic's Cadences optimism and ITDF's pessimism are both
+  *beliefs*, neither a measured meaning result), a cleaner and more symmetric methodology cut; (2) **"Preserve the job,
+  not just the income"** (W25) / the economic–meaning decoupling gains a **large second demand-side leg** (ITDF workers
+  rate work's meaning/identity/community functions nearly as highly as its pay, and the public expects AI to threaten
+  both). Both are updated above / in evidence_base and concepts. *(Honesty notes: both surveys are prior-dated — Sep 14 and
+  Oct 13 — caught recirculating in the W43 sweep, not W43 events; and every figure is a self-reported expectation/belief,
+  not a measured meaning outcome. In-window layoff announcements (Barclays/Coinbase/Block/Kroger/Snap/Microsoft, Oct
+  22–23) and a Goldman ~9%-displacement forecast (Oct 22) are self-attributed/projection, below the bar, noted in the
+  digest only — though Goldman's "disruption accelerates in a slowdown" echoes the W40 read and is worth a line for the
+  macro/methodology pieces.)*
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp

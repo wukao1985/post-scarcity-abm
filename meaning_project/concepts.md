@@ -72,6 +72,18 @@ AI-attributable (this month)."** **Honest corollary (kept explicit):** a weak la
 AI-driven hiring freeze would be *indistinguishable* from a macro-driven one, so "not AI-shaped" is a statement about
 *where the losses landed*, not an all-clear — this strengthens the concept's empirical footing without licensing a
 claim that AI is absent. No rewrite — a substantive single-datum extension.
+**A second, larger demand-side leg added 2026-W43 (ITDF public-opinion surveys).** The decoupling now has a second
+demand-side affirmation beyond Chueri's political-preference finding: Elon's Imagining the Digital Future Center surveys
+("Human Purpose in Peril," Sep 14; "The Meaning of Work in the AI Age," Oct 13) show the US public explicitly rating work's
+*meaning/identity/community* functions (workers: 70% / 64% / 58% "extremely/very important") alongside its paycheck, and
+expecting AI to threaten **both** income (83% expect net job loss; 68% expect inadequate pay) **and** meaning (64% expect
+AI to undermine purpose/meaning in life; 65% expect lost purpose and dignity if work becomes less meaningful). So the
+decoupling is not only an analyst's distinction and a political preference — it is a measured, near-consensus *public
+expectation*: people do not conflate the income question with the meaning question, and they are pessimistic on both.
+**Load-bearing caveat (kept explicit):** this is **belief/expectation, not a measured meaning outcome** — the public
+*anticipating* a meaning crisis is a demand-side fact, not evidence that one has arrived; the concept's measured footing
+(the over-determined macro-null; "calm/cooling aggregate ≠ psychological calm") is untouched by it. No rewrite — a
+demand-side strengthening held one layer back from the outcome evidence.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
@@ -141,6 +153,13 @@ This is not a contradiction: Cadences measures a *self-reported future expectati
 heavy delegators (author-flagged selection confound); Lee et al. measures a *felt-meaning outcome*
 during/after a task. The discipline for citing this axis: **keep expectation and outcome strictly
 separate — "AI users feel optimistic" is not "AI preserves meaning."**
+**Caveat made symmetric 2026-W43 (ITDF public-opinion surveys).** The expectation-≠-outcome discipline now cuts *both*
+ways: where Cadences heavy-automation users expect *benefit*, Elon/ITDF's representative public expects *harm* (64% expect
+AI to undermine purpose/meaning; 65% expect lost purpose/dignity if work becomes less meaningful; 69% expect weaker human
+bonds). Neither is a measured meaning result — public pessimism is no more an outcome than heavy-user optimism — so the
+rule holds in mirror image: a belief that meaning will erode and a belief that it will flourish are both *expectations*,
+and the measured outcome layer (Lee et al./Chi et al. on the psychological side; the macro-null and relatedness cluster
+elsewhere) is the only one that settles the question.
 **Mechanism extended upstream 2026-W30 (Chi et al., "Optimized but Unowned").** The psychological limb of
 this axis now has a *second independent preregistered paradigm* and reaches a level *above* task execution.
 Lee et al. found passive/automated *doing* of a task erodes self-efficacy/ownership/meaning; Chi et al.

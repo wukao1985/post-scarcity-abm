@@ -1079,6 +1079,59 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   the OECD post-labour scenario and hard to scale; monitor for a Western replication. VERIFIED 2026-06
   (secondary). https://doi.org/10.1007/s11205-026-03806-y
 
+## Public perceptions of AI, work, and meaning (demand-side / attitude data)
+
+*(The belief layer, distinct from the measured-outcome anchors above. Every entry here is what people **expect, fear, or
+rate as important** — robust attitude data, but not a measurement that meaning has actually changed. Keep the
+expectation-≠-outcome line visible when citing: public pessimism is no more a measured meaning decline than the Anthropic
+"Cadences" users' optimism is a measured preservation. Pairs with Chueri et al.'s demand-side political-preference finding
+in the labour section.)*
+
+- **Imagining the Digital Future Center (Elon University) — two national surveys on AI and the meaning of work/life (the
+  demand-side / public-perception leg; added 2026-W43).** Elon University's Imagining the Digital Future Center (ITDF; Lee
+  Rainie, director; Janna Anderson, senior researcher). **"Human Purpose in Peril"** — released **Sep 14, 2026** (file
+  dated 9-15-26); nationally representative survey of **1,505 US adults including 1,163 LLM users** (oversample of 501 LLM
+  users; MoE ±3.1pp); fieldwork **May 14–18, 2026**. **"The Meaning of Work in the AI Age"** / "Americans Fear AI Will
+  Hollow Out the Meaning of Work" — released **Oct 13, 2026**; **n=1,158 US adults + a 150-worker oversample** (MoE
+  ±3.4pp); fieldwork **Aug 20–24, 2026**, fielded by **SSRS**. **Both prior-dated; caught in the W43 sweep** (grep-confirmed
+  never previously logged — the base had only the earlier ITDF "Rise of AI Companions" prevalence survey, W37). 🟡 **with
+  caveats — robust *attitude* measurement, NOT a measured meaning outcome** (nationally representative samples, stated MoEs,
+  a reputable academic polling center; **but** every figure is a self-reported *expectation / belief / fear / importance
+  rating*, not an observed change in purpose, loneliness, or wellbeing — 🟡 on the project's axis, not 🟢 outcome data;
+  cross-sectional; toplines/full-report PDFs not parsed — figures read from the primary ITDF report pages; the Elon
+  news-release URL 503'd and a regional mirror redirected off-host, so neither was used). *Shows (Human Purpose in Peril):*
+  **64%** agree "by replacing human beings in most tasks, AI will undermine our sense of purpose and meaning in life" (the
+  optimistic counter-framing drew **36%**); **69%** say AI will weaken human-to-human bonds (a lot 33% / somewhat 36%);
+  **55%** are *not* confident humans will retain the ability to think critically (15% confident); **46%** are *not*
+  confident people will maintain their sense of motivation and purpose as AI advances — while the same LLM users report
+  real benefits (**88%** "routinely learn something new and valuable"; **70%** used AI "to create work superior to what
+  they might have achieved on their own"; **59%** better advice than family/friends at least sometimes) and unease (**51%**
+  feel lazy/shortcutting; **39%** overly dependent; **39%** "cheating"; **22%** "manipulated"). *Shows (The Meaning of
+  Work):* **83%** expect AI to eliminate more jobs than it creates; **68%** expect most jobs to pay too little for a decent
+  lifestyle; **62%** expect most available jobs to be dull and unfulfilling; **65%** agree "if AI makes work less meaningful,
+  people will lose their sense of purpose and dignity"; **52%** agree AI's workforce impact will leave most workers with
+  little control over their futures. Baseline importance (workers): paid work rated extremely/very important to **family
+  role 81%**, **sense of meaning and purpose 70%**, **personal identity 64%**, **community responsibility 58%**. Safety-net
+  expectations: only **11%** of workers are highly confident government agencies will help if AI hits their jobs (**58%**
+  little/no confidence; family/friends/former colleagues the most-trusted source at 33%); **60%** agree workers must adapt
+  themselves rather than expect outside help; **59%** agree AI-generated wealth should be widely shared. *Use:* the base's
+  **first systematic public-perception leg** — the demand/belief side the manifesto's question implies but the evidence
+  base barely touched. Three uses: (i) the **large demand-side companion to Chueri et al.** (the public affirms the
+  economic–meaning decoupling — it rates work's meaning/identity/community functions as highly as its paycheck, Jahoda's
+  latent functions surfacing in survey data); (ii) the **clean mirror of Anthropic's "Cadences"** (W27) — Cadences heavy
+  users expected *benefit*, the public expects *harm*, and **neither is a measured outcome**, which is the whole
+  methodological point and why both can be cited without contradiction; (iii) a 🔴-policy datum — the public expects *and*
+  wants the AI dividend shared (59%) yet has near-zero institutional confidence (11%), a legitimacy gap the ITDF
+  "institutions-first" resilience framing (its April-2026 companion report) addresses. *Limits (load-bearing):* **attitudes,
+  not outcomes** — a nation *expecting* AI to hollow out meaning is not evidence that it *has*; the base's actual measured
+  layer (macro-null, conditional relatedness harm, durable German purpose gain) is unchanged by it; cross-sectional;
+  self-report; prior-dated (not a W43 event); PDFs unparsed. Strengthens the project's *framing and stakes* and adds the
+  demand-side layer it lacked, **without** adding a measured meaning result. Follow-up: parse both topline PDFs for exact
+  question wording and subgroup breaks; watch whether ITDF re-fields either survey into a *trend* line. VERIFIED 2026-W43
+  (primary ITDF report pages; topline/full PDFs pending).
+  https://imaginingthedigitalfuture.org/reports-and-publications/human-purpose-in-peril/ ·
+  https://imaginingthedigitalfuture.org/reports-and-publications/the-meaning-of-work-in-the-ai-age/
+
 ---
 
 ## Gaps to fill (future 🟢 pillars to consider)
