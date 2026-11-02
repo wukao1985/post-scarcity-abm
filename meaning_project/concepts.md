@@ -84,6 +84,22 @@ expectation*: people do not conflate the income question with the meaning questi
 *anticipating* a meaning crisis is a demand-side fact, not evidence that one has arrived; the concept's measured footing
 (the over-determined macro-null; "calm/cooling aggregate ≠ psychological calm") is untouched by it. No rewrite — a
 demand-side strengthening held one layer back from the outcome evidence.
+**A third demand-side leg — the first *trade-off* test — added 2026-W44 (Jacobs, "What is Work For?").** The decoupling now
+has its most direct demand-side *test*: Julian Jacobs' cross-national survey (arXiv:2610.39375, Oct 29; n=8,234; UK/US/
+Denmark/India) puts the core trade-off *to respondents* — hold income constant via a guarantee, would you still work? — and
+finds a measured **Work Values Index** (≈⅓ intrinsic, ~¼ social/community, 17% status, ~¼ financial), that a **majority would
+leave** if salary were guaranteed **but ~1 in 5 would stay even at 120% of salary**, that the **intrinsically-motivated
+refuse a basic income at *any* substitution level**, and that income-substituted-but-role-less workers re-seek Jahoda's
+latent functions via **volunteering/work-like activity** — all spread **evenly across income and collar**. Jacobs' own
+conclusion is the concept in a sentence: a basic income "may be necessary" for an AI shock but "could ultimately fail to
+compensate workers" for the non-monetary benefits lost. So the decoupling's demand-side footing is now three-legged (Chueri's
+political preference, ITDF's expectation/importance ratings, Jacobs' stated trade-off). **Load-bearing caveat (kept
+explicit, and two-sided):** this is **stated preference, not revealed behaviour** (the say-do / lottery-winner gap bears
+directly on it) — and the honest shape is two-sided: *most* respondents *would* take the money, so the decoupling is carried
+by a sizeable, evenly-distributed *minority* and by what the role-less do with their time, not by a claim that people value
+meaning over money. A belief/preference datum on the same shelf as ITDF and Cadences; the measured-outcome layer is
+untouched. No rewrite — a demand-side strengthening, now as an explicit trade-off, held one layer back from the outcome
+evidence.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
@@ -283,6 +299,21 @@ mechanism *shape* unit-dependent), held with the working-paper and attribution-c
 COVID-onset pre-trends, remote work, educational attainment, and monetary policy (≤¼), and distinguishes "uncertainty
 about AI" from demonstrable "use of AI." No rewrite — a strengthening + sharpening, not a mechanism change. (🟢 with
 caveats: CES working papers, not peer-reviewed; exposure not deployment; full PDFs unread.)
+**Fourth national source — and the first that reads *against* AI attribution — added 2026-W44 (Statistics Canada: Mehdi &
+Frenette).** The concept gains a **fourth national-level source** (after Stanford/ADP + US Census for the US, and the Bank
+of Korea), and it is the first to read *against* a clean AI story. StatCan's first *flows* analysis (hires/separations; LFS,
+released Oct 28; youth 15–29) finds hiring fell in **every** exposure tier and **most in the *least* AI-exposed jobs**
+(low-exposure 4.0%→3.3%; AI-augmentable 2.9%→2.5%; substitution-prone 3.2%→3.0%; coding-intensive 2.5%→1.9%), with
+separations barely moving — which the agency reads as **"a general cooling rather than an AI shock,"** an *inflow* (slower
+hiring) story, not outflow. So it **strengthens the *phenomenon*** (youth entry is weak, cross-nationally, and it is a
+hiring-side problem) while **weakening the AI *attribution*** at the Canadian aggregate — the opposite gradient to what a
+clean AI story predicts, and the W40 "cooling, not AI-shaped" read replicated in a second country's labour flows. The one
+AI-plausible cell is **coding-intensive** (the lowest tracked), which StatCan honestly refuses to attribute. Honest state:
+the entry-margin weakness is real and cross-national; *why* (AI vs post-pandemic cyclical cooling, remote work, cohort size)
+stays contested, and the countries now visibly *disagree* on how AI-shaped it is — US micro-data read it as AI-adjacent and
+large (W42), Canadian flows read it as mostly cyclical with a coding exception. A **triangulation + attribution-honesty**
+update (phenomenon tighter; AI-causation more openly contested), held read-from-secondary (two outlets; primary PDF unread).
+No rewrite — a strengthening of the phenomenon and a sharpening of the "Was it ever AI?" caveat.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and

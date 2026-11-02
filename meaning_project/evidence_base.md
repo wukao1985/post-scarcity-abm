@@ -300,6 +300,38 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   decomposition before any citation. VERIFIED 2026-W42 (Census CES landing page + primary PDF abstract; full PDFs
   pending). https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html ·
   https://www2.census.gov/library/working-papers/2026/adrm/ces/CES-WP-26-56.pdf
+- **Statistics Canada (Mehdi & Frenette) — youth hiring/separation *flows*, "a general cooling rather than an AI shock"
+  (the Canadian *attribution-against* leg; added 2026-W44).** Tahsin Mehdi & Marc Frenette (Statistics Canada), released
+  **Oct 28, 2026** (the agency's *Economic and Social Reports* line; Labour Force Survey data **Jan 2006 – Aug 2026**) —
+  the agency's **first look at hires and separations (labour-market flows), not headline employment counts, since genAI
+  reached the mass market.** 🟢 **with caveats** (national statistical agency, near-universal LFS survey data, a novel flows
+  margin; **but** AI *exposure* is an occupation construct, not measured deployment; the agency calls the evidence **early**
+  and declines causal attribution; the coding-separations series is **volatile/small-sample**; and this is **read from two
+  independent secondary outlets** — The Hub (Oct 28) and HCAMag (Canada) — with consistent core figures, the primary PDF
+  on the backlog). *Shows:* youth (**15–29**) hiring rates (six-month averages, late 2022 vs Aug 2026) fell in **every**
+  exposure tier and **most in the *least* AI-exposed jobs** — **low-exposure 4.0%→3.3%** (steepest), **AI-augmentable** (AI
+  assists; e.g. doctors/nurses/teachers/engineers) **2.9%→2.5%**, **substitution-prone 3.2%→3.0%**, **coding-intensive**
+  (within substitution-prone) **2.5%→1.9%** (lowest tracked cell). **Separations barely moved** overall (coding separations
+  2.4%→3.5%, flagged volatile/small-sample). The agency reads it as **"a general cooling rather than an AI shock"**: hiring
+  fell even where AI barely reaches, so the data do not point to AI as the main driver; the weakness is an **inflow** story
+  (slower hiring, continuing earlier trends), not an **outflow** one; and the coding-intensive decline "cannot yet [be told]
+  whether [it] is the start of AI-driven substitution or part of the same cyclical slowdown." Context: StatCan's business
+  survey shows **19.2%** of firms used AI in the 12 months before its Q2-2026 survey (up from 12.2% a year earlier); this
+  extends the agency's Jan-2026 predecessor, "Employment trends in Canada in the era of generative AI: early results."
+  *Use:* a **fourth national-level source** on the youth signal (after Stanford/ADP + US Census, and the Bank of Korea) —
+  and the **first that reads *against* a clean AI attribution**, using the project's own preferred move (a within-comparison
+  across exposure tiers, where the AI story predicts the *most*-exposed youth fall hardest and the data show the *least*-
+  exposed falling hardest). It is the W40 "cooling, not AI-shaped" read **replicated in a second country's labour flows**,
+  a direct counterweight to over-reading the US young-cohort drop as AI-caused — while the **coding-intensive exception**
+  (the one AI-plausible cell, which StatCan honestly refuses to claim) keeps the software-developer signal alive. Adds a
+  **flows margin** the base lacked: the youth weakness is in *hiring*, not *separations* (nobody is fired faster; fewer are
+  let *in*), cohering with the Dallas Fed "lower inflow, not outflow" reading and with experience-creep *without* resolving
+  attribution. *Limits:* exposure not deployment; agency-flagged early; read-from-secondary (primary pending); and the W40
+  corollary cuts both ways — a broadly cooling market is exactly where an AI effect would be *masked*, so "not AI-shaped" is
+  a statement about *where* the hiring losses concentrate (everywhere, led by low-exposure jobs), not an all-clear. VERIFIED
+  2026-W44 (two independent secondary outlets, consistent figures; primary *Economic and Social Reports* PDF pending).
+  https://thehub.ca/2026/10/28/young-canadians-hiring-rate-falls-to-3-3-percent-even-in-jobs-ai-barely-touches/ ·
+  https://www.hcamag.com/ca/news/general/employers-blaming-ai-for-weak-youth-hiring-may-be-off-target/595486
 - **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
   Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
   Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-
@@ -1131,6 +1163,40 @@ in the labour section.)*
   (primary ITDF report pages; topline/full PDFs pending).
   https://imaginingthedigitalfuture.org/reports-and-publications/human-purpose-in-peril/ ·
   https://imaginingthedigitalfuture.org/reports-and-publications/the-meaning-of-work-in-the-ai-age/
+
+- **Jacobs, "What is Work For? Labor, Politics, and Meaning in the Age of AI" — the demand-side *trade-off* test of the
+  economic–meaning decoupling (added 2026-W44).** Julian Jacobs (sole author), **arXiv:2610.39375** (econ.GN; v1, 39 pp.,
+  17 figures; submitted **29 Oct 2026**). An original cross-national survey of **8,234 working-age adults** (UK, US,
+  Denmark, India) plus a constructed **"Work Values" Index**. 🟡 **with caveats — a large cross-national *stated-preference*
+  survey, NOT a measured meaning outcome** (original multi-country instrument; an explicit values typology; a direct test
+  of the UBI-vs-non-monetary-benefits question the project centres on; **but** every headline figure is a *hypothetical/
+  self-reported preference* — "would you keep working if income were guaranteed?" — not revealed behaviour, so the say-do
+  gap (lottery winners, FIRE retirees) bears directly on it; **single-author arXiv preprint, not peer-reviewed**; full PDF
+  unread — per-country breakdown, weighting, and index-category definitions unchecked, and category shares may not be
+  mutually exclusive; cross-sectional). *Shows:* **81%** report job satisfaction and a majority in all four countries are
+  strongly motivated by *non-monetary* aspects of work; the **Work Values Index** splits respondents ≈ **⅓ intrinsically
+  motivated** ("for its own sake"), **~¼ socially/community motivated**, **17% status-motivated**, **~¼ financially
+  motivated**; a **majority would leave** their role if salary were guaranteed as income, **but ~1 in 5 would stay even at
+  up to 120% of salary**; the **intrinsically-motivated disproportionately refuse a basic income at *any* substitution
+  level**; workers attached to work for non-monetary reasons who are income-substituted *but lose the role* are more likely
+  to pursue **volunteering or work-like activity**; and these non-monetary motivations are spread **roughly evenly across
+  the income distribution and between white- and blue-collar workers**. Author's conclusion: a basic income "may be
+  necessary to manage a future AI labour shock" yet "could ultimately fail to compensate workers" for the non-monetary
+  benefits lost. *Use:* the **most direct demand-side test of the economic–meaning decoupling in the base** — a step beyond
+  Chueri (automation fear → demand for work's *role*) and ITDF (public *rates* work's meaning functions highly, *expects*
+  AI to threaten them): Jacobs puts the trade-off to respondents (*swap your job for guaranteed money?*) and finds a
+  substantial, income-and-collar-independent segment for whom the answer is no, plus the behavioural tell that income-
+  substituted-but-role-less workers re-seek Jahoda's latent functions (volunteering/work-like activity). First item in the
+  base to **operationalise intrinsic vs extrinsic work motivation as a measured typology** and tie it to UBI *refusal* — a
+  survey-grade version of "money buys relief, not meaning." *Limits (load-bearing):* **(i)** stated preference ≠ behaviour —
+  *most* respondents would take the guaranteed money, and even the "~1-in-5 at 120%" and "intrinsically-motivated refuse
+  UBI" figures are what people *say*, which the project's own FIRE/lottery evidence warns can diverge sharply from what they
+  do; **(ii)** a belief/preference datum on the same shelf as ITDF and Cadences — it strengthens the decoupling's
+  *demand-side* footing without touching the measured-outcome layer (macro-null, conditional relatedness harm, durable
+  German purpose gain); **(iii)** arXiv preprint, full text unread. A genuine, in-window, on-niche strengthening of the
+  project's central framing, held one honest layer back from the outcome evidence. Follow-up: parse the full PDF for
+  per-country splits, index construction, the UBI-substitution ladder, and any *behavioural* (not stated) measure. VERIFIED
+  2026-W44 (arXiv abstract/metadata; full PDF pending). https://arxiv.org/abs/2610.39375
 
 ---
 

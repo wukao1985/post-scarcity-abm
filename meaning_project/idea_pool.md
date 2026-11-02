@@ -511,6 +511,41 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   digest only — though Goldman's "disruption accelerates in a slowdown" echoes the W40 read and is worth a line for the
   macro/methodology pieces.)*
 
+## Tier 2 — added 2026-W44
+
+- 💡 🟡/🔴 **"The ones who wouldn't take the money."** Julian Jacobs' cross-national survey ("What is Work For?",
+  arXiv:2610.39375, Oct 29; n=8,234; UK/US/Denmark/India) is the first to put the economic–meaning decoupling's core
+  trade-off *to respondents*: hold income constant via a guarantee, would you still work? A **majority** say they would
+  leave — but **~1 in 5 would keep working even at 120% of salary**, the **intrinsically-motivated refuse a basic income at
+  *any* substitution level**, and income-substituted-but-role-less workers go seek **volunteering / work-like activity** —
+  with these non-monetary motivations spread **evenly across income and collar**. The piece is the sharpest demand-side
+  illustration yet that **income substitution ≠ meaning substitution** (Jacobs' own line: a UBI "may be necessary" but
+  "could ultimately fail to compensate" for the non-monetary benefits of work) — and a concrete, survey-grade companion to
+  "Money doesn't buy meaning." *Honesty spine (non-negotiable):* these are **stated preferences, not revealed behaviour** —
+  the say-do gap (lottery winners, FIRE retirees) is exactly where this survey is weakest, and the piece must say plainly
+  that *most* respondents would take the money; the decoupling lives in the sizeable, evenly-distributed *minority* and in
+  what the role-less do with their time, not in a claim that people value meaning over money. Pairs with "A nation braced
+  for meaningless work" (the ITDF companion), "Preserve the job, not just the income" (Chueri), and the three-layer
+  framework. Tier 2, stated-preference ≠ behaviour caveat explicit.
+
+## W44 note (2026-W44 — a substantive in-window week; one modest new idea, two existing ideas sharpened)
+- W44 (Oct 26 – Nov 1) **broke the W35→W43 run of quiet-in-window weeks** — for the first time since the dailies lapsed, the
+  payoff was two genuinely new **in-window** primary items, both on project-central questions. (1) **Jacobs, "What is Work
+  For?"** (arXiv, Oct 29) **seeds one modest new Tier-2 idea** ("The ones who wouldn't take the money," above — a genuine
+  in-window catch, not a manufactured quiet-week idea) and **sharpens the decoupling pieces** ("Money doesn't buy meaning";
+  "Preserve the job, not just the income") with a demand-side *trade-off* leg, plus **"A nation braced for meaningless
+  work"** (W43) gains a cross-national companion (ITDF pessimism and Jacobs refusal are two cuts of the same demand-side
+  picture). (2) **Statistics Canada** (Mehdi & Frenette, Oct 28) **sharpens the methodology pieces** — **"Was it ever AI?"**
+  (W23) and the three-layer framework gain a clean worked example in the *opposite* direction to the usual scare: *a
+  national statistical agency finds youth hiring fell hardest in the jobs AI barely touches ("a general cooling rather than
+  an AI shock"), the within-tier gradient pointing away from AI* — and **"The edges fray first"** (W29) gains a fourth
+  national source that strengthens the phenomenon (weak, inflow-driven youth entry) while weakening the AI attribution at
+  the Canadian aggregate (updated in concepts). Both updates are above / in evidence_base and concepts; StatCan seeds no
+  standalone, so it is not promoted. *(Honesty notes: Jacobs is a **stated-preference** survey and an unrefereed arXiv
+  preprint; StatCan is read-from-secondary and agency-flagged as early; neither is a measured meaning outcome. One would-be
+  catch — Lee et al., *Scientific Reports* 16:13583 — was checked and found **already logged** (since June), a
+  verify-before-logging non-event.)*
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp
