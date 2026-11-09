@@ -100,6 +100,21 @@ by a sizeable, evenly-distributed *minority* and by what the role-less do with t
 meaning over money. A belief/preference datum on the same shelf as ITDF and Cadences; the measured-outcome layer is
 untouched. No rewrite — a demand-side strengthening, now as an explicit trade-off, held one layer back from the outcome
 evidence.
+**The macro leg firmed, and the W40 "cooling" gloss was walked back, 2026-W45 (October jobs report).** The pre-committed
+macro test — the **October 2026 Employment Situation** (BLS, Nov 6) — came back **strong**: **+165K** (a beat), **U
+4.1%**, **August and September both revised *up*** (+84K combined), **information flat (−1K), financial steady (+7K),
+health care +42K re-accelerating, no AI mention.** This is the fourth distinct macro test (calm-bad W32 → reversed;
+strong W36; weak W40; strong W45) and the cleanest "calm/firming aggregate, high-exposure sectors flat beneath" print
+since W36 — so the decoupling's labour-macro leg firms: *aggregate employment stability (now firmness) ≠ psychological
+stability, and the aggregate's moves aren't AI-shaped at the sector level.* **The reflexive update is the honest part:**
+W40 had upgraded the null's gloss from "calm" to **"cooling"** on a September +29K print it judged revision-*reinforced*;
+September is now **+60K** and August **+186K**, so the "genuine cooling" texture **softens** and the gloss returns to
+**"calm-to-firming."** Not a change to the concept (which never rested on the cooling) but a worked example, applied to
+the project's own prior read, of the "don't over-read a single print — even a revision-confirmed one" discipline the
+concept carries. It also makes the **belief-vs-outcome gap** concrete: the demand-side *dread* of a jobs collapse
+(ITDF/Jacobs, W43/W44) now sits, in the same quarter, on a *measured* aggregate that beat and revised up — expectation
+and outcome pointing opposite ways, kept strictly separate in both directions. No rewrite — a macro-leg firming + a
+reflexive gloss-correction, the demand-side and measured-meaning legs untouched.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes

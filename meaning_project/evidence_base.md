@@ -482,6 +482,35 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   one — so "not AI-shaped" is a statement about where the losses landed, not an all-clear. Also closes the W37/W38
   shutdown-delay data-cadence watch: the report **shipped on schedule (Oct 2)**, confirming W39's correction.
   https://www.bls.gov/news.release/empsit.nr0.htm)*
+  *(BLS **October 2026**, added W45 — the next pre-committed macro test, read directly from the BLS archive release
+  empsit_11062026; it **firmed the aggregate and revised the W40 cooling upward**:* **+165,000 payrolls** — a large beat
+  (~65K consensus; well above the prior-12-month average of 48K) — with **unemployment 4.1%** ("changed little"; 0.1pp
+  below the 4.2% logged in W40), **AHE +0.4% m/m (to $38.00) / +3.1% y/y** (wage growth still cooling, real wages barely
+  positive). **Revisions went *up*: August +133K→+186K (+53K); September +29K→+60K (+31K); combined +84K higher.**
+  **Composition:** **information −1K** (flat; after −21K Aug / −11K Sep — the tracked high-exposure decline neither
+  accelerating nor reversing), **financial activities +7K** ("little change"), **health care +42K and re-accelerating**
+  (hospitals +16K, home health +11K, outpatient +5K — reversing the W40 health-care *deceleration* that carried that
+  month's softness), gains otherwise broad across services. **No AI mention in the release.** *(Secondary, not primary:
+  ~421K entered the labour force even as U ticked down — a firming signal; white-collar accounting/legal/finance added
+  jobs in October on a weak multi-year trend; a PJ-Media opinion "AI is driving the boom" framing has no
+  mainstream-economist attribution — below the bar.)* *Use:* the **fourth** distinct macro test in the tracking window
+  (calm-bad W32 → reversed; strong W36; genuinely-weak W40; now strong-again W45), confirming the macro-null through a
+  *firming* print with the tracked high-exposure sectors flat/steady and no attribution. **The load-bearing update is
+  reflexive:** W40 logged September (+29K) as "the window's first *non-artifact* weak print," distinguished from W32's
+  −23K *because* its weakness was then reinforced-not-reversed by revisions, and upgraded the null's gloss from "calm" to
+  "cooling." Six weeks on, **September revised up to +60K and August to +186K** (August's path across vintages: +162K →
+  +133K → +186K) — so the "genuine cooling" call **softens materially** and the honest gloss returns to **"calm-to-firming
+  aggregate whose moves are not AI-attributable at the sector level."** Not a hit to the macro-null (which never rested on
+  the cooling) but a textbook case of the project's own "don't over-read a single print — even a revision-confirmed one"
+  discipline applied to itself. Also sharpens the **belief-vs-outcome gap**: after two demand-side weeks of public *dread*
+  (ITDF 83% expect net job loss; Jacobs' income-can't-compensate minority), the measured aggregate *beat* and revised up —
+  expectation and outcome pointing opposite ways, the two-layer distinction kept open in both directions. **Caveat
+  (load-bearing):** one preliminary print (its own two revisions pending — and the September walk-back here is the reason
+  to hold October loosely too); a jobs report assigns no cause; and the W40 corollary now cuts in mirror image — a
+  *firming* market can mask an AI-driven hiring freeze just as a cooling one can, so "not AI-shaped" is a statement about
+  *where* the hiring landed (broad services + health care; high-exposure sectors flat), not an all-clear. Texture, not a
+  pillar; the strongest clean "calm/firming surface, high-exposure sectors flat beneath" print since W36. VERIFIED
+  2026-W45 (BLS primary archive). https://www.bls.gov/news.release/archives/empsit_11062026.htm)*
   *Dallas Fed TBOS:* 66% of TX firms use AI; 10% already cut
   headcount need, 30% expect to. *NACEWEB:* entry-level AI-skill demand ~tripled in two survey
   quarters; **40% of early-career workers report changing career plans because of AI.** *Use:*
