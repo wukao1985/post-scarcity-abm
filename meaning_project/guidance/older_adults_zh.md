@@ -19,7 +19,7 @@ AI 和机器人能帮着减轻抑郁；但真正减孤独的，是那些**把老
 3. 🟢 **长期把 AI 当陪伴，与更孤独、更低的幸福感相关**，主要因为真人见面少了。（Folk & Dunn, *Psychological Science* 2026；
    Zhang et al. 2026；这些研究以成年人为主，不专门针对老人）
 4. 🟢 **非自愿离开工作伤脑。** 51–64 岁男性非自愿失业后认知衰退加快，约相当于多老两年。
-   （Kouchekinia, Neumark & Bruckner, NBER WP 35117, 2026；方法有争议）
+   （Kouchekinia, Neumark & Bruckner, NBER WP 35117, 2026；方法有争议，"两年"这个数来自二手报道）
 
 ## 二、有证据的做法 🟢
 
