@@ -89,3 +89,26 @@ Held-out test on the GSS 2020 panel wave (`stage1b_panel2020/RESULTS.md`): unemp
 US only; one-item outcome; cross-section has selection (who stops working); health is both confounder and
 possible mediator; panels small (≈260 exits) so within-person nulls are uninformative about moderate effects;
 none of these people stopped working because of AI. Exploratory findings are on the same data that generated them.
+
+
+## Addendum 2026-11-16: survey-mode sensitivity (exploratory, NOT pre-registered, added after results)
+
+GSS 2021–2024 changed mode (mostly web/mail instead of face-to-face), which can shift answers to "happy" and
+"life exciting". `scripts/mode_sensitivity.py` re-runs the same model code on 1973–2018 only
+(`results/mode_sensitivity.json`; the all-years column reproduces the numbers above exactly).
+
+| Estimate (pp) | All years | 1973–2018 only |
+|---|---|---|
+| H1 non-work → "life exciting" | −1.0 (−2.6, +0.5) | **−2.0 (−3.7, −0.3)** |
+| Non-work → "not too happy" | +3.9 (2.9, 5.0) | +2.8 (1.8, 3.8) |
+| Unemployed → "not too happy" | +14.8 (12.2, 17.4) | +13.9 (11.4, 16.6) |
+| Retired <65 → "life exciting" | +5.4 (1.8, 9.1) | +3.0 (−1.0, +6.9), ns |
+| Retired <65 → "not too happy" | −2.4 (−3.9, −0.7) | −2.6 (−4.1, −0.9) |
+| Married buffer on distress | −5.7 (−7.8, −3.6) | −4.8 (−7.0, −2.6) |
+| Religious attendance buffer on distress | −2.5 (−4.4, −0.6) | −2.7 (−4.5, −0.9) |
+
+Reading: the distress results and both buffers are stable. Two things move. (1) Without the new-mode waves the
+H1 engagement penalty is about −2pp and its CI excludes zero, so the pooled null on H1 may partly reflect the
+mode change; the confirmatory verdict stays as registered (pooled sample), but "no engagement penalty" should
+not be stated strongly. (2) The early-retiree engagement *bonus* is not robust (rests on recent waves); their
+lower distress is. One more forking path was run, so treat both as hypotheses.
