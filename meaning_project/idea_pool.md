@@ -568,6 +568,30 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   jobs report assigns no cause; and the honest W40 corollary now cuts in mirror image — a firming market can mask an AI
   hiring freeze just as a cooling one can, so "not AI-shaped" describes where the hiring landed, not an all-clear.)*
 
+## W46 note (2026-W46 — a quiet in-niche week; one in-window labour-periphery catch, no new standalone idea)
+- W46 (Nov 9–15) returned to the quiet-in-niche pattern after the substantive W44 (Jacobs + StatCan) and W45 (October
+  jobs report): **no new measured meaning outcome, no new on-axis UBI/purpose result, no new AI-companion study dated to
+  the window, no macro print** (November Employment Situation due early December). No new standalone idea rose (logged
+  honestly, per W28/W30/W31/W32/W35/W36/W37/W41/W42/W45). The week's one in-window item — **OpenAI × Upwork, "The
+  Rebundling of Freelance Work in the AI Age"** (Nov 10; AI-related freelance **budgets +52%, hours +41%, task mix +45%
+  more diverse, but hourly rate +1.5%**; **43/63 categories** shed ChatGPT-common activities, content-writing fastest;
+  the provider's own line: *"ChatGPT use alone does not explain these changes"*) — **sharpens one existing idea and one
+  methodology angle** rather than seeding a new one. (1) **"Commoditized competence"** (W26) gains a freelance-channel
+  *complication*: on the *same* Upwork market where Siddiq & Zhang found the human-capital premium eroding, the per-hour
+  skill price is now essentially flat (+1.5%) *even as* the market grows the projects (bigger budgets/hours/bundling) —
+  so the honest form is **"commoditised per hour, re-valued by scope/orchestration"** (value migrates to assembling
+  bundled, multi-skill, AI-involved projects, not to selling a discrete craft by the hour), with content-writing the
+  clean routine-text decline. (2) **"Was it ever AI?"** (W23) gains a worked example in an unusual direction — *a
+  conflicted provider (OpenAI) published data on its own tool's labour footprint and explicitly declined the substitution
+  story*, the self-hedging-conflicted-source move from the party most incentivised to claim the opposite (cf. BOK
+  "amplifier"; StatCan "cooling, not AI shock"; Forrester "financially-driven layoffs confused with AI-driven"). Both
+  updated above / in evidence_base and concepts; an example, not an argument, so neither is promoted. *(Honesty notes:
+  OpenAI/Upwork is **provider-authored, descriptive/correlational, online-freelance-only, read-from-secondary** — a
+  labour-composition datum, not a measured meaning outcome. Below-bar/off-axis this week: the AI100 "AI Goes Mainstream"
+  field-overview report, the OECD Digital Economy Outlook 2026, vendor reports (Littler/ZipRecruiter/Cognizant/SHRM), and
+  an obscure Apr-2026 Zenodo "purpose" paper. One backlog item became retrievable: the Jacobs "What is Work For?" full
+  text (v2, Nov 8) is now on arXiv HTML.)*
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp

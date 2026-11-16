@@ -1043,6 +1043,32 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   cost likely concentrates here**. Neither a full 🟢 anchor yet; both flagged for peer review / outcome
   data. VERIFIED 2026-06 (preprints/secondary). https://arxiv.org/abs/2606.21880 ·
   https://www.nber.org/papers/w34705
+  - **Freelance-channel complication added 2026-W46 — "rebundling, not replacement" (OpenAI × Upwork).** OpenAI
+    *Work at the Frontier* series, joint with Upwork, **"The Rebundling of Freelance Work in the AI Age," released
+    Nov 10, 2026.** 🟡 **with caveats — provider-authored (OpenAI analysing its own tool's market footprint, the
+    same structural conflict flagged on the Anthropic Economic Index), descriptive/correlational (authors state it
+    "cannot establish that AI caused these shifts"), Upwork-postings data only (online-freelance, not salaried),
+    read-from-secondary** (five independent outlets — Unite.AI, AIWeekly, Superpowerdaily, MLQ.ai, Beri.net — with
+    consistent figures; primary PDF pending). *Shows:* AI-related **fixed-price** postings carry budgets **~52.4%
+    higher** than comparable non-AI postings while the adjusted **hourly-rate gap is only ~1.5%** (scope grows, the
+    per-hour skill price barely moves); AI-related **hourly** contracts log **~41% more hours** in their first 90
+    days; task briefs became **~45% more diverse** (effective task clusters 14.6→21.2) — clients *bundling* AI work
+    with production/integration skills rather than buying single tasks; of **63 matched categories, 43** saw
+    ChatGPT-common activities *lose* share on Upwork, with **content-writing falling fastest**. OpenAI's own
+    conclusion: **"ChatGPT use alone does not explain these changes in freelance demand"** / "does not point to a
+    simple substitution story." *Use:* a **complication, not a confirmation**, of the Siddiq & Zhang commoditization
+    reading on the *same* Upwork market — the human-capital premium erodes at the *hourly* level (flat +1.5%) even as
+    the market *grows the projects* (budgets/hours/bundling up), so "commoditised per hour, re-valued by
+    scope/orchestration" and the SDT-competence arc shifting from "master a skill" to "orchestrate AI + production +
+    integration" (the project's inference, not the report's claim). Also a methodology datum: **a conflicted provider
+    refusing the substitution story about its own tool** — the self-hedging-conflicted-source move (cf. BOK
+    "amplifier, not culprit"; StatCan "a general cooling rather than an AI shock"), here from the party most
+    incentivised to claim AI *is* transforming the market. *Limits:* provider conflict; descriptive/no causation;
+    online-freelance only; read-from-secondary; independent research finds real losses in *some* exposed freelance
+    niches, so "not a simple substitution story" describes the *aggregate platform pattern*, not an all-clear.
+    Follow-up: parse the primary PDF for the content-writing decline magnitude and the hourly-vs-fixed decomposition.
+    VERIFIED 2026-W46 (five secondary outlets, consistent figures; primary PDF pending).
+    https://openai.com/index/ai-effect-on-freelance-work/
 
 ## Purpose as a measurable health (mortality) variable — the 🟢 floor under "meaning matters"
 

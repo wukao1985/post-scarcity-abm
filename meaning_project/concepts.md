@@ -329,6 +329,22 @@ stays contested, and the countries now visibly *disagree* on how AI-shaped it is
 large (W42), Canadian flows read it as mostly cyclical with a coding exception. A **triangulation + attribution-honesty**
 update (phenomenon tighter; AI-causation more openly contested), held read-from-secondary (two outlets; primary PDF unread).
 No rewrite — a strengthening of the phenomenon and a sharpening of the "Was it ever AI?" caveat.
+**Freelance-channel commoditization complicated 2026-W46 (OpenAI × Upwork) — "rebundling, not replacement."** The
+concept's demand-side commoditization strand (Siddiq & Zhang, W26: AI-exposed Upwork categories reward price over
+skill/reputation, the human-capital premium eroding) gains a second primary datum on the *same* market, and it
+complicates rather than confirms. OpenAI × Upwork's "Rebundling of Freelance Work in the AI Age" (Nov 10) finds
+AI-related freelance projects getting **bigger** — budgets **~52%** higher, **~41%** more hours, task briefs **~45%**
+more diverse (clients bundling AI work with production/integration skills) — while the adjusted **hourly rate barely
+moves (+1.5%)**, and **43 of 63 categories** shed ChatGPT-common activities (content-writing fastest). So both readings
+hold: the *per-hour price of a discrete skill* is flat/commoditised, while *value migrates to project scope and
+orchestration* — the raised rung, on the freelance channel, is less "removed" than "re-specified toward assembling
+bundled, multi-skill, AI-involved projects," shifting the SDT-competence arc from "master a craft" to "orchestrate AI +
+production + integration" (the project's inference, not the report's claim). The provider's own refusal of the
+substitution story ("ChatGPT use alone does not explain these changes") is itself the methodologically useful part — a
+conflicted source hedging its own causation, cf. the BOK and StatCan hedges. **Load-bearing caveat (kept explicit):**
+provider-authored (OpenAI on its own tool), descriptive/correlational (no causal claim), online-freelance segment only,
+read-from-secondary — a labour-*composition* datum, not a measured meaning outcome. No rewrite — a demand-side
+commoditization *complication* on the freelance channel, held 🟡.
 
 ## 🌰 Meaning-targeted automation
 Automation is not meaning-neutral within a job: the micro-tasks workers find most agentic and
