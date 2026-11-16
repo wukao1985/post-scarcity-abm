@@ -16,3 +16,8 @@ All written before reading any confirmatory output.
    on NW at wave 3. A non-zero coefficient = decline before exit.
 6. **Code fix (no change to the plan):** first run crashed in the exploratory by-sex split because the female dummy
    is constant within one sex; constant columns are now dropped from the design matrix.
+7. **Code fix (no change to the plan):** panel files store variables as labelled categories (e.g. "Working
+   Fulltime"), not numeric codes; the first run crashed on them. They are now mapped to 1-based GSS codes in the
+   GSS category order (verified: wrkstat, life, socfrend, marital, health category lists match the codebook order).
+   The panel section was then run on its own while debugging, so panel results (H7, H8, P1) were seen before the
+   cross-section results; no panel specification was changed after seeing them.
