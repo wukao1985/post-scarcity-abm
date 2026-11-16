@@ -80,6 +80,10 @@ does not show the predicted drop, and the placebo shows no pre-exit decline.
    says the risk concentrates in **involuntary** loss and in the **unpartnered / unconnected-to-a-community**, and
    (weakly) among **25–39** for engagement.
 
+## Follow-up (Stage 1b, 2026-11-16)
+
+Held-out test on the GSS 2020 panel wave (`stage1b_panel2020/RESULTS.md`): unemployment → distress **+8pp, CI −11 to +27, inconclusive** (35 exposed). Within-person, job loss in 2020 lowered "life exciting" by ~19pp (secondary, uncorrected) — the engagement penalty the cross-section did not show.
+
 ## Limitations
 
 US only; one-item outcome; cross-section has selection (who stops working); health is both confounder and
