@@ -29,7 +29,7 @@ HRS（美国 50 岁以上，两年一波）的心理社会自填问卷（Psychos
 - "被迫 vs 想退"的退休自评，原题（Voss et al., *J Occup Environ Med* 2024，HRS 2004–2016，PubMed/PMC 全文，
   [doi:10.1097/JOM.0000000000003137](https://doi.org/10.1097/JOM.0000000000003137)）：
   "Thinking back to the time you (partly/completely) retired, was that something you wanted to do or something you felt you were forced into?"
-  答案含"想退 / 被迫 / 一部分想、一部分被迫"。早年波次已有人用（Szinovacz & Davey, *The Gerontologist* 45:36–47, 2005）。
+  答案含"想退 / 被迫 / 一部分想、一部分被迫"。早年波次已有人用（Szinovacz & Davey, *The Gerontologist* 45:36–47, 2005；同作者用 HRS 1–4 波发现被迫、过早、骤停的退休抑郁症状上升，*J Gerontol B* 2004，[doi:10.1093/geronb/59.6.s333](https://doi.org/10.1093/geronb/59.6.s333)）。
 - ⚠️ **这道题有效回答很少**：受跳题影响，每波只有 128–807 个有效回答；Voss 等的分析最后只用上 HRS 全样本的 8%。
   而且**被迫退休会被少报**：同文引的混合方法研究里，问卷勾"自愿"的人有 17% 在访谈中说出了被迫的成分。
   → 下面"暴露"一节因此加了宽口径定义。
