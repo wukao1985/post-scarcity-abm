@@ -21,7 +21,7 @@
    中年和临近退休的人几乎为零；不过 25–39 岁和中年段之间的差别本身还不显著（p≈0.06）。
    （`../../who_keeps_meaning_study/RESULTS.md`；控制健康；样本不含 25 岁以下；一道题的结局）
 4. 🟢 **把 AI 当伙伴越用越多，往往越孤独。** 981 人、四周的随机研究：分配到哪种对话方式没差别，但**自己越用越多的人**，
-   孤独、依赖、问题性使用都更差，和真人社交更少。（Fang et al. 2025，MIT Media Lab × OpenAI，预印本）
+   孤独、依赖、问题性使用都更差，和真人社交更少。（Fang et al. 2025，"How AI and Human Behaviors Shape Psychosocial Effects of Chatbot Use"，MIT Media Lab × OpenAI，arXiv:2503.17473 预印本；"用得越多越差"是相关，不是随机分配出来的）
    12 个月面板：社交聊天机器人用得多 → 之后更孤独。（Folk & Dunn, *Psychological Science* 2026，
    [doi:10.1177/09567976261427747](https://doi.org/10.1177/09567976261427747)）
    但"用多少"未必是要害：韩国 1,022 名成人跨 ChatGPT 出现前后两波追踪（2022.10 对 2026.3），用不用、每天用多久，
