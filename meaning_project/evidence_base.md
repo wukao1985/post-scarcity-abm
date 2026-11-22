@@ -698,11 +698,11 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   https://www.tfah.org/report-details/pain-in-the-nation-2026-report/
 - **Involuntary job loss causally accelerates cognitive decline.** Kouchekinia, Neumark & Bruckner,
   NBER WP 35117 (Apr 2026, rev. May). Bartik-IV using local labour-demand shocks; HRS. *Shows:*
-  job loss from negative demand shocks **causally** accelerates cognitive decline — ~**2 extra
-  years** of normal ageing — concentrated in **men 51–64**, via the *employment* channel (not income
+  lower *area-level* employment (Bartik IV, not individual job loss) predicts faster cognitive decline —
+  a 10-pp employment drop ≈ −0.19 SD — larger in **men 51–64**, no clear effect at 65+, via the *employment* channel (not income
   alone). *Limits:* Bartik-IV validity debated; older sample; data pre-genAI, so the AI-displacement
-  link is an *inference*; the 2-year figure is from secondary coverage. *Use:* a **third stakes
-  dimension** beside deaths-of-despair and Emile's purpose→mortality — displacement may carry
+  link is an *inference*; the earlier "~2 extra years" figure is not in the abstract or NBER Digest and was removed (2026-11). *Use:* a **third stakes
+  dimension** beside deaths-of-despair and O'Súilleabháin et al.'s purpose→mortality — displacement may carry
   *neurological* cost, and the affected demographic overlaps mid-career workers in the declining
   high-exposure white-collar sectors. Weakens "just find meaning elsewhere." VERIFIED 2026-06.
   https://www.nber.org/papers/w35117
@@ -766,7 +766,7 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
 - **Q3 status (updated 2026-W38 — now five methods):** with Aalto (quasi-experiment), Folk & Dunn (prospective
   panel), Li et al. (RCT), **Zhang et al. (survey + coded transcripts)**, and now **Vaillancourt/Bonnesen et al.
   (JAMA Pediatrics, ~40k adolescents, cross-sectional)** all converging — plus the
-  empathy-preference result and Emile/OECD mortality — the relatedness sub-question stands at **"consistent
+  empathy-preference result and O'Súilleabháin et al./OECD mortality — the relatedness sub-question stands at **"consistent
   five-method evidence: AI cannot supply relatedness, and deployed as a loneliness fix it likely worsens the
   deficit."** Zhang et al. adds that the harm is **conditional** — concentrated in the already-isolated who use
   the bot for companionship, absent for productivity/curiosity users — which reconciles this cluster with any
@@ -800,7 +800,7 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   descriptive trends; cross-national comparability caveats; the mortality figure is a global
   estimate under varying assumptions. *Use:* demographic precision the canon lacks — the socially
   most-at-risk group (young men) is the same group taking the early entry-level hit ("double
-  exposure"); pairs with Emile's mortality mediation. VERIFIED 2026-06.
+  exposure"); pairs with O'Súilleabháin et al.'s mortality mediation. VERIFIED 2026-06.
   https://www.oecd.org/en/publications/social-connections-and-loneliness-in-oecd-countries_6df2d6a0-en.html
 - **Subjective loneliness — not objective isolation — predicts cognitive impairment and shorter
   life.** Yoneda et al. (24-author international team, UC Davis-led); *Journal of Personality and
@@ -972,7 +972,7 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   computerizability result in the same paper — the headline-vs-primary gap the project exists to
   catch. Revisit if the authors' promised causal (DiD) follow-up appears. VERIFIED 2026-W31 (primary
   PDF). https://doi.org/10.21033/wp-2026-12
-- **Ranjit et al., "Are We Automating the Joy Out of Work?"** — arXiv:2603.14963; *CHI 2026*.
+- **Ranjit et al., "Are We Automating the Joy Out of Work?"** — arXiv:2603.14963 (preprint; CHI 2026 venue not confirmed on the arXiv page, corrected 2026-11).
   Survey of workers/developers rating 171 representative tasks, then LM-scaled to 10,131 O*NET
   computer-assisted tasks. *Shows:* tasks workers associate with **agency and happiness are
   disproportionately AI-exposed** relative to tasks they rate routine/low-meaning; plus a
@@ -985,8 +985,8 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   (Jun 2025). German SOEP, two decades, DiD/event-study; observational; data ends ~2020 (pre-
   generative-AI). *Shows:* **no average harm** from AI occupational exposure to mental health/
   subjective wellbeing (slight health gains via reduced physical job intensity) — **but** among
-  workers who *actually report using AI tools*, "indications of declining life and job
-  satisfaction." *Limits:* occupational exposure ≠ individual use; self-report subsample smaller/
+  occupations where more workers *report using AI tools* (an occupation-level measure, in a
+  robustness check), small declines in life and job satisfaction (~0.05 SD; corrected 2026-11). *Limits:* occupational exposure ≠ individual use; self-report subsample smaller/
   selected; German co-determination may buffer harms. *Use:* the **reconciliation** anchor — the
   population-average null and Lee et al.'s task-level mechanism operate at different levels; the
   actual-user nuance bridges them and warns the null may not survive deeper AI penetration.
@@ -1072,8 +1072,8 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
 
 ## Purpose as a measurable health (mortality) variable — the 🟢 floor under "meaning matters"
 
-- **Emile, "Loneliness predicts mortality risk via the erosion of purpose in life"** — *Social
-  Science & Medicine* 368 (23 Jan 2026). Prospective, Health and Retirement Study, N=8,351 US
+- **O'Súilleabháin PS, Kirwan EM, … McKenna G, "Loneliness predicts mortality risk via the erosion of purpose in life"** — *Social
+  Science & Medicine* 393:119008 (Mar 2026; doi:10.1016/j.socscimed.2026.119008, PubMed 41619331; author and volume corrected 2026-11). Prospective, Health and Retirement Study, N=8,351 US
   adults, 11-yr follow-up. *Shows:* purpose in life statistically explains **~88%** of the
   loneliness→premature-mortality association; the mediation runs primarily through *changes* in
   purpose over time (not baseline alone); robust to adjustment for depression, social isolation,
