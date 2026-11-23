@@ -332,6 +332,36 @@ Format per entry: **Claim** — source(s) — what it does/doesn't show — how 
   2026-W44 (two independent secondary outlets, consistent figures; primary *Economic and Social Reports* PDF pending).
   https://thehub.ca/2026/10/28/young-canadians-hiring-rate-falls-to-3-3-percent-even-in-jobs-ai-barely-touches/ ·
   https://www.hcamag.com/ca/news/general/employers-blaming-ai-for-weak-youth-hiring-may-be-off-target/595486
+- **Ahn & Carollo, "Artificial Intelligence and Labor Market Reallocation" — the first institutional labour source in this
+  base reading *toward* an AI-specific effect, and the exposure-vs-adoption lesson it carries (added 2026-W47).** Hie Joo
+  Ahn & Nicholas A. Carollo (Federal Reserve — Board of Governors / Technology & Growth Center research page), **posted
+  Nov 17, 2026**; an earlier version circulated as an NBER conference paper dated **Jul 16, 2026** (f245251). 🟢 **with
+  caveats** (Fed economists; **CPS + JOLTS** worker-flow data combined with an **OpenAI AI-exposure** measure and a
+  **Lightcast AI-*adoption*** measure; builds labour-force stocks, worker flows, market tightness, and individual-level
+  "hirability"/"separability" indices; natural rate recovered from trend components of unemployment inflows/outflows plus a
+  structural model — a strong design; **but** causal language is interpretive ("the patterns *suggest*…"), the natural-rate
+  figure comes "with considerable uncertainty," adoption is inferred from Lightcast postings, US-only, and this is
+  **read from the research landing page — primary / NBER conference PDF unparsed**, on the backlog). *Shows:* since LLMs
+  arrived, workers high on **both** AI exposure **and** adoption saw **larger declines in job-finding and job-switching
+  rates** than others; their **within-job activity switching rose** noticeably; AI's **positive effects on nominal wage
+  growth and hours worked weakened markedly** post-LLM; **dispersion in job-finding prospects rose markedly since 2023,
+  "largely driven by AI factors";** and the **natural rate of unemployment is estimated to have risen ~0.2pp** since LLMs
+  (with the stated uncertainty). Author mechanism: **within-firm task reorganisation + a reconfiguration of labour inputs,
+  alongside weaker demand for the most AI-exposed** — i.e. *reallocation*, not an aggregate collapse. *Use:* the
+  **first institutional reading *toward* AI** in the base, deliberately paired against the exposure-based hedges (StatCan
+  W44 "cooling, not AI shock"; BOK W35 "amplifier, not culprit"; the NY Fed postings null; our own contract-buffer null).
+  **The load-bearing point is methodological, and it sharpens the "Was it ever AI?" thread into its most falsifiable form:**
+  Ahn & Carollo condition on *observed adoption* (Lightcast) — the deployment-not-capability move that also let Massenkoff &
+  McCrory see a hiring-flow signal — whereas the sources reading *against* AI use *exposure-only* constructs. So the
+  attribution answer is **method-relative**: exposure-only → "broad cooling, not AI"; adoption-conditioned → "AI
+  reallocation." Both can be honestly true; the disagreement *is* the finding. The within-firm task-reorganisation mechanism
+  also **coheres with, rather than breaks, the macro-null** (reallocation under a calm surface is exactly where the
+  decoupling always said the action would be). *Limits (state honestly):* interpretive causation, not clean identification;
+  natural-rate estimate explicitly uncertain; adoption a postings proxy; US-only; read-from-landing-page; and a reallocation
+  story is compatible with a calm aggregate, so this is **not** a refutation of the null — the aggregate test is the Nov
+  jobs print (due **Dec 4, 2026**). Follow-up: parse the primary / NBER PDF for flow-decline magnitudes, the
+  hirability/separability construction, the natural-rate CI, and the adoption-measure first stage before any citation.
+  VERIFIED 2026-W47 (Fed research landing page; primary PDF pending). https://www.frbsf.org/?p=456937
 - **NY Fed — "Remote work, not AI, sidelined recent college graduates"** (Natalia Emanuel [NY
   Fed], Emma Harrington [UVA], Amanda Pallais [Harvard]; *Liberty Street Economics*, 1 Jun 2026).
   Federal employment data + an occupational remotability index, plus a single Fortune-500 tech-

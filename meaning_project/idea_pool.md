@@ -592,6 +592,30 @@ Status: 💡 raw · 🌱 developing · ✍️ drafting · ✅ published
   an obscure Apr-2026 Zenodo "purpose" paper. One backlog item became retrievable: the Jacobs "What is Work For?" full
   text (v2, Nov 8) is now on arXiv HTML.)*
 
+## W47 note (2026-W47 — the attribution needle moved *toward* AI; one existing idea sharpened into its crux, no new standalone idea)
+- W47 (Nov 16–22) was **not quiet on the labour/attribution thread** but stayed quiet on the measured-meaning core. Two
+  in-window primary items, both labour-side: **(1) Ahn & Carollo (Federal Reserve), "Artificial Intelligence and Labor
+  Market Reallocation"** (posted Nov 17; NBER conference version Jul 16) — the **first institutional source in the base to
+  read *toward* an AI-specific effect**: adoption-and-exposure-high workers show larger post-LLM declines in
+  job-finding/job-switching, within-job churn up, AI's wage/hours lift faded, job-finding dispersion up "largely driven by
+  AI," **natural rate +~0.2pp** (uncertain), mechanism = **within-firm task reorganisation** (reallocation, not collapse).
+  **(2) OECD, "AI and work organisation"** — a rare *job-quality* datum (AI-exposed occupations saw *less* monotony growth;
+  education credited over AI), held 🟡 (primary 403'd, date unconfirmed, read-from-secondary). No new standalone idea rose
+  (logged honestly, per W28/W30/W31/W32/W35/W36/W37/W41/W42/W45/W46). The week **sharpens one existing idea into its
+  sharpest, most falsifiable form:** **"Was it ever AI? The confounded canary"** (W23) should now be built around a single
+  crux — **the attribution answer is method-relative: exposure-only designs find "cooling, not AI" (StatCan W44, NY Fed
+  postings); adoption-conditioned designs find "AI reallocation" (Ahn & Carollo; Massenkoff & McCrory).** The essay's spine
+  is no longer "AI vs confounder" but **"which ruler — what AI *could* do (exposure) or what firms *actually run*
+  (adoption)? — and why the choice decides the headline."** That reframing is the strongest version of the project's
+  attribution discipline yet, and the clean, teachable move (the same study, run on both rulers, would report the gap —
+  the decisive datum, still missing). Updated above / in evidence_base and concepts; **no promotion** — the
+  exposure-vs-adoption split needs the Ahn & Carollo and comparator primary PDFs read before it anchors a published
+  argument. *(Honesty notes: Ahn & Carollo is interpretive-causal, natural-rate-uncertain, adoption-proxy, US-only,
+  read-from-landing-page — reallocation that *fits* the macro-null, not a refutation of it; the Dec-4 November jobs print
+  is the next aggregate test. The OECD paper is read-from-secondary with the primary inaccessible. Below-bar/outside-window
+  this week: the RAISE/Burning Glass entry-level report (Nov 23, W48), Challenger's AI-cited-layoffs tally, ZipRecruiter,
+  Korn Ferry "Meaning Advantage," Robert Walters, Imperial College Gen-Z usage.)*
+
 ## Parking lot (raw sparks)
 - "AI in the paycheck, not the headcount" (2026-W35 watch): a recurring reading that AI's near-term bite
   falls on *wages and hours* more than *employment counts* — Apollo/Slok (AI-exposed wage growth ~6.7pp

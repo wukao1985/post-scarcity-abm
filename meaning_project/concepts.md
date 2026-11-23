@@ -115,6 +115,22 @@ concept carries. It also makes the **belief-vs-outcome gap** concrete: the deman
 (ITDF/Jacobs, W43/W44) now sits, in the same quarter, on a *measured* aggregate that beat and revised up — expectation
 and outcome pointing opposite ways, kept strictly separate in both directions. No rewrite — a macro-leg firming + a
 reflexive gloss-correction, the demand-side and measured-meaning legs untouched.
+**A credible institutional *reallocation* reading arrived — and it fits the concept, 2026-W47 (Ahn & Carollo, Fed).** The
+**first institutional labour source in the base to read *toward* an AI-specific effect** — Ahn & Carollo, "Artificial
+Intelligence and Labor Market Reallocation" (Federal Reserve, posted Nov 17; NBER conference version Jul 16) — finds that,
+since LLMs arrived, workers high on **both** AI exposure **and** *adoption* (Lightcast) saw larger declines in
+job-finding/job-switching, rising within-job activity churn, a fading of AI's earlier wage/hours lift, and widening
+dispersion in job-finding prospects "largely driven by AI," with the **natural rate of unemployment up ~0.2pp** (their own
+"considerable uncertainty"). Crucially the mechanism is **within-firm task reorganisation + a reconfiguration of labour
+inputs** — i.e. *reallocation beneath the surface*, which is the economic–meaning decoupling's **own core claim stated from
+the labour-economics side** ("the tasks reorganised away beneath the calm aggregate may be the competence- and
+autonomy-bearing ones"). So this **reinforces** the concept rather than breaking it: a reading that points *at* AI without
+contradicting the macro-null (the aggregate test is still the Dec-4 November print; reallocation is compatible with a calm
+headcount). It also names the attribution strand's **new crux — exposure vs adoption as the method that decides the
+answer:** exposure-only designs find "cooling, not AI" (StatCan W44, NY Fed postings); adoption-conditioned designs find
+"AI reallocation" (Ahn & Carollo, Massenkoff & McCrory). No rewrite — a macro/attribution-leg reinforcement (reallocation
+that fits the mechanism) plus the exposure-vs-adoption sharpening; demand-side and measured-meaning legs untouched, held
+with the interpretive-causation / natural-rate-uncertainty / adoption-proxy / read-from-landing-page caveats.
 
 ## 🌰 "Money buys relief, not meaning"
 The recurring 🟢 finding from cash-transfer/lottery/retirement evidence: money reliably removes
